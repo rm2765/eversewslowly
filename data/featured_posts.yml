@@ -1,0 +1,7 @@
+title: "Featured Posts"
+content: "Check out some of our top blog posts."
+style: "style2 small onscroll-fade-in"
+items:
+  - path: "2025/behind the seams/"
+  - path: "2023/learning-to-sew/"
+  - path: "2023/sweater-challenge/"

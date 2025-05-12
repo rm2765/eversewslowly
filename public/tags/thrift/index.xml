@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Thrift on Ever Sew Slowly</title>
+    <link>//localhost:1313/tags/thrift/</link>
+    <description>Recent content in Thrift on Ever Sew Slowly</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>{year}</copyright>
+    <lastBuildDate>Thu, 02 Feb 2023 19:13:18 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/thrift/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Journey Begins ...</title>
+      <link>//localhost:1313/blog/2023/learning-to-sew/</link>
+      <pubDate>Thu, 02 Feb 2023 19:13:18 +0000</pubDate>
+      <guid>//localhost:1313/blog/2023/learning-to-sew/</guid>
+      <description>&lt;p&gt;The COVID-19 pandemic led to a period of uncertainty, disruption and reflection. It was a stressful time for everyone and more so for frontline workers. Many who were temporarily out of a job or for their first time working from home found themselves with more time on their hands. Trying out new things was a way to move forward and gain a sense of agency during COVID. One of those things for me was learning how to sew. (I also became very interested in birds 😺). &lt;!---more--&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,31 @@
+
+<!-- Pagination controls -->
+{{ if or (.Paginator.HasPrev) (.Paginator.HasNext) }}
+<ul class="icons">
+  {{ if .Paginator.HasPrev }}
+    <li>
+      <a href="{{ .Paginator.Prev.URL }}" class="icon style2 fa-arrow-left">
+        <span class="label">Newer</span>
+      </a>
+    </li>
+  {{ end }}
+    
+    {{ range .Paginator.Pagers }}
+    <li>
+      {{ if eq . $.Paginator }}
+        <span class="page active">{{ .PageNumber }}</span>
+      {{ else }}
+        <a href="{{ .URL }}" class="page">{{ .PageNumber }}</a>
+      {{ end }}
+    {{ end }}
+    </li>
+    
+    {{ if .Paginator.HasNext }}
+    <li>
+      <a href="{{ .Paginator.Next.URL }}" class="icon style2 fa-arrow-right">
+        <span class="label">Older</span>
+      </a>
+    </li>
+   {{ end }}
+
+{{ end }}

@@ -1,0 +1,8 @@
+{{ define "main" }}
+
+    {{ partial "menu-header" . }}
+    {{ partial "banner-carousel" site.Data.gallery_page }}
+    {{ partial "spotlight" site.Data.gallery_page.spotlight }}
+    {{ partial "gallery" site.Data.gallery_page.gallery }}
+
+{{ end }}

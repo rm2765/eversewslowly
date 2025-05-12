@@ -1,0 +1,61 @@
+@import 'components/icon';
+/* SCSS styles for meta container with categories/tags and sharing icons */
+
+.meta-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.meta-categories-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    
+    a {
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+}
+
+/* Styling for icons if needed - this assumes you already have .icons styling in your theme */
+.icons.share-icons {
+    @include icon;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    
+    li {
+        padding: 0;
+        margin-left: 10px;
+    }
+    
+    .icon.style1, .icon.brands.style1 {
+        &:hover {
+            transform: translateY(-2px);
+        }
+    }
+}
+
+/* For responsive design */
+@media (max-width: 768px) {
+    .meta-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .icons.share-icons {
+        justify-content: flex-start;
+        margin-top: 10px;
+        
+        li:first-child {
+            margin-left: 0;
+        }
+    }
+}

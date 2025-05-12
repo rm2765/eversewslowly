@@ -1,0 +1,85 @@
+@import 'base/_page'; // If you have base styles
+
+.main-header {
+    background-color: #f8f8f8;
+    padding: 1rem 0;
+    position: sticky; // Or fixed
+    top: 0;
+    z-index: 100; // Ensure it's above other content
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between; // Example: Nav on left, search on right
+        align-items: center;
+    }
+
+    .main-nav {
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+
+            li {
+                margin-left: 1rem;
+                &:first-child {
+                    margin-left: 0;
+                }
+                a {
+                    // Existing styles for the links
+                    color: _palette(fg); // using theme variable for default text color
+                    text-decoration: none;
+                    padding: 0.5rem 1rem;
+                    border-radius: 0.25rem;
+                    @include vendor('transition', (
+                        'background-color #{_duration(transition)} ease-in-out',
+                        'color #{_duration(transition)} ease-in-out'
+                    ));
+
+                    &:hover {
+                        // Hover effect: change to accent color for text
+                        color: _palette(fg-bold) !important;
+                        font-weight: bolder;
+                    }
+
+                    // Active link styling:
+                    &.active {
+                        background-color: _palette(accent); // e.g. a darker shade
+                        color: _palette(bg) !important;
+                        font-weight: bolder;
+                    }
+                }
+
+                // Alternatively, if the active class is applied to the li element:
+                &.active > a {
+                    background-color: _palette(accent);
+                    color: _palette(bg) !important;
+                    font-weight: bolder;
+                }
+            }
+        }
+    }
+
+    .search-panel {
+        display: flex;
+        align-items: center;
+
+        input[type="text"] {
+            padding: 0.5rem;
+            margin-right: 0.5rem;
+            border: 1px solid #ccc;
+        }
+
+        .actions {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+            li {
+                margin: 0;
+            }
+        }
+    }
+}

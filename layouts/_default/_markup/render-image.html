@@ -1,0 +1,25 @@
+{{ $image := .Page.Resources.GetMatch (printf "**/%s" .Destination) }}
+{{ if $image }}
+  {{ $image = $image.Resize "x600" }}
+  {{ if and (eq .Page.Type "blog") (eq .Page.Kind "page") }}
+    <figure class="figure">
+      <img src="{{ $image.RelPermalink }}" alt="{{ .Text | safeHTMLAttr }}" loading="lazy" class="table-image" />
+      {{ if .Text }}
+        <figcaption>{{ .Text }}</figcaption>
+      {{ end }}
+    </figure>
+  {{ else }}
+    <img src="{{ $image.RelPermalink }}" alt="{{ .Text | safeHTMLAttr }}" loading="lazy" class="table-image" />
+  {{ end }}
+{{ else }}
+  {{ if and (eq .Page.Type "blog") (eq .Page.Kind "page") }}
+    <figure class="figure">
+      <img src="{{ .Destination | safeURL }}" alt="{{ .Text | safeHTMLAttr }}" loading="lazy" class="table-image" />
+      {{ if .Text }}
+        <figcaption>{{ .Text }}</figcaption>
+      {{ end }}
+    </figure>
+  {{ else }}
+    <img src="{{ .Destination | safeURL }}" alt="{{ .Text | safeHTMLAttr }}" loading="lazy" class="table-image" />
+  {{ end }}
+{{ end }}

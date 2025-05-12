@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on Ever Sew Slowly</title>
+    <link>//localhost:1313/blog/</link>
+    <description>Recent content in Blog on Ever Sew Slowly</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>{year}</copyright>
+    <lastBuildDate>Sat, 26 Apr 2025 20:42:13 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Behind the Seams</title>
+      <link>//localhost:1313/blog/2025/behind-the-seams/</link>
+      <pubDate>Sat, 26 Apr 2025 20:42:13 +0000</pubDate>
+      <guid>//localhost:1313/blog/2025/behind-the-seams/</guid>
+      <description>&lt;p&gt;Last year, I joined the BKLYN Fashion Academy&amp;rsquo;s sixth season—an incredible program that more aspiring designers should know about. The Academy (BFA) takes designers on a four-month journey to a runway finale. The 2024 cohort created mini-collections under the &lt;em&gt;Women in Future Industries&lt;/em&gt; theme. I interviewed fellow designers Gia, Regina, and Ronen, and together, we tell it all—from the creative challenges that tested both our skills and resolve, to our growth as design professionals.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Your First Post</title>
+      <link>//localhost:1313/blog/2025/your-first-post/</link>
+      <pubDate>Thu, 27 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/blog/2025/your-first-post/</guid>
+      <description>This is summary.&#xA;This is summary.</description>
+    </item>
+    <item>
+      <title>Sweater Challenge</title>
+      <link>//localhost:1313/blog/2023/sweater-challenge/</link>
+      <pubDate>Sun, 26 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/blog/2023/sweater-challenge/</guid>
+      <description>&lt;p&gt;With the winter season coming to an end, you may find yourself staring at a pile of old sweaters, cardigans, and other winter clothing that you no longer wear or that have seen better days. But before you toss them out or donate them, why not upcycle them into something new and useful!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>A Journey Begins ...</title>
+      <link>//localhost:1313/blog/2023/learning-to-sew/</link>
+      <pubDate>Thu, 02 Feb 2023 19:13:18 +0000</pubDate>
+      <guid>//localhost:1313/blog/2023/learning-to-sew/</guid>
+      <description>&lt;p&gt;The COVID-19 pandemic led to a period of uncertainty, disruption and reflection. It was a stressful time for everyone and more so for frontline workers. Many who were temporarily out of a job or for their first time working from home found themselves with more time on their hands. Trying out new things was a way to move forward and gain a sense of agency during COVID. One of those things for me was learning how to sew. (I also became very interested in birds 😺). &lt;!---more--&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,20 @@
+{{ define "main" }}
+  <h1>{{ .Title | humanize }}</h1>
+  {{ with .Content }}
+    {{ . }}
+  {{ end }}
+  <ul>
+    {{ range .Paginator.Pages }}
+      <li>
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+        {{ if .Date }}
+          <time datetime="{{ .Date.Format "2006-01-02T15:04:05-07:00" }}">{{ .Date.Format "January 2, 2006" }}</time>
+        {{ end }}
+        {{ with .Summary }}
+          <p>{{ . }}</p>
+        {{ end }}
+      </li>
+    {{ end }}
+  </ul>
+  {{ template "_internal/pagination.html" . }}
+{{ end }}

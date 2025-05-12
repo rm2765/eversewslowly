@@ -1,0 +1,50 @@
+@import 'libs/custom_vars';
+@import 'base/typography';
+
+
+.breadcrumb {
+ 
+    text-align: center;
+    margin-bottom: 2rem;
+  
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: inline-flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0rem;
+  
+      li {
+        display: inline;
+  
+        color:  _palette(accent) !important;
+  
+        &::after {
+          content: "  »";
+          color:  _palette(invert border-alt) !important;
+        }
+  
+        &:last-child::after {
+          content: "";
+        }
+  
+        a {
+          text-decoration: none;
+          color: inherit;
+          transition: color 0.2s ease-in-out;
+  
+          &:hover {
+            // Hover effect: change to accent color for text
+            color: _palette(accent1) !important;
+        }
+    }
+  
+        .current {
+          color: _palette(color1) !important;
+        }
+      }
+    }
+  }
+  

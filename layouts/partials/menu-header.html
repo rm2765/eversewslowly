@@ -1,0 +1,41 @@
+<header class="main-header">
+    <div class="container"> <!-- Optional container for centering content -->
+        <nav class="main-nav">
+            <ul>
+                <!-- Static Menu Items with active class conditions -->
+                <li class="{{ if or (eq $.RelPermalink "/") (eq $.Permalink site.BaseURL) }}active{{ end }}">
+                    <a href="{{ site.BaseURL }}">Home</a>
+                </li>
+                <li class="{{ if eq $.Section "blog" }}active{{ end }}">
+                    <a href="{{ site.BaseURL }}/blog">Blog</a>
+                </li>
+                <li class="{{ if eq $.RelPermalink "/gallery/" }}active{{ end }}">
+                    <a href="{{ site.BaseURL }}/gallery">Gallery</a>
+                </li>
+                <li class="{{ if eq $.Section "learn" }}active{{ end }}">
+                    <a href="{{ site.BaseURL }}/learn">Learn</a>
+                </li>
+                <li class="{{ if eq $.RelPermalink "/connect/" }}active{{ end }}">
+                    <a href="{{ site.BaseURL }}/connect">Connect</a>
+                </li>
+                <!-- Dynamic menu items -->
+                {{ with site.Menus.main }}
+                    {{ range . }}
+                        <li class="{{ if .IsMenuCurrent "main" . }}active{{ end }}">
+                            <a href="{{ .URL }}">{{ .Name }}</a>
+                        </li>
+                    {{ end }}
+                {{ end }}
+            </ul>
+        </nav>
+        <div class="search-panel" style="display: flex; align-items: center;">
+            <input type="text" placeholder="Search..." style="margin-right: 0.5rem;">
+            <ul class="icons" style="margin: 0; padding: 0;">
+                <li>
+                    <!-- Replaced fa-dribbble with fa-search. Adjust the FontAwesome classes as needed -->
+                    <a href="#" class="icon style2 fa-search"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>

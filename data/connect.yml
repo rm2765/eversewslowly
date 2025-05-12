@@ -1,0 +1,40 @@
+mission:
+   style: "style5 orient-left color6 content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right"
+   title: |
+     Welcome to **Ever Sew Slowly**!
+     <h3 style="text-align:center;"> Join me on this journey where each "mistake" is just another opportunity to learn and grow!</h3>
+   content: |
+    <h3 style="text-align:center;">Mission</h3>
+    
+    The name ***Ever Sew Slowly*** adequately describes my journey in learning to sew and re-imagining & transforming clothes. It is a slow process in two important ways:
+     
+     * **First**, refashioning is a side hobby, not a full-time gig. There are times when I don’t have the hours or energy left in the day for sewing and my sewing machine sits quiet while life takes priority.
+     * **Second**, every refashioned garment, thrift find, and handmade piece all are a stand against fast fashion and its harmful social and environmental impacts. 
+    
+    My dream is to make refashioning accessible to everyone—showing that with patience, creativity, and a willingness to embrace mistakes, anyone can transform their relationship with clothing into something **more mindful :turtle:, sustainable :seedling:, and personally expressive** :blossom:.
+    
+    
+
+banner:
+  style: "style3 orient-left color3 content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right"
+  title:  Hi! I'm Rose Martinez.
+  subtitle: |
+    I work with data to uncover insights by day :city_sunrise: and have fun transforming & upcycling clothes by night :night_with_stars:. 
+    It may be surprising but, I had never really been interested in fashion :womans_clothes:. For years, I hated shopping for new clothes. Trying on dresses for birthday parties, graduations and other events only led to frustration as I never liked how I looked or felt. 
+    Either I'd find something I **liked** that didn't quite fit, or I found something that **fit** but didn't like it at all. Pride in my uniqueness, individuality and self-expression took a toll :woman_facepalming:. 
+    Altering and creating my own clothes was never something I thought I would have the ability and time to do, but made a lot of sense for it to become an outlet for me during Covid. 
+    I thought *“why don’t I learn to sew and make a dress from scratch”* :sewing_needle:?
+    
+    And the rest is herstory.
+  image: "refashion_mens_shirt.png" # Replace with your image path
+
+contact:
+  style: "style4 orient-left content-align-left image-position-center onscroll-image-fade-in"
+  id: "contact-info"
+  title: "Let's Connect"
+  content: |
+    I'd love to hear from you. Whether you have questions, want to share your own refashion victories (or amusing mishaps!), or simply wish to say hello—your message would brighten my day immensely!
+  button:
+    label: "Send me an email"
+    link: "contact@eversewslowly.com"
+  image: "images/pic02.jpg" # Replace with your contact image path

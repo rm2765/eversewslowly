@@ -1,0 +1,37 @@
+/* Image */
+.figure {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin: 0;
+  border-radius: size(border-radius);
+  
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: size(border-radius);
+  }
+  
+  figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    padding: 0.75rem;
+    font-size: 0.9rem;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 0.4s ease-in-out;
+    border-bottom-left-radius: size(border-radius);
+    border-bottom-right-radius: size(border-radius);
+  }
+  
+  &:hover figcaption {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

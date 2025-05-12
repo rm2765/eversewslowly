@@ -1,0 +1,27 @@
+<section class="banner style2">
+    <div class="content">
+
+        {{ with .Title }}<h1>{{ . | markdownify | emojify  }}</h1>{{ end }}
+        {{ with .Params.subtitle}}<p class="major">{{ . | markdownify | emojify }}</p>{{ end }}
+        
+        <hr style="margin: 5px; height: 0;">
+
+            <div class="meta-info">
+              <div class="meta-item">
+                <i class="fad fa-calendar-alt fa-lg"></i>
+                  <span>{{ .Date.Format "Jan 2, 2006" }}</span>
+                </div>
+              <div class="meta-item">
+                <i class="fad fa-clock fa-lg"></i>
+                <span>{{ .ReadingTime }} minute{{ if ne .ReadingTime 1 }}s{{ end }}</span>
+              </div>
+            </div>
+
+      </div>
+      
+  {{ with .Params.image }}
+    <div class="image">
+      <img src="{{ . }}" alt="{{ $.Title }}">
+    </div>
+  {{ end }}
+</section>

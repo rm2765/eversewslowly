@@ -1,0 +1,82 @@
+## -----------------------------------------------
+## Basic Configuration
+## -----------------------------------------------
+
+title = "Ever Sew Slowly"
+copyright = "{year}"
+
+## -----------------------------------------------
+## Publish
+## -----------------------------------------------
+
+relativeURLs = "true"
+#canonifyURLs = "true"
+
+# Local
+baseURL = "/"
+publishDir = "public"
+
+# Remote
+#baseURL = "https://caressofsteel.github.io/demos/hugo/hugo-story/"
+#publishDir = "//centos/sites/hugodev/hugostory/"
+
+## -----------------------------------------------
+## Hugo Built-in Features
+## -----------------------------------------------
+
+#disableKinds = []
+# googleAnalytics = "G-XXXXXXXXXX"
+
+## -----------------------------------------------
+## Site Parameters
+## -----------------------------------------------
+
+[Params]
+  description = "Ever Sew Slowly"
+  logo = "images/refashion_mens_shirt.png"
+  favicon = true
+
+[Params.social]
+  email = "eversewslowly@gmail.com"
+  instagram = "https://www.instagram.com/eversewslowly"
+  pinterest = "https://www.pinterest.com/EverSewSlowly"
+  youtube = "https://youtube.com/@eversewslowly/"
+
+
+[Params.asset]
+  fontawesome_css = ["css/fontawesome-all.min.css"]
+  fontawesome_js = ["js/fontawesome-all.min.js"]
+
+[taxonomies]
+  topic = "topics"
+  tag = "tags"
+  report = "reports"
+  year = "years"
+  inspo = "inspirations"
+  technique = "techniques"
+  source = "sources"
+  pattern = "patterns"
+  color = "colors"
+  category = "categories"
+  playlist = "playlists"
+  construction = "constructions"
+
+# allow for formattting in yaml
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.tableOfContents]
+    endLevel = 1
+    startLevel = 1
+
+enableEmoji = true
+
+metaDataFormat = "yaml"
+
+[params]
+  # Default pagination
+  paginate = 8
+
+
+

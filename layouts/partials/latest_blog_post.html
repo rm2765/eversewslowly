@@ -1,0 +1,33 @@
+{{ $blogPages := where site.RegularPages "Type" "blog" | first 1 }}
+{{ $style := .style }}
+{{ with index $blogPages 0 }}
+{{ $permalink := .Permalink }}
+<section class="spotlight {{ $style }}"{{ with $.id }} id="{{ . }}"{{ end }}>
+    <div class="content">
+      <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+      {{ with .Summary }}
+        <p>{{ . | safeHTML }}</p>
+      {{ end }}
+      {{ with .Params.button }}
+      <ul class="actions">
+        <li><a href="{{ .link }}" class="button">{{ .label }}</a></li>
+      </ul>
+      {{ else }}{{ with site.Data.blog_spotlight.button }}
+      <ul class="actions">
+        <li><a href="{{ $permalink }}" class="button">{{ .label }}</a></li>
+      </ul>
+      {{ end }}{{ end }}
+    </div>
+    <div class="image">
+      <a href="{{ .Permalink }}">
+        {{ if .Params.image }}
+          <img src="{{ .RelPermalink }}{{ .Params.image }}" alt="{{ .Title }}" />
+        {{ else }}
+          <img src="{{ "/images/spotlight01.jpg" | relURL }}" alt="Default Image" />
+        {{ end }}
+      </a>
+    </div>
+  </section>
+{{ else }}
+  <p>No blog post found.</p>
+{{ end }}

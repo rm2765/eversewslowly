@@ -1,0 +1,8 @@
+{{ define "main" }}
+
+  {{ partial "menu-header" . }}
+  {{ partial "latest_blog_post" site.Data.blog_spotlight }}
+  {{ partial "featured-posts" site.Data.featured_posts}}
+  {{ partial "blog-taxonomies-buttons" . }}
+
+{{ end }}

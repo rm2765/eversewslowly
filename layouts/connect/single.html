@@ -1,0 +1,31 @@
+{{ define "main" }}
+    
+    {{ partial "menu-header" . }}
+    
+    {{ partial "banner_connect" site.Data.connect.mission }}
+    {{ partial "banner" site.Data.connect.banner }}
+    {{ partial "spotlight" site.Data.connect.contact }}
+
+    <div class="social-posts">
+        <h2>Recent Social Activity</h2>
+        <div class="items style1 small onscroll-fade-in">
+            <section>
+                <!-- Social Post 1 Content -->
+            </section>
+            <section>
+                <!-- Social Post 2 Content -->
+            </section>
+            <!-- More social posts -->
+        </div>
+    </div>
+
+    <div class="comments">
+        <h2>Leave a Comment or Question</h2>
+        <!-- Implementation for your chosen comment system -->
+    </div>
+
+    <div class="poll">
+        <h2>Participate in the Poll</h2>
+        <!-- Implementation for your chosen poll system -->
+    </div>
+{{ end }}

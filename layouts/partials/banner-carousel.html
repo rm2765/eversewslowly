@@ -1,0 +1,50 @@
+<section class="banner style1 {{ with .banner }}{{ .style | default "" }}{{ end }}" style="min-height: 100vh;">
+    <div class="container" style="display: flex; flex-wrap: nowrap; align-items: stretch; width: 100%; margin: 0 auto;">
+     
+      <!-- Left Column: Banner Content -->
+      <div class="content" style="flex: 1 1 50%; padding: 1rem; box-sizing: border-box;">
+        {{ with .banner }}
+           {{ if .title }}<h1>{{ .title }}</h1>{{ end }}
+           {{ if .subtitle }}<p class="major">{{ .subtitle }}</p>{{ end }}
+           {{ if .content }}<p>{{ .content | markdownify }}</p>{{ end }}
+           {{ if .buttons }}
+             <ul class="actions small">
+               {{ range .buttons }}
+                 <li><a href="{{ .link }}" class="button primary fit">{{ .label }}</a></li>
+               {{ end }}
+             </ul>
+           {{ end }}
+        {{ else }}
+           <p>No banner data available.</p>
+        {{ end }}
+      </div>
+    
+      <div class="image">
+        {{ with .carousel }}
+          <!-- Explicitly add lightbox class here -->
+          <div class="gallery {{ .style | default "" }}">
+            {{ range .pictures }}
+              <article>
+                <!-- Ensure image links are correct - '.image' class without lightbox -->
+                <a href="{{ .Site.BaseURL }}{{ .image }}" class="image">
+                    <img src="{{ .Site.BaseURL }}{{ .thumb }}" alt="{{ .title }}" />
+                  </a>
+                {{ if or .title .content .button }}
+                  <div class="caption">
+                    {{ if .title }}<h3>{{ .title }}</h3>{{ end }}
+                    {{ if .content }}<p>{{ .content | markdownify }}</p>{{ end }}
+                    {{ if .button }}
+                      <ul class="actions">
+                        <li><a href="#" class="button">{{ .button }}</a></li>
+                      </ul>
+                    {{ end }}
+                  </div>
+                {{ end }}
+              </article>
+            {{ end }}
+          </div>
+        {{ else }}
+          <p>No carousel data available.</p>
+        {{ end }}
+      </div>
+    </section>

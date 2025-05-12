@@ -1,0 +1,29 @@
+<!-- Footer -->
+ <br>
+<footer class="wrapper style1 align-center">
+        Subscribe & Follow  
+        <p><i class="fas fa-heart"></i> 
+            Thank You!</p>
+        <ul class="icons">
+            {{ with .Site.Params.social.pinterest }}
+            <li><a target="_blank" href="{{.}}" class="icon brands style2 fa-pinterest">
+                <span class="label">Pinterest</span></a></li>{{end}}
+            {{ with .Site.Params.social.instagram }}
+            <li><a target="_blank" href="{{.}}" class="icon brands style2 fa-instagram">
+                <span class="label">Instagram</span></a></li>{{end}}
+            {{ with .Site.Params.social.email }}
+            <li><a target="_blank" href="mailto:{{.}}" class="fav icon style2 fa-envelope">
+                <span class="label">Email</span></a></li>{{end}}
+        </ul>
+        <p>&copy; {{ now.Year }} Ever Sew Slowly </p>
+        <small>Theme based on Hugo Story by
+            <a target="_blank" href="https://github.com/caressofsteel/">CaressOfSteel</a> 
+        </small>
+        <i class="footerspacer icon fa-diamond"></i>
+            
+</footer>
+
+<!-- FontAwesome JS -->
+{{ range .Site.Params.asset.fontawesome_js -}}
+    <script type="text/javascript" src="{{ . | absURL }}"></script>
+{{- end }}

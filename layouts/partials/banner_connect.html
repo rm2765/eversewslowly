@@ -1,0 +1,23 @@
+<!-- Banner box * its uses buttons not button-->
+<section class="banner {{ .style }}">
+    <div class="content">
+        {{ with .title }}<h1>{{ . | markdownify | emojify  }}</h1>{{ end }}
+        <div class="box" style="background-color: #eee;">
+        {{ with .subtitle }}<p class="major">{{ . | markdownify | emojify }}</p>{{ end }}
+        {{ with .content }}<div>{{ . | markdownify | emojify }}</div>{{ end }}
+        {{ with .buttons }}
+            <ul class="actions small">
+                {{ range . }}
+                    <li><a href="{{ .link }}" class="button primary small fit">{{ .label }}</a></li>
+                {{ end }}
+            </ul>
+        </div>
+        {{ end }}
+    </div>
+    {{ with .image }}
+        <div class="image">
+            <img src="{{ . }}" alt="" />
+        </div>
+    {{ end }}
+</section>
+  

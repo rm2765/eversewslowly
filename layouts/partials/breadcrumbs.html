@@ -1,0 +1,13 @@
+<section class="wrapper style1 align-center">
+    <div class="inner">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <ul><h3>
+          {{ range .Ancestors.Reverse }}
+            <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+          {{ end }}
+          <li><span class="current">{{ .Title }}</span></li></h3>
+        </ul>
+      </nav>  
+    </div>
+  </section>
+  

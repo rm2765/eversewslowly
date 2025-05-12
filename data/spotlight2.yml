@@ -1,0 +1,9 @@
+####################### Spotlight #########################
+style: "style3 orient-left content-align-left image-position-center onscroll-image-fade-in"
+title : "New in the Refashion Library"
+content: |
+  fill in
+button: 
+  label: "Learn More"
+  link: "#"
+image: "images/spotlight02.jpg"

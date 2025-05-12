@@ -1,0 +1,247 @@
+
+
+/* Featured Posts Styling */
+.featured-posts {
+  /* Make sure the align-center class is applied to the wrapper */
+  &.wrapper.style1.align-center {
+    text-align: center;
+  }
+  
+  .inner {
+    width: 100%;
+    max-width: _size(inner);
+    margin: 0 auto;
+  }
+  
+
+  .items.style2 {
+    @include vendor('display', 'flex');
+    @include vendor('flex-wrap', 'wrap');
+    @include vendor('justify-content', 'center');
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    
+    /* Reset fixed widths from item style2 to ensure proper centering */
+    @include breakpoint('<=large') {
+      width: 100%;
+    }
+    
+    @include breakpoint('<=medium') {
+      width: 100%;
+    }
+    
+    @include breakpoint('<=small') {
+      width: 100%;
+    }
+    
+    article {
+      overflow: hidden;
+      position: relative;
+      width: 25%;
+      margin: 0; /* Remove any default margins causing gaps */
+
+      .image {
+        @include vendor('transition', 'opacity #{_duration(transition)} ease-in-out');
+        display: block;
+        width: 100%;
+        border-radius: 0;
+        height: 0;
+        padding-bottom: 66.67%; /* 2:3 aspect ratio for consistent height */
+        position: relative;
+        overflow: hidden;
+
+        img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          position: absolute;
+          top: 0;
+          left: 0;
+          border-radius: 0;
+        }
+      }
+
+      .caption {
+        @include color-button(invert);
+        @include vendor('align-items', 'center');
+        @include vendor('display', 'flex');
+        @include vendor('flex-direction', 'column');
+        @include vendor('justify-content', 'center');
+        @include vendor('pointer-events', 'none');
+        @include vendor('transition', 'opacity #{_duration(transition)} ease-in-out');
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparentize(_palette(invert, bg), 1 - _misc(overlay-opacity));
+        opacity: 0;
+        padding: 2rem;
+        z-index: 1;
+        font-size: 0.8rem;
+        color: #ffffff; /* Set text color to white */
+
+        a {
+          @include vendor('pointer-events', 'auto');
+          color: #ffffff; /* Set link color to white */
+        }
+
+        h2, h3, h4, h5, h6 {
+          font-size: 1.25rem;
+          margin-bottom: 0.25rem;
+          color: #ffffff; /* Set heading color to white */
+        }
+
+        > * {
+          max-width: 100%;
+          margin-bottom: 1rem;
+        }
+
+        > :last-child {
+          margin-bottom: 0;
+        }
+        
+      }
+
+      &:hover {
+        .caption {
+          opacity: 1;
+        }
+      }
+    }
+
+    @include breakpoint('<=large') {
+      article {
+        width: (100% / 3);
+
+        .caption {
+          padding: 1rem;
+        }
+      }
+    }
+
+    @include breakpoint('<=medium') {
+      article {
+        width: 50%;
+
+        .caption {
+          padding: 1rem;
+        }
+      }
+    }
+
+    @include breakpoint('<=xsmall') {
+      article {
+        width: 100%;
+
+        .caption {
+          padding: 1rem;
+        }
+      }
+    }
+      
+    /* Post meta below the image */
+    .post-meta {
+      padding: 0.75rem 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      text-align: left;
+      
+      a {
+        color: inherit;
+        text-decoration: none;
+        
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+      
+    /* Post summary styling */
+    .post-summary {
+      padding: 0 1rem 1rem;
+      flex-grow: 1; /* Allow the summary to grow and fill space */
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      text-align: left;
+      min-height: 6rem; /* Consistent minimum height */
+      overflow: hidden;
+      
+      p {
+        margin: 0;
+        line-height: 1.5;
+        color: _palette(fg);
+        /* Gradient fade out at the bottom for truncated text */
+        display: -webkit-box;
+        -webkit-line-clamp: 4; /* Limit to 4 lines */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+
+  /* Featured Posts Force Centering */
+  .wrapper.style1.align-center .items.style2 {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  
+  .wrapper.style1.align-center .items.style2:after {
+    content: "";
+    flex: auto;
+    /* This empty element helps with alignment when there's an incomplete row */
+  }
+  
+  .items.style2.small > article {
+    flex: 0 0 calc(33.333% - 2px) !important;
+    max-width: calc(33.333% - 2px) !important;
+  }
+  
+  .items.style2.medium > article {
+    flex: 0 0 calc(50% - 2px) !important;
+    max-width: calc(50% - 2px) !important;
+  }
+  
+  /* Responsive adjustments */
+  @media screen and (max-width: 980px) {
+    .items.style2.small > article {
+        flex: 0 0 calc(50% - 2px) !important;
+        max-width: calc(50% - 2px) !important;
+    }
+  }
+  
+  @media screen and (max-width: 736px) {
+    .items.style2.small > article,
+    .items.style2.medium > article {
+        flex: 0 0 calc(100% - 2px) !important;
+        max-width: calc(100% - 2px) !important;
+    }
+  }
+  
+  /* Make sure inner content is properly aligned */
+  .items.style2 > article .inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .items.style2 > article .content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+  }

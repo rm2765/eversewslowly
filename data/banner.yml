@@ -1,0 +1,22 @@
+####################### Banner #########################
+style: "style3 orient-right color3 content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right"
+title : "Ever Sew Slowly"
+subtitle: |
+  Your Refashion Journey Starts Here 
+content : |
+  Welcome to my **refashion hub**—where I share my journey, curated resources, and transformed pieces to inspire your creativity. 
+ 
+  Begin your slow fashion adventure and discover how each mistake can lead to growth and a more mindful relationship with fashion.
+buttons:
+  - label : "Blog"
+    link : "/blog"
+  - label : "Learn to Refashion"
+    link : "/learn"
+  - label : "Gallery"
+    link : "/gallery"
+  - label : "Connect"
+    link : "/connect"
+  #- label : "Shop"
+  #  link : "#shop"
+image : "images/refashion_mens_shirt.png"
+

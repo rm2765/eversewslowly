@@ -1,0 +1,80 @@
+@import 'libs/_custom_vars';
+/* TOC Container */
+.toc-box {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0em;
+    margin-bottom: 0em;
+  }
+  
+  /* Summary Styling */
+  .toc-summary {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    outline: none;
+    font-size: 1.35rem; 
+  }
+  
+  /* TOC Content */
+  .toc-content {
+    margin-top: 1em;
+    background-color: _palette(bg-alt);
+  }
+  
+  /* TOC Columns */
+  .toc-columns {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  /* Individual Columns */
+  .toc-column-1,
+  .toc-column-2 {
+    flex: 1;
+  }
+  
+  /* TOC Lists */
+  .toc-column-1 ul,
+  .toc-column-2 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 0;
+  }
+  
+  /* TOC List Items */
+  .toc-column-1 ul li,
+  .toc-column-2 ul li {
+    margin-bottom: 0.4em;
+    padding-bottom: 0;    /* Reset if inherited */
+  }
+  
+  
+  /* TOC Links */
+  .toc-column-1 a,
+  .toc-column-2 a {
+    text-decoration: none;
+    color: _palette(color1);
+    transition: color 0.2s ease;
+    display: inline-block;
+  }
+  
+  .toc-column-1 a:hover,
+  .toc-column-2 a:hover {
+    text-decoration: underline;
+    color: _palette(accent);
+    font-weight: bolder; /* Replace with a darker shade of your accent color */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .toc-columns {
+      flex-direction: column;
+    }
+  
+    .toc-heading {
+      font-size: 1.25rem;
+    }
+  }
+  

@@ -1,0 +1,44 @@
+{{ $toc := .TableOfContents }}
+{{ if $toc }}
+  {{ $tocContent := findRE "<ul>(.|\n)*?</ul>" $toc 1 }}
+  {{ if gt (len $tocContent) 0 }}
+    {{ $tocHTML := index $tocContent 0 }}
+    {{ $tocItems := findRE "<li>(.|\n)*?</li>" $tocHTML }}
+    {{ $totalItems := len $tocItems }}
+    {{ $half := div $totalItems 2 }}
+    {{ $remainder := mod $totalItems 2 }}
+    {{ $firstColCount := add $half $remainder }}
+
+    <br>
+    <section class="wrapper style1">
+      <details open>
+        <summary class="toc-summary"><span> Table of Contents <i class="fad fa-chevron-circle-down"></i></span></summary>
+
+        <div class="toc-content">
+          <div class="toc-columns">
+            <div class="toc-column">
+              <ul class="alt">
+                {{ range $index, $item := $tocItems }}
+                  {{ if lt $index $firstColCount }}
+                    {{ $item | safeHTML }}
+                  {{ end }}
+                {{ end }}
+              </ul>
+            </div>
+            <div class="toc-column">
+              <ul class="alt">
+                {{ range $index, $item := $tocItems }}
+                  {{ if ge $index $firstColCount }}
+                    {{ $item | safeHTML }}
+                  {{ end }}
+                {{ end }}
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </details>
+    </section>
+  {{ end }}
+{{ end }}
+<br>

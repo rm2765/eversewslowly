@@ -1,0 +1,7 @@
+####################### Blog Spotlight #########################
+style: "style4 color2 fullscreen orient-left content-align-left image-position-center onscroll-image-fade-in"
+id: "first"
+button: 
+  label: "Read"
+  link: ""
+image: "images/spotlight01.jpg"

@@ -1,0 +1,43 @@
+{{ define "main" }}
+{{ partial "menu-header" . }}
+{{ partial "blog_single_banner" . }}
+<section class="wrapper style2">
+    <div class="content">
+        <div class="meta-container">
+            <div class="meta-categories-tags">
+                {{ with .Params.categories }}
+                {{ range . }}
+                    <a class="button primary small" href="{{ "/categories/" | relURL }}{{ . | urlize }}" class="category-link">{{ . | humanize }}</a>
+                    {{ end }}
+                {{ end }}
+               
+                {{ with .Params.tags }}
+                    {{ range . }}
+                    <a class="button small" href="{{ "/tags/" | relURL }}{{ . | urlize }}">{{ . | humanize }}</a>
+                    {{ end }}
+                {{ end }}
+            </div>
+
+            {{ $clipboardJS := resources.Get "js/clipboard.js" | resources.Fingerprint }}
+            <script src="{{ $clipboardJS.RelPermalink }}"></script>
+
+            <!-- Social Share Icons -->
+            <ul class="icons share-icons">
+                <li><a href="https://pinterest.com/pin/create/button/?url={{ .Permalink }}&media={{ with .Params.image }}{{ . }}{{ end }}&description={{ .Title }}" class="icon brands style1 fa-pinterest" target="_blank" title="Share on Pinterest">
+                    <span class="label">Share on Pinterest</span></a></li>
+                <li><a href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}" target="_blank" title="Share on Facebook" class="icon brands style1 fa-facebook-f">
+                    <span class="label">Share on Facebook</span></a></li>
+                <li><a href="https://www.linkedin.com/sharing/share-offsite/?url={{ .Permalink }}" target="_blank" title="Share on LinkedIn" class="icon brands style1 fa-linkedin">
+                    <span class="label">Share on LinkedIn</span></a></li>
+                <li><a onclick="copyToClipboard('{{ .Permalink }}')" class="icon style1 fa-link" title="Copy Link" style="cursor: pointer;">
+                    <span class="label">Copy Link</span></a></li>
+            </ul>
+        </div>    
+      {{ partial "toc" .}}
+      {{ .Content | safeHTML }}
+    
+    </div>
+</section>
+
+{{ partial "breadcrumbs" . }}
+{{ end }}

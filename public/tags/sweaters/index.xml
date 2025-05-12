@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sweaters on Ever Sew Slowly</title>
+    <link>//localhost:1313/tags/sweaters/</link>
+    <description>Recent content in Sweaters on Ever Sew Slowly</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>{year}</copyright>
+    <lastBuildDate>Sun, 26 Mar 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/sweaters/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sweater Challenge</title>
+      <link>//localhost:1313/blog/2023/sweater-challenge/</link>
+      <pubDate>Sun, 26 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/blog/2023/sweater-challenge/</guid>
+      <description>&lt;p&gt;With the winter season coming to an end, you may find yourself staring at a pile of old sweaters, cardigans, and other winter clothing that you no longer wear or that have seen better days. But before you toss them out or donate them, why not upcycle them into something new and useful!&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

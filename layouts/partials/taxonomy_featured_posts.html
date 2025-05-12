@@ -1,0 +1,83 @@
+
+<section class="featured-posts wrapper style1 align-center">
+  <div class="inner">
+    <Header>
+      <h2> {{ .Title }}</h2>
+      {{ if eq .Data.Singular "category" }}
+        <p>Showing All Posts Under this Category</p>
+      {{ else if eq .Data.Singular "tag" }}
+        <p>Showing All Posts With this Tag</p>
+      {{ else }}
+        <p>Showing All Related Posts</p>
+      {{ end }}
+    </Header>
+    
+    {{ with .Content }}<p>{{ . | safeHTML }}</p>{{ end }}
+   
+    <div class="content">
+      <div class="items style2 medium">
+        {{ range (.Paginator 8).Pages }}
+          <article onclick="window.location='{{ .Permalink }}';">
+              <!-- Title appears above the image -->
+              <a href="{{ .Permalink }}">
+              <h3 class="name">{{ .Title }}</h3></a>
+             
+              <div class="style1 small lightbox onscroll-fade-in">
+              <!-- Clickable image with hover overlay, fixed path for page bundle -->
+              <a class="image" href="{{ .Permalink }}">
+                {{ $imagePath := "" }}
+                  {{ with .Params.image }}
+                    {{ $imagePath = . }}
+                  {{ end }}
+               
+                {{ $resource := .Resources.GetMatch $imagePath }}
+                {{ if $resource }}
+                  <img src="{{ $resource.RelPermalink }}" alt="{{ .Title }}" loading="lazy" />
+                {{ else }}
+                  <!-- Check if the image is a path rather than a resource -->
+                  {{ if hasPrefix $imagePath "/" }}
+                    <img src="{{ $imagePath }}" alt="{{ .Title }}" loading="lazy" />
+                  {{ else }}
+                    <img src="{{ path.Join .RelPermalink $imagePath }}" alt="{{ .Title }}" loading="lazy" />
+                  {{ end }}
+                {{ end }}
+               
+                <!-- Caption overlay on hover -->
+                <div class="caption">
+                  <h4>{{ with .Params.subtitle }}{{ . }}{{ else }}{{ .Title }}{{ end }}</h4>
+                  <span class="button small">Read More</span>
+                </div>
+              </a>
+             
+            </div>
+             
+              <!-- Date and categories below the image -->
+              <div class="post-meta">
+                <span class="post-date">
+                  <i class="fad fa-calendar-alt"></i>
+                  <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+                </span>
+                <br>
+                <span class="post-categories">
+                  <i class="fad fa-tag"></i>
+                  {{ with .Params.categories }}
+                    {{ range $i, $category := . }}
+                      {{ if gt $i 0 }}{{ if eq (add $i 1) (len .) }} and {{ else }}, {{ end }}{{ end }}
+                      <a href="{{ "/categories/" | relURL }}{{ $category | urlize }}">{{ $category | humanize }}</a>
+                    {{ end }}
+                  {{ end }}
+                </span>
+              </div>
+             
+              <!-- Post summary with character limit -->
+              <div class="post-summary">
+                  {{ $summary := .Summary | plainify | truncate 150 }}
+                  <p>{{ $summary }}</p>
+              </div>
+            </article>
+        {{ end }}
+      </div>
+    </div>
+    {{ partial "pagination" . }}
+  </div>
+</section>

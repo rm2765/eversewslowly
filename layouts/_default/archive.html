@@ -1,0 +1,80 @@
+{{ define "main" }}
+
+{{ partial "menu-header" . }}
+
+<section class="archive-container wrapper style2 align-center">
+    
+    <div class="inner">
+        <div class="box color3">
+            <h2>Archive</h2>
+            <p>A chronological archive of all blog posts</p>
+
+        {{ $allPages := slice }}
+        {{ $typePages := where .Site.RegularPages "Type" "blog" }}
+        {{ $allPages = $allPages | append $typePages }}
+
+        <!-- Only keep regular pages (not sections) -->
+        {{ $allPages = where $allPages "Kind" "page" }}
+
+        <!-- Sort by date descending -->
+        {{ $allPages = sort $allPages "Date" "desc" }}
+
+         <!-- Year navigation -->
+        {{ $years := $allPages.GroupByDate "2006" }}
+        {{ if gt (len $years) 1 }}
+            <div class="year-navigation">
+            <span>Jump to year: </span>
+            {{ range $years }}
+                <a href="#year-{{ .Key }}" class="year-link">{{ .Key }}</a>
+            {{ end }}
+            </div>
+        </div>
+        {{ end }}
+
+
+        
+        <div class="index align-left">
+            {{ $paginator := .Paginate $allPages 8 }}
+            {{ range $paginator.Pages.GroupByDate "2006" }}
+            <section>
+                <header>
+                    <h3>{{ .Key }}</h3>
+                </header>
+                <div class="content">
+                    <dl>
+                        {{ range .Pages }}
+                        <dt><a href="{{ .Permalink }}" style="font-size: x-large ; font-weight: lighter;">{{ .Title }}</a>
+                            <div style="font-weight: lighter;">
+                                <span>
+                                  <i class="fad fa-calendar-alt"></i>
+                                  <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+                                  &verbar;
+                                  <i class="fad fa-tag"></i>
+                                  {{ with .Params.categories }}
+                                    {{ range $i, $category := . }}
+                                      {{ if gt $i 0 }}{{ if eq (add $i 1) (len .) }} and {{ else }}, {{ end }}{{ end }}
+                                      <a href="{{ "/categories/" | relURL }}{{ $category | urlize }}">{{ $category | humanize }}</a>
+                                    {{ end }}
+                                  {{ end }}
+                                </span>
+                            </div>
+                        </dt>
+                        <dd>
+                            {{ $summary := .Summary | plainify | truncate 150 }}
+                            <p>{{ $summary }}</p>
+                            <p class="button small" href="{{ .Permalink }}" style="
+                            margin-top: -0.5rem;;">Read More</p>
+                        </dd>
+                        {{ end }}
+                    </dl>
+                </div>
+            </section>
+            {{ end }}
+        </div>
+
+    <!-- Pagination -->
+    {{ partial "pagination" . }}
+    </div>
+</section>
+<br>
+{{ end }}
