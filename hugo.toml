@@ -13,7 +13,7 @@ relativeURLs = "true"
 #canonifyURLs = "true"
 
 # Local
-baseURL = "/"
+baseURL = "https://eversewslowly.com/"
 publishDir = "public"
 
 # Remote
@@ -32,9 +32,13 @@ publishDir = "public"
 ## Site Parameters
 ## -----------------------------------------------
 
-[Params]
+[build]
+  publish = "public"
+  command = "hugo"
 
-
+[build.environment]
+  HUGO_VERSION = "0.145.0"
+  
 [Params.social]
   email = "eversewslowly@gmail.com"
   instagram = "https://www.instagram.com/eversewslowly"
