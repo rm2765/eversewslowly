@@ -12,8 +12,9 @@ copyright = "{year}"
 relativeURLs = "true"
 #canonifyURLs = "true"
 
+
 # Local
-baseURL = "/"
+baseURL = "https://eversewslowly.com/"
 publishDir = "public"
 
 # Remote
@@ -24,15 +25,23 @@ publishDir = "public"
 ## Hugo Built-in Features
 ## -----------------------------------------------
 
-#disableKinds = ["taxonomy", "section"]
+#disableKinds = []
 # googleAnalytics = "G-XXXXXXXXXX"
 
 ## -----------------------------------------------
 ## Site Parameters
 ## -----------------------------------------------
 
+[build]
+  publish = "public"
+  command = "hugo"
+
+[build.environment]
+  HUGO_VERSION = "0.145.0"
+
+
 [Params]
-  description = "Eversewslowly"
+  description = "Ever Sew Slowly"
   logo = "images/refashion_mens_shirt.png"
   favicon = true
 
@@ -40,7 +49,43 @@ publishDir = "public"
   email = "eversewslowly@gmail.com"
   instagram = "https://www.instagram.com/eversewslowly"
   pinterest = "https://www.pinterest.com/EverSewSlowly"
+  youtube = "https://youtube.com/@eversewslowly/"
+
 
 [Params.asset]
   fontawesome_css = ["css/fontawesome-all.min.css"]
   fontawesome_js = ["js/fontawesome-all.min.js"]
+
+[taxonomies]
+  topic = "topics"
+  tag = "tags"
+  report = "reports"
+  year = "years"
+  inspo = "inspirations"
+  technique = "techniques"
+  source = "sources"
+  pattern = "patterns"
+  color = "colors"
+  category = "categories"
+  playlist = "playlists"
+  construction = "constructions"
+
+# allow for formattting in yaml
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.tableOfContents]
+    endLevel = 1
+    startLevel = 1
+
+enableEmoji = true
+
+metaDataFormat = "yaml"
+
+[params]
+  # Default pagination
+  paginate = 8
+
+
+
