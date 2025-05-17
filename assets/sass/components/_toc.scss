@@ -77,4 +77,25 @@
       font-size: 1.25rem;
     }
   }
+
+
+ /* Back to top */
+.back-to-top-link {
+  text-align: center;       // center under the H1
+  margin-top: 0.25em;
+  
+  a {
+    font-size: 0.85em;
+    text-decoration: none;
+    color: _palette(accent);         // your theme’s accent color
+    display: inline-block;
+    transform: translateY(-0.2em); // slight overlap like subscript
+  }
+
+  a:hover {
+    text-decoration: underline;
+    color: darken(_palette(accent), 10%);
+  }
+}
+
   

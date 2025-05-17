@@ -193,3 +193,9 @@
 // Layout.
 
 	@import 'layout/wrapper';
+
+
+	// Inserted for smooth scroll transition when going back to top 
+	html {
+  scroll-behavior: smooth;
+}

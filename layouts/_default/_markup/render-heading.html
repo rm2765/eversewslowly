@@ -1,0 +1,13 @@
+{{ $level  := .Level }}
+{{ $text   := .Text | safeHTML }}
+{{ $anchor := .Anchor }}
+
+{{ if eq $level 1 }}
+  <h1 id="{{ $anchor }}">{{ $text }}</h1>
+  <div class="back-to-top-link">
+    <a href="#top" aria-label="Back to Top">↑ Back to Top</a>
+  </div>
+{{ else }}
+  <h{{ $level }} id="{{ $anchor }}">{{ $text }}</h{{ $level }}>
+{{ end }}
+

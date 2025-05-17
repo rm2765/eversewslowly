@@ -12,7 +12,28 @@ image: ""
 summary: null
 toc: true 
 insertTOC: true
-tocPosition: 2 
+pictures:
+  - image: image.png
+    thumb: image.png
+    title: "First Image"
+    content: "Caption for the first image."
+    button: "Expand"
+  - image: image.png
+    thumb: image.png
+    title: "Second Image"
+    content: "Caption for the second image."
+    button: "Expand"
+galleryTwo:
+  - image: sewing_hobby_birds.jpg
+    thumb: sewing_hobby_birds.jpg
+    title: "First Image"
+    content: "Caption for the first image."
+    button: "Expand"
+  - image: sewing_hobby_birds.jpg
+    thumb: sewing_hobby_birds.jpg
+    title: "Second Image"
+    content: "Caption for the second image."
+    button: "Expand"
 ---
 
 Last year, I joined the BKLYN Fashion Academy's sixth season—an incredible program that more aspiring designers should know about. The Academy (BFA) takes designers on a four-month journey to a runway finale. The 2024 cohort created mini-collections under the *Women in Future Industries* theme. I interviewed fellow designers Gia, Regina, and Ronen, and together, we tell it all—from the creative challenges that tested both our skills and resolve, to our growth as design professionals. <!--more--> Our accounts reveal the program's essence: a journey that validates fashion aspirations, expands creative boundaries, and builds professional resilience. Our candid insights can help anyone considering this opportunity and, who knows, it could be the catalyst for your own design career.
@@ -45,6 +66,18 @@ Having shared from where we started, next is the fun part, our designer personas
 # Envisioning Women in Future Industries
 
 Our collections imagined women's evolving roles across many sectors, with designs that reflected both our personal experiences and forward-looking perspectives. From Gia's vision of self-sustaining technology empowering the next generation, Regina's conservative elegance for executive women in finance, to Ronen transforming legal wear into vehicles for social justice and my own focus on women's strength and bravery in emergency services—we each translated personal values into distinctive visions of women's futures.
+
+
+{{< gallery id="gallery-one" title="First Gallery"  style="style2 big lightbox onscroll-fade-in" >}}
+This is an optional paragraph that appears above the gallery.
+{{< /gallery >}}
+
+
+{{< gallery id="second" title="Second Gallery" style="style1" src="galleryTwo" >}}
+This is an optional paragraph that appears above the gallery.
+{{< /gallery >}}
+
+<br>
 
 ## A Self-Sustaining Future
 

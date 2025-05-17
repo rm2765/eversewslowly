@@ -1,0 +1,25 @@
+{{/* layouts/shortcodes/gallery.html */}}
+
+{{/* 1. Grab parameters */}}
+{{ $id     := .Get "id" | default "" }}
+{{ $title  := .Get "title" | default "" }}
+{{ $style  := .Get "style" | default "" }}
+{{ $srcKey := .Get "src" | default "" }}
+
+{{/* 2. Determine which pictures to use */}}
+{{ $allPics := .Page.Params.pictures }}
+{{ $pics := cond (and (ne $srcKey "") (isset .Page.Params $srcKey)) (index .Page.Params $srcKey) $allPics }}
+
+<section class="wrapper style1 align-center" {{ if ne $id "" }}id="{{ $id }}"{{ end }}>
+  <div class="inner">
+    {{ if ne $title "" }}<h2>{{ $title }}</h2>{{ end }}
+    {{ .Inner | markdownify }}
+  </div>
+
+  <div class="gallery {{ $style }}">
+    {{ range $pics }}
+      {{ partial "picture.html" . }}
+    {{ end }}
+  </div>
+</section>
+
