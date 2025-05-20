@@ -1,0 +1,28 @@
+{{/* layouts/shortcodes/items.html */}}
+
+{{/* 1. Grab parameters */}}
+{{ $id      := .Get "id"      | default "" }}
+{{ $title   := .Get "title"   | default "" }}
+{{ $style   := .Get "style"   | default "" }}
+{{ $srcKey  := .Get "src"     | default "" }}
+
+{{/* 2. Determine which items to loop */}}
+{{ $allItems := .Page.Params.items }}
+{{ $items    := cond (and (ne $srcKey "") (isset .Page.Params $srcKey))
+                     (index .Page.Params $srcKey)
+                     $allItems }}
+
+<section class="wrapper style1 align-center" {{ if ne $id "" }}id="{{ $id }}"{{ end }}>
+  <div class="inner">
+    {{ if ne $title "" }}<h2>{{ $title }}</h2>{{ end }}
+    {{ with .Inner }}<p>{{ . | markdownify }}</p>{{ end }}
+
+    <div class="items {{ $style }}">
+      {{ range $items }}
+        {{ partial "item.html" . | safeHTML}}
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+
