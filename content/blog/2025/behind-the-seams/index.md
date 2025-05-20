@@ -149,7 +149,7 @@ items:
     image: "participant_photo.png" 
 ---
 
-<span class="image right medium"><img src="bfa24_promo.png" alt="" />BKLYN Fashion Academy 2024 Promo Flyer</span>
+<span class="image right medium"><img src="bfa24_promo.png" alt="BKLYN Fashion Academy 2024 Promo Flyer" /></span>
 Last year, I joined the BKLYN Fashion Academy's sixth season—an incredible program that more aspiring designers should know about. The Academy (BFA) takes designers on a four-month journey to a runway finale. The 2024 cohort created mini-collections under the *Women in Future Industries* theme. I interviewed fellow designers Gia, Regina, and Ronen, and together, we tell it all—from the creative challenges that tested both our skills and resolve, to our growth as design professionals. Our accounts reveal the program's essence: a journey that validates fashion aspirations, expands creative boundaries, and builds professional resilience. Our candid insights can help anyone considering this opportunity and, who knows, it could be the catalyst for your own design career.
 
 
@@ -182,13 +182,13 @@ Having shared from where we started, next is the fun part, our designer personas
 Our collections imagined women's evolving roles across many sectors, with designs that reflected both our personal experiences and forward-looking perspectives. From Gia's vision of self-sustaining technology empowering the next generation, Regina's conservative elegance for executive women in finance, to Ronen transforming legal wear into vehicles for social justice and my own focus on women's strength and bravery in emergency services—we each translated personal values into distinctive visions of women's futures.
 
 ## A Self-Sustaining Future
-<span class="image left small"><img src="main_look_gia.jpg" alt="" />Gia's main look on canvas.</span> 
+<span class="image right small"><img src="main_look_gia.jpg" alt="Gia's main look on canvas." /></span> 
 Choosing technology as her industry, Gia envisioned a self-sustaining future. “*When I think of technology, I think of androids or machines. I wanted to create something self-sustaining*," she explains, drawing from sci-fi influences from the video game Deus Ex. Her vision is "*a hope for the future*” where her children and others grow up capable, independent, and resilient. “*I want my designs to empower women, to make them feel strong and capable*.” Gia aims to design for everyone—from statement pieces to everyday wear, even pets. Her collection reflects her commitment to client satisfaction: 
 
 >“More importantly, I want to design for women in a way that brings them joy. I design for myself, but if my client isn’t happy, then I’ve failed.” -Gia
 
 ## Conservative Elegance for the Executive Woman
-<span class="image right small"><img src="main_look_regina.jpg" alt="" />Regina's main look on canvas</span> 
+<span class="image right small"><img src="main_look_regina.jpg" alt="Regina's main look on canvas" /></span> 
 Driven by an entrepreneurial spirit, Regina’s long-held dream of dressing executive women gave her collection focus. Choosing finance as her industry, she explains: 
 
 > "*I've always wanted to design for powerful, professional women. Our assignment was to create a vision for women in 2042, but I concentrated on future business attire. It was a dream to be selected and create a mini-collection on this theme*." -Regina
@@ -198,7 +198,7 @@ Her brand, [Reserved Wear](https://reserve-wear.com/), reflects her journey and 
 <br>
 
 ## Fashion as Social Commentary
-<span class="image left small"><img src="main_look_ronen.jpg" alt="" />Ronen's main look displayed on canvas.</span> 
+<span class="image left small"><img src="main_look_ronen.jpg" alt="Ronen's main look on canvas"/></span> 
 While curiosity drew Ronen to the BFA, his collection became a platform for powerful ideas. Under the *Law* theme, his vision drew from social movements and intersectionality, reflecting his personal convictions. "*Novels about the Black experience in Brazil and decolonial theory, including texts about Palestine, influenced my work*," said Ronen. "*As an anti-Zionist, I see my designs participating in broader conversations on decolonization and justice*." He designs for those who wish to express these ideas through fashion. Ronen sees advocates in the legal field wearing fashion as a performative statement to advocate progressive values, dismantle colonial legacies, and promote social justice. 
 
 Not only that, Ronen sees fashion as a dialogue platform on and off runways. 
@@ -208,7 +208,7 @@ Not only that, Ronen sees fashion as a dialogue platform on and off runways.
 Fashion design has deepened his commitment to social justice, offering a new expressive medium blending aesthetics with activism.
 
 ## Strength & Bravery for the Everywoman
-<span class="image right small"><img src="main_look_rose2.jpg" alt="" />My main look displayed on canvas.</span> 
+<span class="image right small"><img src="main_look_rose2.jpg" alt="My main look on canvas"/>.</span> 
 From a data project on occupational segregation, I discovered the emergency services sector remains predominantly male with minimal progress toward gender parity. This insight inspired my collection championing women in this essential field. Focusing on firefighter turnout jackets, I incorporated visibility and protective elements using deconstructed thrifted garments and textile waste. My vision for 2044 celebrates women's strength and bravery, aiming for a future where they are better represented and honored in these vital roles.
 
 While creating my collection, I not only developed a vision for more women in the field, but also fortified my broader approach to design. I seek to redefine fashion beyond luxury brands and celebrity culture, prioritizing fit, durability, and individuality. My vision revolves around slow, personal, and repurposed designs that tell stories of conscious consumption and practicality. The BFA's sample development and sustainability classes have inspired me to explore these aspects further.
@@ -254,7 +254,7 @@ Despite not completing my fourth look, I made it to the show with three emergenc
 {{< gallery id="first" style="style2 small lightbox onscroll-fade-in" src="galleryOne" title="### Runway Finale Gallery">}}
 Here are scenes of each our mini-collections. The runway finale was just but a moment, but months of hard work and determination went into each of our designs. 
 
-*Gregg Richards, Brooklyn Public Library Photographer*
+*Photo Credits: Gregg Richards, Brooklyn Public Library Staff Photographer*
 
 <h3>Gia Zhao</h3>
 {{< /gallery >}}
@@ -332,7 +332,7 @@ Before the program, I wasn't *on the hook*, as Seth Godin puts it. I sewed for m
 <span class="image left medium"><img src="mentor_helping_dayof.JPG" alt="Ben Mach, our mentor, assisting one of Gia's models" /></span>
 The Brooklyn Fashion Academy offered a transformative blend of creative expression and rigorous hands-on work. However, the initial flyer and info sessions didn't convey its demanding nature; the long hours, problem-solving, and pressure became evident only after immersion. 
 
-While delivering an impressive runway show that exceeded all of our expectations, my fellow participants and I identified four areas for improvement: ***1)** planning clear timelines, **2)** more transparent workload expectations, **3)** additional teaching support, and **4)** enhanced mentorship resources*. 
+The entire cohort—Gia, Regina, Ronen, and myself included—is grateful to the program staff, supporters, and funders who made this experience possible. While delivering an impressive runway show that exceeded all our expectations, my fellow participants and I identified four areas for improvement: **1)** clearer planning timelines, **2)** more transparent workload expectations, **3)** additional teaching support, and **4)** strengthened mentorship resources. These suggestions are offered in the spirit of collaboration and program growth for future cohorts.
 
 ### Improving Structure and Planning
 
@@ -362,7 +362,7 @@ Regina proposed that personalized, one-on-one mentorship could make a significan
 The runway show was undeniably the program's centerpiece, creating both excitement and pressure. Ronen reflected on its production value: 
 >"*I'm not sure how intentional it is on the part of the administrators and organizers, but there's a certain sense of glamour surrounding the show—CBS covering the story, the audience turnout, and the expectation of press being there. I didn't expect it to be as grand and well-produced as it was—the music, the lights, the runway.*"
 
-<span class="image right medium"><img src="library_after.JPG" alt="" />Brooklyn Public Central Library's reference desk area transformed into a runway show.</span>
+<span class="image right medium"><img src="library_after.JPG" alt="Brooklyn Public Central Library's reference desk area transformed into a runway show." /></span>
 
 The library hall's transformation from a reference desk and patron sitting area into a professional runway venue was remarkable. Ronen questioned the runway-centric approach: 
 > "*I don't know how typical this kind of show is in the fashion industry. For garment makers, runway shows aren't always central. But in this program, the show is a big focus—it's something they promise and deliver.*"
