@@ -13,7 +13,7 @@
                      $allItems }}
 
 <section class="wrapper style1 align-center" {{ if ne $id "" }}id="{{ $id }}"{{ end }}>
-  <div class="inner">
+  <div class="inner" style="padding-top: 0rem;">
     {{ if ne $title "" }}<h2>{{ $title }}</h2>{{ end }}
     {{ with .Inner }}<p>{{ . | markdownify }}</p>{{ end }}
 

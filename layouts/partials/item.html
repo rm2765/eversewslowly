@@ -9,6 +9,6 @@
       <span class="{{ .style }}"></span>
     </div>
   {{ end }}
-  <h3>{{ .name }}</h3>
+  <h3>{{ .name | markdownify }}</h3>
   <p> {{ .content | markdownify }}</p>
 </section>

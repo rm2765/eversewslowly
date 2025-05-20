@@ -112,31 +112,35 @@ galleryFive:
   - image: walk_ronen.jpg
     thumb: walk_ronen.jpg
     button: "Expand"
+  - image: poster_runway_rose.jpg
+    thumb: poster_runway_rose.jpg
+    button: "Expand"
+  - image: walk_rose.jpg
+    thumb: walk_rose.jpg
+    button: "Expand"
 items:
-  - name: "
-     Stay-at-home mom with a degree in fashion design"
+  - name: '<a href="https://www.instagram.com/je.suis.gia/"> Stay-at-home mom with a degree in fashion design <i class="fab fa-instagram"></i></a>'
     content: "<br>
      **A Self-Sustaining Future**
      <h4>Technology</h4> 
      **Versatile, Client-Focused**
      <h4>Fashion Philosophy</h4>"
-    image: "headshot_gia.png"  
-  - name: "
-     Career transitioner pursuing fashion entrepreneurship"
+    image: "headshot_gia.png"
+  - name: '<a href="#"> Career transitioner pursuing fashion entrepreneurship <i class="fab fa-instagram"></i></a>'
     content: "<br>
      **Corporate Evolution**
      <h4>Finance</h4> 
      **Reserved Elegance**
      <h4>Fashion Philosophy</h4>"
     image: "headshot_regina.png" 
-  - name: "Visual artist exploring fashion as a new medium"
+  - name: '<a href="#"> Visual artist exploring fashion as a new medium <i class="fab fa-instagram"></i></a>'
     content: "<br>
      **Social Justice**
      <h4>Law</h4> 
      **Fashion as Social Commentary**
      <h4>Fashion Philosophy</h4>"
     image: "headshot_ronen.png" 
-  - name: "Data-savvy amateur upcycler enthusiast"
+  - name: '<a href="https://www.instagram.com/eversewslowly/"> Data-savvy amateur upcycler enthusiast <i class="fab fa-instagram"></i></a>'
     content: "<br>
      **Strength & Bravery**
      <h4>Fire/EMS</h4> 
@@ -252,25 +256,25 @@ Here are scenes of each our mini-collections. The runway finale was just but a m
 
 *Gregg Richards, Brooklyn Public Library Photographer*
 
-<h4>Gia Zhao</h4>
+<h3>Gia Zhao</h3>
 {{< /gallery >}}
 
 <br>
 
 {{< gallery id="second" style="style2 small lightbox onscroll-fade-in" src="galleryTwo">}}
-<h4> Regina Spann </h4>
+<h3> Regina Spann </h3>
 {{< /gallery >}}
 
 <br>
 
 {{< gallery id="third" style="style2 small lightbox onscroll-fade-in" src="galleryThree">}}
-<h4> Ronen Gamil </h4>
+<h3> Ronen Gamil </h3333333333>
 {{< /gallery >}}
 
 <br>
 
 {{< gallery id="fourth" style="style2 small lightbox onscroll-fade-in" src="galleryFour">}}
-<h4> Rose Martinez </h4>
+<h3> Rose Martinez </h3>
 {{< /gallery >}}
 
 <br>
@@ -370,7 +374,7 @@ When I asked if the show was worth it, Ronen replied, "*Absolutely, but I think 
 
 I had mixed feelings about the show. Though dissatisfied with my presentation and overwhelmed by the pace, afterward I remembered why I'd committed to this journey. I wasn't in it for the show, even though that was what we worked toward. The true reward lay in my growth and lessons learned. As Gia said: "*Even as artists, what's the point of creating if no one sees it? Yes, there will be judgment—but feedback is valuable.*"
 
-{{< gallery id="fifth" style="style2 small lightbox onscroll-fade-in" src="galleryFive">}}
+{{< gallery id="fifth" style="style2 medium lightbox onscroll-fade-in" src="galleryFive">}}
 {{< /gallery >}}
 
 <br>

@@ -8,12 +8,13 @@
 {{ $pics := index .Page.Params $srcKey }}
 
 <section class="wrapper style1 align-center" {{ if $id }}id="{{ $id }}"{{ end }}>
-  <div class="inner">
+  <div class="inner" style="padding-top: 0rem;">
     {{ if $title }}<h2>{{ $title | markdownify }}</h2>{{ end }}
     {{ .Inner | markdownify }}
   </div>
 
-  <div class="gallery {{ $style }}">
+  <div class="gallery {{ $style }}" style="margin-top: -4%;
+  margin-bottom: 1.5rem;">
     {{ range $pics }}
       {{ partial "picture.html" . }}
     {{ end }}
