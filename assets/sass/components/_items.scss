@@ -337,3 +337,45 @@
 	}
 
 	@include color-items;
+
+	/* At the bottom of your existing items.scss file */
+
+.item {
+  text-align: center;
+
+  .item-media {
+    margin-bottom: 0.5rem;
+	display: flex !important;
+
+    img {
+      width: 15rem !important;
+      height: 15rem !important;
+      object-fit: contain !important;
+      display: flex !important;
+      border-radius: _size(border-radius);
+    }
+
+    span {
+      font-size: 3rem;
+      display: inline-block;
+    }
+  }
+
+  h3 { margin: 0.5rem 0 0.25rem; }
+  p  { margin: 0; }
+}
+
+/* Inject the .item-media container into each style’s > * .inner */
+.items.style1,
+.items.style2,
+.items.style3 {
+  > * {
+    /* wrap the existing >* > .inner rules */
+    .inner {
+      /* ensure the media sits at top of each cell */
+      .item-media {
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}
