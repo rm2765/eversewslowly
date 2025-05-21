@@ -2,7 +2,7 @@
 <section class="item">
   {{ with .image }}
     <div class="item-media">
-      <img src="{{ . }}" alt="{{ $.name | default "item" }}" />
+      <img src="{{ . }}" loading="lazy" alt="{{ $.name | default "item" }}" />
     </div>
   {{ else }}
     <div class="item-media">
