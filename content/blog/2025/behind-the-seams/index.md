@@ -2,11 +2,11 @@
 slug: brooklyn-fashion-academy-2024-bts
 title: Behind the Seams
 subtitle: Our Brooklyn Fashion Academy Experience
-description: ""
+description: Four emerging designers at Brooklyn Fashion Academy turn self-doubt and creative challenges into runway-ready fashion. They reveal how personal stories shaped their “Women of Future Industries” collections—plus advice for aspiring designers.
 date: 2025-04-26T20:42:13.328Z
 tags:
   - emerging designers
-  - runway
+  - runway show
   - Women in Future Industries
 categories:
   - BFA Series
@@ -132,23 +132,24 @@ items:
     image: participant_photo.png
 keywords:
   - Brooklyn Fashion Academy
-  - transform
+  - transformative experience
   - BFA program
-  - library
+  - Brooklyn Public Central Library
   - designers
-  - runway
-  - sustainable
+  - Brooklyn Fashion Academy Runway Show
+  - sustainable fabric sourcing
   - refashion
-  - mentorship 
+  - more mentorship support
   - time management
-  - reality
-  - vision
+  - hear first hand from previous particpants of the Brooklyn Fashion Academy
+  - designing a collection
+  - design realization and vision
   - women in future industries
-  - advice
-  - doubt 
-  - fashion 
-  - sewing
-  - creative 
+  - advice for those considering the Brooklyn Fashion Academy program
+  - doubt
+  - fashion student
+  - beginner to confident designer
+  - creative
   - journey
 ---
 
