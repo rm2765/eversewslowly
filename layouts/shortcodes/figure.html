@@ -1,0 +1,33 @@
+{{/* layouts/shortcodes/figure.html */}}
+
+{{ $src := .Get "src" }}
+{{ $alt := .Get "alt" | default "" }}
+{{ $caption := .Get "caption" }}
+{{ $class := .Get "class" | default "" }}
+
+{{ with .Page.Resources.GetMatch (printf "**%s" $src) }}
+  {{ $img := . }}
+  {{ $small := $img.Resize "400x" }}
+  {{ $medium := $img.Resize "800x" }}
+  {{ $large := $img.Resize "1200x" }}
+  {{ $smallWebp := $img.Resize "400x webp" }}
+  {{ $mediumWebp := $img.Resize "800x webp" }}
+  {{ $largeWebp := $img.Resize "1200x webp" }}
+
+  <figure class="figure {{ $class }}">
+    <picture>
+      <source srcset="{{ $largeWebp.RelPermalink }}" media="(min-width: 1024px)" type="image/webp">
+      <source srcset="{{ $mediumWebp.RelPermalink }}" media="(min-width: 600px)" type="image/webp">
+      <source srcset="{{ $smallWebp.RelPermalink }}" type="image/webp">
+
+      <source srcset="{{ $large.RelPermalink }}" media="(min-width: 1024px)">
+      <source srcset="{{ $medium.RelPermalink }}" media="(min-width: 600px)">
+      <img src="{{ $small.RelPermalink }}" alt="{{ $alt }}" loading="lazy" decoding="async" width="{{ $small.Width }}" height="{{ $small.Height }}">
+    </picture>
+    {{ if $caption }}
+      <figcaption>{{ $caption }}</figcaption>
+    {{ end }}
+  </figure>
+{{ else }}
+  <p>Image "{{ $src }}" not found.</p>
+{{ end }}
