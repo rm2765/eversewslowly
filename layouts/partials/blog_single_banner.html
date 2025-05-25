@@ -21,7 +21,7 @@
       
   {{ with .Params.image }}
     <div class="image">
-      <img src="{{ . }}" loading="lazy" alt="{{ $.Title }}">
+      <img src="{{ . }}" loading="lazy" decoding="async" alt="{{ $.Title }}">
     </div>
   {{ end }}
 </section>
