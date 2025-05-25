@@ -1,25 +1,42 @@
-{{ $image := .Page.Resources.GetMatch (printf "**/%s" .Destination) }}
-{{ if $image }}
-  {{ $image = $image.Resize "x600" }}
-  {{ if and (eq .Page.Type "blog") (eq .Page.Kind "page") }}
-    <figure class="figure">
-      <img src="{{ $image.RelPermalink }}" alt="{{ .Text | safeHTMLAttr }}" loading="lazy" class="table-image" />
-      {{ if .Text }}
-        <figcaption>{{ .Text }}</figcaption>
-      {{ end }}
-    </figure>
-  {{ else }}
-    <img src="{{ $image.RelPermalink }}" alt="{{ .Text | safeHTMLAttr }}" loading="lazy" class="table-image" />
-  {{ end }}
+{{/* layouts/_default/_markup/render-image.html */}}
+{{ $orig := .Page.Resources.GetMatch (printf "**%s" .Destination) }}
+{{ if $orig }}
+  {{/* Resize JPEG/PNG variants */}}
+  {{ $smallJpg  := $orig.Resize "400x" }}
+  {{ $mediumJpg := $orig.Resize "800x" }}
+  {{ $largeJpg  := $orig.Resize "1200x" }}
+
+  {{/* Build WebP variants in one go */}}
+  {{ $smallWebp  := $orig.Resize "400x webp" }}
+  {{ $mediumWebp := $orig.Resize "800x webp" }}
+  {{ $largeWebp  := $orig.Resize "1200x webp" }}
+
+  <figure class="rendered-image">
+    <picture>
+      <source srcset="{{ $largeWebp.RelPermalink }}" media="(min-width:1024px)" type="image/webp">
+      <source srcset="{{ $mediumWebp.RelPermalink }}" media="(min-width:600px)"  type="image/webp">
+      <source srcset="{{ $smallWebp.RelPermalink }}"                       type="image/webp">
+
+      <source srcset="{{ $largeJpg.RelPermalink }}" media="(min-width:1024px)">
+      <source srcset="{{ $mediumJpg.RelPermalink }}" media="(min-width:600px)">
+      <img
+        src="{{ $smallJpg.RelPermalink }}"
+        alt="{{ .Text }}"
+        loading="lazy"
+        decoding="async"
+        width="{{ $smallJpg.Width }}"
+        height="{{ $smallJpg.Height }}"
+      >
+    </picture>
+    {{ with .Text }}
+      <figcaption>{{ . }}</figcaption>
+    {{ end }}
+  </figure>
 {{ else }}
-  {{ if and (eq .Page.Type "blog") (eq .Page.Kind "page") }}
-    <figure class="figure">
-      <img src="{{ .Destination | safeURL }}" alt="{{ .Text | safeHTMLAttr }}" loading="lazy" class="table-image" />
-      {{ if .Text }}
-        <figcaption>{{ .Text }}</figcaption>
-      {{ end }}
-    </figure>
-  {{ else }}
-    <img src="{{ .Destination | safeURL }}" alt="{{ .Text | safeHTMLAttr }}" loading="lazy" class="table-image" />
-  {{ end }}
+  <img
+    src="{{ .Destination | safeURL }}"
+    alt="{{ .Text }}"
+    loading="lazy"
+    decoding="async"
+  >
 {{ end }}

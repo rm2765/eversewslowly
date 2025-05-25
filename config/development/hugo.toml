@@ -70,11 +70,14 @@ publishDir = "public"
   playlist = "playlists"
   construction = "constructions"
 
-# allow for formattting in yaml
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
-      unsafe = true
+      unsafe = true         # allow raw HTML in content
+    [markup.goldmark.parser]
+      attribute = true      # enable {.class} attribute syntax
+
+
   [markup.tableOfContents]
     endLevel = 1
     startLevel = 1

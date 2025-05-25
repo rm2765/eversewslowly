@@ -1,5 +1,4 @@
 ---
-slug: brooklyn-fashion-academy-2024-bts
 title: Behind the Seams
 subtitle: Our Brooklyn Fashion Academy Experience
 description: Four emerging designers at Brooklyn Fashion Academy turn self-doubt and creative challenges into runway-ready fashion. They reveal how personal stories shaped their “Women of Future Industries” collections—plus advice for aspiring designers.
@@ -152,8 +151,8 @@ keywords:
   - creative
   - journey
 ---
+!["BKLYN Fashion Academy 2024 Promo Flyer"](bfa24_promo.png){.image .right .medium}
 
-<span class="image right medium"><img src="bfa24_promo.png" alt="BKLYN Fashion Academy 2024 Promo Flyer" /></span>
 Last year, I joined the BKLYN Fashion Academy's sixth season—an incredible program that more aspiring designers should know about. The Academy (BFA) takes designers on a four-month journey to a runway finale. The 2024 cohort created mini-collections under the *Women in Future Industries* theme. I interviewed fellow designers Gia, Regina, and Ronen, and together, we tell it all—from the creative challenges that tested both our skills and resolve, to our growth as design professionals. Our accounts reveal the program's essence: a journey that validates fashion aspirations, expands creative boundaries, and builds professional resilience. Our candid insights can help anyone considering this opportunity and, who knows, it could be the catalyst for your own design career.
 
 

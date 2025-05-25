@@ -1,12 +1,52 @@
-<article>
+{{/* layouts/partials/picture.html */}}
+{{ $orig := .Page.Resources.GetMatch (printf "**%s" .image) }}
+{{ if $orig }}
+  {{ $smallJpg  := $orig.Resize "400x" }}
+  {{ $mediumJpg := $orig.Resize "800x" }}
+  {{ $largeJpg  := $orig.Resize "1200x" }}
+
+  {{ $smallWebp  := $orig.Resize "400x webp" }}
+  {{ $mediumWebp := $orig.Resize "800x webp" }}
+  {{ $largeWebp  := $orig.Resize "1200x webp" }}
+
+  <figure class="gallery-item">
+    <picture>
+      <source srcset="{{ $largeWebp.RelPermalink }}" media="(min-width:1024px)" type="image/webp">
+      <source srcset="{{ $mediumWebp.RelPermalink }}" media="(min-width:600px)"  type="image/webp">
+      <source srcset="{{ $smallWebp.RelPermalink }}"                       type="image/webp">
+
+      <source srcset="{{ $largeJpg.RelPermalink }}" media="(min-width:1024px)">
+      <source srcset="{{ $mediumJpg.RelPermalink }}" media="(min-width:600px)">
+      <img 
+        src="{{ $smallJpg.RelPermalink }}" 
+        alt="{{ .title }}" 
+        loading="lazy" 
+        decoding="async" 
+        width="{{ $smallJpg.Width }}" 
+        height="{{ $smallJpg.Height }}"
+      >
+    </picture>
+    <div class="caption">
+      <h3>{{ .title }}</h3>
+      <p>{{ .content }}</p>
+      <ul class="actions fixed">
+        <li><span class="button small">{{ .button }}</span></li>
+      </ul>
+    </div>
+  </figure>
+{{ else }}
+  <!-- fallback if not in page bundle -->
+  <article>
     <a href="{{ .image }}" class="image">
-        <img src="{{ .thumb }}" alt="" loading="lazy"/>
+      <img src="{{ .thumb }}" alt="{{ .title }}" loading="lazy" decoding="async" />
     </a>
     <div class="caption">
-        <h3>{{ .title }}</h3>
-        <p>{{ .content }}</p>
-        <ul class="actions fixed">
-            <li><span class="button small">{{ .button }}</span></li>
-        </ul>
+      <h3>{{ .title }}</h3>
+      <p>{{ .content }}</p>
+      <ul class="actions fixed">
+        <li><span class="button small">{{ .button }}</span></li>
+      </ul>
     </div>
-</article>
+  </article>
+{{ end }}
+

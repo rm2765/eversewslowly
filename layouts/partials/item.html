@@ -1,14 +1,38 @@
 {{/* layouts/partials/item.html */}}
-<section class="item">
-  {{ with .image }}
-    <div class="item-media">
-      <img src="{{ . }}" loading="lazy" alt="{{ $.name | default "item" }}" />
+{{ $orig := .Page.Resources.GetMatch (printf "**%s" .image) }}
+{{ if $orig }}
+  {{ $smallJpg := $orig.Resize "200x" }}
+  {{ $smallWebp := $orig.Resize "200x webp" }}
+
+  <section class="item">
+    <picture class="item-media">
+      <source srcset="{{ $smallWebp.RelPermalink }}" type="image/webp">
+      <img 
+        src="{{ $smallJpg.RelPermalink }}" 
+        alt="{{ .name }}" 
+        loading="lazy" 
+        decoding="async" 
+        width="{{ $smallJpg.Width }}" 
+        height="{{ $smallJpg.Height }}"
+      >
+    </picture>
+    <h3>{{ .name | markdownify }}</h3>
+    <div class="item-content">
+      {{ .content | markdownify }}
     </div>
-  {{ else }}
-    <div class="item-media">
-      <span class="{{ .style }}"></span>
-    </div>
-  {{ end }}
-  <h3>{{ .name | markdownify }}</h3>
-  <p> {{ .content | markdownify }}</p>
-</section>
+  </section>
+{{ else }}
+  <section class="item">
+    {{ with .image }}
+      <div class="item-media">
+        <img src="{{ . }}" loading="lazy" alt="{{ $.name }}" />
+      </div>
+    {{ else }}
+      <div class="item-media">
+        <span class="{{ .style }}"></span>
+      </div>
+    {{ end }}
+    <h3>{{ .name | markdownify }}</h3>
+    <div class="item-content">{{ .content | markdownify }}</div>
+  </section>
+{{ end }}
