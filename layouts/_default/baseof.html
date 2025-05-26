@@ -17,5 +17,8 @@
 		{{ partial "scripts" . }}
 		{{ partial "footer" . }}
 
+		{{ $js := resources.Get "js/toggle-captions.js" | js.Build }}
+<script src="{{ $js.RelPermalink }}" defer></script>
+
 	</body>
 </html>
