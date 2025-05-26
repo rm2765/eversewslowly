@@ -117,17 +117,17 @@ galleryFive:
     thumb: walk_rose.jpg
     button: Expand
 items:
-  - name: <a href="https://www.instagram.com/je.suis.gia/"> Stay-at-home mom with a degree in fashion design <i class="fab fa-instagram"></i></a>
-    content: <br> **A Self-Sustaining Future** <h4>Technology</h4> **Versatile, Client-Focused** <h4>Fashion Philosophy</h4>
+  - name: Stay-at-home mom with a degree in fashion design
+    content: <br> **A Self-Sustaining Future** <h4>Technology</h4> **Versatile, Client-Focused** <h4>Fashion Philosophy</h4> <a href="https://www.instagram.com/je.suis.gia/"> <i class="fab fa-instagram"></i></a>
     image: headshot_gia.png
-  - name: <a href="#"> Career transitioner pursuing fashion entrepreneurship <i class="fab fa-instagram"></i></a>
-    content: <br> **Corporate Evolution** <h4>Finance</h4> **Reserved Elegance** <h4>Fashion Philosophy</h4>
+  - name: Career transitioner pursuing fashion entrepreneurship
+    content: <br> **Corporate Evolution** <h4>Finance</h4> **Reserved Elegance** <h4>Fashion Philosophy</h4><a href="#"><i class="fab fa-instagram"></i></a>
     image: headshot_regina.png
-  - name: <a href="#"> Visual artist exploring fashion as a new medium <i class="fab fa-instagram"></i></a>
-    content: <br> **Social Justice** <h4>Law</h4> **Fashion as Social Commentary** <h4>Fashion Philosophy</h4>
+  - name: Visual artist exploring fashion as a new medium
+    content: <br> **Social Justice** <h4>Law</h4> **Fashion as Social Commentary** <h4>Fashion Philosophy</h4> <a href="#"><i class="fab fa-instagram"></i></a>
     image: headshot_ronen.png
-  - name: <a href="https://www.instagram.com/eversewslowly/"> Data-savvy amateur upcycler enthusiast <i class="fab fa-instagram"></i></a>
-    content: <br> **Strength & Bravery** <h4>Fire/EMS</h4> **Personal & Sustainable** <h4>Fashion Philosophy</h4>
+  - name: Data-savvy amateur upcycler enthusiast 
+    content: <br> **Strength & Bravery** <h4>Fire/EMS</h4> **Personal & Sustainable** <h4>Fashion Philosophy</h4><a href="https://www.instagram.com/eversewslowly/"><i class="fab fa-instagram"></i></a>
     image: participant_photo.png
 keywords:
   - Brooklyn Fashion Academy

@@ -1,0 +1,367 @@
+{
+  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.framework.id": "hugo",
+  "frontMatter.media.folder": "static/images",
+  "frontMatter.media.publicFolder": "/images",
+  "frontMatter.content.publicFolder": "static",
+  "frontMatter.preview.host": "http://localhost:1313",
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "content",
+      "path": "[[workspace]]/content"
+    }
+  ],
+  "frontMatter.taxonomy.contentTypes": [
+    {
+      "name": "Blog",
+      "pageBundle": true,
+      "previewPath": "blog/{{date|yyyy}}/",
+      "filePrefix": null,
+      "fields": [
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string",
+          "single": true
+        },
+        {
+          "title": "Description",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "title": "Publishing date",
+          "name": "date",
+          "type": "datetime",
+          "default": "{{now}}",
+          "isPublishDate": true
+        },
+        {
+          "title": "Is in draft",
+          "name": "draft",
+          "type": "draft"
+        },
+        {
+          "title": "Tags",
+          "name": "tags",
+          "type": "tags"
+        },
+        {
+          "title": "Categories",
+          "name": "categories",
+          "type": "categories"
+        },
+        {
+          "title": "fmContentType",
+          "name": "fmContentType",
+          "type": "string"
+        },
+        {
+          "title": "image",
+          "name": "image",
+          "type": "image",
+          "isPreviewImage": true
+        },
+        {
+          "title": "summary",
+          "name": "summary",
+          "type": "datetime"
+        },
+        {
+          "default": "blog",
+          "name": "type",
+          "type": "string",
+          "hidden": true
+        },
+        {
+          "title": "slug",
+          "name": "slug",
+          "type": "datetime"
+        },
+        {
+          "title": "subtitle",
+          "name": "subtitle",
+          "type": "datetime"
+        },
+        {
+          "title": "toc",
+          "name": "toc",
+          "type": "boolean"
+        },
+        {
+          "title": "insertTOC",
+          "name": "insertTOC",
+          "type": "boolean"
+        },
+        {
+          "title": "pictures",
+          "name": "pictures",
+          "type": "block",
+          "fieldGroup": [
+            "pictures_group"
+          ]
+        },
+        {
+          "title": "galleryTwo",
+          "name": "galleryTwo",
+          "type": "block",
+          "fieldGroup": [
+            "galleryTwo_group"
+          ]
+        },
+        {
+          "title": "galleryOne",
+          "name": "galleryOne",
+          "type": "block",
+          "fieldGroup": [
+            "galleryOne_group"
+          ]
+        },
+        {
+          "title": "galleryThree",
+          "name": "galleryThree",
+          "type": "block",
+          "fieldGroup": [
+            "galleryThree_group"
+          ]
+        },
+        {
+          "title": "galleryFour",
+          "name": "galleryFour",
+          "type": "block",
+          "fieldGroup": [
+            "galleryFour_group"
+          ]
+        },
+        {
+          "title": "galleryFive",
+          "name": "galleryFive",
+          "type": "block",
+          "fieldGroup": [
+            "galleryFive_group"
+          ]
+        },
+        {
+          "title": "items",
+          "name": "items",
+          "type": "block",
+          "fieldGroup": [
+            "items_group"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Default",
+      "pageBundle": false,
+      "previewPath": null,
+      "fields": [
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "Date",
+          "name": "date",
+          "type": "datetime",
+          "default": "{{now}}",
+          "isPublishDate": true
+        },
+        {
+          "title": "Draft",
+          "name": "draft",
+          "type": "boolean",
+          "default": true
+        }
+      ]
+    }
+  ],
+  "frontMatter.taxonomy.fieldGroups": [
+    {
+      "id": "pictures_group",
+      "fields": [
+        {
+          "title": "image",
+          "name": "image",
+          "type": "image"
+        },
+        {
+          "title": "thumb",
+          "name": "thumb",
+          "type": "string"
+        },
+        {
+          "title": "title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "content",
+          "name": "content",
+          "type": "string"
+        },
+        {
+          "title": "button",
+          "name": "button",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "id": "galleryTwo_group",
+      "fields": [
+        {
+          "title": "image",
+          "name": "image",
+          "type": "image"
+        },
+        {
+          "title": "thumb",
+          "name": "thumb",
+          "type": "string"
+        },
+        {
+          "title": "title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "content",
+          "name": "content",
+          "type": "string"
+        },
+        {
+          "title": "button",
+          "name": "button",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "id": "galleryOne_group",
+      "fields": [
+        {
+          "title": "image",
+          "name": "image",
+          "type": "image"
+        },
+        {
+          "title": "thumb",
+          "name": "thumb",
+          "type": "string"
+        },
+        {
+          "title": "title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "button",
+          "name": "button",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "id": "galleryThree_group",
+      "fields": [
+        {
+          "title": "image",
+          "name": "image",
+          "type": "image"
+        },
+        {
+          "title": "thumb",
+          "name": "thumb",
+          "type": "string"
+        },
+        {
+          "title": "title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "content",
+          "name": "content",
+          "type": "string"
+        },
+        {
+          "title": "button",
+          "name": "button",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "id": "galleryFour_group",
+      "fields": [
+        {
+          "title": "image",
+          "name": "image",
+          "type": "image"
+        },
+        {
+          "title": "thumb",
+          "name": "thumb",
+          "type": "string"
+        },
+        {
+          "title": "title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "content",
+          "name": "content",
+          "type": "string"
+        },
+        {
+          "title": "button",
+          "name": "button",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "id": "galleryFive_group",
+      "fields": [
+        {
+          "title": "image",
+          "name": "image",
+          "type": "image"
+        },
+        {
+          "title": "thumb",
+          "name": "thumb",
+          "type": "string"
+        },
+        {
+          "title": "button",
+          "name": "button",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "id": "items_group",
+      "fields": [
+        {
+          "title": "name",
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "title": "content",
+          "name": "content",
+          "type": "string"
+        },
+        {
+          "title": "image",
+          "name": "image",
+          "type": "image"
+        }
+      ]
+    }
+  ]
+}

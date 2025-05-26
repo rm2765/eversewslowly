@@ -1,22 +1,39 @@
 {{/* layouts/_default/_markup/render-image.html */}}
 {{ $orig := .Page.Resources.GetMatch (printf "**%s" .Destination) }}
 {{ if $orig }}
-  {{/* Resize JPEG/PNG variants */}}
-  {{ $smallJpg  := $orig.Resize "400x" }}
-  {{ $mediumJpg := $orig.Resize "800x" }}
-  {{ $largeJpg  := $orig.Resize "1200x" }}
-
-  {{/* Build WebP variants in one go */}}
-  {{ $smallWebp  := $orig.Resize "400x webp" }}
-  {{ $mediumWebp := $orig.Resize "800x webp" }}
-  {{ $largeWebp  := $orig.Resize "1200x webp" }}
-
+  {{ $scratch := .Page.Scratch }}
+  {{ $imageKey := $orig.RelPermalink }}
+  {{/* Define sizes and formats */}}
+  {{ $sizes := dict "small" "400x" "medium" "800x" "large" "1200x" }}
+  {{ $formats := slice "jpg" "webp" }}
+  {{/* Process images if not already in scratch */}}
+  {{ range $size, $dimension := $sizes }}
+    {{ range $formats }}
+      {{ $key := printf "%s-%s-%s" $imageKey $size . }}
+      {{ if not ($scratch.Get $key) }}
+        {{ $options := "" }}
+        {{ if eq . "webp" }}
+          {{ $options = printf "%s webp" $dimension }}
+        {{ else }}
+          {{ $options = $dimension }}
+        {{ end }}
+        {{ $processed := $orig.Resize $options }}
+        {{ $scratch.Set $key $processed }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+  {{/* Retrieve processed images */}}
+  {{ $smallJpg := $scratch.Get (printf "%s-small-jpg" $imageKey) }}
+  {{ $mediumJpg := $scratch.Get (printf "%s-medium-jpg" $imageKey) }}
+  {{ $largeJpg := $scratch.Get (printf "%s-large-jpg" $imageKey) }}
+  {{ $smallWebp := $scratch.Get (printf "%s-small-webp" $imageKey) }}
+  {{ $mediumWebp := $scratch.Get (printf "%s-medium-webp" $imageKey) }}
+  {{ $largeWebp := $scratch.Get (printf "%s-large-webp" $imageKey) }}
   <figure class="rendered-image">
     <picture>
       <source srcset="{{ $largeWebp.RelPermalink }}" media="(min-width:1024px)" type="image/webp">
       <source srcset="{{ $mediumWebp.RelPermalink }}" media="(min-width:600px)"  type="image/webp">
       <source srcset="{{ $smallWebp.RelPermalink }}"                       type="image/webp">
-
       <source srcset="{{ $largeJpg.RelPermalink }}" media="(min-width:1024px)">
       <source srcset="{{ $mediumJpg.RelPermalink }}" media="(min-width:600px)">
       <img
@@ -40,4 +57,3 @@
     decoding="async"
   >
 {{ end }}
-

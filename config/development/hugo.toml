@@ -11,6 +11,7 @@ copyright = "{year}"
 
 relativeURLs = "true"
 #canonifyURLs = "true"
+timeout = 60000 # Example: 60 seconds (60000 milliseconds)
 
 
 # Local
@@ -89,6 +90,3 @@ metaDataFormat = "yaml"
 [params]
   # Default pagination
   paginate = 8
-
-
-
