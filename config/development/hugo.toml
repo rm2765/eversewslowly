@@ -11,8 +11,6 @@ copyright = "{year}"
 
 relativeURLs = "true"
 #canonifyURLs = "true"
-timeout = 120000 # Example: 60 seconds (60000 milliseconds)
-
 
 # Local
 baseURL = "https://eversewslowly.com/"
