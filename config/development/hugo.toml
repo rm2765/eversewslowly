@@ -85,6 +85,8 @@ enableEmoji = true
 
 metaDataFormat = "yaml"
 
-[params]
-  # Default pagination
-  paginate = 8
+[pagination]
+  pagerSize = 8
+  path = "page"
+
+timeout = "60s"
