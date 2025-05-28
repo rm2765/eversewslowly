@@ -1,17 +1,39 @@
 <section class="wrapper style1 align-center">
     <div class="inner">
         <nav class="breadcrumb" aria-label="Breadcrumb">
-            <ul><h3>
-                {{ if .Ancestors }}
-                    {{ $ancestors := first 8 .Ancestors.Reverse }}
-                    {{ range $ancestors }}
-                        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+            <ul>
+                <h3>
+                    {{/* For taxonomy pages, build breadcrumbs manually */}}
+                    {{/* Check if ancestors exist and use them, otherwise build manually */}}
+                    {{ if .Ancestors }}
+                        {{ $ancestors := .Ancestors.Reverse }}
+                        {{ $maxDepth := 10 }}
+                        {{ $currentDepth := 0 }}
+                        {{ range $ancestors }}
+                            {{ if lt $currentDepth $maxDepth }}
+                                <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+                                {{ $currentDepth = add $currentDepth 1 }}
+                            {{ end }}
+                        {{ end }}
+                    {{ else if .Data.Singular }}
+                        {{/* Taxonomy page breadcrumbs - build manually */}}
+                        <li><a href="{{ "/" | relURL }}">Home</a></li>
+                        {{ if eq .Data.Singular "category" }}
+                            <li><a href="{{ "/categories/" | relURL }}">Categories</a></li>
+                        {{ else if eq .Data.Singular "tag" }}
+                            <li><a href="{{ "/tags/" | relURL }}">Tags</a></li>
+                        {{ else }}
+                            <li><a href="{{ printf "/%s/" .Data.Plural | relURL }}">{{ .Data.Plural | title }}</a></li>
+                        {{ end }}
+                    {{ else }}
+                        {{/* Fallback: just add Home */}}
+                        <li><a href="{{ "/" | relURL }}">Home</a></li>
                     {{ end }}
-                {{ else }}
-                    <li><a href="{{ "/" | relURL }}">Home</a></li>
-                {{ end }}
-                <li><span class="current">{{ .Title }}</span></li>
-            </h3></ul>
+                    
+                    {{/* Current page */}}
+                    <li><span class="current">{{ .Title }}</span></li>
+                </h3>
+            </ul>
         </nav>  
     </div>
 </section>
