@@ -12,85 +12,85 @@ categories:
   - Roundup
 fmContentType: Blog
 image: my_models_bts_2.jpg
-summary: Last year, I joined the BKLYN Fashion Academy's sixth season—an incredible program that more aspiring designers should know about. The Academy (BFA) takes designers on a four-month journey to a runway finale. The 2024 cohort created mini-collections under the *Women in Future Industries* theme. I interviewed fellow designers Gia, Regina, and Ronen, and together, we tell it all—from the creative challenges that tested both our skills and resolve, to our growth as design professionals.
+summary: Last year, I joined the [BKLYN Fashion Academy](https://www.bklynlibrary.org/bklyn-fashion-academy#)'s sixth season—an incredible program that more aspiring designers should know about. The Academy (BFA) takes designers on a four-month journey to a runway finale. The 2024 cohort created mini-collections under the *Women in Future Industries* theme. I interviewed fellow designers Gia, Regina, and Ronen, and together, we tell it all—from the creative challenges that tested both our skills and resolve, to our growth as design professionals.
 toc: true
 insertTOC: true
 galleryOne:
-  - image: look_1_gia.jpg
-    thumb: look_1_gia.jpg
+  - image: look_1_gia.webp
+    thumb: look_1_gia.webp
     title: Faye Perpetua
     button: Expand
-  - image: look_2_gia.jpg
-    thumb: look_2_gia.jpg
+  - image: look_2_gia.webp
+    thumb: look_2_gia.webp
     title: Solaris
     button: Expand
-  - image: look_3_gia.jpg
-    thumb: look_3_gia.jpg
+  - image: look_3_gia.webp
+    thumb: look_3_gia.webp
     title: ALIS
     button: Expand
-  - image: look_4_gia.jpg
-    thumb: look_4_gia.jpg
+  - image: look_4_gia.webp
+    thumb: look_4_gia.webp
     title: Constantia
     button: Expand
-  - image: look_5_gia.jpg
-    thumb: look_5_gia.jpg
+  - image: look_5_gia.webp
+    thumb: look_5_gia.webp
     title: RENATUS
     button: Expand
 galleryTwo:
-  - image: look_1_regina.jpg
-    thumb: look_1_regina.jpg
+  - image: look_1_regina.webp
+    thumb: look_1_regina.webp
     title: Look Name
     content: Caption for the first image.
     button: Expand
-  - image: look_2_regina.jpg
-    thumb: look_2_regina.jpg
+  - image: look_2_regina.webp
+    thumb: look_2_regina.webp
     title: Look Name
     content: Caption for the second image.
     button: Expand
-  - image: look_3_regina.jpg
-    thumb: look_3_regina.jpg
+  - image: look_3_regina.webp
+    thumb: look_3_regina.webp
     title: Look Name
     content: Caption for the first image.
     button: Expand
-  - image: look_4_regina.jpg
-    thumb: look_4_regina.jpg
+  - image: look_4_regina.webp
+    thumb: look_4_regina.webp
     title: Look Name
     content: Caption for the second image.
     button: Expand
 galleryThree:
-  - image: look_1_ronen.jpg
-    thumb: look_1_ronen.jpg
+  - image: look_1_ronen.webp
+    thumb: look_1_ronen.webp
     title: Look Name
     content: Caption for the first image.
     button: Expand
-  - image: look_2_ronen.jpg
-    thumb: look_2_ronen.jpg
+  - image: look_2_ronen.webp
+    thumb: look_2_ronen.webp
     title: Look Name
     content: Caption for the second image.
     button: Expand
-  - image: look_3_ronen.jpg
-    thumb: look_3_ronen.jpg
+  - image: look_3_ronen.webp
+    thumb: look_3_ronen.webp
     title: Look Name
     content: Caption for the first image.
     button: Expand
-  - image: look_4_ronen.jpg
-    thumb: look_4_ronen.jpg
+  - image: look_4_ronen.webp
+    thumb: look_4_ronen.webp
     title: Look Name
     content: Caption for the second image.
     button: Expand
 galleryFour:
-  - image: look_1_rose.jpg
-    thumb: look_1_rose.jpg
+  - image: look_1_rose.webp
+    thumb: look_1_rose.webp
     title: Turnout Jacket Dress
     content: "Model: Nadia Sanon"
     button: Expand
-  - image: look_2_rose.jpg
-    thumb: look_2_rose.jpg
+  - image: look_2_rose.webp
+    thumb: look_2_rose.webp
     title: Bomber Patrol Jacket
     content: "Model: Nikki Medina"
     button: Expand
-  - image: look_3_rose.jpg
-    thumb: look_3_rose.jpg
+  - image: look_3_rose.webp
+    thumb: look_3_rose.webp
     title: Relaxed Cargo Patrol Pants
     content: "Model: Minaiel Shoaib, Women of Future Industry Role Model"
     button: Expand
@@ -152,12 +152,12 @@ keywords:
   - journey
 ---
 {{< figure src="bfa24_promo.png" alt="BKLYN Fashion Academy 2024 Promo Flyer" caption="BKLYN Fashion Academy 2024 Promo Flyer" class="image right medium" >}} 
-Last year, I joined the BKLYN Fashion Academy's sixth season—an incredible program that more aspiring designers should know about. The Academy (BFA) takes designers on a four-month journey to a runway finale. The 2024 cohort created mini-collections under the *Women in Future Industries* theme. I interviewed fellow designers Gia, Regina, and Ronen, and together, we tell it all—from the creative challenges that tested both our skills and resolve, to our growth as design professionals. Our accounts reveal the program's essence: a journey that validates fashion aspirations, expands creative boundaries, and builds professional resilience. Our candid insights can help anyone considering this opportunity and, who knows, it could be the catalyst for your own design career.
+Last year, I joined the [BKLYN Fashion Academy](https://www.bklynlibrary.org/bklyn-fashion-academy#)'s sixth season—an incredible program that more aspiring designers should know about. The Academy (BFA) takes designers on a four-month journey to a runway finale. The 2024 cohort created mini-collections under the *Women in Future Industries* theme. I interviewed fellow designers Gia, Regina, and Ronen, and together, we tell it all—from the creative challenges that tested both our skills and resolve, to our growth as design professionals. Our accounts reveal the program's essence: a journey that validates fashion aspirations, expands creative boundaries, and builds professional resilience. Our candid insights can help anyone considering this opportunity and, who knows, it could be the catalyst for your own design career.
 
 
 # The Journey Begins with Doubt 
 
-A glance at our profiles on the [BFA webpage](https://www.bklynlibrary.org/bklyn-fashion-academy) showcases our rich diversity—we vary in age, backgrounds, careers, styles, and even sewing experience. Some designers arrived with formal fashion training and years of expertise, while others, like me, discovered sewing as a creative refuge during the COVID lockdown. Regardless of our differences, it is clear that we all hold a strong interest in fashion. Surprisingly, we even share similar self-doubts. From Gia balancing family obligations and critical voices, Regina's six-year trajectory from fashion novice to designer, to Ronen's artistic curiosity leading him into uncharted territory, and my own evolution from refashion amateur to runway designer—we all wrestled with the same insecurities: ***Can I really do this? Am I talented enough? Do I belong here?*** These doubts, however, became the foundation for our growth throughout the program's intense, transformative journey.
+A glance at our profiles on the [BFA webpage](https://www.bklynlibrary.org/bklyn-fashion-academy) showcases our rich diversity—we vary in age, backgrounds, careers, styles, and even sewing experience. Some designers arrived with formal fashion training and years of expertise, while others, like me, [discovered sewing](https://eversewslowly.com/blog/2023/learning-to-sew/) as a creative refuge during the COVID lockdown. Regardless of our differences, it is clear that we all hold a strong interest in fashion. Surprisingly, we even share similar self-doubts. From Gia balancing family obligations and critical voices, Regina's six-year trajectory from fashion novice to designer, to Ronen's artistic curiosity leading him into uncharted territory, and my own evolution from refashion amateur to runway designer—we all wrestled with the same insecurities: ***Can I really do this? Am I talented enough? Do I belong here?*** These doubts, however, became the foundation for our growth throughout the program's intense, transformative journey.
 
 {{< items title="Designer Profiles" style="style2 small" >}}
 {{< /items >}}
@@ -175,7 +175,7 @@ Ronen, a visual artist, discovered the BFA by chance through an email in a rarel
 
 ## A Refashion Amateur Finding Her Way — Me
 
-My journey began during the COVID lockdown in 2020, when I explored a new hobby in refashioning garments. Frustrated with my slow self-taught progress, I felt stuck—until my sister shared an Instagram post about the BFA. With just two reworked pieces to my name, I applied on the final day, doubting my readiness like Regina. The chance to combine my data skills with refashioning drew me in—I saw potential for content creation and innovative business ventures. By the program’s end, I went from beginner to confident designer within a short span. Though the journey was challenging, I’m proud of my achievements and the program's role in my growth—now a foundation for bigger dreams.
+My journey began during the COVID lockdown in 2020, when I explored a new hobby in [refashioning garments](https://eversewslowly.com/blog/2023/learning-to-sew/). Frustrated with my slow self-taught progress, I felt stuck—until my sister shared an Instagram post about the BFA. With just two reworked pieces to my name, I applied on the final day, doubting my readiness like Regina. The chance to combine my data skills with refashioning drew me in—I saw potential for content creation and innovative business ventures. By the program’s end, I went from beginner to confident designer within a short span. Though the journey was challenging, I’m proud of my achievements and the program's role in my growth—now a foundation for bigger dreams.
 
 Having shared from where we started, next is the fun part, our designer personas and original visions!
 
@@ -256,8 +256,6 @@ Despite not completing my fourth look, I made it to the show with three emergenc
 {{< gallery id="first" style="style2 small lightbox onload-fade-in" src="galleryOne" title="### Runway Finale Gallery">}}
 Here are scenes of each our mini-collections. The runway finale was just but a moment, but months of hard work and determination went into each of our designs. 
 
-*Photo Credits: Gregg Richards, Brooklyn Public Library Staff Photographer*
-
 <h3>Gia Zhao</h3>
 {{< /gallery >}}
 
@@ -283,7 +281,7 @@ Here are scenes of each our mini-collections. The runway finale was just but a m
 
 ## The Power of Persistence
 {{< figure src="the_practice_book_cover.JPG" alt="Book Cover of The Practice: Shipping Creative Work by Seth Godin" caption="Book Cover of The Practice: Shipping Creative Work by Seth Godin" class="image right small" >}}
-In *The Practice: Shipping Creative Work*, Seth Godin, entrepreneur and best selling author known for his insights on leadership and creativity, explains that learning and growth requires discomfort: 
+In *[The Practice: Shipping Creative Work](https://geni.us/kD6UWdp)*, Seth Godin, entrepreneur and [best selling author](https://seths.blog/about/) known for his insights on leadership and creativity, explains that learning and growth requires discomfort: 
 
 > “*Desirable difficulty is the hard work of doing hard work…Learning almost always involves incompetence. Shortly before we get to the next level, we realize that we’re not yet at that level and we feel insufficient. The difficulty is real, and it’s desirable if our goal is to move forward.*”
 
@@ -309,7 +307,7 @@ Gia reflects on how the experience reshaped her self-perception:
 
 She adds, 
 
-> "*Not everyone can be like Rick Owens, designing purely for themselves. He once said he doesn't care about an audience, but most of us need validation to some degree*." -Gia
+> "*Not everyone can be like [Rick Owens](https://www.businessoffashion.com/people/rick-owens/), designing purely for themselves. He once said he doesn't care about an audience, but most of us need validation to some degree*." -Gia
 
 I agree. Seeing our collections come to life on the runway and having an audience engage with them is powerful. The runway is where we share our work and make it professional.
 
@@ -355,7 +353,7 @@ To fill knowledge gaps, we relied on YouTube tutorials and library books with va
 
 ### More Mentorship Support
 
-Regina proposed that personalized, one-on-one mentorship could make a significant difference. Throughout the program, we relied solely on Ben Mach—former Project Runway all star—who provided valuable support during sessions and via WhatsApp. However, having just one mentor for up to 20 participants felt insufficient for many of us. I agree with Regina. Personalized mentorship would have accelerated our growth, ideally creating lasting relationships that could guide our careers beyond the program—the icing on the cake of an already valuable experience.
+Regina proposed that personalized, one-on-one mentorship could make a significant difference. Throughout the program, we relied solely on [Ben Mach](https://api-us.creativebug.com/instructors/benjamin-mach)—former Project Runway all star—who provided valuable support during sessions and via WhatsApp. However, having just one mentor for up to 20 participants felt insufficient for many of us. I agree with Regina. Personalized mentorship would have accelerated our growth, ideally creating lasting relationships that could guide our careers beyond the program—the icing on the cake of an already valuable experience.
 
 ### The Runway is the End Game
 
@@ -438,3 +436,6 @@ The BFA experience has been a transformative journey for us. I hope that by shar
 
 As Seth Godin wisely says, "*Let's call it art. The human act of doing something that might not work, something generous, something that will make a difference. Your art matters.*" And to all future BFA participants, 
 >"*You have everything you need to make magic. Go make a ruckus.*" -Godin
+
+<sub>**Photography Credits:**
+Profile portraits and event photography by [Gregg Richards](https://www.tryating.com), Brooklyn Public Library Staff Photographer. Website screenshots and canvas photos were taken by me.</sub>
