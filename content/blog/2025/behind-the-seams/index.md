@@ -1,14 +1,14 @@
 ---
 title: Behind the Seams
 subtitle: Our Brooklyn Fashion Academy Experience
-description: Four emerging designers at Brooklyn Fashion Academy turn self-doubt and creative challenges into runway-ready fashion. They reveal how personal stories shaped their “Women of Future Industries” collections—plus advice for aspiring designers.
+description: Four BKLYN Fashion Academy designers transform self-doubt into runway success with their "Women of Future Industries" collections, sharing insights for aspiring designers.
 date: 2025-04-26T20:42:13.328Z
 tags:
   - emerging designers
   - runway show
   - Women in Future Industries
 categories:
-  - BFA Series
+  - BKLYN Fashion Academy Series
   - Roundup
 fmContentType: Blog
 image: my_models_bts_2.webp
@@ -126,30 +126,28 @@ items:
   - name: Visual artist exploring fashion as a new medium
     content: <br> **Social Justice** <h4>Law</h4> **Fashion as Social Commentary** <h4>Fashion Philosophy</h4> <a href="#"><i class="fab fa-instagram"></i></a>
     image: headshot_ronen.png
-  - name: Data-savvy amateur upcycler enthusiast 
+  - name: Data-savvy amateur upcycler enthusiast
     content: <br> **Strength & Bravery** <h4>Fire/EMS</h4> **Personal & Sustainable** <h4>Fashion Philosophy</h4><a href="https://www.instagram.com/eversewslowly/"><i class="fab fa-instagram"></i></a>
     image: participant_photo.png
 keywords:
-  - Brooklyn Fashion Academy
-  - transformative experience
-  - BFA program
-  - Brooklyn Public Central Library
-  - designers
-  - Brooklyn Fashion Academy Runway Show
-  - sustainable fabric sourcing
-  - refashion
-  - more mentorship support
-  - time management
-  - hear first hand from previous particpants of the Brooklyn Fashion Academy
-  - designing a collection
-  - design realization and vision
-  - women in future industries
-  - advice for those considering the Brooklyn Fashion Academy program
-  - doubt
-  - fashion student
+  - advice
   - beginner to confident designer
+  - BKLYN Fashion Academy
+  - Brooklyn Fashion Academy
   - creative
+  - designing a collection
+  - doubt
+  - fashion design journey
   - journey
+  - mentorship
+  - portfolio
+  - program review
+  - refashion
+  - runway
+  - sustainable fabric sourcing
+  - time management
+  - women in future industries
+  - emerging fashion designers
 ---
 {{< figure src="bfa24_promo.png" alt="BKLYN Fashion Academy 2024 Promo Flyer" caption="BKLYN Fashion Academy 2024 Promo Flyer" class="image right medium" >}} 
 Last year, I joined the [BKLYN Fashion Academy](https://www.bklynlibrary.org/bklyn-fashion-academy#)'s sixth season—an incredible program that more aspiring designers should know about. The Academy (BFA) takes designers on a four-month journey to a runway finale. The 2024 cohort created mini-collections under the *Women in Future Industries* theme. I interviewed fellow designers Gia, Regina, and Ronen, and together, we tell it all—from the creative challenges that tested both our skills and resolve, to our growth as design professionals. Our accounts reveal the program's essence: a journey that validates fashion aspirations, expands creative boundaries, and builds professional resilience. Our candid insights can help anyone considering this opportunity and, who knows, it could be the catalyst for your own design career.
@@ -157,23 +155,23 @@ Last year, I joined the [BKLYN Fashion Academy](https://www.bklynlibrary.org/bkl
 
 # The Journey Begins with Doubt 
 
-A glance at our profiles on the [BFA webpage](https://www.bklynlibrary.org/bklyn-fashion-academy) showcases our rich diversity—we vary in age, backgrounds, careers, styles, and even sewing experience. Some designers arrived with formal fashion training and years of expertise, while others, like me, [discovered sewing](https://eversewslowly.com/blog/2023/learning-to-sew/) as a creative refuge during the COVID lockdown. Regardless of our differences, it is clear that we all hold a strong interest in fashion. Surprisingly, we even share similar self-doubts. From Gia balancing family obligations and critical voices, Regina's six-year trajectory from fashion novice to designer, to Ronen's artistic curiosity leading him into uncharted territory, and my own evolution from refashion amateur to runway designer—we all wrestled with the same insecurities: ***Can I really do this? Am I talented enough? Do I belong here?*** These doubts, however, became the foundation for our growth throughout the program's intense, transformative journey.
+A glance at our profiles on the [BKLYN Fashion Academy webpage](https://www.bklynlibrary.org/bklyn-fashion-academy) showcases our rich diversity—we vary in age, backgrounds, careers, styles, and even sewing experience. Some designers arrived with formal fashion training and years of expertise, while others, like me, [discovered sewing](https://eversewslowly.com/blog/2023/learning-to-sew/) as a creative refuge during the COVID lockdown. Regardless of our differences, it is clear that we all hold a strong interest in fashion. Surprisingly, we even share similar self-doubts. From Gia balancing family obligations and critical voices, Regina's six-year trajectory from fashion novice to designer, to Ronen's artistic curiosity leading him into uncharted territory, and my own evolution from refashion amateur to runway designer—we all wrestled with the same insecurities: ***Can I really do this? Am I talented enough? Do I belong here?*** These doubts, however, became the foundation for our growth throughout the program's intense, transformative journey.
 
 {{< items title="Designer Profiles" style="style2 small" >}}
 {{< /items >}}
 
-## Balancing Family, Critics, and Fashion Aspirations — Gia
+## Gia: Balancing Family, Critics, and Fashion Design Dreams
 "*I had people tell me I wasn't talented enough to be a designer*," Gia confides. Despite holding a degree in fashion, she delayed applying to the BFA for a year, carefully planning how to balance her commitments to two children, four dogs, and a husband. "*If I can't invest 100% into something, I'd rather not do it. I didn't want regrets… I wanted to give it my best shot*." Her persistence paid off when her mother—once her biggest critic—praised her runway show. That moment validated her efforts and proved that self-belief can overcome setbacks.
 
-## A Transition into Fashion, Six Years in the Making — Regina
+## Regina: A Transition into Fashion, Six Years in the Making
 
 Regina heard about the BFA six years ago in an entrepreneurship class. Although she lacked the basics then—"*I didn't know how to sew, sketch, or design*"—her desire for fashion only grew stronger. Even after enrolling in classes and learning the basics, self-doubt lingered. "*I wasn't sure my designs were strong enough*," she shared. At friends and family's insistence—"*Just apply—you have nothing to lose!*" she submitted last-minute. This leap turned her long-held dream into concrete steps toward launching her own brand.
 
-## An Artist’s Curiosity Leads to New Possibilities — Ronen
+## Ronen: An Artist's Curiosity Leads to Fashion
 
 Ronen, a visual artist, discovered the BFA by chance through an email in a rarely-checked inbox. Curious, he attended an info session and applied on a whim, attracted to working with textiles three-dimensionally.  "*I had no idea what I was getting into*," he laughs. "*I thought it would be skill-building workshops—just lessons on fashion and garment-making*." Though comfortable with sewing machines for flat projects, he assumed his lack of formal training would disqualify him. However, to his surprise, gaining acceptance to the program expanded his artistic boundaries and revealed new possibilities in fashion design.
 
-## A Refashion Amateur Finding Her Way — Me
+## Rose: A Refashion Amateur Finding Her Way
 
 My journey began during the COVID lockdown in 2020, when I explored a new hobby in [refashioning garments](https://eversewslowly.com/blog/2023/learning-to-sew/). Frustrated with my slow self-taught progress, I felt stuck—until my sister shared an Instagram post about the BFA. With just two reworked pieces to my name, I applied on the final day, doubting my readiness like Regina. The chance to combine my data skills with refashioning drew me in—I saw potential for content creation and innovative business ventures. By the program’s end, I went from beginner to confident designer within a short span. Though the journey was challenging, I’m proud of my achievements and the program's role in my growth—now a foundation for bigger dreams.
 
@@ -298,7 +296,7 @@ As we learned, there’s no magic—just the work. The willingness to start from
 
 # Program Reflections
 
-## Personal Transformation
+## How the Program Transformed Us as Designers
 {{< figure src="audience_2.JPG" alt="Runway & audience" caption="The runway show is open to the public and the audience takes it all in." class="image right medium" >}}
 The BFA program marked a clear before-and-after change in us all. It transformed us as designers by nurturing our creative identity, building professional confidence, and ultimately reshaping our career aspirations through the powerful experience of seeing our work move from concept to runway. It was more than learning advanced sewing or creating runway looks; it was about discovering our potential and finding validation in our work.
 
@@ -326,11 +324,11 @@ For designers like Ronen and me, learning new techniques while applying them for
 Before the program, I wasn't *on the hook*, as Seth Godin puts it. I sewed for myself, and my progress was slow. After completing the program, I no longer fear the speed of the sewing pedal and delivered three looks on the runway. I learned about the industry and feel capable of moving forward. That's the program's magic—it demands hard, self-driven work, which makes the achievement all the more meaningful.
 
 
-## Program Realities & Opportunities for Improvement
+## Program Review: Realities & Opportunities for Growth
 {{< figure src="mentor_helping_dayof.JPG" alt="Mentor" caption="Ben Mach, our mentor, assisting one of Gia's models" class="image left medium" >}}
 The Brooklyn Fashion Academy offered a transformative blend of creative expression and rigorous hands-on work. However, the initial flyer and info sessions didn't convey its demanding nature; the long hours, problem-solving, and pressure became evident only after immersion. 
 
-The entire cohort—Gia, Regina, Ronen, and myself included—is grateful to the program staff, supporters, and funders who made this experience possible. While delivering an impressive runway show that exceeded all our expectations, my fellow participants and I identified four areas for improvement: **1)** clearer planning timelines, **2)** more transparent workload expectations, **3)** additional teaching support, and **4)** strengthened mentorship resources. These suggestions are offered in the spirit of collaboration and program growth for future cohorts.
+The entire 2024 cohort—Gia, Regina, Ronen, and myself included—is grateful to the program staff, supporters, and funders who made this experience possible. While delivering an impressive runway show that exceeded all our expectations, my fellow participants and I identified four areas for improvement: **1)** clearer planning timelines, **2)** more transparent workload expectations, **3)** additional teaching support, and **4)** strengthened mentorship resources. These suggestions are offered in the spirit of collaboration and program growth for future cohorts.
 
 ### Improving Structure and Planning
 
@@ -344,7 +342,7 @@ While we valued the program's hands-on, self-driven approach, a more structured 
 Ronen brought up how the program needed to be more transparent about the workload and what to expect in terms of instruction versus self-driven learning. Clearer communication upfront, he felt, would have helped: 
 > "*They didn't really warn us about just how intense it would be. Before accepting people into the program, there should be a clearer explanation of what's expected and exactly what will and won't be taught. They should be upfront—this isn't a comprehensive sewing course*." -Ronen
 
-### The Self-Learning Reality
+### Navigating Self-Directed Learning
 
 The program also focused more on problem-solving than formal instruction—a surprise to many of us. Both Ronen and I had anticipated more guidance, especially since the program description mentioned advanced sewing techniques. Instead, “*we had to figure out a lot on our own*,” Ronen recalled. “*Our mentor would give us a push in the right direction, but the rest was up to us.*”
 
@@ -377,9 +375,9 @@ I had mixed feelings about the show. Though dissatisfied with my presentation an
 
 <br>
 
-# Advice to Future Participants
+# Round-up Advice to Future BKLYN Fashion Academy Participants
 
-If you're considering applying, here is our collective advice:
+If you're considering applying, here's our collective wisdom:
 
 ## Apply!
 
@@ -407,7 +405,7 @@ Above all, remember to give yourself grace. While it is a lot of hard work, you 
 
 **My final piece of advice is to be clear about why you're doing this.** It's easy to get swept away and lose sight of why you decided to embark on this journey. Keeping your purpose in mind can offer peace of mind and make it easier to grant yourself the grace you deserve when things get tough.
 
-# What’s next for us after the BFA?
+# What’s next for us after the BKLYN Fashion Academy?
 
 ## Clothing that Makes People Happy
 
@@ -434,7 +432,7 @@ This journey for me has been more than just learning to design and construct gar
 
 The BFA experience has been a transformative journey for us. I hope that by sharing our experiences in this round-up, we can inspire others to take the leap and to commit to their own creative adventures despite challenges. Whether you’re a beginner or looking to push your creative boundaries and business opportunities, the BFA is a great stepping stone. 
 
-As Seth Godin wisely says, "*Let's call it art. The human act of doing something that might not work, something generous, something that will make a difference. Your art matters.*" And to all future BFA participants, 
+As Seth Godin wisely says, "*Let's call it art. The human act of doing something that might not work, something generous, something that will make a difference. Your art matters.*" And to all future BKLYN Fashion Academy participants, 
 >"*You have everything you need to make magic. Go make a ruckus.*" -Godin
 
 <sub>**Photography Credits:**
