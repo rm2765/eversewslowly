@@ -438,4 +438,4 @@ As Seth Godin wisely says, "*Let's call it art. The human act of doing something
 >"*You have everything you need to make magic. Go make a ruckus.*" -Godin
 
 <sub>**Photography Credits:**
-Profile portraits and event photography by [Gregg Richards](https://www.tryating.com), Brooklyn Public Library Staff Photographer. Website screenshots and canvas photos were taken by me.</sub>
+Profile portraits and event photography by [Gregg Richards](https://www.tryating.com), Brooklyn Public Library Staff Photographer. Website screenshots, cover photo and canvas photos were taken by me.</sub>
