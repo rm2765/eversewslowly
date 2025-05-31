@@ -11,7 +11,7 @@ categories:
   - BFA Series
   - Roundup
 fmContentType: Blog
-image: my_models_bts_2.jpg
+image: my_models_bts_2.webp
 summary: Last year, I joined the [BKLYN Fashion Academy](https://www.bklynlibrary.org/bklyn-fashion-academy#)'s sixth season—an incredible program that more aspiring designers should know about. The Academy (BFA) takes designers on a four-month journey to a runway finale. The 2024 cohort created mini-collections under the *Women in Future Industries* theme. I interviewed fellow designers Gia, Regina, and Ronen, and together, we tell it all—from the creative challenges that tested both our skills and resolve, to our growth as design professionals.
 toc: true
 insertTOC: true
@@ -95,26 +95,26 @@ galleryFour:
     content: "Model: Minaiel Shoaib, Women of Future Industry Role Model"
     button: Expand
 galleryFive:
-  - image: poster_runway_gia.jpg
-    thumb: poster_runway_gia.jpg
+  - image: poster_runway_gia.webp
+    thumb: poster_runway_gia.webp
     button: Expand
-  - image: walk_gia.jpg
-    thumb: walk_gia.jpg
+  - image: walk_gia.webp
+    thumb: walk_gia.webp
     button: Expand
-  - image: poster_runway_regina.jpg
-    thumb: poster_runway_regina.jpg
+  - image: poster_runway_regina.webp
+    thumb: poster_runway_regina.webp
     button: Expand
-  - image: poster_runway_ronen.jpg
-    thumb: poster_runway_ronen.jpg
+  - image: poster_runway_ronen.webp
+    thumb: poster_runway_ronen.webp
     button: Expand
-  - image: walk_ronen.jpg
-    thumb: walk_ronen.jpg
+  - image: walk_ronen.webp
+    thumb: walk_ronen.webp
     button: Expand
-  - image: poster_runway_rose.jpg
-    thumb: poster_runway_rose.jpg
+  - image: poster_runway_rose.webp
+    thumb: poster_runway_rose.webp
     button: Expand
-  - image: walk_rose.jpg
-    thumb: walk_rose.jpg
+  - image: walk_rose.webp
+    thumb: walk_rose.webp
     button: Expand
 items:
   - name: Stay-at-home mom with a degree in fashion design
