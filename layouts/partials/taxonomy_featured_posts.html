@@ -28,25 +28,20 @@
                   </a>
                  
                   <div class="style1 small lightbox onscroll-fade-in">
-                    <!-- Clickable image with hover overlay, fixed path for page bundle -->
+                    <!-- Improved image logic with proper resource handling -->
                     <a class="image" href="{{ .Permalink }}">
-                      {{ $imagePath := "" }}
-                      {{ with .Params.image }}
-                        {{ $imagePath = . }}
-                      {{ end }}
-                     
-                      {{ if $imagePath }}
-                        {{ $resource := .Resources.GetMatch $imagePath }}
+                      {{ $imageSrc := "" }}
+                      {{ if .Params.image }}
+                        {{ $resource := .Resources.GetMatch .Params.image }}
                         {{ if $resource }}
-                          <img src="{{ $resource.RelPermalink }}" alt="{{ .Title | default "Image" }}" loading="lazy" />
+                          {{ $imageSrc = $resource.RelPermalink }}
                         {{ else }}
-                          <!-- Check if the image is a path rather than a resource -->
-                          {{ if hasPrefix $imagePath "/" }}
-                            <img src="{{ $imagePath }}" alt="{{ .Title | default "Image" }}" loading="lazy" />
-                          {{ else }}
-                            <img src="{{ path.Join .RelPermalink $imagePath }}" alt="{{ .Title | default "Image" }}" loading="lazy" />
-                          {{ end }}
+                          {{ $imageSrc = .Params.image }}
                         {{ end }}
+                      {{ end }}
+                      
+                      {{ if $imageSrc }}
+                        <img src="{{ $imageSrc }}" alt="{{ .Title | default "Image" }}" loading="lazy" />
                       {{ else }}
                         <!-- Fallback: no image specified -->
                         <div class="no-image-placeholder" style="background-color: #f0f0f0; height: 200px; display: flex; align-items: center; justify-content: center;">
@@ -75,13 +70,9 @@
                     {{ if .Params.categories }}
                       <span class="post-categories">
                         <i class="fad fa-tag"></i>
-                        {{ $categories := .Params.categories }}
-                        {{ $categoryCount := len $categories }}
-                        {{ range $i, $category := $categories }}
+                        {{ range $i, $category := .Params.categories }}
                           {{ if and $category (ne $category "") }}
-                            {{ if gt $i 0 }}
-                              {{ if eq (add $i 1) $categoryCount }} and {{ else }}, {{ end }}
-                            {{ end }}
+                            {{ if gt $i 0 }}, {{ end }}
                             <a href="{{ "/categories/" | relURL }}{{ $category | urlize }}">{{ $category | humanize }}</a>
                           {{ end }}
                         {{ end }}
@@ -91,14 +82,10 @@
                  
                   <!-- Post summary with character limit -->
                   <div class="post-summary">
-                    {{ $summary := "" }}
                     {{ if .Summary }}
-                      {{ $summary = .Summary | plainify | truncate 150 }}
+                      <p>{{ .Summary | plainify | truncate 150 }}</p>
                     {{ else if .Content }}
-                      {{ $summary = .Content | plainify | truncate 150 }}
-                    {{ end }}
-                    {{ if $summary }}
-                      <p>{{ $summary }}</p>
+                      <p>{{ .Content | plainify | truncate 150 }}</p>
                     {{ end }}
                   </div>
                 </article>

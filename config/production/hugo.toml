@@ -16,7 +16,7 @@ publishDir = "public"
 ## -----------------------------------------------
 enableEmoji = true
 metaDataFormat = "yaml"
-timeout = "60s"  # This was missing and might help with your timeout issue!
+timeout = "120s"  # This was missing and might help with your timeout issue!
 
 ## -----------------------------------------------
 ## Minification (Production Only)
