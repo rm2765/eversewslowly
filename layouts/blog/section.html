@@ -1,7 +1,7 @@
 {{ define "main" }}
 
   {{ partial "menu-header" . }}
-  {{ partial "latest_blog_post" site.Data.blog_spotlight }}
+  {{ partial "latest_blog_post" (dict "style" site.Data.blog_spotlight.style "id" site.Data.blog_spotlight.id) }}
   {{ partial "featured-posts" site.Data.featured_posts}}
   {{ partial "blog-taxonomies-buttons" . }}
 
