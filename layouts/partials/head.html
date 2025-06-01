@@ -29,4 +29,13 @@
 		<link rel="stylesheet" href="{{ . | absURL }}">
 	{{- end }}
 
+	<!-- Custom JavaScript -->
+	{{ if hugo.IsServer }}
+	{{ $js := resources.Get "js/main.js" }}
+	<script src="{{ $js.RelPermalink }}"></script>
+	{{ else }}
+	{{ $js := resources.Get "js/main.js" | minify | fingerprint }}
+	<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
+	{{ end }}
+
 </head>
