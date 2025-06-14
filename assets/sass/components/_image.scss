@@ -77,3 +77,16 @@
     img { width: 100%; }
   }
 }
+
+@include breakpoint('<=small') {
+  .image,
+  .image img,
+  .image.fit,
+  .image.main {
+    width: 100% !important;
+    max-width: 100% !important;
+    float: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
