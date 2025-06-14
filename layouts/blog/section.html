@@ -4,5 +4,7 @@
   {{ partial "latest_blog_post" (dict "style" site.Data.blog_spotlight.style "id" site.Data.blog_spotlight.id) }}
   {{ partial "featured-posts" site.Data.featured_posts}}
   {{ partial "blog-taxonomies-buttons" . }}
+  {{ partial "newsletter_inline" site.Data.newsletter_inline}}
+
 
 {{ end }}

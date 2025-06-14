@@ -1,0 +1,75 @@
+<section class="wrapper style2 align-center">
+  <div class="inner">
+      {{ with site.Data.newsletter_inline.title}}
+        <h2>{{ . }}</h2>{{ end }}
+      {{ with site.Data.newsletter_inline.subtitle }}
+        <p class="subtitle">{{ . }}</p>{{ end }}
+
+      {{ with site.Data.newsletter_inline.content }}
+        <p>{{ . }}</p>{{ end }}
+      <div class="email-octopus-form">
+        <script async src="https://eocampaign1.com/form/{{ site.Data.newsletter_inline.form_id }}.js" data-form="{{ site.Data.newsletter_inline.form_id }}"></script>
+    </div>
+  </div>
+</section>
+
+<style>
+/* Apply EmailOctopus styling variables */
+[data-form="ea500138-4914-11f0-b8ca-3bcf1751ec19"] .emailoctopus-form {
+  --label-size: 12px;
+  --field-colour: #FFFFFF;
+  --label-colour: #212529;
+  --button-colour: #000000;
+  --button-text-colour: #FFFFFF !important;
+  --field-border-colour: #CED4DA;
+}
+
+[data-form="ea500138-4914-11f0-b8ca-3bcf1751ec19"].inline-container {
+  max-width: 100% !important;
+  position: relative;
+}
+
+/* Target the specific form and override */
+[data-form="ea500138-4914-11f0-b8ca-3bcf1751ec19"] .btn {
+  all: unset;
+  display: inline-block;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.8rem;
+  line-height: 4em;
+  height: 4em;
+  border-radius: 4em;
+  padding: 0 3em;
+  color: #FFFFFF !important;
+  text-align: center;
+  cursor: pointer;
+  max-width: 20rem;
+  width: 100%; /* acts like .fit */
+}
+
+/* Hover and active states */
+[data-form="ea500138-4914-11f0-b8ca-3bcf1751ec19"] .btn:hover {
+  /* color: #8F80E0 !important;  slightly darker */
+  color: #eeeeee !important;
+  background-color: #837164 !important;
+
+}
+/*
+[data-form="ea500138-4914-11f0-b8ca-3bcf1751ec19"] .btn:active {
+  background-color: #6C5FCF;
+}*/
+
+/* Responsive iframe */
+.emailoctopus-form-wrapper iframe {
+  max-width: 100% !important;
+  width: 100% !important;
+  min-height: 300px;
+  border: none;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 1em;
+}
+</style>
