@@ -1,6 +1,27 @@
+<!-- Updated HTML for Hugo header -->
 <header class="main-header">
-    <div class="container"> <!-- Optional container for centering content -->
-        <nav class="main-nav">
+    <div class="container">
+        <!-- Logo and Hamburger for mobile -->
+        <div class="mobile-header">
+            <div class="logo-title">
+                <h3><a href="{{ site.BaseURL }}">Ever Sew Slowly</a></h3>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <nav class="main-nav" id="mainNav">
+            <!-- Mobile search panel (inside nav for mobile) -->
+            <div class="mobile-search">
+                <input type="text" placeholder="Search..." id="mobileSearchInput">
+                <a href="#" class="button primary fit small" id="mobileSearchButton">
+                    <i class="fa fa-search"></i>
+                </a>
+            </div>
+
             <ul>
                 <!-- Static Menu Items with active class conditions -->
                 <li class="{{ if or (eq $.RelPermalink "/") (eq $.Permalink site.BaseURL) }}active{{ end }}">
@@ -28,14 +49,107 @@
                 {{ end }}
             </ul>
         </nav>
-        <div class="search-panel" style="display: flex; align-items: center;">
-            <input type="text" placeholder="Search..." style="margin-right: 0.5rem;">
-            <ul class="icons" style="margin: 0; padding: 0;">
+
+        <!-- Desktop search panel -->
+        <div class="search-panel">
+            <input type="text" placeholder="Search..." id="desktopSearchInput">
+            <ul class="icons">
                 <li>
-                    <!-- Replaced fa-dribbble with fa-search. Adjust the FontAwesome classes as needed -->
-                    <a href="#" class="icon style2 fa-search"></a>
+                    <a href="#" class="icon style2 fa-search" id="desktopSearchButton"></a>
                 </li>
             </ul>
         </div>
     </div>
 </header>
+
+<!-- Add this JavaScript before closing </body> tag -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.getElementById('hamburger');
+    const mainNav = document.getElementById('mainNav');
+    const body = document.body;
+
+    if (hamburger && mainNav) {
+        hamburger.addEventListener('click', function() {
+            hamburger.classList.toggle('active');
+            mainNav.classList.toggle('active');
+            body.classList.toggle('menu-open');
+        });
+
+        // Close menu when clicking on nav links (mobile)
+        const navLinks = mainNav.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                if (window.innerWidth <= 768) {
+                    hamburger.classList.remove('active');
+                    mainNav.classList.remove('active');
+                    body.classList.remove('menu-open');
+                }
+            });
+        });
+
+        // Close menu when clicking outside (mobile)
+        document.addEventListener('click', function(event) {
+            if (window.innerWidth <= 768) {
+                if (!mainNav.contains(event.target) && !hamburger.contains(event.target)) {
+                    hamburger.classList.remove('active');
+                    mainNav.classList.remove('active');
+                    body.classList.remove('menu-open');
+                }
+            }
+        });
+
+        // Handle window resize
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 768) {
+                hamburger.classList.remove('active');
+                mainNav.classList.remove('active');
+                body.classList.remove('menu-open');
+            }
+        });
+    }
+
+    // Search functionality
+    function handleSearch(searchInput) {
+        const query = searchInput.value.trim();
+        if (query) {
+            // Implement your search logic here
+            // For example, redirect to search page:
+            window.location.href = `{{ site.BaseURL }}/search?q=${encodeURIComponent(query)}`;
+        }
+    }
+
+    // Desktop search
+    const desktopSearchButton = document.getElementById('desktopSearchButton');
+    const desktopSearchInput = document.getElementById('desktopSearchInput');
+    
+    if (desktopSearchButton && desktopSearchInput) {
+        desktopSearchButton.addEventListener('click', function(e) {
+            e.preventDefault();
+            handleSearch(desktopSearchInput);
+        });
+
+        desktopSearchInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                handleSearch(this);
+            }
+        });
+    }
+
+    // Mobile search
+    const mobileSearchButton = document.getElementById('mobileSearchButton');
+    const mobileSearchInput = document.getElementById('mobileSearchInput');
+    
+    if (mobileSearchButton && mobileSearchInput) {
+        mobileSearchButton.addEventListener('click', function() {
+            handleSearch(mobileSearchInput);
+        });
+
+        mobileSearchInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                handleSearch(this);
+            }
+        });
+    }
+});
+</script>
