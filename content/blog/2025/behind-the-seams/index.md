@@ -134,6 +134,7 @@ keywords:
   - beginner to confident designer
   - BKLYN Fashion Academy
   - Brooklyn Fashion Academy
+  - Brooklyn Public Library
   - creative
   - designing a collection
   - doubt
@@ -147,7 +148,7 @@ keywords:
   - sustainable fabric sourcing
   - time management
   - women in future industries
-  - emerging fashion designers
+  - emerging designers
 ---
 {{< figure src="bfa24_promo.png" alt="BKLYN Fashion Academy 2024 Promo Flyer" caption="BKLYN Fashion Academy 2024 Promo Flyer" class="image right medium" >}} 
 Last year, I joined the [BKLYN Fashion Academy](https://www.bklynlibrary.org/bklyn-fashion-academy#)'s sixth season—an incredible program that more aspiring designers should know about. The Academy (BFA) takes designers on a four-month journey to a runway finale. The 2024 cohort created mini-collections under the *Women in Future Industries* theme. I interviewed fellow designers Gia, Regina, and Ronen, and together, we tell it all—from the creative challenges that tested both our skills and resolve, to our growth as design professionals. Our accounts reveal the program's essence: a journey that validates fashion aspirations, expands creative boundaries, and builds professional resilience. Our candid insights can help anyone considering this opportunity and, who knows, it could be the catalyst for your own design career.
