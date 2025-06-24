@@ -1,0 +1,787 @@
+<!DOCTYPE HTML>
+
+<html>
+	
+	<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=52732&amp;path=livereload" data-no-instant defer></script>
+	<title>Ever Sew Slowly</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="description" content="">
+	<meta name="author" content="">
+	
+	<meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">	
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../../favicon-16x16.png">
+    <link rel="manifest" href="../../../site.webmanifest">
+    <link rel="mask-icon" href="../../../safari-pinned-tab.svg" color="#5bbad5">
+	
+	
+	
+	
+	
+	<link rel="stylesheet" href="../../../css/main.css">
+	
+	
+	
+	<noscript><link rel="stylesheet" href="../../../css/noscript.css" /></noscript>
+	
+
+	
+	<link rel="stylesheet" href="http://localhost:52732/css/fontawesome-all.min.css">
+
+	
+	
+	
+	<script src="../../../js/main.js"></script>
+	
+
+	
+
+</head>
+
+
+	<body class="is-preload">
+
+		
+		<div id="wrapper" class="divided">
+
+<header class="main-header">
+    <div class="container">
+        
+        <div class="mobile-header">
+            <div class="logo-title">
+                <h3><a href="http://localhost:52732/">Ever Sew Slowly</a></h3>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <nav class="main-nav" id="mainNav">
+            
+            <div class="mobile-search">
+                <input type="text" placeholder="Search..." id="mobileSearchInput">
+                <a href="#" class="button primary fit small" id="mobileSearchButton">
+                    <i class="fa fa-search"></i>
+                </a>
+            </div>
+
+            <ul>
+                
+                <li class="">
+                    <a href="http://localhost:52732/">Home</a>
+                </li>
+                <li class="active">
+                    <a href="http://localhost:52732//blog">Blog</a>
+                </li>
+                <li class="">
+                    <a href="http://localhost:52732//gallery">Gallery</a>
+                </li>
+                <li class="">
+                    <a href="http://localhost:52732//learn">Learn</a>
+                </li>
+                <li class="">
+                    <a href="http://localhost:52732//connect">Connect</a>
+                </li>
+                
+                
+            </ul>
+        </nav>
+
+        
+        <div class="search-panel">
+            <input type="text" placeholder="Search..." id="desktopSearchInput">
+            <ul class="icons">
+                <li>
+                    <a href="#" class="icon style2 fa-search" id="desktopSearchButton"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.getElementById('hamburger');
+    const mainNav = document.getElementById('mainNav');
+    const body = document.body;
+
+    if (hamburger && mainNav) {
+        hamburger.addEventListener('click', function() {
+            hamburger.classList.toggle('active');
+            mainNav.classList.toggle('active');
+            body.classList.toggle('menu-open');
+        });
+
+        
+        const navLinks = mainNav.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                if (window.innerWidth <= 768) {
+                    hamburger.classList.remove('active');
+                    mainNav.classList.remove('active');
+                    body.classList.remove('menu-open');
+                }
+            });
+        });
+
+        
+        document.addEventListener('click', function(event) {
+            if (window.innerWidth <= 768) {
+                if (!mainNav.contains(event.target) && !hamburger.contains(event.target)) {
+                    hamburger.classList.remove('active');
+                    mainNav.classList.remove('active');
+                    body.classList.remove('menu-open');
+                }
+            }
+        });
+
+        
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 768) {
+                hamburger.classList.remove('active');
+                mainNav.classList.remove('active');
+                body.classList.remove('menu-open');
+            }
+        });
+    }
+
+    
+    function handleSearch(searchInput) {
+        const query = searchInput.value.trim();
+        if (query) {
+            
+            
+            window.location.href = `http:\/\/localhost:52732\//search?q=${encodeURIComponent(query)}`;
+        }
+    }
+
+    
+    const desktopSearchButton = document.getElementById('desktopSearchButton');
+    const desktopSearchInput = document.getElementById('desktopSearchInput');
+    
+    if (desktopSearchButton && desktopSearchInput) {
+        desktopSearchButton.addEventListener('click', function(e) {
+            e.preventDefault();
+            handleSearch(desktopSearchInput);
+        });
+
+        desktopSearchInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                handleSearch(this);
+            }
+        });
+    }
+
+    
+    const mobileSearchButton = document.getElementById('mobileSearchButton');
+    const mobileSearchInput = document.getElementById('mobileSearchInput');
+    
+    if (mobileSearchButton && mobileSearchInput) {
+        mobileSearchButton.addEventListener('click', function() {
+            handleSearch(mobileSearchInput);
+        });
+
+        mobileSearchInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                handleSearch(this);
+            }
+        });
+    }
+});
+</script>
+<section class="banner style2"  style="background-color: rgba(255, 255, 255, 0.85);">
+    <div class="content">
+
+        <h1>Nine Things You Should Know About the BKLYN Fashion Academy</h1>
+        <p class="major">What I Wish I Knew Before Starting</p>
+        
+        <hr style="margin: 5px; height: 0;">
+
+            <div class="meta-info">
+              <div class="meta-item">
+                <i class="fad fa-calendar-alt fa-lg"></i>
+                  <span>Jun 23, 2025</span>
+                </div>
+              <div class="meta-item">
+                <i class="fad fa-clock fa-lg"></i>
+                <span>4 minutes</span>
+              </div>
+            </div>
+
+      </div>
+      
+  
+    <div class="image">
+      <img src="central_library.jpg" loading="lazy" decoding="async" alt="Nine Things You Should Know About the BKLYN Fashion Academy">
+    </div>
+  
+</section>
+<section class="wrapper style2">
+    <div class="content">
+        <div class="meta-container">
+            <div class="meta-categories-tags">
+                
+                
+                    <a class="button primary small" href="../../../categories/bklyn-fashion-academy-series" class="category-link">Bklyn fashion academy series</a>
+                    
+                    <a class="button primary small" href="../../../categories/list" class="category-link">List</a>
+                    
+                
+               
+                
+                    
+                    <a class="button small" href="../../../tags/emerging-designers">Emerging designers</a>
+                    
+                    <a class="button small" href="../../../tags/runway-show">Runway show</a>
+                    
+                
+            </div>
+
+            
+            <script src="../../../js/clipboard.6a3adc2369f3e5dbc2f660d75108bfe82c075bbb0f7fce01fb1d8231176ba28f.js"></script>
+
+            
+            <ul class="icons share-icons">
+                <li><a href="https://pinterest.com/pin/create/button/?url=http%3a%2f%2flocalhost%3a52732%2fblog%2f2025%2fnine-things-you-should-know-about-the-bklyn-fashion-academy%2f&media=central_library.jpg&description=Nine%20Things%20You%20Should%20Know%20About%20the%20BKLYN%20Fashion%20Academy" class="icon brands style1 fa-pinterest" target="_blank" title="Share on Pinterest">
+                    <span class="label">Share on Pinterest</span></a></li>
+                <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a52732%2fblog%2f2025%2fnine-things-you-should-know-about-the-bklyn-fashion-academy%2f" target="_blank" title="Share on Facebook" class="icon brands style1 fa-facebook-f">
+                    <span class="label">Share on Facebook</span></a></li>
+                <li><a href="https://www.linkedin.com/sharing/share-offsite/?url=http%3a%2f%2flocalhost%3a52732%2fblog%2f2025%2fnine-things-you-should-know-about-the-bklyn-fashion-academy%2f" target="_blank" title="Share on LinkedIn" class="icon brands style1 fa-linkedin">
+                    <span class="label">Share on LinkedIn</span></a></li>
+                <li><a onclick="copyToClipboard('http:\/\/localhost:52732\/blog\/2025\/nine-things-you-should-know-about-the-bklyn-fashion-academy\/')" class="icon style1 fa-link" title="Copy Link" style="cursor: pointer;">
+                    <span class="label">Copy Link</span></a></li>
+            </ul>
+        </div>    
+         <div id="top"></div>
+      
+
+
+
+<br>
+      
+
+
+
+
+  <h2 id="here-are-the-nine-things-you-should-know-before-you-apply">Here are the nine things you should know before you apply.</h2>
+
+
+<p>Do you dream of seeing your designs on a runway, launching a fashion line, or joining a community of like-minded creatives? For aspiring designers who are ready to leap into the world of fashion, the BKLYN Fashion Academy (BFA) offers a rare, intensive journey to transform your vision into reality. But what makes this program so different, so highly regarded?</p>
+
+
+
+
+
+  <h3 id="1-its-not-a-competition-its-a-community">1. It&rsquo;s Not a Competition, It’s a Community.</h3>
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+  <figure class="figure image fit">
+    <picture>
+      
+      <source srcset="../../../blog/2025/nine-things-you-should-know-about-the-bklyn-fashion-academy/fabscrap_group_hu_3c2daada3bc68d8c.webp 2x, ../../../blog/2025/nine-things-you-should-know-about-the-bklyn-fashion-academy/fabscrap_group_hu_90c86e0e08434508.webp 1x" media="(min-width: 600px)" type="image/webp">
+      <source srcset="../../../blog/2025/nine-things-you-should-know-about-the-bklyn-fashion-academy/fabscrap_group_hu_144d855bd28f2fed.webp" type="image/webp" media="(max-width: 599px)">
+
+      
+      <source srcset="../../../blog/2025/nine-things-you-should-know-about-the-bklyn-fashion-academy/fabscrap_group_hu_3af03ecead188e9a.png 2x, ../../../blog/2025/nine-things-you-should-know-about-the-bklyn-fashion-academy/fabscrap_group_hu_f3e8b416129cc52e.png 1x" media="(min-width: 600px)">
+      <source srcset="../../../blog/2025/nine-things-you-should-know-about-the-bklyn-fashion-academy/fabscrap_group_hu_c03d4a85dc5ae42a.png" media="(max-width: 599px)">
+
+      
+      <img 
+        src="../../../blog/2025/nine-things-you-should-know-about-the-bklyn-fashion-academy/fabscrap_group_hu_f3e8b416129cc52e.png"
+        srcset="../../../blog/2025/nine-things-you-should-know-about-the-bklyn-fashion-academy/fabscrap_group_hu_f3e8b416129cc52e.png 1x, ../../../blog/2025/nine-things-you-should-know-about-the-bklyn-fashion-academy/fabscrap_group_hu_3af03ecead188e9a.png 2x"
+        sizes="(max-width: 600px) 100vw, 800px"
+        alt="BKLYN Fashion Academy 2024 Promo Flyer"
+        loading="lazy"
+        decoding="async"
+        width="800"
+        height="404"
+      >
+    </picture>
+    
+      <figcaption>BKLYN Fashion Academy 2024 Promo Flyer</figcaption>
+    
+  </figure>
+
+
+<p>The Brooklyn Fashion Academy isn’t about beating the designer next to you; it’s about learning together, side by side, in a community-driven environment. You’ll quickly discover that the real goal isn’t to outdo others, but to push your own boundaries and grow with the support of instructors and peers alike.</p>
+
+
+
+
+
+  <h3 id="2-its-the-only-program-of-its-kind-in-the-us">2. It’s the Only Program of Its Kind in the U.S.</h3>
+
+
+<p>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+   
+   
+   
+   
+   
+   
+ 
+   <figure class="figure image left small">
+     <picture>
+       
+       <source srcset="../../../blog/2025/nine-things-you-should-know-about-the-bklyn-fashion-academy/bfa_logo_hu_91dca6626eb1f30a.webp 2x, ../../../blog/2025/nine-things-you-should-know-about-the-bklyn-fashion-academy/bfa_logo_hu_f6d139f258ccea92.webp 1x" media="(min-width: 600px)" type="image/webp">
+       <source srcset="../../../blog/2025/nine-things-you-should-know-about-the-bklyn-fashion-academy/bfa_logo_hu_d3d6dabf70304d55.webp" type="image/webp" media="(max-width: 599px)">
+ 
+       
+       <source srcset="../../../blog/2025/nine-things-you-should-know-about-the-bklyn-fashion-academy/bfa_logo_hu_f9b6ff8303644fc7.png 2x, ../../../blog/2025/nine-things-you-should-know-about-the-bklyn-fashion-academy/bfa_logo_hu_75f64e172752cca2.png 1x" media="(min-width: 600px)">
+       <source srcset="../../../blog/2025/nine-things-you-should-know-about-the-bklyn-fashion-academy/bfa_logo_hu_5f85b628fc506462.png" media="(max-width: 599px)">
+ 
+       
+       <img 
+         src="../../../blog/2025/nine-things-you-should-know-about-the-bklyn-fashion-academy/bfa_logo_hu_75f64e172752cca2.png"
+         srcset="../../../blog/2025/nine-things-you-should-know-about-the-bklyn-fashion-academy/bfa_logo_hu_75f64e172752cca2.png 1x, ../../../blog/2025/nine-things-you-should-know-about-the-bklyn-fashion-academy/bfa_logo_hu_f9b6ff8303644fc7.png 2x"
+         sizes="(max-width: 600px) 100vw, 800px"
+         alt="BKLYN Fashion Academy 2024 Promo Flyer"
+         loading="lazy"
+         decoding="async"
+         width="800"
+         height="801"
+       >
+     </picture>
+     
+       <figcaption>BKLYN Fashion Academy 2024 Promo Flyer</figcaption>
+     
+   </figure>
+ 
+
+Hosted by the Brooklyn Public Library, the BFA is completely free and unlike any other program in the country. It blends design, business training, mentorship, and technical labs—all from inside a public institution. It&rsquo;s a new model for accessible fashion education. In my complete guide of the BFA post, I go over the backstory to the program&rsquo;s origins and development.</p>
+<br>
+
+
+
+
+
+  <h3 id="3-prepare-to-face-your-toughest-criticyourself">3. Prepare to Face Your Toughest Critic—Yourself.</h3>
+
+
+<p>You might expect your mentors to be your biggest challengers, but in reality, your toughest critic will likely be the one in the mirror. Every decision, from fabric choice to fit, will confront you with questions about your skill, vision, and dedication. Here, you’ll be pushed not only to create but to self-reflect in ways you may not expect.</p>
+
+
+
+
+
+  <h3 id="4-pacing-starts-slow--then-ramps-up-real-fast-at-the-end">4. Pacing Starts Slow &hellip; Then Ramps Up Real Fast at the End.</h3>
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+   
+   
+   
+   
+   
+   
+ 
+   <figure class="figure image fit">
+     <picture>
+       
+       <source srcset="../../../blog/2025/nine-things-you-should-know-about-the-bklyn-fashion-academy/wip_hu_d809de1b4f82f57d.webp 2x, ../../../blog/2025/nine-things-you-should-know-about-the-bklyn-fashion-academy/wip_hu_ca9a09adaeb7bf1d.webp 1x" media="(min-width: 600px)" type="image/webp">
+       <source srcset="../../../blog/2025/nine-things-you-should-know-about-the-bklyn-fashion-academy/wip_hu_3b3d952aad51ceef.webp" type="image/webp" media="(max-width: 599px)">
+ 
+       
+       <source srcset="../../../blog/2025/nine-things-you-should-know-about-the-bklyn-fashion-academy/wip_hu_9e8a41c45e974dee.jpg 2x, ../../../blog/2025/nine-things-you-should-know-about-the-bklyn-fashion-academy/wip_hu_da545bcc79519ccb.jpg 1x" media="(min-width: 600px)">
+       <source srcset="../../../blog/2025/nine-things-you-should-know-about-the-bklyn-fashion-academy/wip_hu_450275c6884dfa3a.jpg" media="(max-width: 599px)">
+ 
+       
+       <img 
+         src="../../../blog/2025/nine-things-you-should-know-about-the-bklyn-fashion-academy/wip_hu_da545bcc79519ccb.jpg"
+         srcset="../../../blog/2025/nine-things-you-should-know-about-the-bklyn-fashion-academy/wip_hu_da545bcc79519ccb.jpg 1x, ../../../blog/2025/nine-things-you-should-know-about-the-bklyn-fashion-academy/wip_hu_9e8a41c45e974dee.jpg 2x"
+         sizes="(max-width: 600px) 100vw, 800px"
+         alt="BKLYN Fashion Academy 2024 Promo Flyer"
+         loading="lazy"
+         decoding="async"
+         width="800"
+         height="600"
+       >
+     </picture>
+     
+       <figcaption>BKLYN Fashion Academy 2024 Promo Flyer</figcaption>
+     
+   </figure>
+ 
+
+<p>The first few weeks might feel like a comfortable warm-up, but don’t be fooled. As deadlines approach, the pacing accelerates, challenging even the most seasoned creators to stay organized, balanced, and driven. This is where time management becomes an important, if not, the most important part of the creative process. The final stretch is all about crunch time, pushing your limits to deliver your best work under pressure.</p>
+
+
+
+
+
+  <h3 id="5-expect-tough-love">5. Expect Tough Love.</h3>
+
+
+<p>At the BFA, constructive criticism is part of the package. Instructors are here to make you better, not to coddle you. So don’t take it personally if the feedback feels intense; instead, embrace it as a sign of how deeply invested they are in your growth.</p>
+
+
+
+
+
+  <h3 id="6-youll-learn-business-not-just-how-to-design-a-collection">6. You’ll Learn Business, Not Just How to Design a Collection.</h3>
+
+
+<p>Fashion is as much about business as it is about design. From sourcing and budgeting to pricing and presentation, you’ll leave the BFA with more than a collection—you’ll have the foundation of a brand. If you’re serious about launching your own label, the BFA will introduce you to the tools and insights you need to turn your creative vision into a sustainable business.</p>
+
+
+
+
+
+  <h3 id="7-technical-labs--mentor-sessions-are-a-lifelineuse-them-intentionally">7. Technical Labs &amp; Mentor Sessions Are a Lifeline—Use Them Intentionally</h3>
+
+
+<p>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+   
+   
+   
+   
+   
+   
+ 
+   <figure class="figure image fit">
+     <picture>
+       
+       <source srcset="../../../blog/2025/nine-things-you-should-know-about-the-bklyn-fashion-academy/tough_love_hu_b2934a8639e40bcc.webp 2x, ../../../blog/2025/nine-things-you-should-know-about-the-bklyn-fashion-academy/tough_love_hu_33fc3b67e2591146.webp 1x" media="(min-width: 600px)" type="image/webp">
+       <source srcset="../../../blog/2025/nine-things-you-should-know-about-the-bklyn-fashion-academy/tough_love_hu_438dee4d51066dd2.webp" type="image/webp" media="(max-width: 599px)">
+ 
+       
+       <source srcset="../../../blog/2025/nine-things-you-should-know-about-the-bklyn-fashion-academy/tough_love_hu_13ee593acc7b7e55.png 2x, ../../../blog/2025/nine-things-you-should-know-about-the-bklyn-fashion-academy/tough_love_hu_8956c5f321fca15d.png 1x" media="(min-width: 600px)">
+       <source srcset="../../../blog/2025/nine-things-you-should-know-about-the-bklyn-fashion-academy/tough_love_hu_1978b8caa54bf1ed.png" media="(max-width: 599px)">
+ 
+       
+       <img 
+         src="../../../blog/2025/nine-things-you-should-know-about-the-bklyn-fashion-academy/tough_love_hu_8956c5f321fca15d.png"
+         srcset="../../../blog/2025/nine-things-you-should-know-about-the-bklyn-fashion-academy/tough_love_hu_8956c5f321fca15d.png 1x, ../../../blog/2025/nine-things-you-should-know-about-the-bklyn-fashion-academy/tough_love_hu_13ee593acc7b7e55.png 2x"
+         sizes="(max-width: 600px) 100vw, 800px"
+         alt="BKLYN Fashion Academy 2024 Promo Flyer"
+         loading="lazy"
+         decoding="async"
+         width="800"
+         height="521"
+       >
+     </picture>
+     
+       <figcaption>BKLYN Fashion Academy 2024 Promo Flyer</figcaption>
+     
+   </figure>
+ 
+
+Come prepared to troubleshoot in real time, ask questions, and apply feedback. With a cohort of around 15 designers, mentor time is limited and goes quickly—so knowing what you need help with matters. If you hesitate, you might miss out on insight that could save you hours later. That said, the wisdom shared doesn’t just come from instructors. Your peers bring diverse backgrounds and experiences, and often, the most memorable lessons come from the conversations happening at the next table over.</p>
+
+
+
+
+
+  <h3 id="8-the-runway-isnt-a-final-showcaseits-a-beginning">8. The Runway Isn’t a Final Showcase—It’s a Beginning.</h3>
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+   
+   
+   
+   
+   
+   
+ 
+   <figure class="figure image fit">
+     <picture>
+       
+       <source srcset="../../../blog/2025/nine-things-you-should-know-about-the-bklyn-fashion-academy/poster_runway_rose_hu_1788fc29e5bbcbb1.webp 2x, ../../../blog/2025/nine-things-you-should-know-about-the-bklyn-fashion-academy/poster_runway_rose_hu_e5e2040d1f834fc4.webp 1x" media="(min-width: 600px)" type="image/webp">
+       <source srcset="../../../blog/2025/nine-things-you-should-know-about-the-bklyn-fashion-academy/poster_runway_rose_hu_2839dc2210217258.webp" type="image/webp" media="(max-width: 599px)">
+ 
+       
+       <source srcset="../../../blog/2025/nine-things-you-should-know-about-the-bklyn-fashion-academy/poster_runway_rose_hu_97d397d068ac5165.webp 2x, ../../../blog/2025/nine-things-you-should-know-about-the-bklyn-fashion-academy/poster_runway_rose_hu_55771e98100e09b9.webp 1x" media="(min-width: 600px)">
+       <source srcset="../../../blog/2025/nine-things-you-should-know-about-the-bklyn-fashion-academy/poster_runway_rose_hu_590680e766e7adac.webp" media="(max-width: 599px)">
+ 
+       
+       <img 
+         src="../../../blog/2025/nine-things-you-should-know-about-the-bklyn-fashion-academy/poster_runway_rose_hu_55771e98100e09b9.webp"
+         srcset="../../../blog/2025/nine-things-you-should-know-about-the-bklyn-fashion-academy/poster_runway_rose_hu_55771e98100e09b9.webp 1x, ../../../blog/2025/nine-things-you-should-know-about-the-bklyn-fashion-academy/poster_runway_rose_hu_97d397d068ac5165.webp 2x"
+         sizes="(max-width: 600px) 100vw, 800px"
+         alt="BKLYN Fashion Academy 2024 Promo Flyer"
+         loading="lazy"
+         decoding="async"
+         width="800"
+         height="534"
+       >
+     </picture>
+     
+       <figcaption>BKLYN Fashion Academy 2024 Promo Flyer</figcaption>
+     
+   </figure>
+ 
+
+<p>The final runway show isn’t just a celebration; it’s your first real chance to present your work to the world, to industry insiders, and to potential clients. More than just a capstone, this event can serve as a launchpad for your career, helping you gauge your brand’s reception and make valuable connections.</p>
+
+
+
+
+
+  <h3 id="9-its-an-emotional-investmentexpect-highs-lows-and-growth">9. It’s an Emotional Investment—Expect Highs, Lows, and Growth.</h3>
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+   
+   
+   
+   
+   
+   
+ 
+   <figure class="figure image fit">
+     <picture>
+       
+       <source srcset="../../../blog/2025/nine-things-you-should-know-about-the-bklyn-fashion-academy/pic_with_models_hu_3343dec4e23c9d78.webp 2x, ../../../blog/2025/nine-things-you-should-know-about-the-bklyn-fashion-academy/pic_with_models_hu_3ef508215c9593ee.webp 1x" media="(min-width: 600px)" type="image/webp">
+       <source srcset="../../../blog/2025/nine-things-you-should-know-about-the-bklyn-fashion-academy/pic_with_models_hu_ee0050eb10ed879f.webp" type="image/webp" media="(max-width: 599px)">
+ 
+       
+       <source srcset="../../../blog/2025/nine-things-you-should-know-about-the-bklyn-fashion-academy/pic_with_models_hu_c9604e63fdc1e607.png 2x, ../../../blog/2025/nine-things-you-should-know-about-the-bklyn-fashion-academy/pic_with_models_hu_daf1c4705faed79e.png 1x" media="(min-width: 600px)">
+       <source srcset="../../../blog/2025/nine-things-you-should-know-about-the-bklyn-fashion-academy/pic_with_models_hu_54530bf44d218ecf.png" media="(max-width: 599px)">
+ 
+       
+       <img 
+         src="../../../blog/2025/nine-things-you-should-know-about-the-bklyn-fashion-academy/pic_with_models_hu_daf1c4705faed79e.png"
+         srcset="../../../blog/2025/nine-things-you-should-know-about-the-bklyn-fashion-academy/pic_with_models_hu_daf1c4705faed79e.png 1x, ../../../blog/2025/nine-things-you-should-know-about-the-bklyn-fashion-academy/pic_with_models_hu_c9604e63fdc1e607.png 2x"
+         sizes="(max-width: 600px) 100vw, 800px"
+         alt="BKLYN Fashion Academy 2024 Promo Flyer"
+         loading="lazy"
+         decoding="async"
+         width="800"
+         height="594"
+       >
+     </picture>
+     
+       <figcaption>BKLYN Fashion Academy 2024 Promo Flyer</figcaption>
+     
+   </figure>
+ 
+
+<p>From the excitement of breakthroughs to the frustration of creative blocks, you’ll experience a spectrum of emotions. The emotional rollercoaster is part of the process—and by the end, you’ll not only be a better designer, but a more resilient one.</p>
+<hr>
+<p><sub>Check out my Instagram highlights for a real-time look at my experience in the BFA program.</sub></p>
+
+      
+        <a href="#top" style="align-items: center;">↥ Back to Top</a></div>
+
+
+    </div>
+</section>
+<section class="wrapper style1 align-center">
+    <div class="inner">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <ul>
+                <h3>
+                    
+                    
+                    
+                        
+                        
+                        
+                        
+                            
+                                <li><a href="../../../">Home</a></li>
+                                
+                            
+                        
+                            
+                                <li><a href="../../../blog/">Blog</a></li>
+                                
+                            
+                        
+                    
+                    
+                    
+                    <li><span class="current">Nine Things You Should Know About the BKLYN Fashion Academy</span></li>
+                </h3>
+            </ul>
+        </nav>  
+    </div>
+</section>
+<section class="wrapper style2 align-center">
+  <div class="inner">
+      
+        <h2>Stay in the Loop</h2>
+      
+        <p class="subtitle">Get updates on refashion projects, tutorials, and behind-the-scenes stories.</p>
+
+      
+      <div class="email-octopus-form">
+        <script async src="https://eocampaign1.com/form/ea500138-4914-11f0-b8ca-3bcf1751ec19.js" data-form="ea500138-4914-11f0-b8ca-3bcf1751ec19"></script>
+    </div>
+  </div>
+</section>
+
+<style>
+ 
+[data-form="ea500138-4914-11f0-b8ca-3bcf1751ec19"] .emailoctopus-form {
+  --label-size: 12px;
+  --field-colour: #FFFFFF;
+  --label-colour: #212529;
+  --button-colour: #000000;
+  --button-text-colour: #FFFFFF !important;
+  --field-border-colour: #CED4DA;
+}
+
+[data-form="ea500138-4914-11f0-b8ca-3bcf1751ec19"].inline-container {
+  max-width: 100% !important;
+  position: relative;
+}
+
+ 
+[data-form="ea500138-4914-11f0-b8ca-3bcf1751ec19"] .btn {
+  all: unset;
+  display: inline-block;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.8rem;
+  line-height: 4em;
+  height: 4em;
+  border-radius: 4em;
+  padding: 0 3em;
+  color: #FFFFFF !important;
+  text-align: center;
+  cursor: pointer;
+  max-width: 20rem;
+  width: 100%;  
+}
+
+ 
+[data-form="ea500138-4914-11f0-b8ca-3bcf1751ec19"] .btn:hover {
+   
+  color: #eeeeee !important;
+  background-color: #837164 !important;
+
+}
+ 
+
+ 
+.emailoctopus-form-wrapper iframe {
+  max-width: 100% !important;
+  width: 100% !important;
+  min-height: 300px;
+  border: none;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 1em;
+}
+</style>
+
+
+		
+		</div>
+		
+		
+		
+
+
+
+
+
+
+
+
+
+
+
+
+<script src='../../../js/bundle.min.js'></script>
+
+
+		
+ <br>
+<footer class="wrapper style1 align-center">
+
+        <p><i class="fas fa-heart"></i> 
+            Follow Me on Social Media!</p>
+        <ul class="icons">
+            
+            <li><a target="_blank" href="https://www.pinterest.com/EverSewSlowly" class="icon brands style2 fa-pinterest">
+                <span class="label">Pinterest</span></a></li>
+            
+            <li><a target="_blank" href="https://www.instagram.com/eversewslowly" class="icon brands style2 fa-instagram">
+                <span class="label">Instagram</span></a></li>
+            
+            <li><a target="_blank" href="mailto:eversewslowly@gmail.com" class="fav icon style2 fa-envelope">
+                <span class="label">Email</span></a></li>
+        </ul>
+        <p>&copy; 2025 Ever Sew Slowly </p>
+        <small>Theme based on Hugo Story by
+            <a target="_blank" href="https://github.com/caressofsteel/">CaressOfSteel</a> 
+        </small>
+        <i class="footerspacer icon fa-diamond"></i>
+            
+</footer>
+
+
+<script type="text/javascript" src="http://localhost:52732/js/fontawesome-all.min.js"></script>
+
+		
+<script src="../../../js/toggle-captions.js" defer></script>
+
+	</body>
+</html>

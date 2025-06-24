@@ -1,48 +1,52 @@
 {{/* layouts/_default/_markup/render-image.html */}}
+
 {{ $orig := .Page.Resources.GetMatch (printf "**%s" .Destination) }}
 {{ if $orig }}
   {{ $scratch := .Page.Scratch }}
   {{ $imageKey := $orig.RelPermalink }}
-  {{/* Define sizes and formats */}}
-  {{ $sizes := dict "small" "400x" "medium" "800x" "large" "1200x" }}
+
+  {{ $sizes := dict "small" "400x" "medium" "800x" "medium2x" "1600x" }}
   {{ $formats := slice "jpg" "webp" }}
-  {{/* Process images if not already in scratch */}}
-  {{ range $size, $dimension := $sizes }}
+
+  {{ range $size, $dim := $sizes }}
     {{ range $formats }}
       {{ $key := printf "%s-%s-%s" $imageKey $size . }}
       {{ if not ($scratch.Get $key) }}
-        {{ $options := "" }}
-        {{ if eq . "webp" }}
-          {{ $options = printf "%s webp" $dimension }}
-        {{ else }}
-          {{ $options = $dimension }}
-        {{ end }}
+        {{ $options := printf "%s%s" $dim (cond (eq . "webp") " webp" "") }}
         {{ $processed := $orig.Resize $options }}
         {{ $scratch.Set $key $processed }}
       {{ end }}
     {{ end }}
   {{ end }}
-  {{/* Retrieve processed images */}}
-  {{ $smallJpg := $scratch.Get (printf "%s-small-jpg" $imageKey) }}
+
   {{ $mediumJpg := $scratch.Get (printf "%s-medium-jpg" $imageKey) }}
-  {{ $largeJpg := $scratch.Get (printf "%s-large-jpg" $imageKey) }}
-  {{ $smallWebp := $scratch.Get (printf "%s-small-webp" $imageKey) }}
+  {{ $medium2xJpg := $scratch.Get (printf "%s-medium2x-jpg" $imageKey) }}
+  {{ $smallJpg := $scratch.Get (printf "%s-small-jpg" $imageKey) }}
+
   {{ $mediumWebp := $scratch.Get (printf "%s-medium-webp" $imageKey) }}
-  {{ $largeWebp := $scratch.Get (printf "%s-large-webp" $imageKey) }}
+  {{ $medium2xWebp := $scratch.Get (printf "%s-medium2x-webp" $imageKey) }}
+  {{ $smallWebp := $scratch.Get (printf "%s-small-webp" $imageKey) }}
+
   <figure class="rendered-image">
     <picture>
-      <source srcset="{{ $largeWebp.RelPermalink }}" media="(min-width:1024px)" type="image/webp">
-      <source srcset="{{ $mediumWebp.RelPermalink }}" media="(min-width:600px)"  type="image/webp">
-      <source srcset="{{ $smallWebp.RelPermalink }}"                       type="image/webp">
-      <source srcset="{{ $largeJpg.RelPermalink }}" media="(min-width:1024px)">
-      <source srcset="{{ $mediumJpg.RelPermalink }}" media="(min-width:600px)">
+      <!-- WebP sources -->
+      <source srcset="{{ $medium2xWebp.RelPermalink }} 2x, {{ $mediumWebp.RelPermalink }} 1x" media="(min-width: 600px)" type="image/webp">
+      <source srcset="{{ $smallWebp.RelPermalink }}" media="(max-width: 599px)" type="image/webp">
+
+      <!-- JPEG fallback -->
+      <source srcset="{{ $medium2xJpg.RelPermalink }} 2x, {{ $mediumJpg.RelPermalink }} 1x" media="(min-width: 600px)">
+      <source srcset="{{ $smallJpg.RelPermalink }}" media="(max-width: 599px)">
+
+      <!-- Default image -->
       <img
-        src="{{ $smallJpg.RelPermalink }}"
+        src="{{ $mediumJpg.RelPermalink }}"
+        srcset="{{ $mediumJpg.RelPermalink }} 1x, {{ $medium2xJpg.RelPermalink }} 2x"
+        sizes="(max-width: 600px) 100vw, 800px"
         alt="{{ .Text }}"
         loading="lazy"
         decoding="async"
-        width="{{ $smallJpg.Width }}"
-        height="{{ $smallJpg.Height }}"
+        width="{{ $mediumJpg.Width }}"
+        height="{{ $mediumJpg.Height }}"
       >
     </picture>
     {{ with .Text }}

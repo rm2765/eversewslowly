@@ -1,5 +1,7 @@
+{{ $tocEnabled := .Params.toc | default true }}
 {{ $toc := .TableOfContents }}
-{{ if $toc }}
+
+{{ if and $tocEnabled $toc }}
   {{ $tocContent := findRE "<ul>(.|\n)*?</ul>" $toc 1 }}
   {{ if gt (len $tocContent) 0 }}
     {{ $tocHTML := index $tocContent 0 }}

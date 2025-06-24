@@ -9,20 +9,32 @@
   {{ $img := . }}
   {{ $small := $img.Resize "400x" }}
   {{ $medium := $img.Resize "800x" }}
-  {{ $large := $img.Resize "1200x" }}
+  {{ $medium2x := $img.Resize "1600x" }}
   {{ $smallWebp := $img.Resize "400x webp" }}
   {{ $mediumWebp := $img.Resize "800x webp" }}
-  {{ $largeWebp := $img.Resize "1200x webp" }}
+  {{ $medium2xWebp := $img.Resize "1600x webp" }}
 
   <figure class="figure {{ $class }}">
     <picture>
-      <source srcset="{{ $largeWebp.RelPermalink }}" media="(min-width: 1024px)" type="image/webp">
-      <source srcset="{{ $mediumWebp.RelPermalink }}" media="(min-width: 600px)" type="image/webp">
-      <source srcset="{{ $smallWebp.RelPermalink }}" type="image/webp">
+      <!-- WebP sources -->
+      <source srcset="{{ $medium2xWebp.RelPermalink }} 2x, {{ $mediumWebp.RelPermalink }} 1x" media="(min-width: 600px)" type="image/webp">
+      <source srcset="{{ $smallWebp.RelPermalink }}" type="image/webp" media="(max-width: 599px)">
 
-      <source srcset="{{ $large.RelPermalink }}" media="(min-width: 1024px)">
-      <source srcset="{{ $medium.RelPermalink }}" media="(min-width: 600px)">
-      <img src="{{ $small.RelPermalink }}" alt="{{ $alt }}" loading="lazy" decoding="async" width="{{ $small.Width }}" height="{{ $small.Height }}">
+      <!-- JPEG/PNG fallback sources -->
+      <source srcset="{{ $medium2x.RelPermalink }} 2x, {{ $medium.RelPermalink }} 1x" media="(min-width: 600px)">
+      <source srcset="{{ $small.RelPermalink }}" media="(max-width: 599px)">
+
+      <!-- Default image fallback -->
+      <img 
+        src="{{ $medium.RelPermalink }}"
+        srcset="{{ $medium.RelPermalink }} 1x, {{ $medium2x.RelPermalink }} 2x"
+        sizes="(max-width: 600px) 100vw, 800px"
+        alt="{{ $alt }}"
+        loading="lazy"
+        decoding="async"
+        width="{{ $medium.Width }}"
+        height="{{ $medium.Height }}"
+      >
     </picture>
     {{ if $caption }}
       <figcaption>{{ $caption }}</figcaption>
