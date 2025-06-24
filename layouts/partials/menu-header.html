@@ -113,9 +113,8 @@ document.addEventListener('DOMContentLoaded', function() {
     function handleSearch(searchInput) {
         const query = searchInput.value.trim();
         if (query) {
-            // Implement your search logic here
-            // For example, redirect to search page:
-            window.location.href = `{{ site.BaseURL }}/search?q=${encodeURIComponent(query)}`;
+            // Fixed: Use string concatenation instead of template literals
+            window.location.href = "{{ site.BaseURL }}/search?q=" + encodeURIComponent(query);
         }
     }
 

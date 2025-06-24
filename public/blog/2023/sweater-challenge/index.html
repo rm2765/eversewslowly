@@ -46,9 +46,30 @@
 
 		
 		<div id="wrapper" class="divided">
+
 <header class="main-header">
-    <div class="container"> 
-        <nav class="main-nav">
+    <div class="container">
+        
+        <div class="mobile-header">
+            <div class="logo-title">
+                <h3><a href="http://localhost:1313/">Ever Sew Slowly</a></h3>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <nav class="main-nav" id="mainNav">
+            
+            <div class="mobile-search">
+                <input type="text" placeholder="Search..." id="mobileSearchInput">
+                <a href="#" class="button primary fit small" id="mobileSearchButton">
+                    <i class="fa fa-search"></i>
+                </a>
+            </div>
+
             <ul>
                 
                 <li class="">
@@ -70,17 +91,109 @@
                 
             </ul>
         </nav>
-        <div class="search-panel" style="display: flex; align-items: center;">
-            <input type="text" placeholder="Search..." style="margin-right: 0.5rem;">
-            <ul class="icons" style="margin: 0; padding: 0;">
+
+        
+        <div class="search-panel">
+            <input type="text" placeholder="Search..." id="desktopSearchInput">
+            <ul class="icons">
                 <li>
-                    
-                    <a href="#" class="icon style2 fa-search"></a>
+                    <a href="#" class="icon style2 fa-search" id="desktopSearchButton"></a>
                 </li>
             </ul>
         </div>
     </div>
 </header>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.getElementById('hamburger');
+    const mainNav = document.getElementById('mainNav');
+    const body = document.body;
+
+    if (hamburger && mainNav) {
+        hamburger.addEventListener('click', function() {
+            hamburger.classList.toggle('active');
+            mainNav.classList.toggle('active');
+            body.classList.toggle('menu-open');
+        });
+
+        
+        const navLinks = mainNav.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                if (window.innerWidth <= 768) {
+                    hamburger.classList.remove('active');
+                    mainNav.classList.remove('active');
+                    body.classList.remove('menu-open');
+                }
+            });
+        });
+
+        
+        document.addEventListener('click', function(event) {
+            if (window.innerWidth <= 768) {
+                if (!mainNav.contains(event.target) && !hamburger.contains(event.target)) {
+                    hamburger.classList.remove('active');
+                    mainNav.classList.remove('active');
+                    body.classList.remove('menu-open');
+                }
+            }
+        });
+
+        
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 768) {
+                hamburger.classList.remove('active');
+                mainNav.classList.remove('active');
+                body.classList.remove('menu-open');
+            }
+        });
+    }
+
+    
+    function handleSearch(searchInput) {
+        const query = searchInput.value.trim();
+        if (query) {
+            
+            window.location.href = "http:\/\/localhost:1313\//search?q=" + encodeURIComponent(query);
+        }
+    }
+
+    
+    const desktopSearchButton = document.getElementById('desktopSearchButton');
+    const desktopSearchInput = document.getElementById('desktopSearchInput');
+    
+    if (desktopSearchButton && desktopSearchInput) {
+        desktopSearchButton.addEventListener('click', function(e) {
+            e.preventDefault();
+            handleSearch(desktopSearchInput);
+        });
+
+        desktopSearchInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                handleSearch(this);
+            }
+        });
+    }
+
+    
+    const mobileSearchButton = document.getElementById('mobileSearchButton');
+    const mobileSearchInput = document.getElementById('mobileSearchInput');
+    
+    if (mobileSearchButton && mobileSearchInput) {
+        mobileSearchButton.addEventListener('click', function() {
+            handleSearch(mobileSearchInput);
+        });
+
+        mobileSearchInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                handleSearch(this);
+            }
+        });
+    }
+});
+</script>
 <section class="banner style2"  style="background-color: rgba(255, 255, 255, 0.85);">
     <div class="content">
 
@@ -155,6 +268,8 @@
          <div id="top"></div>
       
 
+
+
   
   
     
@@ -228,29 +343,24 @@
           <td style="text-align: center">
 
 
+
   
   
+
   
   
-  
-  
+
   
     
       
       
         
         
-          
-        
-        
         
       
     
       
       
-        
-        
-          
         
         
         
@@ -262,17 +372,11 @@
       
         
         
-          
-        
-        
         
       
     
       
       
-        
-        
-          
         
         
         
@@ -284,9 +388,6 @@
       
         
         
-          
-        
-        
         
       
     
@@ -294,67 +395,68 @@
       
         
         
-          
-        
-        
         
       
     
   
+
   
   
   
+
   
   
   
-  
+
   <figure class="rendered-image">
     <picture>
-      <source srcset="../../../blog/2023/sweater-challenge/pattern_mask_hu_8c7d9e8875cb5dd9.webp" media="(min-width:1024px)" type="image/webp">
-      <source srcset="../../../blog/2023/sweater-challenge/pattern_mask_hu_ad760636710beab5.webp" media="(min-width:600px)"  type="image/webp">
-      <source srcset="../../../blog/2023/sweater-challenge/pattern_mask_hu_f5aa32a0eebaa49c.webp"                       type="image/webp">
-      <source srcset="../../../blog/2023/sweater-challenge/pattern_mask_hu_1ce51f4bb4abd40.jpg" media="(min-width:1024px)">
-      <source srcset="../../../blog/2023/sweater-challenge/pattern_mask_hu_9ce773e1dd085b5c.jpg" media="(min-width:600px)">
+      
+      <source srcset="../../../blog/2023/sweater-challenge/pattern_mask_hu_b8bdbc149db7dd35.webp 2x, ../../../blog/2023/sweater-challenge/pattern_mask_hu_ad760636710beab5.webp 1x" media="(min-width: 600px)" type="image/webp">
+      <source srcset="../../../blog/2023/sweater-challenge/pattern_mask_hu_f5aa32a0eebaa49c.webp" media="(max-width: 599px)" type="image/webp">
+
+      
+      <source srcset="../../../blog/2023/sweater-challenge/pattern_mask_hu_c0c2a6624630f0da.jpg 2x, ../../../blog/2023/sweater-challenge/pattern_mask_hu_9ce773e1dd085b5c.jpg 1x" media="(min-width: 600px)">
+      <source srcset="../../../blog/2023/sweater-challenge/pattern_mask_hu_6f63fb867644c76a.jpg" media="(max-width: 599px)">
+
+      
       <img
-        src="../../../blog/2023/sweater-challenge/pattern_mask_hu_6f63fb867644c76a.jpg"
+        src="../../../blog/2023/sweater-challenge/pattern_mask_hu_9ce773e1dd085b5c.jpg"
+        srcset="../../../blog/2023/sweater-challenge/pattern_mask_hu_9ce773e1dd085b5c.jpg 1x, ../../../blog/2023/sweater-challenge/pattern_mask_hu_c0c2a6624630f0da.jpg 2x"
+        sizes="(max-width: 600px) 100vw, 800px"
         alt="Pattern Drafting the Mask"
         loading="lazy"
         decoding="async"
-        width="400"
-        height="533"
+        width="800"
+        height="1067"
       >
     </picture>
     
       <figcaption>Pattern Drafting the Mask</figcaption>
     
   </figure>
+
 </td>
           <td style="text-align: center">
 
 
+
   
   
+
   
   
-  
-  
+
   
     
       
       
         
         
-          
-        
-        
         
       
     
       
       
-        
-        
-          
         
         
         
@@ -366,17 +468,11 @@
       
         
         
-          
-        
-        
         
       
     
       
       
-        
-        
-          
         
         
         
@@ -388,9 +484,6 @@
       
         
         
-          
-        
-        
         
       
     
@@ -398,69 +491,70 @@
       
         
         
-          
-        
-        
         
       
     
   
+
   
   
   
+
   
   
   
-  
+
   <figure class="rendered-image">
     <picture>
-      <source srcset="../../../blog/2023/sweater-challenge/mask_after_hu_e781e00e1ba42901.webp" media="(min-width:1024px)" type="image/webp">
-      <source srcset="../../../blog/2023/sweater-challenge/mask_after_hu_7776161ea802a52b.webp" media="(min-width:600px)"  type="image/webp">
-      <source srcset="../../../blog/2023/sweater-challenge/mask_after_hu_d76bc9ac4e6d8cac.webp"                       type="image/webp">
-      <source srcset="../../../blog/2023/sweater-challenge/mask_after_hu_f51be9f3fa14e825.jpg" media="(min-width:1024px)">
-      <source srcset="../../../blog/2023/sweater-challenge/mask_after_hu_e794bb50cbd4cee6.jpg" media="(min-width:600px)">
+      
+      <source srcset="../../../blog/2023/sweater-challenge/mask_after_hu_b2d3c626d021e44d.webp 2x, ../../../blog/2023/sweater-challenge/mask_after_hu_7776161ea802a52b.webp 1x" media="(min-width: 600px)" type="image/webp">
+      <source srcset="../../../blog/2023/sweater-challenge/mask_after_hu_d76bc9ac4e6d8cac.webp" media="(max-width: 599px)" type="image/webp">
+
+      
+      <source srcset="../../../blog/2023/sweater-challenge/mask_after_hu_c039c20f56029cb3.jpg 2x, ../../../blog/2023/sweater-challenge/mask_after_hu_e794bb50cbd4cee6.jpg 1x" media="(min-width: 600px)">
+      <source srcset="../../../blog/2023/sweater-challenge/mask_after_hu_235bc70cb0f0247a.jpg" media="(max-width: 599px)">
+
+      
       <img
-        src="../../../blog/2023/sweater-challenge/mask_after_hu_235bc70cb0f0247a.jpg"
+        src="../../../blog/2023/sweater-challenge/mask_after_hu_e794bb50cbd4cee6.jpg"
+        srcset="../../../blog/2023/sweater-challenge/mask_after_hu_e794bb50cbd4cee6.jpg 1x, ../../../blog/2023/sweater-challenge/mask_after_hu_c039c20f56029cb3.jpg 2x"
+        sizes="(max-width: 600px) 100vw, 800px"
         alt="Mask After"
         loading="lazy"
         decoding="async"
-        width="400"
-        height="451"
+        width="800"
+        height="902"
       >
     </picture>
     
       <figcaption>Mask After</figcaption>
     
   </figure>
+
 </td>
       </tr>
       <tr>
           <td style="text-align: center">
 
 
+
   
   
+
   
   
-  
-  
+
   
     
       
       
         
         
-          
-        
-        
         
       
     
       
       
-        
-        
-          
         
         
         
@@ -472,17 +566,11 @@
       
         
         
-          
-        
-        
         
       
     
       
       
-        
-        
-          
         
         
         
@@ -494,9 +582,6 @@
       
         
         
-          
-        
-        
         
       
     
@@ -504,67 +589,68 @@
       
         
         
-          
-        
-        
         
       
     
   
+
   
   
   
+
   
   
   
-  
+
   <figure class="rendered-image">
     <picture>
-      <source srcset="../../../blog/2023/sweater-challenge/pattern_hat_hu_252c1c16c9b50528.webp" media="(min-width:1024px)" type="image/webp">
-      <source srcset="../../../blog/2023/sweater-challenge/pattern_hat_hu_91456e7e661ea110.webp" media="(min-width:600px)"  type="image/webp">
-      <source srcset="../../../blog/2023/sweater-challenge/pattern_hat_hu_6f701ee1a824a4a5.webp"                       type="image/webp">
-      <source srcset="../../../blog/2023/sweater-challenge/pattern_hat_hu_b3341c382eebed98.jpg" media="(min-width:1024px)">
-      <source srcset="../../../blog/2023/sweater-challenge/pattern_hat_hu_7af92365da1bdc18.jpg" media="(min-width:600px)">
+      
+      <source srcset="../../../blog/2023/sweater-challenge/pattern_hat_hu_3a3adfa4fb15997f.webp 2x, ../../../blog/2023/sweater-challenge/pattern_hat_hu_91456e7e661ea110.webp 1x" media="(min-width: 600px)" type="image/webp">
+      <source srcset="../../../blog/2023/sweater-challenge/pattern_hat_hu_6f701ee1a824a4a5.webp" media="(max-width: 599px)" type="image/webp">
+
+      
+      <source srcset="../../../blog/2023/sweater-challenge/pattern_hat_hu_cdf0451edd40204.jpg 2x, ../../../blog/2023/sweater-challenge/pattern_hat_hu_7af92365da1bdc18.jpg 1x" media="(min-width: 600px)">
+      <source srcset="../../../blog/2023/sweater-challenge/pattern_hat_hu_e022ea5893e7c240.jpg" media="(max-width: 599px)">
+
+      
       <img
-        src="../../../blog/2023/sweater-challenge/pattern_hat_hu_e022ea5893e7c240.jpg"
+        src="../../../blog/2023/sweater-challenge/pattern_hat_hu_7af92365da1bdc18.jpg"
+        srcset="../../../blog/2023/sweater-challenge/pattern_hat_hu_7af92365da1bdc18.jpg 1x, ../../../blog/2023/sweater-challenge/pattern_hat_hu_cdf0451edd40204.jpg 2x"
+        sizes="(max-width: 600px) 100vw, 800px"
         alt="Pattern Drafting the Hat"
         loading="lazy"
         decoding="async"
-        width="400"
-        height="488"
+        width="800"
+        height="976"
       >
     </picture>
     
       <figcaption>Pattern Drafting the Hat</figcaption>
     
   </figure>
+
 </td>
           <td style="text-align: center">
 
 
+
   
   
+
   
   
-  
-  
+
   
     
       
       
         
         
-          
-        
-        
         
       
     
       
       
-        
-        
-          
         
         
         
@@ -576,17 +662,11 @@
       
         
         
-          
-        
-        
         
       
     
       
       
-        
-        
-          
         
         
         
@@ -598,9 +678,6 @@
       
         
         
-          
-        
-        
         
       
     
@@ -608,69 +685,70 @@
       
         
         
-          
-        
-        
         
       
     
   
+
   
   
   
+
   
   
   
-  
+
   <figure class="rendered-image">
     <picture>
-      <source srcset="../../../blog/2023/sweater-challenge/mint_after_hu_25e9166830d1edc3.webp" media="(min-width:1024px)" type="image/webp">
-      <source srcset="../../../blog/2023/sweater-challenge/mint_after_hu_ad70e6cc50999490.webp" media="(min-width:600px)"  type="image/webp">
-      <source srcset="../../../blog/2023/sweater-challenge/mint_after_hu_6a2bdb98d07cac8b.webp"                       type="image/webp">
-      <source srcset="../../../blog/2023/sweater-challenge/mint_after_hu_8a71320d9b84d760.jpg" media="(min-width:1024px)">
-      <source srcset="../../../blog/2023/sweater-challenge/mint_after_hu_58847217b7ea92df.jpg" media="(min-width:600px)">
+      
+      <source srcset="../../../blog/2023/sweater-challenge/mint_after_hu_25f251a002300b54.webp 2x, ../../../blog/2023/sweater-challenge/mint_after_hu_ad70e6cc50999490.webp 1x" media="(min-width: 600px)" type="image/webp">
+      <source srcset="../../../blog/2023/sweater-challenge/mint_after_hu_6a2bdb98d07cac8b.webp" media="(max-width: 599px)" type="image/webp">
+
+      
+      <source srcset="../../../blog/2023/sweater-challenge/mint_after_hu_9c175bfdfb6f5325.jpg 2x, ../../../blog/2023/sweater-challenge/mint_after_hu_58847217b7ea92df.jpg 1x" media="(min-width: 600px)">
+      <source srcset="../../../blog/2023/sweater-challenge/mint_after_hu_720b95891a705102.jpg" media="(max-width: 599px)">
+
+      
       <img
-        src="../../../blog/2023/sweater-challenge/mint_after_hu_720b95891a705102.jpg"
+        src="../../../blog/2023/sweater-challenge/mint_after_hu_58847217b7ea92df.jpg"
+        srcset="../../../blog/2023/sweater-challenge/mint_after_hu_58847217b7ea92df.jpg 1x, ../../../blog/2023/sweater-challenge/mint_after_hu_9c175bfdfb6f5325.jpg 2x"
+        sizes="(max-width: 600px) 100vw, 800px"
         alt="Mint After"
         loading="lazy"
         decoding="async"
-        width="400"
-        height="557"
+        width="800"
+        height="1115"
       >
     </picture>
     
       <figcaption>Mint After</figcaption>
     
   </figure>
+
 </td>
       </tr>
       <tr>
           <td style="text-align: center">
 
 
+
   
   
+
   
   
-  
-  
+
   
     
       
       
         
         
-          
-        
-        
         
       
     
       
       
-        
-        
-          
         
         
         
@@ -682,17 +760,11 @@
       
         
         
-          
-        
-        
         
       
     
       
       
-        
-        
-          
         
         
         
@@ -704,9 +776,6 @@
       
         
         
-          
-        
-        
         
       
     
@@ -714,67 +783,68 @@
       
         
         
-          
-        
-        
         
       
     
   
+
   
   
   
+
   
   
   
-  
+
   <figure class="rendered-image">
     <picture>
-      <source srcset="../../../blog/2023/sweater-challenge/red_tunic_before_hu_fc6ff87c15021fdb.webp" media="(min-width:1024px)" type="image/webp">
-      <source srcset="../../../blog/2023/sweater-challenge/red_tunic_before_hu_ab0447311fd2800.webp" media="(min-width:600px)"  type="image/webp">
-      <source srcset="../../../blog/2023/sweater-challenge/red_tunic_before_hu_33fb1c5edf896a44.webp"                       type="image/webp">
-      <source srcset="../../../blog/2023/sweater-challenge/red_tunic_before_hu_491f9a6198a4ea4d.jpg" media="(min-width:1024px)">
-      <source srcset="../../../blog/2023/sweater-challenge/red_tunic_before_hu_70099317ed62311.jpg" media="(min-width:600px)">
+      
+      <source srcset="../../../blog/2023/sweater-challenge/red_tunic_before_hu_7c0a8e1d8ace184c.webp 2x, ../../../blog/2023/sweater-challenge/red_tunic_before_hu_ab0447311fd2800.webp 1x" media="(min-width: 600px)" type="image/webp">
+      <source srcset="../../../blog/2023/sweater-challenge/red_tunic_before_hu_33fb1c5edf896a44.webp" media="(max-width: 599px)" type="image/webp">
+
+      
+      <source srcset="../../../blog/2023/sweater-challenge/red_tunic_before_hu_d6b451f20bbd34e2.jpg 2x, ../../../blog/2023/sweater-challenge/red_tunic_before_hu_70099317ed62311.jpg 1x" media="(min-width: 600px)">
+      <source srcset="../../../blog/2023/sweater-challenge/red_tunic_before_hu_118996ec51bcdaf7.jpg" media="(max-width: 599px)">
+
+      
       <img
-        src="../../../blog/2023/sweater-challenge/red_tunic_before_hu_118996ec51bcdaf7.jpg"
+        src="../../../blog/2023/sweater-challenge/red_tunic_before_hu_70099317ed62311.jpg"
+        srcset="../../../blog/2023/sweater-challenge/red_tunic_before_hu_70099317ed62311.jpg 1x, ../../../blog/2023/sweater-challenge/red_tunic_before_hu_d6b451f20bbd34e2.jpg 2x"
+        sizes="(max-width: 600px) 100vw, 800px"
         alt="Red Tunic Before"
         loading="lazy"
         decoding="async"
-        width="400"
-        height="239"
+        width="800"
+        height="478"
       >
     </picture>
     
       <figcaption>Red Tunic Before</figcaption>
     
   </figure>
+
 </td>
           <td style="text-align: center">
 
 
+
   
   
+
   
   
-  
-  
+
   
     
       
       
         
         
-          
-        
-        
         
       
     
       
       
-        
-        
-          
         
         
         
@@ -786,17 +856,11 @@
       
         
         
-          
-        
-        
         
       
     
       
       
-        
-        
-          
         
         
         
@@ -808,9 +872,6 @@
       
         
         
-          
-        
-        
         
       
     
@@ -818,69 +879,70 @@
       
         
         
-          
-        
-        
         
       
     
   
+
   
   
   
+
   
   
   
-  
+
   <figure class="rendered-image">
     <picture>
-      <source srcset="../../../blog/2023/sweater-challenge/red_tunic_after_hu_f5516ec2137df686.webp" media="(min-width:1024px)" type="image/webp">
-      <source srcset="../../../blog/2023/sweater-challenge/red_tunic_after_hu_c8c13bd129a5eb37.webp" media="(min-width:600px)"  type="image/webp">
-      <source srcset="../../../blog/2023/sweater-challenge/red_tunic_after_hu_dd04dc32faa691dd.webp"                       type="image/webp">
-      <source srcset="../../../blog/2023/sweater-challenge/red_tunic_after_hu_f524998c90cd4efb.jpg" media="(min-width:1024px)">
-      <source srcset="../../../blog/2023/sweater-challenge/red_tunic_after_hu_6185257a1094402e.jpg" media="(min-width:600px)">
+      
+      <source srcset="../../../blog/2023/sweater-challenge/red_tunic_after_hu_15697668c47f66c.webp 2x, ../../../blog/2023/sweater-challenge/red_tunic_after_hu_c8c13bd129a5eb37.webp 1x" media="(min-width: 600px)" type="image/webp">
+      <source srcset="../../../blog/2023/sweater-challenge/red_tunic_after_hu_dd04dc32faa691dd.webp" media="(max-width: 599px)" type="image/webp">
+
+      
+      <source srcset="../../../blog/2023/sweater-challenge/red_tunic_after_hu_36ae8da8b6e52d3e.jpg 2x, ../../../blog/2023/sweater-challenge/red_tunic_after_hu_6185257a1094402e.jpg 1x" media="(min-width: 600px)">
+      <source srcset="../../../blog/2023/sweater-challenge/red_tunic_after_hu_540def6908d0a3ba.jpg" media="(max-width: 599px)">
+
+      
       <img
-        src="../../../blog/2023/sweater-challenge/red_tunic_after_hu_540def6908d0a3ba.jpg"
+        src="../../../blog/2023/sweater-challenge/red_tunic_after_hu_6185257a1094402e.jpg"
+        srcset="../../../blog/2023/sweater-challenge/red_tunic_after_hu_6185257a1094402e.jpg 1x, ../../../blog/2023/sweater-challenge/red_tunic_after_hu_36ae8da8b6e52d3e.jpg 2x"
+        sizes="(max-width: 600px) 100vw, 800px"
         alt="Red Tunic After"
         loading="lazy"
         decoding="async"
-        width="400"
-        height="518"
+        width="800"
+        height="1037"
       >
     </picture>
     
       <figcaption>Red Tunic After</figcaption>
     
   </figure>
+
 </td>
       </tr>
       <tr>
           <td style="text-align: center">
 
 
+
   
   
+
   
   
-  
-  
+
   
     
       
       
         
         
-          
-        
-        
         
       
     
       
       
-        
-        
-          
         
         
         
@@ -892,17 +954,11 @@
       
         
         
-          
-        
-        
         
       
     
       
       
-        
-        
-          
         
         
         
@@ -914,9 +970,6 @@
       
         
         
-          
-        
-        
         
       
     
@@ -924,67 +977,68 @@
       
         
         
-          
-        
-        
         
       
     
   
+
   
   
   
+
   
   
   
-  
+
   <figure class="rendered-image">
     <picture>
-      <source srcset="../../../blog/2023/sweater-challenge/rainbow_scarf_before_hu_2869ada786be701b.webp" media="(min-width:1024px)" type="image/webp">
-      <source srcset="../../../blog/2023/sweater-challenge/rainbow_scarf_before_hu_8cca0b4b2c8fce5f.webp" media="(min-width:600px)"  type="image/webp">
-      <source srcset="../../../blog/2023/sweater-challenge/rainbow_scarf_before_hu_1b1d5850eec947f6.webp"                       type="image/webp">
-      <source srcset="../../../blog/2023/sweater-challenge/rainbow_scarf_before_hu_ef907338223fc99f.jpg" media="(min-width:1024px)">
-      <source srcset="../../../blog/2023/sweater-challenge/rainbow_scarf_before_hu_17a376122b1a719d.jpg" media="(min-width:600px)">
+      
+      <source srcset="../../../blog/2023/sweater-challenge/rainbow_scarf_before_hu_ac32fbd32c38d75b.webp 2x, ../../../blog/2023/sweater-challenge/rainbow_scarf_before_hu_8cca0b4b2c8fce5f.webp 1x" media="(min-width: 600px)" type="image/webp">
+      <source srcset="../../../blog/2023/sweater-challenge/rainbow_scarf_before_hu_1b1d5850eec947f6.webp" media="(max-width: 599px)" type="image/webp">
+
+      
+      <source srcset="../../../blog/2023/sweater-challenge/rainbow_scarf_before_hu_602f9ab19b63a9da.jpg 2x, ../../../blog/2023/sweater-challenge/rainbow_scarf_before_hu_17a376122b1a719d.jpg 1x" media="(min-width: 600px)">
+      <source srcset="../../../blog/2023/sweater-challenge/rainbow_scarf_before_hu_a7da61c93e008994.jpg" media="(max-width: 599px)">
+
+      
       <img
-        src="../../../blog/2023/sweater-challenge/rainbow_scarf_before_hu_a7da61c93e008994.jpg"
+        src="../../../blog/2023/sweater-challenge/rainbow_scarf_before_hu_17a376122b1a719d.jpg"
+        srcset="../../../blog/2023/sweater-challenge/rainbow_scarf_before_hu_17a376122b1a719d.jpg 1x, ../../../blog/2023/sweater-challenge/rainbow_scarf_before_hu_602f9ab19b63a9da.jpg 2x"
+        sizes="(max-width: 600px) 100vw, 800px"
         alt="Rainbow scarf before"
         loading="lazy"
         decoding="async"
-        width="400"
-        height="533"
+        width="800"
+        height="1067"
       >
     </picture>
     
       <figcaption>Rainbow scarf before</figcaption>
     
   </figure>
+
 </td>
           <td style="text-align: center">
 
 
+
   
   
+
   
   
-  
-  
+
   
     
       
       
         
         
-          
-        
-        
         
       
     
       
       
-        
-        
-          
         
         
         
@@ -996,17 +1050,11 @@
       
         
         
-          
-        
-        
         
       
     
       
       
-        
-        
-          
         
         
         
@@ -1018,9 +1066,6 @@
       
         
         
-          
-        
-        
         
       
     
@@ -1028,40 +1073,46 @@
       
         
         
-          
-        
-        
         
       
     
   
+
   
   
   
+
   
   
   
-  
+
   <figure class="rendered-image">
     <picture>
-      <source srcset="../../../blog/2023/sweater-challenge/rainbow_scarf_after_hu_1652358d97f5c18d.webp" media="(min-width:1024px)" type="image/webp">
-      <source srcset="../../../blog/2023/sweater-challenge/rainbow_scarf_after_hu_ea476bf32e67898b.webp" media="(min-width:600px)"  type="image/webp">
-      <source srcset="../../../blog/2023/sweater-challenge/rainbow_scarf_after_hu_4e61b67201f20382.webp"                       type="image/webp">
-      <source srcset="../../../blog/2023/sweater-challenge/rainbow_scarf_after_hu_ef36ce519e154b71.jpg" media="(min-width:1024px)">
-      <source srcset="../../../blog/2023/sweater-challenge/rainbow_scarf_after_hu_b215d15178e1e0b6.jpg" media="(min-width:600px)">
+      
+      <source srcset="../../../blog/2023/sweater-challenge/rainbow_scarf_after_hu_710c10882e10dea5.webp 2x, ../../../blog/2023/sweater-challenge/rainbow_scarf_after_hu_ea476bf32e67898b.webp 1x" media="(min-width: 600px)" type="image/webp">
+      <source srcset="../../../blog/2023/sweater-challenge/rainbow_scarf_after_hu_4e61b67201f20382.webp" media="(max-width: 599px)" type="image/webp">
+
+      
+      <source srcset="../../../blog/2023/sweater-challenge/rainbow_scarf_after_hu_4d3923a02b25f71a.jpg 2x, ../../../blog/2023/sweater-challenge/rainbow_scarf_after_hu_b215d15178e1e0b6.jpg 1x" media="(min-width: 600px)">
+      <source srcset="../../../blog/2023/sweater-challenge/rainbow_scarf_after_hu_c521537a1028d70.jpg" media="(max-width: 599px)">
+
+      
       <img
-        src="../../../blog/2023/sweater-challenge/rainbow_scarf_after_hu_c521537a1028d70.jpg"
+        src="../../../blog/2023/sweater-challenge/rainbow_scarf_after_hu_b215d15178e1e0b6.jpg"
+        srcset="../../../blog/2023/sweater-challenge/rainbow_scarf_after_hu_b215d15178e1e0b6.jpg 1x, ../../../blog/2023/sweater-challenge/rainbow_scarf_after_hu_4d3923a02b25f71a.jpg 2x"
+        sizes="(max-width: 600px) 100vw, 800px"
         alt="Rainbow Scarf After"
         loading="lazy"
         decoding="async"
-        width="400"
-        height="300"
+        width="800"
+        height="600"
       >
     </picture>
     
       <figcaption>Rainbow Scarf After</figcaption>
     
   </figure>
+
 </td>
       </tr>
   </tbody>
@@ -1131,29 +1182,24 @@
 <a href="https://www.instagram.com/reel/Cn2vnCjLXRa/embed">
 
 
+
   
   
+
   
   
-  
-  
+
   
     
       
       
         
         
-          
-        
-        
         
       
     
       
       
-        
-        
-          
         
         
         
@@ -1165,17 +1211,11 @@
       
         
         
-          
-        
-        
         
       
     
       
       
-        
-        
-          
         
         
         
@@ -1187,9 +1227,6 @@
       
         
         
-          
-        
-        
         
       
     
@@ -1197,40 +1234,46 @@
       
         
         
-          
-        
-        
         
       
     
   
+
   
   
   
+
   
   
   
-  
+
   <figure class="rendered-image">
     <picture>
-      <source srcset="../../../blog/2023/sweater-challenge/headband_alejandramezadiy_hu_f306bf8dacd6079d.webp" media="(min-width:1024px)" type="image/webp">
-      <source srcset="../../../blog/2023/sweater-challenge/headband_alejandramezadiy_hu_eef31bbe43a11924.webp" media="(min-width:600px)"  type="image/webp">
-      <source srcset="../../../blog/2023/sweater-challenge/headband_alejandramezadiy_hu_ffa5af8683138ea4.webp"                       type="image/webp">
-      <source srcset="../../../blog/2023/sweater-challenge/headband_alejandramezadiy_hu_efdc0a3550ee17fe.JPG" media="(min-width:1024px)">
-      <source srcset="../../../blog/2023/sweater-challenge/headband_alejandramezadiy_hu_8a5b1c34180e5aac.JPG" media="(min-width:600px)">
+      
+      <source srcset="../../../blog/2023/sweater-challenge/headband_alejandramezadiy_hu_218a2a4ad6ee30cc.webp 2x, ../../../blog/2023/sweater-challenge/headband_alejandramezadiy_hu_eef31bbe43a11924.webp 1x" media="(min-width: 600px)" type="image/webp">
+      <source srcset="../../../blog/2023/sweater-challenge/headband_alejandramezadiy_hu_ffa5af8683138ea4.webp" media="(max-width: 599px)" type="image/webp">
+
+      
+      <source srcset="../../../blog/2023/sweater-challenge/headband_alejandramezadiy_hu_63c16ed4928edd3c.JPG 2x, ../../../blog/2023/sweater-challenge/headband_alejandramezadiy_hu_8a5b1c34180e5aac.JPG 1x" media="(min-width: 600px)">
+      <source srcset="../../../blog/2023/sweater-challenge/headband_alejandramezadiy_hu_280014e4d9a44ce9.JPG" media="(max-width: 599px)">
+
+      
       <img
-        src="../../../blog/2023/sweater-challenge/headband_alejandramezadiy_hu_280014e4d9a44ce9.JPG"
+        src="../../../blog/2023/sweater-challenge/headband_alejandramezadiy_hu_8a5b1c34180e5aac.JPG"
+        srcset="../../../blog/2023/sweater-challenge/headband_alejandramezadiy_hu_8a5b1c34180e5aac.JPG 1x, ../../../blog/2023/sweater-challenge/headband_alejandramezadiy_hu_63c16ed4928edd3c.JPG 2x"
+        sizes="(max-width: 600px) 100vw, 800px"
         alt="Alejandra Meza DIY&rsquo;s Headband"
         loading="lazy"
         decoding="async"
-        width="400"
-        height="259"
+        width="800"
+        height="519"
       >
     </picture>
     
       <figcaption>Alejandra Meza DIY&rsquo;s Headband</figcaption>
     
   </figure>
+
 </a></li>
 </ul>
 </li>
@@ -1279,7 +1322,6 @@ Happy photos</p>
 
     </div>
 </section>
-
 <section class="wrapper style1 align-center">
     <div class="inner">
         <nav class="breadcrumb" aria-label="Breadcrumb">
@@ -1311,6 +1353,78 @@ Happy photos</p>
         </nav>  
     </div>
 </section>
+<section class="wrapper style2 align-center">
+  <div class="inner">
+      
+        <h2>Stay in the Loop</h2>
+      
+        <p class="subtitle">Get updates on refashion projects, tutorials, and behind-the-scenes stories.</p>
+
+      
+      <div class="email-octopus-form">
+        <script async src="https://eocampaign1.com/form/ea500138-4914-11f0-b8ca-3bcf1751ec19.js" data-form="ea500138-4914-11f0-b8ca-3bcf1751ec19"></script>
+    </div>
+  </div>
+</section>
+
+<style>
+ 
+[data-form="ea500138-4914-11f0-b8ca-3bcf1751ec19"] .emailoctopus-form {
+  --label-size: 12px;
+  --field-colour: #FFFFFF;
+  --label-colour: #212529;
+  --button-colour: #000000;
+  --button-text-colour: #FFFFFF !important;
+  --field-border-colour: #CED4DA;
+}
+
+[data-form="ea500138-4914-11f0-b8ca-3bcf1751ec19"].inline-container {
+  max-width: 100% !important;
+  position: relative;
+}
+
+ 
+[data-form="ea500138-4914-11f0-b8ca-3bcf1751ec19"] .btn {
+  all: unset;
+  display: inline-block;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.8rem;
+  line-height: 4em;
+  height: 4em;
+  border-radius: 4em;
+  padding: 0 3em;
+  color: #FFFFFF !important;
+  text-align: center;
+  cursor: pointer;
+  max-width: 20rem;
+  width: 100%;  
+}
+
+ 
+[data-form="ea500138-4914-11f0-b8ca-3bcf1751ec19"] .btn:hover {
+   
+  color: #eeeeee !important;
+  background-color: #837164 !important;
+
+}
+ 
+
+ 
+.emailoctopus-form-wrapper iframe {
+  max-width: 100% !important;
+  width: 100% !important;
+  min-height: 300px;
+  border: none;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 1em;
+}
+</style>
+
 
 		
 		</div>

@@ -46,9 +46,30 @@
 
 		
 		<div id="wrapper" class="divided">
+
 <header class="main-header">
-    <div class="container"> 
-        <nav class="main-nav">
+    <div class="container">
+        
+        <div class="mobile-header">
+            <div class="logo-title">
+                <h3><a href="http://localhost:1313/">Ever Sew Slowly</a></h3>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <nav class="main-nav" id="mainNav">
+            
+            <div class="mobile-search">
+                <input type="text" placeholder="Search..." id="mobileSearchInput">
+                <a href="#" class="button primary fit small" id="mobileSearchButton">
+                    <i class="fa fa-search"></i>
+                </a>
+            </div>
+
             <ul>
                 
                 <li class="">
@@ -70,17 +91,109 @@
                 
             </ul>
         </nav>
-        <div class="search-panel" style="display: flex; align-items: center;">
-            <input type="text" placeholder="Search..." style="margin-right: 0.5rem;">
-            <ul class="icons" style="margin: 0; padding: 0;">
+
+        
+        <div class="search-panel">
+            <input type="text" placeholder="Search..." id="desktopSearchInput">
+            <ul class="icons">
                 <li>
-                    
-                    <a href="#" class="icon style2 fa-search"></a>
+                    <a href="#" class="icon style2 fa-search" id="desktopSearchButton"></a>
                 </li>
             </ul>
         </div>
     </div>
 </header>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.getElementById('hamburger');
+    const mainNav = document.getElementById('mainNav');
+    const body = document.body;
+
+    if (hamburger && mainNav) {
+        hamburger.addEventListener('click', function() {
+            hamburger.classList.toggle('active');
+            mainNav.classList.toggle('active');
+            body.classList.toggle('menu-open');
+        });
+
+        
+        const navLinks = mainNav.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                if (window.innerWidth <= 768) {
+                    hamburger.classList.remove('active');
+                    mainNav.classList.remove('active');
+                    body.classList.remove('menu-open');
+                }
+            });
+        });
+
+        
+        document.addEventListener('click', function(event) {
+            if (window.innerWidth <= 768) {
+                if (!mainNav.contains(event.target) && !hamburger.contains(event.target)) {
+                    hamburger.classList.remove('active');
+                    mainNav.classList.remove('active');
+                    body.classList.remove('menu-open');
+                }
+            }
+        });
+
+        
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 768) {
+                hamburger.classList.remove('active');
+                mainNav.classList.remove('active');
+                body.classList.remove('menu-open');
+            }
+        });
+    }
+
+    
+    function handleSearch(searchInput) {
+        const query = searchInput.value.trim();
+        if (query) {
+            
+            window.location.href = "http:\/\/localhost:1313\//search?q=" + encodeURIComponent(query);
+        }
+    }
+
+    
+    const desktopSearchButton = document.getElementById('desktopSearchButton');
+    const desktopSearchInput = document.getElementById('desktopSearchInput');
+    
+    if (desktopSearchButton && desktopSearchInput) {
+        desktopSearchButton.addEventListener('click', function(e) {
+            e.preventDefault();
+            handleSearch(desktopSearchInput);
+        });
+
+        desktopSearchInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                handleSearch(this);
+            }
+        });
+    }
+
+    
+    const mobileSearchButton = document.getElementById('mobileSearchButton');
+    const mobileSearchInput = document.getElementById('mobileSearchInput');
+    
+    if (mobileSearchButton && mobileSearchInput) {
+        mobileSearchButton.addEventListener('click', function() {
+            handleSearch(mobileSearchInput);
+        });
+
+        mobileSearchInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                handleSearch(this);
+            }
+        });
+    }
+});
+</script>
 <section class="banner style2"  style="background-color: rgba(255, 255, 255, 0.85);">
     <div class="content">
 
@@ -145,6 +258,8 @@
          <div id="top"></div>
       
 
+
+
   
   
 
@@ -160,29 +275,24 @@
           <th>
 
 
+
   
   
+
   
   
-  
-  
+
   
     
       
       
         
         
-          
-        
-        
         
       
     
       
       
-        
-        
-          
         
         
         
@@ -194,17 +304,11 @@
       
         
         
-          
-        
-        
         
       
     
       
       
-        
-        
-          
         
         
         
@@ -216,9 +320,6 @@
       
         
         
-          
-        
-        
         
       
     
@@ -226,67 +327,68 @@
       
         
         
-          
-        
-        
         
       
     
   
+
   
   
   
+
   
   
   
-  
+
   <figure class="rendered-image">
     <picture>
-      <source srcset="../../../blog/2023/learning-to-sew/first_time_understitching_hu_9896fe263435be83.webp" media="(min-width:1024px)" type="image/webp">
-      <source srcset="../../../blog/2023/learning-to-sew/first_time_understitching_hu_c050c238188c82e9.webp" media="(min-width:600px)"  type="image/webp">
-      <source srcset="../../../blog/2023/learning-to-sew/first_time_understitching_hu_876fd72bcac56695.webp"                       type="image/webp">
-      <source srcset="../../../blog/2023/learning-to-sew/first_time_understitching_hu_3055fc9b1c264f7d.jpg" media="(min-width:1024px)">
-      <source srcset="../../../blog/2023/learning-to-sew/first_time_understitching_hu_dea01adaf998ed50.jpg" media="(min-width:600px)">
+      
+      <source srcset="../../../blog/2023/learning-to-sew/first_time_understitching_hu_98a5d374c1f2b8bc.webp 2x, ../../../blog/2023/learning-to-sew/first_time_understitching_hu_c050c238188c82e9.webp 1x" media="(min-width: 600px)" type="image/webp">
+      <source srcset="../../../blog/2023/learning-to-sew/first_time_understitching_hu_876fd72bcac56695.webp" media="(max-width: 599px)" type="image/webp">
+
+      
+      <source srcset="../../../blog/2023/learning-to-sew/first_time_understitching_hu_10bcd26963271d5c.jpg 2x, ../../../blog/2023/learning-to-sew/first_time_understitching_hu_dea01adaf998ed50.jpg 1x" media="(min-width: 600px)">
+      <source srcset="../../../blog/2023/learning-to-sew/first_time_understitching_hu_17dc69269c940c95.jpg" media="(max-width: 599px)">
+
+      
       <img
-        src="../../../blog/2023/learning-to-sew/first_time_understitching_hu_17dc69269c940c95.jpg"
+        src="../../../blog/2023/learning-to-sew/first_time_understitching_hu_dea01adaf998ed50.jpg"
+        srcset="../../../blog/2023/learning-to-sew/first_time_understitching_hu_dea01adaf998ed50.jpg 1x, ../../../blog/2023/learning-to-sew/first_time_understitching_hu_10bcd26963271d5c.jpg 2x"
+        sizes="(max-width: 600px) 100vw, 800px"
         alt="First time understitching"
         loading="lazy"
         decoding="async"
-        width="400"
-        height="533"
+        width="800"
+        height="1067"
       >
     </picture>
     
       <figcaption>First time understitching</figcaption>
     
   </figure>
+
 </th>
           <th>
 
 
+
   
   
+
   
   
-  
-  
+
   
     
       
       
         
         
-          
-        
-        
         
       
     
       
       
-        
-        
-          
         
         
         
@@ -298,17 +400,11 @@
       
         
         
-          
-        
-        
         
       
     
       
       
-        
-        
-          
         
         
         
@@ -320,9 +416,6 @@
       
         
         
-          
-        
-        
         
       
     
@@ -330,40 +423,46 @@
       
         
         
-          
-        
-        
         
       
     
   
+
   
   
   
+
   
   
   
-  
+
   <figure class="rendered-image">
     <picture>
-      <source srcset="../../../blog/2023/learning-to-sew/dressform_mint_hu_184601d9a8f37f72.webp" media="(min-width:1024px)" type="image/webp">
-      <source srcset="../../../blog/2023/learning-to-sew/dressform_mint_hu_33be0d1203685cdf.webp" media="(min-width:600px)"  type="image/webp">
-      <source srcset="../../../blog/2023/learning-to-sew/dressform_mint_hu_5ddc01c088194c2b.webp"                       type="image/webp">
-      <source srcset="../../../blog/2023/learning-to-sew/dressform_mint_hu_79d45603ae360804.png" media="(min-width:1024px)">
-      <source srcset="../../../blog/2023/learning-to-sew/dressform_mint_hu_d1549e71519b1277.png" media="(min-width:600px)">
+      
+      <source srcset="../../../blog/2023/learning-to-sew/dressform_mint_hu_f94fbd6d7ed9a10e.webp 2x, ../../../blog/2023/learning-to-sew/dressform_mint_hu_33be0d1203685cdf.webp 1x" media="(min-width: 600px)" type="image/webp">
+      <source srcset="../../../blog/2023/learning-to-sew/dressform_mint_hu_5ddc01c088194c2b.webp" media="(max-width: 599px)" type="image/webp">
+
+      
+      <source srcset="../../../blog/2023/learning-to-sew/dressform_mint_hu_50c694a6173e01e0.png 2x, ../../../blog/2023/learning-to-sew/dressform_mint_hu_d1549e71519b1277.png 1x" media="(min-width: 600px)">
+      <source srcset="../../../blog/2023/learning-to-sew/dressform_mint_hu_88a848c59ce3d42b.png" media="(max-width: 599px)">
+
+      
       <img
-        src="../../../blog/2023/learning-to-sew/dressform_mint_hu_88a848c59ce3d42b.png"
+        src="../../../blog/2023/learning-to-sew/dressform_mint_hu_d1549e71519b1277.png"
+        srcset="../../../blog/2023/learning-to-sew/dressform_mint_hu_d1549e71519b1277.png 1x, ../../../blog/2023/learning-to-sew/dressform_mint_hu_50c694a6173e01e0.png 2x"
+        sizes="(max-width: 600px) 100vw, 800px"
         alt="My dress form"
         loading="lazy"
         decoding="async"
-        width="400"
-        height="711"
+        width="800"
+        height="1422"
       >
     </picture>
     
       <figcaption>My dress form</figcaption>
     
   </figure>
+
 </th>
       </tr>
   </thead>
@@ -379,29 +478,24 @@
           <th>
 
 
+
   
   
+
   
   
-  
-  
+
   
     
       
       
         
         
-          
-        
-        
         
       
     
       
       
-        
-        
-          
         
         
         
@@ -413,17 +507,11 @@
       
         
         
-          
-        
-        
         
       
     
       
       
-        
-        
-          
         
         
         
@@ -435,9 +523,6 @@
       
         
         
-          
-        
-        
         
       
     
@@ -445,67 +530,68 @@
       
         
         
-          
-        
-        
         
       
     
   
+
   
   
   
+
   
   
   
-  
+
   <figure class="rendered-image">
     <picture>
-      <source srcset="../../../blog/2023/learning-to-sew/eventphoto2_hu_dfe4225c73341587.webp" media="(min-width:1024px)" type="image/webp">
-      <source srcset="../../../blog/2023/learning-to-sew/eventphoto2_hu_bcf89399673cf824.webp" media="(min-width:600px)"  type="image/webp">
-      <source srcset="../../../blog/2023/learning-to-sew/eventphoto2_hu_552108176a6e8f2.webp"                       type="image/webp">
-      <source srcset="../../../blog/2023/learning-to-sew/eventphoto2_hu_fc41cb99cf287f.jpg" media="(min-width:1024px)">
-      <source srcset="../../../blog/2023/learning-to-sew/eventphoto2_hu_22915117cad28658.jpg" media="(min-width:600px)">
+      
+      <source srcset="../../../blog/2023/learning-to-sew/eventphoto2_hu_c545c5f1087e141f.webp 2x, ../../../blog/2023/learning-to-sew/eventphoto2_hu_bcf89399673cf824.webp 1x" media="(min-width: 600px)" type="image/webp">
+      <source srcset="../../../blog/2023/learning-to-sew/eventphoto2_hu_552108176a6e8f2.webp" media="(max-width: 599px)" type="image/webp">
+
+      
+      <source srcset="../../../blog/2023/learning-to-sew/eventphoto2_hu_addfe03e632fcd87.jpg 2x, ../../../blog/2023/learning-to-sew/eventphoto2_hu_22915117cad28658.jpg 1x" media="(min-width: 600px)">
+      <source srcset="../../../blog/2023/learning-to-sew/eventphoto2_hu_df49c08a21960743.jpg" media="(max-width: 599px)">
+
+      
       <img
-        src="../../../blog/2023/learning-to-sew/eventphoto2_hu_df49c08a21960743.jpg"
+        src="../../../blog/2023/learning-to-sew/eventphoto2_hu_22915117cad28658.jpg"
+        srcset="../../../blog/2023/learning-to-sew/eventphoto2_hu_22915117cad28658.jpg 1x, ../../../blog/2023/learning-to-sew/eventphoto2_hu_addfe03e632fcd87.jpg 2x"
+        sizes="(max-width: 600px) 100vw, 800px"
         alt="Photo of me at the event wearing the altered dress"
         loading="lazy"
         decoding="async"
-        width="400"
-        height="600"
+        width="800"
+        height="1199"
       >
     </picture>
     
       <figcaption>Photo of me at the event wearing the altered dress</figcaption>
     
   </figure>
+
 </th>
           <th>
 
 
+
   
   
+
   
   
-  
-  
+
   
     
       
       
         
         
-          
-        
-        
         
       
     
       
       
-        
-        
-          
         
         
         
@@ -517,17 +603,11 @@
       
         
         
-          
-        
-        
         
       
     
       
       
-        
-        
-          
         
         
         
@@ -539,9 +619,6 @@
       
         
         
-          
-        
-        
         
       
     
@@ -549,40 +626,46 @@
       
         
         
-          
-        
-        
         
       
     
   
+
   
   
   
+
   
   
   
-  
+
   <figure class="rendered-image">
     <picture>
-      <source srcset="../../../blog/2023/learning-to-sew/eventphoto3_hu_370c064221a6517.webp" media="(min-width:1024px)" type="image/webp">
-      <source srcset="../../../blog/2023/learning-to-sew/eventphoto3_hu_2fac3de6eb2bcb57.webp" media="(min-width:600px)"  type="image/webp">
-      <source srcset="../../../blog/2023/learning-to-sew/eventphoto3_hu_e58a824d16fd4bef.webp"                       type="image/webp">
-      <source srcset="../../../blog/2023/learning-to-sew/eventphoto3_hu_555d2122f3afd581.jpg" media="(min-width:1024px)">
-      <source srcset="../../../blog/2023/learning-to-sew/eventphoto3_hu_983fc1e6572e336f.jpg" media="(min-width:600px)">
+      
+      <source srcset="../../../blog/2023/learning-to-sew/eventphoto3_hu_ef65e944a1ee2c77.webp 2x, ../../../blog/2023/learning-to-sew/eventphoto3_hu_2fac3de6eb2bcb57.webp 1x" media="(min-width: 600px)" type="image/webp">
+      <source srcset="../../../blog/2023/learning-to-sew/eventphoto3_hu_e58a824d16fd4bef.webp" media="(max-width: 599px)" type="image/webp">
+
+      
+      <source srcset="../../../blog/2023/learning-to-sew/eventphoto3_hu_10b745e5aa3d0934.jpg 2x, ../../../blog/2023/learning-to-sew/eventphoto3_hu_983fc1e6572e336f.jpg 1x" media="(min-width: 600px)">
+      <source srcset="../../../blog/2023/learning-to-sew/eventphoto3_hu_e576fc36b3850ea2.jpg" media="(max-width: 599px)">
+
+      
       <img
-        src="../../../blog/2023/learning-to-sew/eventphoto3_hu_e576fc36b3850ea2.jpg"
+        src="../../../blog/2023/learning-to-sew/eventphoto3_hu_983fc1e6572e336f.jpg"
+        srcset="../../../blog/2023/learning-to-sew/eventphoto3_hu_983fc1e6572e336f.jpg 1x, ../../../blog/2023/learning-to-sew/eventphoto3_hu_10b745e5aa3d0934.jpg 2x"
+        sizes="(max-width: 600px) 100vw, 800px"
         alt="Photo of me at the event wearing the altered dress"
         loading="lazy"
         decoding="async"
-        width="400"
-        height="600"
+        width="800"
+        height="1199"
       >
     </picture>
     
       <figcaption>Photo of me at the event wearing the altered dress</figcaption>
     
   </figure>
+
 </th>
       </tr>
   </thead>
@@ -596,7 +679,6 @@
 
     </div>
 </section>
-
 <section class="wrapper style1 align-center">
     <div class="inner">
         <nav class="breadcrumb" aria-label="Breadcrumb">
@@ -628,6 +710,78 @@
         </nav>  
     </div>
 </section>
+<section class="wrapper style2 align-center">
+  <div class="inner">
+      
+        <h2>Stay in the Loop</h2>
+      
+        <p class="subtitle">Get updates on refashion projects, tutorials, and behind-the-scenes stories.</p>
+
+      
+      <div class="email-octopus-form">
+        <script async src="https://eocampaign1.com/form/ea500138-4914-11f0-b8ca-3bcf1751ec19.js" data-form="ea500138-4914-11f0-b8ca-3bcf1751ec19"></script>
+    </div>
+  </div>
+</section>
+
+<style>
+ 
+[data-form="ea500138-4914-11f0-b8ca-3bcf1751ec19"] .emailoctopus-form {
+  --label-size: 12px;
+  --field-colour: #FFFFFF;
+  --label-colour: #212529;
+  --button-colour: #000000;
+  --button-text-colour: #FFFFFF !important;
+  --field-border-colour: #CED4DA;
+}
+
+[data-form="ea500138-4914-11f0-b8ca-3bcf1751ec19"].inline-container {
+  max-width: 100% !important;
+  position: relative;
+}
+
+ 
+[data-form="ea500138-4914-11f0-b8ca-3bcf1751ec19"] .btn {
+  all: unset;
+  display: inline-block;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.8rem;
+  line-height: 4em;
+  height: 4em;
+  border-radius: 4em;
+  padding: 0 3em;
+  color: #FFFFFF !important;
+  text-align: center;
+  cursor: pointer;
+  max-width: 20rem;
+  width: 100%;  
+}
+
+ 
+[data-form="ea500138-4914-11f0-b8ca-3bcf1751ec19"] .btn:hover {
+   
+  color: #eeeeee !important;
+  background-color: #837164 !important;
+
+}
+ 
+
+ 
+.emailoctopus-form-wrapper iframe {
+  max-width: 100% !important;
+  width: 100% !important;
+  min-height: 300px;
+  border: none;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 1em;
+}
+</style>
+
 
 		
 		</div>
