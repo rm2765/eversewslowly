@@ -2,7 +2,7 @@
 
 <html>
 	
-	<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=52732&amp;path=livereload" data-no-instant defer></script>
 	<title>Ever Sew Slowly</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -29,7 +29,7 @@
 	
 
 	
-	<link rel="stylesheet" href="http://localhost:1313/css/fontawesome-all.min.css">
+	<link rel="stylesheet" href="http://localhost:52732/css/fontawesome-all.min.css">
 
 	
 	
@@ -47,36 +47,58 @@
 		
 		<div id="wrapper" class="divided">
 
+
 <header class="main-header">
-    <div class="container"> 
-        <nav class="main-nav">
+    <div class="container">
+        
+        <div class="mobile-header">
+            <div class="logo-title">
+                <h3><a href="http://localhost:52732/">Ever Sew Slowly</a></h3>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <nav class="main-nav" id="mainNav">
+            
+            <div class="mobile-search">
+                <input type="text" placeholder="Search..." id="mobileSearchInput">
+                <a href="#" class="button primary fit small" id="mobileSearchButton">
+                    <i class="fa fa-search"></i>
+                </a>
+            </div>
+
             <ul>
                 
                 <li class="">
-                    <a href="http://localhost:1313/">Home</a>
+                    <a href="http://localhost:52732/">Home</a>
                 </li>
                 <li class="">
-                    <a href="http://localhost:1313//blog">Blog</a>
+                    <a href="http://localhost:52732//blog">Blog</a>
                 </li>
                 <li class="">
-                    <a href="http://localhost:1313//gallery">Gallery</a>
+                    <a href="http://localhost:52732//gallery">Gallery</a>
                 </li>
                 <li class="">
-                    <a href="http://localhost:1313//learn">Learn</a>
+                    <a href="http://localhost:52732//learn">Learn</a>
                 </li>
                 <li class="">
-                    <a href="http://localhost:1313//connect">Connect</a>
+                    <a href="http://localhost:52732//connect">Connect</a>
                 </li>
                 
                 
             </ul>
         </nav>
-        <div class="search-panel" style="display: flex; align-items: center;">
-            <input type="text" placeholder="Search..." style="margin-right: 0.5rem;">
-            <ul class="icons" style="margin: 0; padding: 0;">
+
+        
+        <div class="search-panel">
+            <input type="text" placeholder="Search..." id="desktopSearchInput">
+            <ul class="icons">
                 <li>
-                    
-                    <a href="#" class="icon style2 fa-search"></a>
+                    <a href="#" class="icon style2 fa-search" id="desktopSearchButton"></a>
                 </li>
             </ul>
         </div>
@@ -84,11 +106,103 @@
 </header>
 
 
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.getElementById('hamburger');
+    const mainNav = document.getElementById('mainNav');
+    const body = document.body;
+
+    if (hamburger && mainNav) {
+        hamburger.addEventListener('click', function() {
+            hamburger.classList.toggle('active');
+            mainNav.classList.toggle('active');
+            body.classList.toggle('menu-open');
+        });
+
+        
+        const navLinks = mainNav.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                if (window.innerWidth <= 768) {
+                    hamburger.classList.remove('active');
+                    mainNav.classList.remove('active');
+                    body.classList.remove('menu-open');
+                }
+            });
+        });
+
+        
+        document.addEventListener('click', function(event) {
+            if (window.innerWidth <= 768) {
+                if (!mainNav.contains(event.target) && !hamburger.contains(event.target)) {
+                    hamburger.classList.remove('active');
+                    mainNav.classList.remove('active');
+                    body.classList.remove('menu-open');
+                }
+            }
+        });
+
+        
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 768) {
+                hamburger.classList.remove('active');
+                mainNav.classList.remove('active');
+                body.classList.remove('menu-open');
+            }
+        });
+    }
+
+    
+    function handleSearch(searchInput) {
+        const query = searchInput.value.trim();
+        if (query) {
+            
+            
+            window.location.href = `http:\/\/localhost:52732\//search?q=${encodeURIComponent(query)}`;
+        }
+    }
+
+    
+    const desktopSearchButton = document.getElementById('desktopSearchButton');
+    const desktopSearchInput = document.getElementById('desktopSearchInput');
+    
+    if (desktopSearchButton && desktopSearchInput) {
+        desktopSearchButton.addEventListener('click', function(e) {
+            e.preventDefault();
+            handleSearch(desktopSearchInput);
+        });
+
+        desktopSearchInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                handleSearch(this);
+            }
+        });
+    }
+
+    
+    const mobileSearchButton = document.getElementById('mobileSearchButton');
+    const mobileSearchInput = document.getElementById('mobileSearchInput');
+    
+    if (mobileSearchButton && mobileSearchInput) {
+        mobileSearchButton.addEventListener('click', function() {
+            handleSearch(mobileSearchInput);
+        });
+
+        mobileSearchInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                handleSearch(this);
+            }
+        });
+    }
+});
+</script>
+
+
 <section class="wrapper style1 align-center">
   <div class="inner">
     <h2>Explore</h2>
     <p>Check out all posts</p>
-    <a href="http://localhost:1313//archive/" class="button">Archive</a>
+    <a href="http://localhost:52732//archive/" class="button">Archive</a>
 
     <hr>
 
@@ -110,15 +224,23 @@
             
               <li>
                 
-                  <a href="http://localhost:1313/categories/bklyn-fashion-academy-series/" class="button primary">
-                    Bklyn Fashion Academy Series (1)
+                  <a href="http://localhost:52732/categories/bklyn-fashion-academy-series/" class="button primary">
+                    Bklyn Fashion Academy Series (2)
                   </a>
                 
               </li>
             
               <li>
                 
-                  <a href="http://localhost:1313/categories/refashioning/" class="button primary">
+                  <a href="http://localhost:52732/categories/list/" class="button primary">
+                    List (1)
+                  </a>
+                
+              </li>
+            
+              <li>
+                
+                  <a href="http://localhost:52732/categories/refashioning/" class="button primary">
                     Refashioning (3)
                   </a>
                 
@@ -126,7 +248,7 @@
             
               <li>
                 
-                  <a href="http://localhost:1313/categories/roundup/" class="button primary">
+                  <a href="http://localhost:52732/categories/roundup/" class="button primary">
                     Roundup (1)
                   </a>
                 
@@ -134,7 +256,7 @@
             
               <li>
                 
-                  <a href="http://localhost:1313/categories/sewing-resources/" class="button primary">
+                  <a href="http://localhost:52732/categories/sewing-resources/" class="button primary">
                     Sewing Resources (1)
                   </a>
                 
@@ -142,7 +264,7 @@
             
               <li>
                 
-                  <a href="http://localhost:1313/categories/slow-fashion/" class="button primary">
+                  <a href="http://localhost:52732/categories/slow-fashion/" class="button primary">
                     Slow Fashion (1)
                   </a>
                 
@@ -183,7 +305,7 @@
             
               <li>
                 
-                  <a href="http://localhost:1313/tags/beginner/" class="button ">
+                  <a href="http://localhost:52732/tags/beginner/" class="button ">
                     Beginner (2)
                   </a>
                 
@@ -191,15 +313,15 @@
             
               <li>
                 
-                  <a href="http://localhost:1313/tags/emerging-designers/" class="button ">
-                    Emerging Designers (1)
+                  <a href="http://localhost:52732/tags/emerging-designers/" class="button ">
+                    Emerging Designers (2)
                   </a>
                 
               </li>
             
               <li>
                 
-                  <a href="http://localhost:1313/tags/face-mask/" class="button ">
+                  <a href="http://localhost:52732/tags/face-mask/" class="button ">
                     Face Mask (1)
                   </a>
                 
@@ -207,7 +329,7 @@
             
               <li>
                 
-                  <a href="http://localhost:1313/tags/headband/" class="button ">
+                  <a href="http://localhost:52732/tags/headband/" class="button ">
                     Headband (1)
                   </a>
                 
@@ -215,7 +337,7 @@
             
               <li>
                 
-                  <a href="http://localhost:1313/tags/hooded-scarf/" class="button ">
+                  <a href="http://localhost:52732/tags/hooded-scarf/" class="button ">
                     Hooded Scarf (1)
                   </a>
                 
@@ -223,15 +345,15 @@
             
               <li>
                 
-                  <a href="http://localhost:1313/tags/runway-show/" class="button ">
-                    Runway Show (1)
+                  <a href="http://localhost:52732/tags/runway-show/" class="button ">
+                    Runway Show (2)
                   </a>
                 
               </li>
             
               <li>
                 
-                  <a href="http://localhost:1313/tags/sustainable/" class="button ">
+                  <a href="http://localhost:52732/tags/sustainable/" class="button ">
                     Sustainable (1)
                   </a>
                 
@@ -239,7 +361,7 @@
             
               <li>
                 
-                  <a href="http://localhost:1313/tags/sweaters/" class="button ">
+                  <a href="http://localhost:52732/tags/sweaters/" class="button ">
                     Sweaters (1)
                   </a>
                 
@@ -247,7 +369,7 @@
             
               <li>
                 
-                  <a href="http://localhost:1313/tags/thrift/" class="button ">
+                  <a href="http://localhost:52732/tags/thrift/" class="button ">
                     Thrift (1)
                   </a>
                 
@@ -255,7 +377,7 @@
             
               <li>
                 
-                  <a href="http://localhost:1313/tags/tunic/" class="button ">
+                  <a href="http://localhost:52732/tags/tunic/" class="button ">
                     Tunic (1)
                   </a>
                 
@@ -263,7 +385,7 @@
             
               <li>
                 
-                  <a href="http://localhost:1313/tags/tutorial/" class="button ">
+                  <a href="http://localhost:52732/tags/tutorial/" class="button ">
                     Tutorial (1)
                   </a>
                 
@@ -271,7 +393,7 @@
             
               <li>
                 
-                  <a href="http://localhost:1313/tags/upcycling/" class="button ">
+                  <a href="http://localhost:52732/tags/upcycling/" class="button ">
                     Upcycling (1)
                   </a>
                 
@@ -279,7 +401,7 @@
             
               <li>
                 
-                  <a href="http://localhost:1313/tags/women-in-future-industries/" class="button ">
+                  <a href="http://localhost:52732/tags/women-in-future-industries/" class="button ">
                     Women in Future Industries (1)
                   </a>
                 
@@ -374,7 +496,7 @@
 </footer>
 
 
-<script type="text/javascript" src="http://localhost:1313/js/fontawesome-all.min.js"></script>
+<script type="text/javascript" src="http://localhost:52732/js/fontawesome-all.min.js"></script>
 
 		
 <script src="../js/toggle-captions.js" defer></script>
