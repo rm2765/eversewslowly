@@ -165,12 +165,9 @@ The magic of AI text-to-image generation is in the prompt. **Clear, detailed des
 <li>Details: reflective trims, utility straps, structured shoulders  </li>
 <li>Colors: navy, dark red, neutral tones  </li>
 <li>Materials: breathable fabric, fire-resistant, lightweight</li>
-</ul>**
+</ul>
 </ul>
 </div>
-
-
-
 
 ---
 

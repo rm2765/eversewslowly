@@ -346,6 +346,8 @@
   .item-media {
     margin-bottom: 0.5rem;
 	display: flex !important;
+  	justify-content: center;
+    align-items: center;
 
     img {
       width: 15rem !important;
@@ -365,17 +367,51 @@
   p  { margin: 0; }
 }
 
-/* Inject the .item-media container into each style’s > * .inner */
+/* Inject the .item-media container into each style's > * .inner */
 .items.style1,
 .items.style2,
 .items.style3 {
   > * {
+    // Reduce top padding for items containing images (modern browsers)
+    &:has(.item-media) {
+      padding-top: 1rem !important;
+    }
+    
     /* wrap the existing >* > .inner rules */
     .inner {
       /* ensure the media sits at top of each cell */
       .item-media {
         margin-bottom: 0.5rem;
+        display: flex !important;
+        justify-content: center !important;  // Center horizontally
+        align-items: center !important;      // Center vertically
+
+        img {
+          width: 15rem !important;
+          height: 15rem !important;
+          object-fit: contain !important;
+          border-radius: _size(border-radius);
+        }
+
+        span {
+          font-size: 3rem;
+          display: inline-block;
+        }
       }
     }
   }
+  
+  // Fallback for browsers that don't support :has() - target items with .item class
+  &.small > .item,
+  &.medium > .item,
+  &.big > .item {
+    padding-top: 1rem !important;
+  }
+}
+
+.item {
+  text-align: center;
+
+  h3 { margin: 0.5rem 0 0.25rem; }
+  p  { margin: 0; }
 }
