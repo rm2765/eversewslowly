@@ -1,0 +1,386 @@
+<!DOCTYPE HTML>
+
+<html>
+	
+	<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<title>Ever Sew Slowly</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="description" content="">
+	<meta name="author" content="">
+	
+	<meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">	
+    <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+    <link rel="manifest" href="../../site.webmanifest">
+    <link rel="mask-icon" href="../../safari-pinned-tab.svg" color="#5bbad5">
+	
+	
+	
+	
+	
+	<link rel="stylesheet" href="../../css/main.css">
+	
+	
+	
+	<noscript><link rel="stylesheet" href="../../css/noscript.css" /></noscript>
+	
+
+	
+	<link rel="stylesheet" href="http://localhost:1313/css/fontawesome-all.min.css">
+
+	
+	
+	
+	<script src="../../js/main.js"></script>
+	
+
+	
+
+</head>
+
+
+	<body class="is-preload">
+
+		
+		<div id="wrapper" class="divided">
+
+
+<header class="main-header">
+    <div class="container">
+        
+        <div class="mobile-header">
+            <div class="logo-title">
+                <h3><a href="http://localhost:1313/">Ever Sew Slowly</a></h3>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <nav class="main-nav" id="mainNav">
+            
+            <div class="mobile-search">
+                <input type="text" placeholder="Search..." id="mobileSearchInput">
+                <a href="#" class="button primary fit small" id="mobileSearchButton">
+                    <i class="fa fa-search"></i>
+                </a>
+            </div>
+
+            <ul>
+                
+                <li class="">
+                    <a href="http://localhost:1313/">Home</a>
+                </li>
+                <li class="">
+                    <a href="http://localhost:1313//blog">Blog</a>
+                </li>
+                <li class="">
+                    <a href="http://localhost:1313//gallery">Gallery</a>
+                </li>
+                <li class="">
+                    <a href="http://localhost:1313//learn">Learn</a>
+                </li>
+                <li class="">
+                    <a href="http://localhost:1313//connect">Connect</a>
+                </li>
+                
+                
+            </ul>
+        </nav>
+
+        
+        <div class="search-panel">
+            <input type="text" placeholder="Search..." id="desktopSearchInput">
+            <ul class="icons">
+                <li>
+                    <a href="#" class="icon style2 fa-search" id="desktopSearchButton"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.getElementById('hamburger');
+    const mainNav = document.getElementById('mainNav');
+    const body = document.body;
+
+    if (hamburger && mainNav) {
+        hamburger.addEventListener('click', function() {
+            hamburger.classList.toggle('active');
+            mainNav.classList.toggle('active');
+            body.classList.toggle('menu-open');
+        });
+
+        
+        const navLinks = mainNav.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                if (window.innerWidth <= 768) {
+                    hamburger.classList.remove('active');
+                    mainNav.classList.remove('active');
+                    body.classList.remove('menu-open');
+                }
+            });
+        });
+
+        
+        document.addEventListener('click', function(event) {
+            if (window.innerWidth <= 768) {
+                if (!mainNav.contains(event.target) && !hamburger.contains(event.target)) {
+                    hamburger.classList.remove('active');
+                    mainNav.classList.remove('active');
+                    body.classList.remove('menu-open');
+                }
+            }
+        });
+
+        
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 768) {
+                hamburger.classList.remove('active');
+                mainNav.classList.remove('active');
+                body.classList.remove('menu-open');
+            }
+        });
+    }
+
+    
+    function handleSearch(searchInput) {
+        const query = searchInput.value.trim();
+        if (query) {
+            
+            window.location.href = "http:\/\/localhost:1313\//search?q=" + encodeURIComponent(query);
+        }
+    }
+
+    
+    const desktopSearchButton = document.getElementById('desktopSearchButton');
+    const desktopSearchInput = document.getElementById('desktopSearchInput');
+    
+    if (desktopSearchButton && desktopSearchInput) {
+        desktopSearchButton.addEventListener('click', function(e) {
+            e.preventDefault();
+            handleSearch(desktopSearchInput);
+        });
+
+        desktopSearchInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                handleSearch(this);
+            }
+        });
+    }
+
+    
+    const mobileSearchButton = document.getElementById('mobileSearchButton');
+    const mobileSearchInput = document.getElementById('mobileSearchInput');
+    
+    if (mobileSearchButton && mobileSearchInput) {
+        mobileSearchButton.addEventListener('click', function() {
+            handleSearch(mobileSearchInput);
+        });
+
+        mobileSearchInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                handleSearch(this);
+            }
+        });
+    }
+});
+</script>
+
+<section class="featured-posts wrapper style1 align-center">
+  <div class="inner">
+    <Header>
+      <h2>Inspo</h2>
+      
+        <p>Showing All Posts With this Tag</p>
+      
+    </Header>
+   
+    
+   
+    <div class="content">
+      <div class="items style2 medium">
+        
+        
+          
+            
+              
+              
+                <article onclick="window.location='http:\/\/localhost:1313\/blog\/2025\/how-i-used-pinterest-and-ai-to-nail-my-design-vision\/';">
+                  
+                  <a href="http://localhost:1313/blog/2025/how-i-used-pinterest-and-ai-to-nail-my-design-vision/">
+                    <h3 class="name">Using Pinterest and AI to Nail My Design Vision</h3>
+                  </a>
+                 
+                  <div class="style1 small lightbox onscroll-fade-in">
+                    
+                    <a class="image" href="http://localhost:1313/blog/2025/how-i-used-pinterest-and-ai-to-nail-my-design-vision/">
+                      
+                      
+                        
+                        
+                          
+                        
+                      
+                      
+                      
+                        <img src="../../blog/2025/how-i-used-pinterest-and-ai-to-nail-my-design-vision/pinterest_board.png" alt="Using Pinterest and AI to Nail My Design Vision" loading="lazy" />
+                      
+                     
+                      
+                      <div class="caption">
+                        <h4>Using Pinterest and AI to Nail My Design Vision</h4>
+                        <span class="button small">Read More</span>
+                      </div>
+                    </a>
+                  </div>
+                 
+                  
+                  <div class="post-meta">
+                    
+                      <span class="post-date">
+                        <i class="fad fa-calendar-alt"></i>
+                        <time datetime="2025-07-27">July 27, 2025</time>
+                      </span>
+                      <br>
+                    
+                    
+                    
+                      <span class="post-categories">
+                        <i class="fad fa-tag"></i>
+                        
+                          
+                            
+                            <a href="../../categories/bklyn-fashion-academy-series">Bklyn fashion academy series</a>
+                          
+                        
+                          
+                            , 
+                            <a href="../../categories/how-to">How to</a>
+                          
+                        
+                      </span>
+                    
+                  </div>
+                 
+                  
+                  <div class="post-summary">
+                    
+                      <p>In this post, I&rsquo;ll be breaking down how I translated my initial ideas into final design sketches using Pinterest, a visual search platform, and …</p>
+                    
+                  </div>
+                </article>
+              
+            
+          
+        
+      </div>
+    </div>
+    
+    
+    
+  </div>
+</section>
+  
+<section class="wrapper style1 align-center">
+    <div class="inner">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <ul>
+                <h3>
+                    
+                    
+                    
+                        
+                        
+                        
+                        
+                            
+                                <li><a href="../../">Home</a></li>
+                                
+                            
+                        
+                            
+                                <li><a href="../../tags/">Tags</a></li>
+                                
+                            
+                        
+                    
+                    
+                    
+                    <li><span class="current">Inspo</span></li>
+                </h3>
+            </ul>
+        </nav>  
+    </div>
+</section>
+ 
+
+		
+		</div>
+		
+		
+		
+
+
+
+
+
+
+
+
+
+
+
+
+<script src='../../js/bundle.min.js'></script>
+
+
+		
+ <br>
+<footer class="wrapper style1 align-center">
+
+        <p><i class="fas fa-heart"></i> 
+            Follow Me on Social Media!</p>
+        <ul class="icons">
+            
+            <li><a target="_blank" href="https://www.pinterest.com/EverSewSlowly" class="icon brands style2 fa-pinterest">
+                <span class="label">Pinterest</span></a></li>
+            
+            <li><a target="_blank" href="https://www.instagram.com/eversewslowly" class="icon brands style2 fa-instagram">
+                <span class="label">Instagram</span></a></li>
+            
+            <li><a target="_blank" href="mailto:eversewslowly@gmail.com" class="fav icon style2 fa-envelope">
+                <span class="label">Email</span></a></li>
+        </ul>
+        <p>&copy; 2025 Ever Sew Slowly </p>
+        <small>Theme based on Hugo Story by
+            <a target="_blank" href="https://github.com/caressofsteel/">CaressOfSteel</a> 
+        </small>
+        <i class="footerspacer icon fa-diamond"></i>
+            
+</footer>
+
+
+<script type="text/javascript" src="http://localhost:1313/js/fontawesome-all.min.js"></script>
+
+		
+<script src="../../js/toggle-captions.js" defer></script>
+
+ 
+<script
+    type="text/javascript"
+    async defer
+    src="//assets.pinterest.com/js/pinit.js"
+></script>
+
+	</body>
+</html>

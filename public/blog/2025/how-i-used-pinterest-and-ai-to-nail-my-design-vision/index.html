@@ -1,0 +1,869 @@
+<!DOCTYPE HTML>
+
+<html>
+	
+	<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<title>Ever Sew Slowly</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="description" content="">
+	<meta name="author" content="">
+	
+	<meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">	
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../../favicon-16x16.png">
+    <link rel="manifest" href="../../../site.webmanifest">
+    <link rel="mask-icon" href="../../../safari-pinned-tab.svg" color="#5bbad5">
+	
+	
+	
+	
+	
+	<link rel="stylesheet" href="../../../css/main.css">
+	
+	
+	
+	<noscript><link rel="stylesheet" href="../../../css/noscript.css" /></noscript>
+	
+
+	
+	<link rel="stylesheet" href="http://localhost:1313/css/fontawesome-all.min.css">
+
+	
+	
+	
+	<script src="../../../js/main.js"></script>
+	
+
+	
+
+</head>
+
+
+	<body class="is-preload">
+
+		
+		<div id="wrapper" class="divided">
+
+<header class="main-header">
+    <div class="container">
+        
+        <div class="mobile-header">
+            <div class="logo-title">
+                <h3><a href="http://localhost:1313/">Ever Sew Slowly</a></h3>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <nav class="main-nav" id="mainNav">
+            
+            <div class="mobile-search">
+                <input type="text" placeholder="Search..." id="mobileSearchInput">
+                <a href="#" class="button primary fit small" id="mobileSearchButton">
+                    <i class="fa fa-search"></i>
+                </a>
+            </div>
+
+            <ul>
+                
+                <li class="">
+                    <a href="http://localhost:1313/">Home</a>
+                </li>
+                <li class="active">
+                    <a href="http://localhost:1313//blog">Blog</a>
+                </li>
+                <li class="">
+                    <a href="http://localhost:1313//gallery">Gallery</a>
+                </li>
+                <li class="">
+                    <a href="http://localhost:1313//learn">Learn</a>
+                </li>
+                <li class="">
+                    <a href="http://localhost:1313//connect">Connect</a>
+                </li>
+                
+                
+            </ul>
+        </nav>
+
+        
+        <div class="search-panel">
+            <input type="text" placeholder="Search..." id="desktopSearchInput">
+            <ul class="icons">
+                <li>
+                    <a href="#" class="icon style2 fa-search" id="desktopSearchButton"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.getElementById('hamburger');
+    const mainNav = document.getElementById('mainNav');
+    const body = document.body;
+
+    if (hamburger && mainNav) {
+        hamburger.addEventListener('click', function() {
+            hamburger.classList.toggle('active');
+            mainNav.classList.toggle('active');
+            body.classList.toggle('menu-open');
+        });
+
+        
+        const navLinks = mainNav.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                if (window.innerWidth <= 768) {
+                    hamburger.classList.remove('active');
+                    mainNav.classList.remove('active');
+                    body.classList.remove('menu-open');
+                }
+            });
+        });
+
+        
+        document.addEventListener('click', function(event) {
+            if (window.innerWidth <= 768) {
+                if (!mainNav.contains(event.target) && !hamburger.contains(event.target)) {
+                    hamburger.classList.remove('active');
+                    mainNav.classList.remove('active');
+                    body.classList.remove('menu-open');
+                }
+            }
+        });
+
+        
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 768) {
+                hamburger.classList.remove('active');
+                mainNav.classList.remove('active');
+                body.classList.remove('menu-open');
+            }
+        });
+    }
+
+    
+    function handleSearch(searchInput) {
+        const query = searchInput.value.trim();
+        if (query) {
+            
+            window.location.href = "http:\/\/localhost:1313\//search?q=" + encodeURIComponent(query);
+        }
+    }
+
+    
+    const desktopSearchButton = document.getElementById('desktopSearchButton');
+    const desktopSearchInput = document.getElementById('desktopSearchInput');
+    
+    if (desktopSearchButton && desktopSearchInput) {
+        desktopSearchButton.addEventListener('click', function(e) {
+            e.preventDefault();
+            handleSearch(desktopSearchInput);
+        });
+
+        desktopSearchInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                handleSearch(this);
+            }
+        });
+    }
+
+    
+    const mobileSearchButton = document.getElementById('mobileSearchButton');
+    const mobileSearchInput = document.getElementById('mobileSearchInput');
+    
+    if (mobileSearchButton && mobileSearchInput) {
+        mobileSearchButton.addEventListener('click', function() {
+            handleSearch(mobileSearchInput);
+        });
+
+        mobileSearchInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                handleSearch(this);
+            }
+        });
+    }
+});
+</script>
+<section class="banner style2"  style="background-color: rgba(255, 255, 255, 0.85);">
+    <div class="content">
+
+        <h1>Using Pinterest and AI to Nail My Design Vision</h1>
+        
+        
+        <hr style="margin: 5px; height: 0;">
+
+            <div class="meta-info">
+              <div class="meta-item">
+                <i class="fad fa-calendar-alt fa-lg"></i>
+                  <span>Jul 27, 2025</span>
+                </div>
+              <div class="meta-item">
+                <i class="fad fa-clock fa-lg"></i>
+                <span>8 minutes</span>
+              </div>
+            </div>
+
+      </div>
+      
+  
+    <div class="image">
+      <img src="pinterest_board.png" loading="lazy" decoding="async" alt="Using Pinterest and AI to Nail My Design Vision">
+    </div>
+  
+</section>
+<section class="wrapper style2">
+    <div class="content">
+        <div class="meta-container">
+            <div class="meta-categories-tags">
+                
+                
+                    <a class="button primary small" href="../../../categories/bklyn-fashion-academy-series" class="category-link">Bklyn fashion academy series</a>
+                    
+                    <a class="button primary small" href="../../../categories/how-to" class="category-link">How to</a>
+                    
+                    <a class="button primary small" href="../../../categories/ai-in-fashion" class="category-link">Ai in fashion</a>
+                    
+                
+               
+                
+                    
+                    <a class="button small" href="../../../tags/design-vision">Design vision</a>
+                    
+                    <a class="button small" href="../../../tags/moodboard">Moodboard</a>
+                    
+                    <a class="button small" href="../../../tags/pinterest">Pinterest</a>
+                    
+                    <a class="button small" href="../../../tags/women-in-future-industries">Women in future industries</a>
+                    
+                    <a class="button small" href="../../../tags/inspo">Inspo</a>
+                    
+                
+            </div>
+
+            
+            <script src="../../../js/clipboard.6a3adc2369f3e5dbc2f660d75108bfe82c075bbb0f7fce01fb1d8231176ba28f.js"></script>
+
+            
+            <ul class="icons share-icons">
+                <li><a href="https://pinterest.com/pin/create/button/?url=http%3a%2f%2flocalhost%3a1313%2fblog%2f2025%2fhow-i-used-pinterest-and-ai-to-nail-my-design-vision%2f&media=pinterest_board.png&description=Using%20Pinterest%20and%20AI%20to%20Nail%20My%20Design%20Vision" class="icon brands style1 fa-pinterest" target="_blank" title="Share on Pinterest">
+                    <span class="label">Share on Pinterest</span></a></li>
+                <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fblog%2f2025%2fhow-i-used-pinterest-and-ai-to-nail-my-design-vision%2f" target="_blank" title="Share on Facebook" class="icon brands style1 fa-facebook-f">
+                    <span class="label">Share on Facebook</span></a></li>
+                <li><a href="https://www.linkedin.com/sharing/share-offsite/?url=http%3a%2f%2flocalhost%3a1313%2fblog%2f2025%2fhow-i-used-pinterest-and-ai-to-nail-my-design-vision%2f" target="_blank" title="Share on LinkedIn" class="icon brands style1 fa-linkedin">
+                    <span class="label">Share on LinkedIn</span></a></li>
+                <li><a onclick="copyToClipboard('http:\/\/localhost:1313\/blog\/2025\/how-i-used-pinterest-and-ai-to-nail-my-design-vision\/')" class="icon style1 fa-link" title="Copy Link" style="cursor: pointer;">
+                    <span class="label">Copy Link</span></a></li>
+            </ul>
+        </div>    
+         <div id="top"></div>
+      
+
+
+
+<br>
+      <p>In this post, I&rsquo;ll be breaking down how I translated my initial ideas into final design sketches using <strong>Pinterest</strong>, a visual search platform, and <strong>generative AI</strong>, specifically the text-to-image feature in <strong>Microsoft Designer</strong>. Together, these tools helped me both explore and clarify my aesthetic and generate design references far beyond what I could imagine on my own.</p>
+<hr>
+
+
+
+
+
+  <h2 id="what-is-design-vision--realization-in-fashion">What is Design Vision &amp; Realization in Fashion?</h2>
+
+
+<p>In simple terms, <strong>design vision</strong> is the big-picture story driving your designs. It&rsquo;s what you want your collection to <em>say</em> and <em>feel</em>. This step involves gathering reference images, experimenting with silhouettes, drafting sketches and refining color palettes and details. Constructing your designs into garments is called <strong>design realization</strong>. This process includes pattern-making, fabric selection, construction techniques, fit adjustments, and so on.</p>
+<p>You might have a clear vision in your head, but translating it into initial sketches and designs can feel overwhelming especially when first starting out. Here is where visual tools like Pinterest and AI text-to-image generators can help bring the ideas in your head onto paper.</p>
+<hr>
+
+
+
+
+
+  <h2 id="pinterest-a-visual-search-engine">Pinterest: A Visual Search Engine</h2>
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+   
+   
+   
+   
+   
+   
+ 
+   <figure class="figure image fit">
+     <picture>
+       
+       <source srcset="../../../blog/2025/how-i-used-pinterest-and-ai-to-nail-my-design-vision/pinterest_hu_553869713de4a1f7.webp 2x, ../../../blog/2025/how-i-used-pinterest-and-ai-to-nail-my-design-vision/pinterest_hu_9cadca910a81fd49.webp 1x" media="(min-width: 600px)" type="image/webp">
+       <source srcset="../../../blog/2025/how-i-used-pinterest-and-ai-to-nail-my-design-vision/pinterest_hu_7336701a51335fc3.webp" type="image/webp" media="(max-width: 599px)">
+ 
+       
+       <source srcset="../../../blog/2025/how-i-used-pinterest-and-ai-to-nail-my-design-vision/pinterest_hu_a1fa88154dbd7c87.png 2x, ../../../blog/2025/how-i-used-pinterest-and-ai-to-nail-my-design-vision/pinterest_hu_76c647607376f836.png 1x" media="(min-width: 600px)">
+       <source srcset="../../../blog/2025/how-i-used-pinterest-and-ai-to-nail-my-design-vision/pinterest_hu_e52f94b63b43f72.png" media="(max-width: 599px)">
+ 
+       
+       <img 
+         src="../../../blog/2025/how-i-used-pinterest-and-ai-to-nail-my-design-vision/pinterest_hu_76c647607376f836.png"
+         srcset="../../../blog/2025/how-i-used-pinterest-and-ai-to-nail-my-design-vision/pinterest_hu_76c647607376f836.png 1x, ../../../blog/2025/how-i-used-pinterest-and-ai-to-nail-my-design-vision/pinterest_hu_a1fa88154dbd7c87.png 2x"
+         sizes="(max-width: 600px) 100vw, 800px"
+         alt="Pinterest Login Landing"
+         loading="lazy"
+         decoding="async"
+         width="800"
+         height="420"
+       >
+     </picture>
+     
+       <figcaption>Pinterest Login Landing Page</figcaption>
+     
+   </figure>
+ 
+
+<p>Pinterest is far more than a social media platform—it’s a <strong>visual search engine</strong>. With over <strong>570 million users worldwide</strong>, it’s a go-to resource for creative inspiration in food, home, and fashion. For designers, its visual-first search makes it easy to explore silhouettes, fabrics, and styling ideas.</p>
+<p>👉 <strong>Stat to Know:</strong> Nearly, <strong>70% of Pinterest users are women</strong>, making it highly aligned with fashion’s core demographics. (Source: <a href="https://www.statista.com/statistics/248168/gender-distribution-of-pinterest-users/">Statista 2025</a>)</p>
+<p>What makes Pinterest exceptional for fashion designers is its algorithm&rsquo;s ability to understand visual connections. Pin an image of a structured blazer, and the platform suggests related silhouettes, fabrics, and design details, creating a web of visual references that often leads to unexpected inspiration.</p>
+<p><strong>Key Pinterest Advantages for Fashion Design:</strong></p>
+<ul>
+<li>🔎<strong>Granular search capabilities</strong>: Search for specific elements like &ldquo;asymmetrical hemlines&rdquo; or &ldquo;utilitarian details&rdquo;</li>
+<li>✨<strong>Algorithm-driven discovery</strong>: Related content suggestions expose you to references you wouldn&rsquo;t have found otherwise</li>
+<li>🗃️<strong>Visual organization</strong>: Project-specific boards keep inspiration organized and accessible</li>
+</ul>
+<hr>
+
+
+
+
+
+  <h2 id="enter-text-to-image-generative-ai-your-creative-collaborator">Enter Text-to-Image Generative AI: Your Creative Collaborator</h2>
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+   
+   
+   
+   
+   
+   
+ 
+   <figure class="figure image fit">
+     <picture>
+       
+       <source srcset="../../../blog/2025/how-i-used-pinterest-and-ai-to-nail-my-design-vision/MS_txt_hu_20a44c23688f1489.webp 2x, ../../../blog/2025/how-i-used-pinterest-and-ai-to-nail-my-design-vision/MS_txt_hu_4b142e65cc279278.webp 1x" media="(min-width: 600px)" type="image/webp">
+       <source srcset="../../../blog/2025/how-i-used-pinterest-and-ai-to-nail-my-design-vision/MS_txt_hu_f0d2abbd2852795e.webp" type="image/webp" media="(max-width: 599px)">
+ 
+       
+       <source srcset="../../../blog/2025/how-i-used-pinterest-and-ai-to-nail-my-design-vision/MS_txt_hu_a8e1c9fecd3ec2d8.png 2x, ../../../blog/2025/how-i-used-pinterest-and-ai-to-nail-my-design-vision/MS_txt_hu_7dcd0e2c802960c7.png 1x" media="(min-width: 600px)">
+       <source srcset="../../../blog/2025/how-i-used-pinterest-and-ai-to-nail-my-design-vision/MS_txt_hu_27d41dd922201def.png" media="(max-width: 599px)">
+ 
+       
+       <img 
+         src="../../../blog/2025/how-i-used-pinterest-and-ai-to-nail-my-design-vision/MS_txt_hu_7dcd0e2c802960c7.png"
+         srcset="../../../blog/2025/how-i-used-pinterest-and-ai-to-nail-my-design-vision/MS_txt_hu_7dcd0e2c802960c7.png 1x, ../../../blog/2025/how-i-used-pinterest-and-ai-to-nail-my-design-vision/MS_txt_hu_a8e1c9fecd3ec2d8.png 2x"
+         sizes="(max-width: 600px) 100vw, 800px"
+         alt="Microsoft Designer&#39;s Text-to-Image Generator Tool"
+         loading="lazy"
+         decoding="async"
+         width="800"
+         height="401"
+       >
+     </picture>
+     
+       <figcaption>Microsoft Designer&#39;s Text-to-Image Generator Tool</figcaption>
+     
+   </figure>
+ 
+
+<p>While Pinterest helps you with discovery, <strong>generative AI</strong> lets you reimagine something new. Behind the hood, <strong>text-to-image models</strong> work by analyzing vast databases of existing images and learning to generate new visuals based on written descriptions. Meaning when you type a detailed description into tools like <strong>Midjourney</strong>, <strong>Stable Diffusion,</strong> and <strong>DALL·E 3</strong> (which powers Microsoft Designer), it creates an image based on your prompt.</p>
+<p>For fashion designers, this means describing a garment—“oversized navy firefighter coat with reflective trimming”—and instantly seeing multiple visual interpretations.</p>
+<p>These AI tools excel at:</p>
+<ul>
+<li>Combining disparate ideas (e.g., Victorian tailoring + athletic wear)</li>
+<li>Quickly generating dozens of variations</li>
+<li>Visualizing fabrics, silhouettes, and styles without technical drawing</li>
+</ul>
+<p>Traditional fashion illustration requires time and skill to produce each variation, but AI can generate dozens of concept images in minutes, allowing you to explore multiple directions rapidly.</p>
+<p>As a student at the <a href="https://www.bklynlibrary.org/bklyn-fashion-academy">BKLYN Fashion Academy</a> in 2024, I used Pinterest and Microsoft Designer’s text-to-image AI generator to develop a cohesive design vision for my Emergency Services-inspired collection. The AI images became my primary references when developing my final design sketches.</p>
+<hr>
+
+
+
+
+
+  <h2 id="my-fashion-design-vision-process">My Fashion Design Vision Process</h2>
+
+
+
+
+
+
+
+  <h3 id="from-pinterest-boards-to-ai-generated-images-to-final-design-sketches">From Pinterest Boards to AI Generated Images to Final Design Sketches</h3>
+
+
+<p>For my <a href="https://eversewslowly.com/blog/2025/behind-the-seams/">BKYLN Fashion Academy</a> project, the theme was &ldquo;<strong>Women of Future Industries</strong>,&rdquo; with a focus on <strong>Emergency Services (EMS/FDNY).</strong> This presented an interesting challenge: how do you take the functional, protective nature of emergency services uniforms into contemporary fashion that still honors the original purpose and aesthetic?</p>
+
+
+
+
+
+  <h3 id="step-1-building-a-pinterest-mood-board"><strong>Step 1:</strong> Building A Pinterest “Mood” Board</h3>
+
+
+<p>I started by <a href="https://www.pinterest.com/EverSewSlowly/women-in-future-jobs-fashion-design-realization/">creating a new Pinterest board</a> specifically for my mini collection. My search strategy involved multiple keyword combinations to cast a wide net for inspiration:</p>
+<ul>
+<li>&ldquo;<strong>Female firefighters</strong>&rdquo; - to understand the actual uniforms and how they look on women</li>
+<li>&ldquo;<strong>Amelia Earhart</strong>&rdquo; - as a historical reference for women in traditionally male-dominated fields</li>
+<li>&ldquo;<strong>Inverted pleats</strong>&rdquo; - for specific construction details that could add movement and functionality</li>
+<li>&ldquo;<strong>Reflective trimming fashion</strong>&rdquo; - to see how safety elements could be incorporated stylistically</li>
+<li>&ldquo;<strong>Utility workwear women</strong>&rdquo; - for contemporary interpretations of functional clothing</li>
+</ul>
+<p>After a few pins, Pinterest&rsquo;s algorithm suggested related images like vintage aviation uniforms and modern tactical gear and even high-fashion interpretations of workwear—some of which I wouldn’t have thought to search for. Pinterest also provides search suggestions both within its search feature and as cards on your feed, this inspired keywords that I would later use in Microsoft Designer’s text-to-image AI prompts.</p>
+
+
+
+
+
+  <h3 id="step-2-generating-ideas-using-ai"><strong>Step 2:</strong> Generating Ideas Using AI</h3>
+
+
+
+
+
+
+
+  <h4 id="how-to-use-microsoft-designers-text-to-image">How to Use Microsoft Designer’s Text-to-Image:</h4>
+
+
+<ol>
+<li>
+<p><strong>Access the Tool</strong>: Go to <a href="https://designer.microsoft.com/">Microsoft Designer</a> on your browser or via the app and select <a href="https://designer.microsoft.com/image-creator?scenario=texttoimage">Image Creator.</a></p>
+</li>
+<li>
+<p><strong>Craft Your Prompt</strong>: Write a detailed description of your envisioned garment or look.<br>
+One of the neat things about Microsoft Designer is that it showcases several examples of generated images and the prompts that created them. If you are new to these tools, I recommend reading through a couple and trying some of them out to get a feel for how it works.</p>
+<p>👉<strong>Tip</strong>: You can use <a href="https://chatgpt.com">ChatGPT</a>, <a href="https://claude.ai/">ClaudeAI</a> or others like it and ask it to improve or develop your text prompt if wordsmithing isn’t your forte.</p>
+</li>
+<li>
+<p><strong>Generate Multiple Variations at Once</strong>: Once you have your prompt ready, select ‘Create’ and Microsoft Designer will return several (~3-4) variations per prompt. *Note you get 15 free credits a month.</p>
+</li>
+<li>
+<p><strong>Refine and Iterate</strong>: Use the generated images as starting points for more specific follow-up prompts.</p>
+</li>
+</ol>
+
+
+
+
+
+  <h3 id="step-3-sketching-the-designs-concept-development"><strong>Step 3:</strong> Sketching the Designs (Concept Development)</h3>
+
+
+<p>I pinned my favorite AI images back to Pinterest and continued refining my mood board. Then I culled my pins and notes, picking color palettes, silhouettes, and functional details I wanted to carry forward.</p>
+<p>From there, I created my initial design sketches and final lineup. <strong>Pinterest</strong> provided the visual vocabulary and understanding of existing solutions while <strong>AI</strong> enabled rapid exploration of new combinations and iterations.</p>
+ <div class="index align-left">
+ Below are some pins both discovered on Pinterest and AI generated that served as references and inspired my final designs.
+<section><header><h3>Look 1: Turnout Jacket Dress</h3></header>
+<div class="content">
+<p><a href="https://www.pinterest.com/pin/950892908816154736/" data-pin-do="embedPin"></a>
+<a href="https://www.pinterest.com/pin/950892908815937935/" data-pin-do="embedPin"></a>
+<a href="https://www.pinterest.com/pin/950892908816283863/" data-pin-do="embedPin"></a></p>
+</div></section>
+<section><header><h3>Look 2: Exo-Performance Suit</h3></header>
+<div class="content"> 
+<p><a href="https://www.pinterest.com/pin/950892908815813339/" data-pin-do="embedPin"></a>
+<a href="https://www.pinterest.com/pin/950892908816165486/" data-pin-do="embedPin"></a></p>
+</div></section>
+<section><header><h3>Look 3: Bomber Jacket & Joggers </h3></header>
+<div class="content">
+<p><a href="https://www.pinterest.com/pin/950892908818021334/" data-pin-do="embedPin"></a>
+<a href="https://www.pinterest.com/pin/950892908818593779/" data-pin-do="embedPin"></a>
+<a href="https://www.pinterest.com/pin/950892908835397220/" data-pin-do="embedPin" height="336" width="236" frameborder="0"></a></p>
+</div></section>
+</div>
+<p><a href="https://www.pinterest.com/EverSewSlowly/women-in-future-jobs-fashion-design-realization/">Checkout the entire board!</a></p>
+<hr>
+
+
+
+
+
+  <h2 id="how-to-write-strong-fashion-ai-prompts">How to Write Strong Fashion AI Prompts</h2>
+
+
+<p>The magic of AI text-to-image generation is in the prompt. <strong>Clear, detailed descriptions</strong> tend to give you better results.</p>
+<p>👉<strong>Tip</strong>: Try <a href="https://www.adobe.com/products/firefly/features/text-to-image.html">Adobe Firefly</a> using the same prompt and see how the generated images differ and choose the platform that gives you the better results or tweak your prompt.</p>
+
+
+
+
+
+  <h3 id="key-elements-for-good-ai-prompts">Key Elements for Good AI Prompts:</h3>
+
+
+<ul class="alt">
+<li><b>Subject:</b>  women’s, men’s, unisex</li>
+<li><b>Style/Vibe:</b>  photorealistic, high detail, futuristic, minimalist, romantic, etc.</li>
+<li><b>Presentation:</b>  full body, front and back view, fashion pose, lineup, fashion illustration or technical drawing</li>
+<li><b>Garment Specifications:</b></li>
+<ul>
+<li>Type: cargo pants, jumpsuit, blazer, workwear  </li>
+<li>Details: reflective trims, utility straps, structured shoulders  </li>
+<li>Colors: navy, dark red, neutral tones  </li>
+<li>Materials: breathable fabric, fire-resistant, lightweight</li>
+</ul>**
+</ul>
+</div>
+<hr>
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="wrapper style1 align-center" >
+  <div class="inner" style="padding-top: 0rem;">
+    <h2>Example Prompts and Images Generated</h2>
+    <p></p>
+
+    <div class="items style2 small">
+      
+        
+<section class="item">
+  
+    <div class="item-media">
+      <img src="txt_ex1.png" loading="lazy" alt="item" decoding="async" />
+    </div>
+  
+  <h3></h3>
+  <p> <em>full body length view, women&rsquo;s fashion pose arms overhead holding bucket hat/helmet in an large coat with reflective trimming, highly detailed </em></p>
+</section>
+      
+        
+<section class="item">
+  
+    <div class="item-media">
+      <img src="txt_ex2.png" loading="lazy" alt="item" decoding="async" />
+    </div>
+  
+  <h3></h3>
+  <p> <em>women&rsquo;s high waisted loose pants waist band with utility Velcro loops as embellishments </em></p>
+</section>
+      
+    </div>
+  </div>
+</section>
+
+<p><strong>The Synergy Between Pinterest and AI</strong></p>
+<p>The combination of Pinterest&rsquo;s discovery capabilities and AI&rsquo;s generative ideations created a design process that was both comprehensive and efficient. Pinterest helped me understand what already existed in the emergency services and fashion worlds, while AI helped me envision what could exist by combining these elements in new ways.</p>
+<p>Through this Pinterest and AI-driven approach, I discovered several key insights. Most significantly, AI allowed for rapid iteration and refinement that would have been impossible with traditional sketching—I could generate dozens of concept images in a single afternoon, exploring far more directions than manual methods would allow. The AI&rsquo;s interpretation of my prompts often led to unexpected visual solutions, such as when I described &ldquo;utility workwear elements&rdquo; and discovered how straps and loops could become decorative rather than purely functional elements.</p>
+<p>Seeing my concepts rendered in photorealistic detail provided invaluable insights into how proportions would work in reality and how different color combinations affected the overall impact of the designs. The AI&rsquo;s interpretation of technical elements like &ldquo;reflective trimming&rdquo; and &ldquo;breathable materials&rdquo; gave me visual inspiration for aesthetically integrating functional requirements into fashion-forward designs, helping me visualize concepts I couldn&rsquo;t have articulated through traditional sketching alone.</p>
+
+
+
+
+
+  <h2 id="practical-tips-for-fashion-designers"><strong>Practical Tips for Fashion Designers</strong></h2>
+
+
+<p>Based on my experience, here are practical recommendations for incorporating these tools into your design process:</p>
+
+
+
+
+
+  <h3 id="pinterest-strategy"><strong>Pinterest Strategy:</strong></h3>
+
+
+<ol>
+<li><strong>Create project-specific boards</strong> to keep your inspiration organized</li>
+<li><strong>Use multiple search terms</strong> to cast a wide net for inspiration</li>
+<li><strong>Pin reference images</strong> and <strong>detail shots</strong> to capture both overall concepts and specific construction techniques</li>
+<li><strong>Follow the algorithm&rsquo;s suggestions</strong> - Pinterest&rsquo;s related content feature often leads to unexpected inspiration</li>
+</ol>
+
+
+
+
+
+  <h3 id="ai-prompting-best-practices"><strong>AI Prompting Best Practices:</strong></h3>
+
+
+<ol>
+<li><strong>Be extremely specific</strong> about what you want to see</li>
+<li><strong>Include technical fashion terminology</strong> to get more accurate results</li>
+<li><strong>Specify presentation style</strong> (photorealistic, fashion pose, etc.)</li>
+<li><strong>Generate multiple variations</strong> before moving to the next concept</li>
+<li><strong>Use generated images as starting points</strong> for more refined prompts</li>
+</ol>
+
+
+
+
+
+  <h3 id="integration-workflow"><strong>Integration Workflow:</strong></h3>
+
+
+<ol>
+<li><strong>Start with Pinterest research</strong> to understand existing visual language</li>
+<li><strong>Use AI to generate original concepts</strong> based on your research insights</li>
+<li><strong>Return to Pinterest</strong> to research specific details revealed in your AI images</li>
+<li><strong>Iterate between both platforms</strong> to refine your vision</li>
+</ol>
+
+
+
+
+
+  <h2 id="final-thoughts"><strong>Final Thoughts</strong></h2>
+
+
+<p>For fashion designers looking to expand their creative process, I recommend starting with clear project goals and being willing to experiment with both platforms. The learning curve is manageable, and the creative possibilities are genuinely exciting. Most importantly, these tools won&rsquo;t replace your creativity or technical skills—but they will amplify them.</p>
+<p>The intersection of visual discovery and AI generation offers fashion designers an unprecedented idea-generating opportunity. The ability to rapidly visualize concepts, explore variations, and communicate ideas visually will accelerate the design process and potentially lead to more innovative designs. By embracing these technologies thoughtfully, we can create designs that are both culturally relevant and genuinely forward-thinking.</p>
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+   
+   
+   
+   
+   
+   
+ 
+   <figure class="figure image fit">
+     <picture>
+       
+       <source srcset="../../../blog/2025/how-i-used-pinterest-and-ai-to-nail-my-design-vision/final_lineup_hu_a0b592ecec17cc97.webp 2x, ../../../blog/2025/how-i-used-pinterest-and-ai-to-nail-my-design-vision/final_lineup_hu_909fa5b21b86b370.webp 1x" media="(min-width: 600px)" type="image/webp">
+       <source srcset="../../../blog/2025/how-i-used-pinterest-and-ai-to-nail-my-design-vision/final_lineup_hu_9e0ab916bcddfddd.webp" type="image/webp" media="(max-width: 599px)">
+ 
+       
+       <source srcset="../../../blog/2025/how-i-used-pinterest-and-ai-to-nail-my-design-vision/final_lineup_hu_7bf3c92dfbe4d98a.jpg 2x, ../../../blog/2025/how-i-used-pinterest-and-ai-to-nail-my-design-vision/final_lineup_hu_58f2c030f9021acf.jpg 1x" media="(min-width: 600px)">
+       <source srcset="../../../blog/2025/how-i-used-pinterest-and-ai-to-nail-my-design-vision/final_lineup_hu_c715d13545912c69.jpg" media="(max-width: 599px)">
+ 
+       
+       <img 
+         src="../../../blog/2025/how-i-used-pinterest-and-ai-to-nail-my-design-vision/final_lineup_hu_58f2c030f9021acf.jpg"
+         srcset="../../../blog/2025/how-i-used-pinterest-and-ai-to-nail-my-design-vision/final_lineup_hu_58f2c030f9021acf.jpg 1x, ../../../blog/2025/how-i-used-pinterest-and-ai-to-nail-my-design-vision/final_lineup_hu_7bf3c92dfbe4d98a.jpg 2x"
+         sizes="(max-width: 600px) 100vw, 800px"
+         alt="Final Designs"
+         loading="lazy"
+         decoding="async"
+         width="800"
+         height="600"
+       >
+     </picture>
+     
+       <figcaption>Final Designs for BKLYN Fashion Academy 2024</figcaption>
+     
+   </figure>
+ 
+
+<hr>
+<p>💬 Have you tried using AI in your creative process yet? What tools or techniques do you love? Drop a comment below!</p>
+
+      
+        <a href="#top" style="align-items: center;">↥ Back to Top</a></div>
+
+
+    </div>
+</section>
+<section class="wrapper style1 align-center">
+    <div class="inner">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <ul>
+                <h3>
+                    
+                    
+                    
+                        
+                        
+                        
+                        
+                            
+                                <li><a href="../../../">Home</a></li>
+                                
+                            
+                        
+                            
+                                <li><a href="../../../blog/">Blog</a></li>
+                                
+                            
+                        
+                    
+                    
+                    
+                    <li><span class="current">Using Pinterest and AI to Nail My Design Vision</span></li>
+                </h3>
+            </ul>
+        </nav>  
+    </div>
+</section>
+<section class="wrapper style2 align-center">
+  <div class="inner">
+      
+        <h2>Stay in the Loop</h2>
+      
+        <p class="subtitle">Get updates on refashion projects, tutorials, and behind-the-scenes stories.</p>
+
+      
+      <div class="email-octopus-form">
+        <script async src="https://eocampaign1.com/form/ea500138-4914-11f0-b8ca-3bcf1751ec19.js" data-form="ea500138-4914-11f0-b8ca-3bcf1751ec19"></script>
+    </div>
+  </div>
+</section>
+
+<style>
+ 
+[data-form="ea500138-4914-11f0-b8ca-3bcf1751ec19"] .emailoctopus-form {
+  --label-size: 12px;
+  --field-colour: #FFFFFF;
+  --label-colour: #212529;
+  --button-colour: #000000;
+  --button-text-colour: #FFFFFF !important;
+  --field-border-colour: #CED4DA;
+}
+
+[data-form="ea500138-4914-11f0-b8ca-3bcf1751ec19"].inline-container {
+  max-width: 100% !important;
+  position: relative;
+}
+
+ 
+[data-form="ea500138-4914-11f0-b8ca-3bcf1751ec19"] .btn {
+  all: unset;
+  display: inline-block;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.8rem;
+  line-height: 4em;
+  height: 4em;
+  border-radius: 4em;
+  padding: 0 3em;
+  color: #FFFFFF !important;
+  text-align: center;
+  cursor: pointer;
+  max-width: 20rem;
+  width: 100%;  
+}
+
+ 
+[data-form="ea500138-4914-11f0-b8ca-3bcf1751ec19"] .btn:hover {
+   
+  color: #eeeeee !important;
+  background-color: #837164 !important;
+
+}
+ 
+
+ 
+.emailoctopus-form-wrapper iframe {
+  max-width: 100% !important;
+  width: 100% !important;
+  min-height: 300px;
+  border: none;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 1em;
+}
+</style>
+
+
+		
+		</div>
+		
+		
+		
+
+
+
+
+
+
+
+
+
+
+
+
+<script src='../../../js/bundle.min.js'></script>
+
+
+		
+ <br>
+<footer class="wrapper style1 align-center">
+
+        <p><i class="fas fa-heart"></i> 
+            Follow Me on Social Media!</p>
+        <ul class="icons">
+            
+            <li><a target="_blank" href="https://www.pinterest.com/EverSewSlowly" class="icon brands style2 fa-pinterest">
+                <span class="label">Pinterest</span></a></li>
+            
+            <li><a target="_blank" href="https://www.instagram.com/eversewslowly" class="icon brands style2 fa-instagram">
+                <span class="label">Instagram</span></a></li>
+            
+            <li><a target="_blank" href="mailto:eversewslowly@gmail.com" class="fav icon style2 fa-envelope">
+                <span class="label">Email</span></a></li>
+        </ul>
+        <p>&copy; 2025 Ever Sew Slowly </p>
+        <small>Theme based on Hugo Story by
+            <a target="_blank" href="https://github.com/caressofsteel/">CaressOfSteel</a> 
+        </small>
+        <i class="footerspacer icon fa-diamond"></i>
+            
+</footer>
+
+
+<script type="text/javascript" src="http://localhost:1313/js/fontawesome-all.min.js"></script>
+
+		
+<script src="../../../js/toggle-captions.js" defer></script>
+
+ 
+<script
+    type="text/javascript"
+    async defer
+    src="//assets.pinterest.com/js/pinit.js"
+></script>
+
+	</body>
+</html>
