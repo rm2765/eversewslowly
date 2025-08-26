@@ -2,67 +2,67 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Ever Sew Slowly</title>
-    <link>https://eversewslowly.com/categories/</link>
+    <link>http://localhost:1313/categories/</link>
     <description>Recent content in Categories on Ever Sew Slowly</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>{year}</copyright>
     <lastBuildDate>Sun, 27 Jul 2025 17:02:02 +0000</lastBuildDate>
-    <atom:link href="https://eversewslowly.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI in Fashion</title>
-      <link>https://eversewslowly.com/categories/ai-in-fashion/</link>
+      <link>http://localhost:1313/categories/ai-in-fashion/</link>
       <pubDate>Sun, 27 Jul 2025 17:02:02 +0000</pubDate>
-      <guid>https://eversewslowly.com/categories/ai-in-fashion/</guid>
+      <guid>http://localhost:1313/categories/ai-in-fashion/</guid>
       <description></description>
     </item>
     <item>
       <title>BKLYN Fashion Academy Series</title>
-      <link>https://eversewslowly.com/categories/bklyn-fashion-academy-series/</link>
+      <link>http://localhost:1313/categories/bklyn-fashion-academy-series/</link>
       <pubDate>Sun, 27 Jul 2025 17:02:02 +0000</pubDate>
-      <guid>https://eversewslowly.com/categories/bklyn-fashion-academy-series/</guid>
+      <guid>http://localhost:1313/categories/bklyn-fashion-academy-series/</guid>
       <description></description>
     </item>
     <item>
       <title>How-To</title>
-      <link>https://eversewslowly.com/categories/how-to/</link>
+      <link>http://localhost:1313/categories/how-to/</link>
       <pubDate>Sun, 27 Jul 2025 17:02:02 +0000</pubDate>
-      <guid>https://eversewslowly.com/categories/how-to/</guid>
+      <guid>http://localhost:1313/categories/how-to/</guid>
       <description></description>
     </item>
     <item>
       <title>List</title>
-      <link>https://eversewslowly.com/categories/list/</link>
+      <link>http://localhost:1313/categories/list/</link>
       <pubDate>Mon, 23 Jun 2025 21:02:54 +0000</pubDate>
-      <guid>https://eversewslowly.com/categories/list/</guid>
+      <guid>http://localhost:1313/categories/list/</guid>
       <description></description>
     </item>
     <item>
       <title>Roundup</title>
-      <link>https://eversewslowly.com/categories/roundup/</link>
+      <link>http://localhost:1313/categories/roundup/</link>
       <pubDate>Sat, 26 Apr 2025 20:42:13 +0000</pubDate>
-      <guid>https://eversewslowly.com/categories/roundup/</guid>
+      <guid>http://localhost:1313/categories/roundup/</guid>
       <description></description>
     </item>
     <item>
       <title>Refashioning</title>
-      <link>https://eversewslowly.com/categories/refashioning/</link>
+      <link>http://localhost:1313/categories/refashioning/</link>
       <pubDate>Thu, 27 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://eversewslowly.com/categories/refashioning/</guid>
+      <guid>http://localhost:1313/categories/refashioning/</guid>
       <description></description>
     </item>
     <item>
       <title>Slow Fashion</title>
-      <link>https://eversewslowly.com/categories/slow-fashion/</link>
+      <link>http://localhost:1313/categories/slow-fashion/</link>
       <pubDate>Thu, 27 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://eversewslowly.com/categories/slow-fashion/</guid>
+      <guid>http://localhost:1313/categories/slow-fashion/</guid>
       <description></description>
     </item>
     <item>
       <title>Sewing Resources</title>
-      <link>https://eversewslowly.com/categories/sewing-resources/</link>
+      <link>http://localhost:1313/categories/sewing-resources/</link>
       <pubDate>Sun, 26 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>https://eversewslowly.com/categories/sewing-resources/</guid>
+      <guid>http://localhost:1313/categories/sewing-resources/</guid>
       <description></description>
     </item>
   </channel>

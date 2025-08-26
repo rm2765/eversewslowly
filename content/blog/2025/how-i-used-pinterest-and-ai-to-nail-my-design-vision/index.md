@@ -214,7 +214,7 @@ For fashion designers looking to expand their creative process, I recommend star
 
 The intersection of visual discovery and AI generation offers fashion designers an unprecedented idea-generating opportunity. The ability to rapidly visualize concepts, explore variations, and communicate ideas visually will accelerate the design process and potentially lead to more innovative designs. By embracing these technologies thoughtfully, we can create designs that are both culturally relevant and genuinely forward-thinking. 
 
- {{< figure src="final_lineup.jpg" alt="Final Designs" caption="Final Designs for BKLYN Fashion Academy 2024" class="image fit" >}} 
+ {{< figure src="final_lineup.jpg" alt="Final Designs" caption="Design Sketches for BKLYN Fashion Academy 2024" class="image fit" >}} 
 
 ---
 
