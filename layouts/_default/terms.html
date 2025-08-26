@@ -1,9 +1,9 @@
 {{ define "main" }}
 
-{{ partial "menu-header" . }}
+{{ partialCached "menu-header" . }}
 
-{{ partial "blog-taxonomies-buttons" . }}
+{{ partialCached "blog-taxonomies-buttons" . }}
 
-{{ partial "breadcrumbs" . }}
+{{ partialCached "breadcrumbs" . }}
 
 {{ end }}

@@ -6,7 +6,7 @@
         
         <div class="items {{ .style }}">
             {{ range .items }}
-                {{ partial "item" . }}
+                {{ partialCached "item" . }}
             {{ end }}
         </div>
     </div>

@@ -1,6 +1,6 @@
 {{ define "main" }}
-{{ partial "menu-header" . }}
-{{ partial "blog_single_banner" . }}
+{{ partialCached "menu-header" . }}
+{{ partialCached "blog_single_banner" . }}
 <section class="wrapper style2">
     <div class="content">
         <div class="meta-container">
@@ -34,7 +34,7 @@
             </ul>
         </div>    
          <div id="top"></div>
-      {{ partial "toc" .}}
+      {{ partialCached "toc" .}}
       {{ .Content | safeHTML }}
       
         <a href="#top" style="align-items: center;">↥ Back to Top</a></div>
@@ -42,7 +42,7 @@
 
     </div>
 </section>
-{{ partial "breadcrumbs" . }}
-{{ partial "newsletter_inline" site.Data.newsletter_inline}}
+{{ partialCached "breadcrumbs" . }}
+{{ partialCached "newsletter_inline" site.Data.newsletter_inline}}
 
 {{ end }}

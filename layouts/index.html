@@ -1,9 +1,9 @@
 {{ define "main" }}
 
-	{{ partial "banner" site.Data.banner }}
-	{{ partial "latest_blog_post" site.Data.spotlight_blog }}
-	{{ partial "spotlight" site.Data.spotlight2 }}
-	{{ partial "gallery" site.Data.gallery }}
-	{{ partial "newsletter_inline" site.Data.newsletter_inline}}
+	{{ partialCached "banner" site.Data.banner }}
+	{{ partialCached "latest_blog_post" site.Data.spotlight_blog }}
+	{{ partialCached "spotlight" site.Data.spotlight2 }}
+	{{ partialCached "gallery" site.Data.gallery }}
+	{{ partialCached "newsletter_inline" site.Data.newsletter_inline}}
 <br>
 {{ end }}

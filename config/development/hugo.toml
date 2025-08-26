@@ -89,4 +89,4 @@ metaDataFormat = "yaml"
   pagerSize = 8
   path = "page"
 
-timeout = "120s"
+timeout = "4250s"

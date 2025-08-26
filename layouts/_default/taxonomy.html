@@ -1,10 +1,10 @@
 {{ define "main" }}
 
-{{ partial "menu-header" . }}
+{{ partialCached "menu-header" . }}
 
-{{ partial "taxonomy_featured_posts" . }}
+{{ partialCached "taxonomy_featured_posts" . }}
   
-{{ partial "breadcrumbs" . }}
+{{ partialCached "breadcrumbs" . }}
  
 {{ end }}
 

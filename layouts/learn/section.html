@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-    {{ partial "menu-header" . }}
+    {{ partialCached "menu-header" . }}
 
     <br>
     🚧 This page is under construction. Please check back later!
@@ -9,7 +9,7 @@
     {{ partial "banner" site.Data.banner_learn }}
     {{ partial "spotlight" site.Data.spotlight_learn }}
     {{ partial "spotlight" site.Data.spotlight_learn_blog }}
-    {{ partial "blog-taxonomies-buttons" . }}
+    {{ partialCached "blog-taxonomies-buttons" . }}
     -->
 
 {{ end }}

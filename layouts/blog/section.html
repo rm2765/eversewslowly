@@ -1,10 +1,10 @@
 {{ define "main" }}
 
-  {{ partial "menu-header" . }}
-  {{ partial "latest_blog_post" (dict "style" site.Data.blog_spotlight.style "id" site.Data.blog_spotlight.id) }}
-  {{ partial "featured-posts" site.Data.featured_posts}}
-  {{ partial "blog-taxonomies-buttons" . }}
-  {{ partial "newsletter_inline" site.Data.newsletter_inline}}
+  {{ partialCached "menu-header" . }}
+  {{ partialCached "latest_blog_post" (dict "style" site.Data.blog_spotlight.style "id" site.Data.blog_spotlight.id) }}
+  {{ partialCached "featured-posts" site.Data.featured_posts}}
+  {{ partialCached "blog-taxonomies-buttons" . }}
+  {{ partialCached "newsletter_inline" site.Data.newsletter_inline}}
 
 
 {{ end }}
