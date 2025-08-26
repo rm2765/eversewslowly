@@ -24,8 +24,9 @@ publishDir = "public"
 ## Hugo Built-in Features
 ## -----------------------------------------------
 
-#disableKinds = []
-# googleAnalytics = "G-XXXXXXXXXX"
+[services]
+  [services.googleAnalytics]
+    id = 'G-3HEZ2GN1D1'
 
 ## -----------------------------------------------
 ## Site Parameters

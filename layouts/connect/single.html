@@ -1,9 +1,9 @@
 {{ define "main" }}
     
-    {{ partialCached "menu-header" . }}
+    {{ partial "menu-header" . }}
     
-    {{ partialCached "banner_connect" site.Data.connect.mission }}
-    {{ partialCached "banner" site.Data.connect.banner }}
+    {{ partial "banner_connect" site.Data.connect.mission }}
+    {{ partial "banner" site.Data.connect.banner }}
     {{ partialCached "newsletter_inline" site.Data.newsletter_inline}}
 
 
