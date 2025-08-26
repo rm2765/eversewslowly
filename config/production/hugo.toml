@@ -50,7 +50,7 @@ timeout = "4250s"  # This was missing and might help with your timeout issue!
   favicon = true
 
 [Params.social]
-  email = "eversewslowly@gmail.com"
+  email = "contact@eversewslowly.com"
   instagram = "https://www.instagram.com/eversewslowly"
   pinterest = "https://www.pinterest.com/EverSewSlowly"
   youtube = "https://youtube.com/@eversewslowly/"

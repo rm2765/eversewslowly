@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Design Vision on Ever Sew Slowly</title>
-    <link>https://eversewslowly.com/tags/design-vision/</link>
+    <link>http://localhost:1313/tags/design-vision/</link>
     <description>Recent content in Design Vision on Ever Sew Slowly</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>{year}</copyright>
     <lastBuildDate>Sun, 27 Jul 2025 17:02:02 +0000</lastBuildDate>
-    <atom:link href="https://eversewslowly.com/tags/design-vision/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/design-vision/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Using Pinterest and AI to Nail My Design Vision</title>
-      <link>https://eversewslowly.com/blog/2025/how-i-used-pinterest-and-ai-to-nail-my-design-vision/</link>
+      <link>http://localhost:1313/blog/2025/how-i-used-pinterest-and-ai-to-nail-my-design-vision/</link>
       <pubDate>Sun, 27 Jul 2025 17:02:02 +0000</pubDate>
-      <guid>https://eversewslowly.com/blog/2025/how-i-used-pinterest-and-ai-to-nail-my-design-vision/</guid>
+      <guid>http://localhost:1313/blog/2025/how-i-used-pinterest-and-ai-to-nail-my-design-vision/</guid>
       <description>In this post, I&amp;rsquo;ll be breaking down how I translated my initial ideas into final design sketches using &lt;strong&gt;Pinterest&lt;/strong&gt;, a visual search platform, and &lt;strong&gt;generative AI&lt;/strong&gt;, specifically the text-to-image feature in &lt;strong&gt;Microsoft Designer&lt;/strong&gt;. Together, these tools helped me both explore and clarify my aesthetic and generate design references far beyond what I could imagine on my own.</description>
     </item>
   </channel>

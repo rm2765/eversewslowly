@@ -15,6 +15,7 @@ image: central_library.jpg
 summary: Thinking about applying to the BKLYN Fashion Academy? This list walks you through 9 honest, experience-based insights—from mentorship to emotional growth—so it can better help you decide whether this program is right for you.
 slug: null
 subtitle: "What I Wish I Knew Before Starting"
+type: blog
 keywords:
     - applying to BKLYN Fashion Academy
     - BKLYN Fashion Academy
