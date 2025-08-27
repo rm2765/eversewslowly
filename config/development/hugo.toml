@@ -24,9 +24,6 @@ publishDir = "public"
 ## Hugo Built-in Features
 ## -----------------------------------------------
 
-[services]
-  [services.googleAnalytics]
-    id = "G-3HEZ2GN1D1"
 
 googleAnalytics = "G-3HEZ2GN1D1"
 
