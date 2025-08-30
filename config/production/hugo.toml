@@ -1,26 +1,8 @@
-## -----------------------------------------------
-## Basic Configuration
-## -----------------------------------------------
-
-title = "Ever Sew Slowly"
-copyright = "{year}"
-## -----------------------------------------------
-## Publish
-## -----------------------------------------------
-relativeURLs = "true"
 baseURL = "https://eversewslowly.com/"
-publishDir = "public"
 
-## -----------------------------------------------
-## Hugo Built-in Features
-## -----------------------------------------------
-enableEmoji = true
-metaDataFormat = "yaml"
-timeout = "4250s"  # This was missing and might help with your timeout issue!
+[Params]
+  googleAnalyticsID = "G-SMHMNGCEW8"
 
-## -----------------------------------------------
-## Minification (Production Only)
-## -----------------------------------------------
 [minify]
   disableCSS = false
   disableHTML = false
@@ -28,65 +10,3 @@ timeout = "4250s"  # This was missing and might help with your timeout issue!
   disableJSON = false
   disableSVG = false
   disableXML = false
-
-[minify.tdewolff.html]
-  keepDocumentTags = true
-  keepQuotes = false
-  keepWhitespace = false
-
-## -----------------------------------------------
-## Site Parameters
-## -----------------------------------------------
-[build]
-  publish = "public"
-  command = "hugo"
-
-[build.environment]
-  HUGO_VERSION = "0.145.0"
-
-[Params]
-  description = "Ever Sew Slowly"
-  logo = "images/refashion_mens_shirt.png"
-  favicon = true
-
-[Params.social]
-  email = "contact@eversewslowly.com"
-  instagram = "https://www.instagram.com/eversewslowly"
-  pinterest = "https://www.pinterest.com/EverSewSlowly"
-  youtube = "https://youtube.com/@eversewslowly/"
-
-[Params.asset]
-  fontawesome_css = ["css/fontawesome-all.min.css"]
-  fontawesome_js = ["js/fontawesome-all.min.js"]
-
-[taxonomies]
-  topic = "topics"
-  tag = "tags"
-  report = "reports"
-  year = "years"
-  inspo = "inspirations"
-  technique = "techniques"
-  source = "sources"
-  pattern = "patterns"
-  color = "colors"
-  category = "categories"
-  playlist = "playlists"
-  construction = "constructions"
-
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
-    [markup.goldmark.parser]
-      attribute = true
-
-  [markup.tableOfContents]
-    endLevel = 1
-    startLevel = 1
-
-[pagination]
-  pagerSize = 8
-  path = "page"
-
-
-

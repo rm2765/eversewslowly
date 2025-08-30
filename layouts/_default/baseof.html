@@ -13,7 +13,8 @@
 		<!-- Wrapper -->
 		</div>
 		
-		{{ template "_internal/google_analytics.html" . }}
+		#{{ template "_internal/google_analytics.html" . }}
+		{{ partial "google_analytics.html" . }}
 		{{ partialCached "scripts" . }}
 		{{ partialCached "footer" . }}
 
