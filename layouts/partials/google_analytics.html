@@ -1,4 +1,4 @@
-{{ $gaid := getenv "GOOGLE_ANALYTICS_ID" }}
+{{ $gaid := getenv "HUGO_GOOGLE_ANALYTICS_ID" }}
 {{ if and (eq hugo.Environment "production") $gaid }}
   <!-- Google Analytics 4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id={{ $gaid }}"></script>
