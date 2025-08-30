@@ -1,7 +1,7 @@
 baseURL = "https://eversewslowly.com/"
 
-[Params]
-  googleAnalyticsID = "G-SMHMNGCEW8"
+#[Params]
+#  googleAnalyticsID = "{{ getenv "GOOGLE_ANALYTICS_ID" }}
 
 [minify]
   disableCSS = false

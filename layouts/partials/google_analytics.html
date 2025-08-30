@@ -1,11 +1,11 @@
 {{ $gaid := getenv "GOOGLE_ANALYTICS_ID" }}
-{{ if and (eq hugo.Environment "production") .Site.Params.googleAnalyticsID }}
+{{ if and (eq hugo.Environment "production") $gaid }}
   <!-- Google Analytics 4 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.googleAnalyticsID }}"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ $gaid }}"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', '{{ .Site.Params.googleAnalyticsID }}');
+    gtag('config', '{{ $gaid }}');
   </script>
 {{ end }}
