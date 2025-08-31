@@ -8,8 +8,8 @@ tags:
     - runway show
     - freebie
 categories:
-    - cornerstone
     - BKLYN Fashion Academy Series
+    - cornerstone
 fmContentType: Blog
 image: runway.webp
 summary: null
@@ -312,7 +312,7 @@ Come prepared with your construction checklist and any work-in-progress pieces. 
 
 👉 **Tip:** *Don’t stress about the inside finish (like seams)—focus on the exterior.*
 
-## ✏️ Making the Most of Technical Labs:
+## Making the Most of Technical Labs:
 
 * **Come with questions** – Keep a running list of issues like pattern adjustments or technique questions  
 * **Bring work-in-progress** – Patterns, mockups, test fabric, or partial pieces give instructors something to review  
@@ -396,5 +396,7 @@ Trust your creative instincts, embrace the challenge, and know that you're capab
    });">
   free resource list</b>
 </a> for emerging designers!</h3>
+
+<sub><b>Photography Credits:</b> Event photography by Gregg Richards, Brooklyn Public Library Staff Photographer. Other photos were taken by fellow designers and myself.</sub>
 
 <sub>A few links are affiliates, which helps support my work.</sub>
