@@ -16,7 +16,7 @@
 		<!--{{ template "_internal/google_analytics.html" . }}-->
 		{{ partial "google_analytics" . }}
 		{{ partialCached "scripts" . }}
-		{{ partialCached "footer" . }}
+		{{ partial "footer" . }}
 
 		{{ $js := resources.Get "js/toggle-captions.js" | js.Build }}
 <script src="{{ $js.RelPermalink }}" defer></script>

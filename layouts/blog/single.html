@@ -34,7 +34,7 @@
             </ul>
         </div>    
          <div id="top"></div>
-      {{ partialCached "toc" .}}
+      {{ partial "toc" .}}
       {{ .Content | safeHTML }}
       
         <a href="#top" style="align-items: center;">↥ Back to Top</a></div>
@@ -42,7 +42,7 @@
 
     </div>
 </section>
-{{ partialCached "breadcrumbs" . }}
+{{ partial "breadcrumbs" . }}
 {{ partialCached "newsletter_inline" site.Data.newsletter_inline}}
 
 {{ end }}
