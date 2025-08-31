@@ -1,16 +1,21 @@
 ---
 title: An Insider's Guide to the BKLYN Fashion Academy
-description: ""
+description: Insider’s guide to the BKLYN Fashion Academy—what to expect from application to runway, plus success tips and a free resource PDF.
 date: 2025-08-30T19:40:39.160Z
 draft: false
-tags: []
-categories: []
+tags:
+    - emerging designers
+    - runway show
+    - freebie
+categories:
+    - cornerstone
+    - BKLYN Fashion Academy Series
 fmContentType: Blog
-image: "runway.webp"
+image: runway.webp
 summary: null
 type: blog
 slug: null
-subtitle: 
+subtitle: null
 toc: true
 insertTOC: false
 pictures: ""
@@ -20,6 +25,20 @@ galleryThree: ""
 galleryFour: ""
 galleryFive: ""
 items: ""
+keywords:
+    - BKLYN Fashion Academy
+    - BKLYN Fashion Academy application process
+    - BKLYN Fashion Academy curriculum
+    - Brooklyn Public Library
+    - emerging designers
+    - Free fashion program
+    - How do you apply to the BKLYN Fashion Academy?
+    - Is the BKLYN Fashion Academy worth it?
+    - Is the Brooklyn Fashion Academy program free?
+    - runway show
+    - What is the BKLYN Fashion Academy?
+    - What to expect at BKLYN Fashion Academy
+    - free resources
 ---
 Wondering what the BKLYN Fashion Academy is really like? I entered BKLYN Fashion Academy with no formal training and finished presenting a mini collection on the runway—one of the most challenging and rewarding experiences of my life.
 
