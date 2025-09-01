@@ -156,25 +156,23 @@ Last year, I joined the sixth season of the [BKLYN Fashion Academy](https://www.
 
 # The Journey Begins with Doubt 
 
-Our profiles on the [BKLYN Fashion Academy webpage](https://www.bklynlibrary.org/bklyn-fashion-academy) reflect a great diversity—in age, backgrounds, careers, styles, and personal experiences. Some entered with formal training and years of expertise, while others, like me, [found sewing](https://eversewslowly.com/blog/2023/learning-to-sew/?utm_source=chatgpt.com) as a creative refuge during the COVID lockdown. Despite these differences, we shared a common passion for fashion—and many of the same self-doubts. Gia balancing family while facing critical voices, Regina steadily pursuing a career change into fashion, Ronen following his artistic curiosity and I beginning as a refashion amateur. Yet, We all wrestled with the same insecurities: ***Can I really do this? Am I good enough? Do I belong here?*** In the end, those doubts became the very foundation of our growth through BFA’s demanding but transformative journey.
+Our profiles on the [BKLYN Fashion Academy webpage](https://www.bklynlibrary.org/bklyn-fashion-academy) reflect a great diversity—in age, backgrounds, careers, styles, and personal experiences. Gia balancing family life while facing critical voices, Regina steadily pursuing a career change into fashion, Ronen following his artistic curiosity and I beginning as a refashion amateur. Yet, we all wrestled with the same insecurities: ***Can I really do this? Am I good enough? Do I belong here?*** In the end, those doubts became the very foundation of our growth through BFA’s demanding but transformative journey.
 
 {{< items title="Designer Profiles" style="style2 small" >}}
 {{< /items >}}
 
-## Gia: Balancing Family, Critics, and Fashion Design Dreams
-"*I had people tell me I wasn't talented enough to be a designer*," Gia confides. Despite her fashion degree, she spent a year planning before applying to BFA—carefully mapping out responsibilities to her family (two children, four dogs, and a husband). "If I can't invest 100% into something, I'd rather not do it. I didn't want regrets, and I wanted to give it my best shot."
-
-Her persistence paid off when her mother—once her biggest critic—praised her runway show, a moment that affirmed her efforts and proved that self-belief can overcome setbacks.
+## Gia: Pursuing Fashion Design Dreams While Balancing Family & Critics
+"*I had people tell me I wasn't talented enough to be a designer*," Gia confides. Despite having a degree in fashion, she spent a year planning before applying to BFA—carefully mapping out her family responsibilities (two children, four dogs, and a husband) to make time for the program. "*If I can't invest 100% into something, I'd rather not do it. I didn't want regrets, and I wanted to give it my best shot.*" Her persistence paid off when her mother—once her biggest critic—praised her runway show, a moment that affirmed her efforts and proved that self-belief can overcome past setbacks.
 
 ## Regina: A Transition into Fashion, Six Years in the Making
 
-Regina first learned about the BFA six years ago but felt unprepared—"*I didn't know how to sew, sketch, or design*"—her desire for fashion only grew stronger. Even after taking classes to build these skills, self-doubt lingered. "*I wasn't sure my designs were strong enough*," she admitted. When friends and family urged her to apply anyway—'You have nothing to lose!'—she submitted her application at the deadline. This leap turned her long-held dream into concrete steps toward launching her own brand.
+Regina first learned about the BFA six years ago but felt unprepared:"*I didn't know how to sew, sketch, or design*". Even after taking classes to build these skills, self-doubt lingered. "*I wasn't sure my designs were strong enough*," she admitted. When friends and family urged her to apply anyway—'*You have nothing to lose*!'—she submitted her application at the deadline. This leap turned her long-held dream into concrete steps toward launching her own brand.
 
 ## Ronen: An Artist's Curiosity Leads to Fashion
 
 Ronen, a visual artist, discovered the BFA by chance through an email in a rarely-checked inbox. Curious, he attended an info session and applied on a whim, attracted to working with textiles three-dimensionally. 
 
-He laughs, “I had no idea what I was getting into. I thought it would be skill-building workshops—just lessons on fashion and garment-making.” Although he was comfortable using sewing machines for simple projects, he assumed his lack of formal training would disqualify him.
+He laughs, “I had no idea what I was getting into. I thought it would be skill-building workshops—just lessons on fashion and garment-making.” Although he was comfortable using sewing machines for flat projects, he assumed his lack of formal training would disqualify him.
 
 To his surprise, being accepted into the program expanded his artistic boundaries and opened new possibilities in fashion design.
 
@@ -186,21 +184,19 @@ Having shared from where we started, the fun part is next, our designer personas
 
 # Envisioning Women in Future Industries
 
-Gia envisioned self-sustaining technology that empowers the next generation. Regina created polished, conservative looks for women in finance. Ronen reinterpreted legal wear as a statement of social justice. And, my own designs focused on the strength and bravery of women in emergency services.
-
-Through these distinct approaches, each of us translated personal values into a vision of women’s future roles.
+Each of us translated personal values into a vision of women’s future roles. Gia envisioned self-sustaining technology that empowers the next generation. Regina created polished, conservative looks for women in finance. Ronen reinterpreted legal wear as a statement of social justice. And, my own designs focused on the strength and bravery of women in emergency services.
 
 ## A Self-Sustaining Future
 {{< figure src="main_look_gia.jpg" alt="Gia's main look on canvas" caption="Gia's main look on canvas" class="image right small" >}}
 Gia's technology-inspired collection draws from sci-fi aesthetics—particularly the video game Deus Ex—to create designs that embody independence and resilience. "When I think of technology, I think of androids or machines. I wanted to create something self-sustaining," she explains. Her vision extends beyond the garments themselves: she wants to design pieces that empower women to feel capable and strong. 
 
->"More importantly, I want to design for women in a way that brings them joy. I design for myself, but if my client isn't happy, then I've failed."
+>"More importantly, I want to design for women in a way that brings them joy. I design for myself, but if my client isn't happy, then I've failed." - Gia
 
 ## Conservative Elegance for the Executive Woman
 {{< figure src="main_look_regina.jpg" alt="Regina's main look on canvas" caption="regina's main look on canvas" class="image right small" >}}
 Driven by an entrepreneurial spirit, Regina had a clear vision: designing for executive women. Choosing finance as her industry, she focused her collection on future business attire: 
 
-> "*I've always wanted to design for powerful, professional women. Our assignment was to create a vision for women in 2042, but I concentrated on future business attire. It was a dream to be selected and create a mini-collection on this theme*." -Regina
+> "*I've always wanted to design for powerful, professional women. Our assignment was to create a vision for women in 2044, but I concentrated on future business attire. It was a dream to be selected and create a mini-collection on this theme*." -Regina
 
 Her brand, [Reserved Wear](https://reserve-wear.com/), continues this vision, empowering women in corporate roles with sophistication and personality.
 
@@ -208,9 +204,9 @@ Her brand, [Reserved Wear](https://reserve-wear.com/), continues this vision, em
 
 ## Fashion as Social Commentary
 {{< figure src="main_look_ronen.jpg" alt="Ronen's main look on canvas" caption="Ronen's main look on canvas" class="image right small" >}}
-While curiosity drew Ronen to the BFA, his collection became a platform for social justice. Working under the *Law* theme, his vision drew from social movements and intersectionality. "*Novels about the Black experience in Brazil and decolonial theory, including texts about Palestine, influenced my work*," said Ronen. "*As an anti-Zionist, I see my designs participating in broader conversations on decolonization and justice*." Ronen sees advocates in the legal field wearing his designs as a performative statement to advocate progressive values, dismantle colonial legacies, and promote social justice. 
+While curiosity drew Ronen to the BFA, his collection became a platform for social justice. With *Law* as his industry, he drew inspiration from social movements and intersectionality. "*Novels about the Black experience in Brazil and decolonial theory, including texts about Palestine, influenced my work*," said Ronen. "*As an anti-Zionist, I see my designs participating in broader conversations on decolonization and justice*." Ronen sees advocates in the legal field wearing his designs as a performative statement to advocate progressive values, dismantle colonial legacies, and promote social justice. 
 
-Not only that, Ronen sees fashion as a dialogue platform on and off runways. 
+Not only that, Ronen sees fashion as a platform for dialogue on and off runways. 
 
 >"*Runways already have an audience and excitement—why not use that space to engage meaningfully? I view it as a form of public art, whether on the runway or on the street, where people wearing my designs make a statement beyond the conventional spaces for art and social commentary*." -Ronen
 
@@ -220,7 +216,7 @@ Fashion design has deepened his commitment to social justice, offering a new exp
 {{< figure src="main_look_rose2.jpg" alt="My main look on canvas" caption="My main look on canvas" class="image right small" >}}
 A data project on occupational segregation revealed that emergency services remain predominantly male, with little progress toward gender parity. This insight inspired my collection, championing women in this essential field. My work focuses on firefighter turnout jackets, incorporating visibility and protective features by deconstructing thrifted garments and repurposing textile waste. My vision for 2044 celebrates women's strength and bravery, aiming for a future where they are better represented and honored in these vital roles.
 
-While creating this collection, I not only envisioned more women in the field, but also strengthened my overall approach to design. I aim to redefine fashion beyond luxury brands and celebrity culture, focusing on fit, durability and individuality. Slow, repurposed designs that tell stories of conscious consumption. The BFA's [sample development and sustainability classes](https://eversewslowly.com/blog/2025/insiders-guide-to-the-bklyn-fashion-academy/#inside-the-classroom) have inspired me to explore these aspects further.
+Creating this collection strengthened my overall approach to design. I aim to redefine fashion beyond luxury brands and celebrity culture, focusing on fit, durability and individuality. Slow, repurposed designs that tell stories of conscious consumption. The BFA's [sample development and sustainability classes](https://eversewslowly.com/blog/2025/insiders-guide-to-the-bklyn-fashion-academy/#inside-the-classroom) have inspired me to explore these aspects further.
 
 With our visions in place, we now set to turn our designs into runway-ready garments—the hard part. 
 
@@ -233,16 +229,16 @@ This program is not for the faint of heart. It pushed us to our limits, testing 
 When discussing creative roadblocks—those moments when patterns don't line up or materials run short—Gia offered a simple strategy: 
 > "I allow them to happen and give myself grace. We're not machines. If I hit a block, I take it as a sign to rest. I step away, play video games, or watch tutorials. Learning something new helps me reset." -Gia
 
-While Gia found stepping back essential to creativity, I struggled to let go—and in hindsight regret not adopting her approach. My pursuit of perfection left me drained by runway day. We were all 'running on fumes,' as Gia put it, pouring ourselves completely into our designs. Regina captured this intensity: 
+While Gia found stepping back essential to creativity, I struggled to let go—and in hindsight regret not adopting her approach. My pursuit of perfection left me drained by runway day. We were all '*running on fumes*,' as Gia put it, pouring ourselves completely into our designs. Regina captured this intensity: 
 
 > “*This was my first mini collection—designed, sketched, and constructed entirely by me. We couldn’t seek outside help... there were days when I wanted to quit. Balancing work, family, and this program was overwhelming.*” -Regina
 
 ## Learning to Give Ourselves Grace
 
-Throughout the program, giving ourselves grace became a shared mantra. For Regina, creating her first mini collection while juggling work and family required adjusting expectations without losing sight of her vision. Her support system became her anchor:
->"*They kept me going. I kept thinking, 'I can't do this,' but their encouragement made me learn to give myself grace. I was hard on myself, but tried to ease up as the deadline approached.*" -Regina
+Throughout the program, giving ourselves grace became a shared mantra. For Regina, creating her first mini collection while juggling work and family required adjusting expectations without losing sight of her vision. Alhough we worked independently, a community of mentors, fellow designers, and loved ones supported us throughout. For Regina, they were her anchor:
+>"*They kept me going. I kept thinking, 'I can't do this,' but their encouragement made me learn to give myself grace. I was hard on myself, but tried to ease up as the deadline approached.*" - Regina
 
-Alhough we worked independently, a community of mentors, fellow designers, and loved ones supported us throughout.
+
 
 Like Regina, this was also my first mini collection, and the balancing act—and sacrifices—were very real. My struggle with perfectionism taught me my limits. I took on too much and barely finished by runway day—a tough but valuable lesson in setting realistic expectations.
 
@@ -253,9 +249,13 @@ The runway show—our end goal—was both exciting and daunting. We all question
 
 Even at our breaking points, we pushed through to create pieces we were proud of.
 
-Regina spent hours perfecting plaid pattern matching for her tailored jacket and box shorts—a powerful, modern look for executive women. Gia managed to balance family responsibilities with the painstaking process of collecting discarded CDs, experimenting with cutting techniques to prevent cracking, and individually hand-sewing hundreds of iridescent pieces to create her "Solaris" look that captured light from every angle. Ronen, who had never sewn garments before, created intricate horizontal pleats throughout his purple ensemble—a dramatic silhouette that challenged Western fashion conventions while honoring Indigenous and African aesthetics. 
+Regina spent hours perfecting plaid pattern matching for her tailored jacket and box shorts—a powerful, modern look for executive women. 
 
-Despite not completing my fourth look, I made it to the show with three emergency services-inspired designs to the runway, turning firefighter gear into street-ready fashion High-visibility tape and reflective accents gave my navy jacket an urban edge that celebrated women's strength in protective roles. Walking the runway alongside models in my designs was exhilarating—a reminder of what’s possible when we face our doubts and embrace the work..
+Gia managed to balance family responsibilities with the painstaking process of collecting discarded CDs, experimenting with cutting techniques to prevent cracking, and individually hand-sewing hundreds of iridescent pieces to create her "Solaris" look that captured light from every angle. 
+
+Ronen, who had never sewn garments before, created intricate horizontal pleats throughout his purple ensemble—a dramatic silhouette that challenged Western fashion conventions while honoring Indigenous and African aesthetics. 
+
+Despite not completing my fourth look, I made it to the show with three emergency services-inspired designs that turned firefighter gear into street-ready fashion. High-visibility tape and reflective accents gave my navy jacket an urban edge that celebrated women's strength in protective roles. Walking the runway alongside models in my designs was exhilarating—a reminder of what’s possible when we face our doubts and embrace the work.
 
 {{< gallery id="first" style="style2 small lightbox onload-fade-in" src="galleryOne" title="### Runway Finale Gallery">}}
 Here are scenes of each our mini-collections. The runway finale was just but a moment, but months of hard work and determination went into each of our designs. 
@@ -285,49 +285,40 @@ Here are scenes of each our mini-collections. The runway finale was just but a m
 
 ## The Power of Persistence
 {{< figure src="the_practice_book_cover.JPG" alt="Book Cover of The Practice: Shipping Creative Work by Seth Godin" caption="Book Cover of The Practice: Shipping Creative Work by Seth Godin" class="image right small" >}}
-In *[The Practice: Shipping Creative Work](https://geni.us/kD6UWdp)*, Seth Godin, entrepreneur and [best selling author](https://seths.blog/about/) known for his insights on leadership and creativity, explains that learning and growth requires discomfort: 
+Seth Godin explains in *The Practice: Shipping Creative Work* that growth requires discomfort: "*Learning almost always involves incompetence. Shortly before we get to the next level, we realize that we're not yet at that level and we feel insufficient.*"
 
-> “*Desirable difficulty is the hard work of doing hard work…Learning almost always involves incompetence. Shortly before we get to the next level, we realize that we’re not yet at that level and we feel insufficient. The difficulty is real, and it’s desirable if our goal is to move forward.*”
+This perfectly captured our BFA experience. We all faced real doubts—Regina and I wished for more practice, Gia worked to prove critics wrong, and Ronen recalled a panelist questioning whether he could even make a T-shirt. Yet we delivered.
+As Ronen put it: "T*here's an element of risk. You don't know if it's going to work, and then it does and it's like winning the lottery.*"
 
-The hard work, doubts, and pressure weren’t just obstacles—they were what pushed us forward. Simply showing up, despite uncertainty, allowed us to grow in ways we never expected. As Ronen shared: 
->“*There’s an element of risk. You don’t know if it’s going to work, and then it does and it’s like winning the lottery.*”
-
-Our self-doubts were real—Regina and I wished for more practice and Gia worked to prove her critics wrong. Ronen recalled during the selection process a panelist who questioned if he could even make a T-shirt. Yet despite it all, we delivered.
-
-Seth Godin’s advice on creative work resonates here as well: “*The magic is that there is no magic. Start where you are, don’t stop.*” Godin also highlights the distinction between talent and skill:
-
-> “*Many people have talent, but only a few care enough to show up fully, to earn their skill. Skill is rarer than talent. Skill is earned. Skill is available to anyone who cares enough.*”
-
-As we learned, there’s no magic—just the work. The willingness to start from where we are and to keep going. Success is about embracing the struggle, not avoiding it. The BFA journey proved this—and as we reflect on our individual paths, we can now see how our personal transformations extend far beyond our design portfolios.
+Godin's insight proved true: "Skill is rarer than talent. Skill is earned. Skill is available to anyone who cares enough." The BFA journey wasn't about avoiding struggle—it was about embracing it to grow beyond what we thought possible.
 
 # Program Reflections
-
-## How the Program Transformed Us as Designers
 {{< figure src="audience_2.JPG" alt="Runway & audience" caption="The runway show is open to the public and the audience takes it all in." class="image right medium" >}}
-The BFA program marked a clear before-and-after change in us all. It transformed us as designers by nurturing our creative identity, building professional confidence, and ultimately reshaping our career aspirations through the powerful experience of seeing our work move from concept to runway. It was more than learning advanced sewing or creating runway looks; it was about discovering our potential and finding validation in our work.
+The BFA marked a turning point for all of us. It nurtured our creative identities, built professional confidence, and reshaped our career aspirations—especially through the powerful experience of taking our work from concept to runway. It was more than mastering techniques or assembling looks; it was about discovering our potential and finding validation.
 
-Gia reflects on how the experience reshaped her self-perception:
-> “*It gave me confidence—not just in the process of designing but in seeing my work validated at the end. Even though the audience was mostly there for support, having people look at what I created made me feel seen. I don’t know if they actually thought my designs were good, but the fact that they engaged with my work meant a lot*” - Gia
+Gia explained how the experience reshaped her self-perception:
 
-She adds, 
+“*It gave me confidence—not just in the process of designing but in seeing my work validated at the end. Even though the audience was mostly there for support, having people look at what I created made me feel seen. I don’t know if they actually thought my designs were good, but the fact that they engaged with my work meant a lot.*” – Gia
 
-> "*Not everyone can be like [Rick Owens](https://www.businessoffashion.com/people/rick-owens/), designing purely for themselves. He once said he doesn't care about an audience, but most of us need validation to some degree*." -Gia
+She added:
 
-I agree. Seeing our collections come to life on the runway and having an audience engage with them is powerful. The runway is where we share our work and make it professional.
+"*Not everyone can be like [Rick Owens](https://www.businessoffashion.com/people/rick-owens/?utm_source=chatgpt.com),designing purely for themselves. He once said he doesn't care about an audience, but most of us need validation to some degree.*" – Gia
 
-Regina, similarly, shares how the experience redefined her ambitions:
+I agree—the runway is powerful. It’s where our collections come to life, where the audience engages with our vision, and where our work truly becomes professional.
 
-> “*Before the show, I wasn’t sure I could do this, even after taking sewing classes. I didn’t know where I fit in the fashion industry. Now, after completing the program, I know I want to push forward and see how far I can go. Showing my work on the runway opened the door for me, and the positive reception has motivated me to start my own line — even if it's just a small collection.*” -Regina
+Regina shares how the experience reshaped her ambitions:
 
-Presenting a collection on the runway for the first time — and realizing it could lead to launching a brand — is the dream for many BFA participants. The program builds confidence that drives us to keep pursuing our goals—a priceless outcome.
+>“*Before the show, I wasn’t sure I could do this, even after sewing classes. I didn’t know where I fit in the fashion industry. Now, after completing the program, I know I want to push forward and see how far I can go. Showing my work on the runway opened the door for me, and the positive reception has motivated me to start my own line—even if it’s just a small collection.*” – Regina
 
-Ronen expressed his awe at what he accomplished, having never sewn a garment before the program:
+For many BFA participants, presenting a collection on the runway—and realizing it could spark a brand—is the ultimate dream. The program instills confidence that propels us to keep pursuing our goals—an outcome beyond measure.
 
-> “*Wow, I can actually do this. It’s almost magical, especially for someone like me, with no prior experience. It was uplifting and empowering. I didn’t know what to expect, but all the excitement and hype made it positive. That said, the pressure of having to create something presentable definitely pushes you to grow.*” -Ronen
+Ronen, who had never sewn a garment before, expressed his awe at what he accomplished:
 
-For designers like Ronen and me, learning new techniques while applying them for the first time was daunting. Drafting, cutting, and sewing felt overwhelming. Yet seeing our designs on the runway — realized and complete — was magical and worth it.
+>“*Wow, I can actually do this. It felt almost magical, especially for someone like me, with no prior experience. It was uplifting and empowering. I didn’t know what to expect, but all the excitement and hype made it positive. That said, the pressure of having to create something presentable definitely pushes you to grow.*” – Ronen
 
-Before the program, I wasn't *on the hook*, as Seth Godin puts it. I sewed for myself, and my progress was slow. After completing the program, I no longer fear the speed of the sewing pedal and delivered three looks on the runway. I learned about the industry and feel capable of moving forward. That's the program's magic—it demands hard, self-driven work, which makes the achievement all the more meaningful.
+For designers like Ronen and me, learning and applying new techniques all at once was daunting. Yet seeing our designs on the runway, finished and real, was magical and worth it.
+
+Before the program, I sewed just for myself with no real deadlines—what Seth Godin calls not being '*on the hook*.' Four months later, I'd conquered my fear of the sewing machine and put three designs on the runway. The program's power lies in creating genuine accountability: when you're truly committed to a deadline, you discover capabilities you never knew you had.
 
 
 ## Program Review: Realities & Opportunities for Growth
