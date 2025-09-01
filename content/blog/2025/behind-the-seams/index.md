@@ -186,7 +186,7 @@ Having shared from where we started, the fun part is next, our designer personas
 
 # Envisioning Women in Future Industries
 
-Gia envisioned self-sustaining technology that empowers the next generation. Regina created polished, conservative looks for women in finance. Ronen reinterpreted legal wear as a statement of social justice. My own designs focused on the strength and bravery of women in emergency services.
+Gia envisioned self-sustaining technology that empowers the next generation. Regina created polished, conservative looks for women in finance. Ronen reinterpreted legal wear as a statement of social justice. And, my own designs focused on the strength and bravery of women in emergency services.
 
 Through these distinct approaches, each of us translated personal values into a vision of women’s future roles.
 
@@ -226,39 +226,36 @@ With our visions in place, we now set to turn our designs into runway-ready garm
 
 ## Embracing the Struggle
 
-This program is not for the faint of heart. It pushed us to our limits, testing our skills, time management, and emotional strength. While taking our designs from concept to creation was a demanding journey, these challenges led us to become more resilient and skillful designers. From managing the weight of creative pressure, learning to give ourselves grace, and to facing the double-edged nature of the runway, our journey revealed the true power of persistence—proving that success comes not from avoiding struggles but from embracing them head-on.
+This program is not for the faint of heart. It pushed us to our limits, testing our skills, time management, and emotional strength. While taking our designs from concept to creation was a demanding journey, these challenges led us to become more resilient and skillful designers. The journey revealed the true power of persistence—proving that success comes not from avoiding struggles but from embracing them head-on.
 
 ## The Weight of Creative Pressure
 
 When discussing creative roadblocks—those moments when patterns don't line up or materials run short—Gia offered a simple strategy: 
 > "I allow them to happen and give myself grace. We're not machines. If I hit a block, I take it as a sign to rest. I step away, play video games, or watch tutorials. Learning something new helps me reset." -Gia
 
-Gia found stepping back essential to creativity. I struggled with letting go and in hindsight regret not adopting her approach. Seeking perfection left me depleted by runway day. As Gia noted, we were "*running on fumes*" as we poured ourselves into our designs. "*It's an artistic endeavor... you're giving yourself into your designs*.” This emotional investment fueled creativity but amplified pressure. The physical and mental toll of building each piece affected everyone, with Regina facing similar challenges, recalling the weight of that commitment:
+While Gia found stepping back essential to creativity, I struggled to let go—and in hindsight regret not adopting her approach. My pursuit of perfection left me drained by runway day. We were all 'running on fumes,' as Gia put it, pouring ourselves completely into our designs. Regina captured this intensity: 
 
 > “*This was my first mini collection—designed, sketched, and constructed entirely by me. We couldn’t seek outside help... there were days when I wanted to quit. Balancing work, family, and this program was overwhelming.*” -Regina
 
 ## Learning to Give Ourselves Grace
 
-Giving ourselves grace became a common mantra. For Regina, creating her first mini collection while balancing work and family meant adjusting expectations without sacrificing her vision. Her support system became her anchor: 
+Throughout the program, giving ourselves grace became a shared mantra. For Regina, creating her first mini collection while juggling work and family required adjusting expectations without losing sight of her vision. Her support system became her anchor:
 >"*They kept me going. I kept thinking, 'I can't do this,' but their encouragement made me learn to give myself grace. I was hard on myself, but tried to ease up as the deadline approached.*" -Regina
 
-Though we worked independently, a community of mentors, fellow designers, and loved ones supported us throughout.
+Alhough we worked independently, a community of mentors, fellow designers, and loved ones supported us throughout.
 
-Like Regina, this was my first mini collection as well, and the balancing act—along with the sacrifices—were real. My struggle with perfectionism taught me about limits—I pushed toward an ideal only to find, as the runway day approached, I'd taken on more than I could manage, a tough lesson in setting realistic expectations.
+Like Regina, this was also my first mini collection, and the balancing act—and sacrifices—were very real. My struggle with perfectionism taught me my limits. I took on too much and barely finished by runway day—a tough but valuable lesson in setting realistic expectations.
 
 ## The Runway: Pressure and Promise
 
-The runway show—our end goal—was both exciting and daunting. We all questioned our ability to pull it off. Yet it drove us forward. Ronen described the mixed emotions: 
->"*There's a feeling that something exciting is waiting at the end, like a prize. For many, especially those hoping for a breakthrough in fashion—it feels like an opportunity you can't miss.*" -Ronen
+The runway show—our end goal—was both exciting and daunting. We all questioned whether we could pull it off, yet that uncertainty drove us forward. As Ronen explained: 
+>"*There's a feeling that something exciting is waiting at the end, like a prize. The timeline is tight, the pressure intense, and the workload overwhelming—there's fear of missing out, but also deep determination not to fail.*" -Ronen
 
-He added: 
->"*The timeline is tight, the pressure intense, and the workload overwhelming. That's why it becomes so emotional—there's fear of missing out, but also a deep determination not to fail.*" -Ronen
+Even at our breaking points, we pushed through to create pieces we were proud of.
 
-Even at what Ronen called "*near breaking points*," we pushed through to create pieces we were proud of.   
+Regina spent hours perfecting plaid pattern matching for her tailored jacket and box shorts—a powerful, modern look for executive women. Gia managed to balance family responsibilities with the painstaking process of collecting discarded CDs, experimenting with cutting techniques to prevent cracking, and individually hand-sewing hundreds of iridescent pieces to create her "Solaris" look that captured light from every angle. Ronen, who had never sewn garments before, created intricate horizontal pleats throughout his purple ensemble—a dramatic silhouette that challenged Western fashion conventions while honoring Indigenous and African aesthetics. 
 
-After hours of meticulously plaid pattern matching, Regina captured the powerful yet modern aesthetic she envisioned for executive women with her tailored plaid jacket paired with neutral box shorts design. Gia managed to balance family responsibilities with the painstaking process of collecting discarded CDs, experimenting with cutting techniques to prevent cracking, and individually hand-sewing hundreds of iridescent pieces to create her "Solaris" look that captured light from every angle. Ronen, who had never sewn garments before, learned to manipulate fabric into intricate horizontal pleats throughout his purple ensemble, creating a dramatic silhouette that boldly challenged Western fashion conventions while referencing Indigenous and African aesthetics as a decolonial gesture and social stance. 
-
-Despite not completing my fourth look, I made it to the show with three emergency services-inspired designs that transformed protective elements into contemporary streetwear. The high-visibility accents and reflective tape on my navy jacket merged firefighter turnout gear's strength with an urban aesthetic that empowers women. Overcoming my nerves to walk the runway alongside models wearing my designs was exhilarating—a reminder of what we can achieve when we overcome doubts and embrace hard work.
+Despite not completing my fourth look, I made it to the show with three emergency services-inspired designs to the runway, turning firefighter gear into street-ready fashion High-visibility tape and reflective accents gave my navy jacket an urban edge that celebrated women's strength in protective roles. Walking the runway alongside models in my designs was exhilarating—a reminder of what’s possible when we face our doubts and embrace the work..
 
 {{< gallery id="first" style="style2 small lightbox onload-fade-in" src="galleryOne" title="### Runway Finale Gallery">}}
 Here are scenes of each our mini-collections. The runway finale was just but a moment, but months of hard work and determination went into each of our designs. 
@@ -377,7 +374,7 @@ He added an interesting observation about the designer identity:
 
 When I asked if the show was worth it, Ronen replied, "*Absolutely, but I think it's important to remember that fashion isn't just about runway shows. There are many ways to build a small business without them.*" Roberto Silva, instructor of the technical production classes, expressed similar sentiments during my interview with him.
 
-I had mixed feelings about the show. Though dissatisfied with my presentation and overwhelmed by the pace, afterward I remembered why I'd committed to this journey. I wasn't in it for the show, even though that was what we worked toward. The true reward lay in my growth and lessons learned. As Gia said: "*Even as artists, what's the point of creating if no one sees it? Yes, there will be judgment—but feedback is valuable.*"
+I had mixed feelings about the show. Though dissatisfied with my presentation and overwhelmed by the pace, afterward I remembered why I'd committed to this journey. I wasn't in it for the show, I was in it for the work that lead up to it. The true reward lay in my growth and lessons learned. As Gia said: "*Even as artists, what's the point of creating if no one sees it? Yes, there will be judgment—but feedback is valuable.*"
 
 {{< gallery id="fifth" style="style2 medium lightbox onload-fade-in" src="galleryFive">}}
 {{< /gallery >}}
