@@ -389,7 +389,7 @@ Trust your creative instincts, embrace the challenge, and know that you're capab
 ***
 
 <h3> ✨ Grab this <b><a href="https://eversewslowly.eo.page/subscribe" target="_blank" class="emailoctopus-link"
-   onclick="gtag('event', 'newsletter_signup_click', {
+   onclick="gtag('event', 'EO_freebie_signup_bfa_link', {
      event_category: 'email',
      event_label: 'EmailOctopus Link',
      value: 1

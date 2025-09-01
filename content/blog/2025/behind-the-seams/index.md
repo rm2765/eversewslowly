@@ -151,68 +151,76 @@ keywords:
   - emerging designers
 ---
 {{< figure src="bfa24_promo.png" alt="BKLYN Fashion Academy 2024 Promo Flyer" caption="BKLYN Fashion Academy 2024 Promo Flyer" class="image right medium" >}} 
-Last year, I joined the [BKLYN Fashion Academy](https://www.bklynlibrary.org/bklyn-fashion-academy#)'s sixth season—an incredible program that more aspiring designers should know about. The Academy (BFA) takes designers on a four-month journey to a runway finale. The 2024 cohort created mini-collections under the *Women in Future Industries* theme. I interviewed fellow designers Gia, Regina, and Ronen, and together, we tell it all—from the creative challenges that tested both our skills and resolve, to our growth as design professionals. Our accounts reveal the program's essence: a journey that validates fashion aspirations, expands creative boundaries, and builds professional resilience. Our candid insights can help anyone considering this opportunity and, who knows, it could be the catalyst for your own design career.
+Last year, I joined the sixth season of the [BKLYN Fashion Academy](https://www.bklynlibrary.org/bklyn-fashion-academy#) (BFA), a four-month program culminating in a runway finale—an experience more aspiring designers should know about. I interviewed fellow designers Gia, Regina, and Ronen, and together, we tell it all—from the creative challenges that tested both our skills and resolve, to our growth as design professionals. What we learned is that the program doesn't just teach fashion—it teaches you that you're capable of more than you imagined. Our candid insights can help anyone considering this opportunity and, who knows, it could be the catalyst for your own design career.
 
 
 # The Journey Begins with Doubt 
 
-A glance at our profiles on the [BKLYN Fashion Academy webpage](https://www.bklynlibrary.org/bklyn-fashion-academy) showcases our rich diversity—we vary in age, backgrounds, careers, styles, and even sewing experience. Some designers arrived with formal fashion training and years of expertise, while others, like me, [discovered sewing](https://eversewslowly.com/blog/2023/learning-to-sew/) as a creative refuge during the COVID lockdown. Regardless of our differences, it is clear that we all hold a strong interest in fashion. Surprisingly, we even share similar self-doubts. From Gia balancing family obligations and critical voices, Regina's six-year trajectory from fashion novice to designer, to Ronen's artistic curiosity leading him into uncharted territory, and my own evolution from refashion amateur to runway designer—we all wrestled with the same insecurities: ***Can I really do this? Am I talented enough? Do I belong here?*** These doubts, however, became the foundation for our growth throughout the program's intense, transformative journey.
+Our profiles on the [BKLYN Fashion Academy webpage](https://www.bklynlibrary.org/bklyn-fashion-academy) reflect a great diversity—in age, backgrounds, careers, styles, and personal experiences. Some entered with formal training and years of expertise, while others, like me, [found sewing](https://eversewslowly.com/blog/2023/learning-to-sew/?utm_source=chatgpt.com) as a creative refuge during the COVID lockdown. Despite these differences, we shared a common passion for fashion—and many of the same self-doubts. Gia balancing family while facing critical voices, Regina steadily pursuing a career change into fashion, Ronen following his artistic curiosity and I beginning as a refashion amateur. Yet, We all wrestled with the same insecurities: ***Can I really do this? Am I good enough? Do I belong here?*** In the end, those doubts became the very foundation of our growth through BFA’s demanding but transformative journey.
 
 {{< items title="Designer Profiles" style="style2 small" >}}
 {{< /items >}}
 
 ## Gia: Balancing Family, Critics, and Fashion Design Dreams
-"*I had people tell me I wasn't talented enough to be a designer*," Gia confides. Despite holding a degree in fashion, she delayed applying to the BFA for a year, carefully planning how to balance her commitments to two children, four dogs, and a husband. "*If I can't invest 100% into something, I'd rather not do it. I didn't want regrets… I wanted to give it my best shot*." Her persistence paid off when her mother—once her biggest critic—praised her runway show. That moment validated her efforts and proved that self-belief can overcome setbacks.
+"*I had people tell me I wasn't talented enough to be a designer*," Gia confides. Despite her fashion degree, she spent a year planning before applying to BFA—carefully mapping out responsibilities to her family (two children, four dogs, and a husband). "If I can't invest 100% into something, I'd rather not do it. I didn't want regrets, and I wanted to give it my best shot."
+
+Her persistence paid off when her mother—once her biggest critic—praised her runway show, a moment that affirmed her efforts and proved that self-belief can overcome setbacks.
 
 ## Regina: A Transition into Fashion, Six Years in the Making
 
-Regina heard about the BFA six years ago in an entrepreneurship class. Although she lacked the basics then—"*I didn't know how to sew, sketch, or design*"—her desire for fashion only grew stronger. Even after enrolling in classes and learning the basics, self-doubt lingered. "*I wasn't sure my designs were strong enough*," she shared. At friends and family's insistence—"*Just apply—you have nothing to lose!*" she submitted last-minute. This leap turned her long-held dream into concrete steps toward launching her own brand.
+Regina first learned about the BFA six years ago but felt unprepared—"*I didn't know how to sew, sketch, or design*"—her desire for fashion only grew stronger. Even after taking classes to build these skills, self-doubt lingered. "*I wasn't sure my designs were strong enough*," she admitted. When friends and family urged her to apply anyway—'You have nothing to lose!'—she submitted her application at the deadline. This leap turned her long-held dream into concrete steps toward launching her own brand.
 
 ## Ronen: An Artist's Curiosity Leads to Fashion
 
-Ronen, a visual artist, discovered the BFA by chance through an email in a rarely-checked inbox. Curious, he attended an info session and applied on a whim, attracted to working with textiles three-dimensionally.  "*I had no idea what I was getting into*," he laughs. "*I thought it would be skill-building workshops—just lessons on fashion and garment-making*." Though comfortable with sewing machines for flat projects, he assumed his lack of formal training would disqualify him. However, to his surprise, gaining acceptance to the program expanded his artistic boundaries and revealed new possibilities in fashion design.
+Ronen, a visual artist, discovered the BFA by chance through an email in a rarely-checked inbox. Curious, he attended an info session and applied on a whim, attracted to working with textiles three-dimensionally. 
+
+He laughs, “I had no idea what I was getting into. I thought it would be skill-building workshops—just lessons on fashion and garment-making.” Although he was comfortable using sewing machines for simple projects, he assumed his lack of formal training would disqualify him.
+
+To his surprise, being accepted into the program expanded his artistic boundaries and opened new possibilities in fashion design.
 
 ## Rose: A Refashion Amateur Finding Her Way
 
-My journey began during the COVID lockdown in 2020, when I explored a new hobby in [refashioning garments](https://eversewslowly.com/blog/2023/learning-to-sew/). Frustrated with my slow self-taught progress, I felt stuck—until my sister shared an Instagram post about the BFA. With just two reworked pieces to my name, I applied on the final day, doubting my readiness like Regina. The chance to combine my data skills with refashioning drew me in—I saw potential for content creation and innovative business ventures. By the program’s end, I went from beginner to confident designer within a short span. Though the journey was challenging, I’m proud of my achievements and the program's role in my growth—now a foundation for bigger dreams.
+I started [refashioning clothes](https://eversewslowly.com/blog/2023/learning-to-sew/) during COVID lockdown as a creative outlet. After months of slow, self-taught progress, I felt stuck—until my sister shared an Instagram post about the BFA. With just two reworked pieces to my name, I applied on the deadline, doubting I was ready. The program changed that—by runway day, I'd gone from fearing my sewing machine's speed pedal to confidently presenting three emergency services-inspired designs to a live audience.
 
-Having shared from where we started, next is the fun part, our designer personas and original visions!
+Having shared from where we started, the fun part is next, our designer personas and original visions!
 
 # Envisioning Women in Future Industries
 
-Our collections imagined women's evolving roles across many sectors, with designs that reflected both our personal experiences and forward-looking perspectives. From Gia's vision of self-sustaining technology empowering the next generation, Regina's conservative elegance for executive women in finance, to Ronen transforming legal wear into vehicles for social justice and my own focus on women's strength and bravery in emergency services—we each translated personal values into distinctive visions of women's futures.
+Gia envisioned self-sustaining technology that empowers the next generation. Regina created polished, conservative looks for women in finance. Ronen reinterpreted legal wear as a statement of social justice. My own designs focused on the strength and bravery of women in emergency services.
+
+Through these distinct approaches, each of us translated personal values into a vision of women’s future roles.
 
 ## A Self-Sustaining Future
 {{< figure src="main_look_gia.jpg" alt="Gia's main look on canvas" caption="Gia's main look on canvas" class="image right small" >}}
-Choosing technology as her industry, Gia envisioned a self-sustaining future. “*When I think of technology, I think of androids or machines. I wanted to create something self-sustaining*," she explains, drawing from sci-fi influences from the video game Deus Ex. Her vision is "*a hope for the future*” where her children and others grow up capable, independent, and resilient. “*I want my designs to empower women, to make them feel strong and capable*.” Gia aims to design for everyone—from statement pieces to everyday wear, even pets. Her collection reflects her commitment to client satisfaction: 
+Gia's technology-inspired collection draws from sci-fi aesthetics—particularly the video game Deus Ex—to create designs that embody independence and resilience. "When I think of technology, I think of androids or machines. I wanted to create something self-sustaining," she explains. Her vision extends beyond the garments themselves: she wants to design pieces that empower women to feel capable and strong. 
 
->“More importantly, I want to design for women in a way that brings them joy. I design for myself, but if my client isn’t happy, then I’ve failed.” -Gia
+>"More importantly, I want to design for women in a way that brings them joy. I design for myself, but if my client isn't happy, then I've failed."
 
 ## Conservative Elegance for the Executive Woman
 {{< figure src="main_look_regina.jpg" alt="Regina's main look on canvas" caption="regina's main look on canvas" class="image right small" >}}
-Driven by an entrepreneurial spirit, Regina’s long-held dream of dressing executive women gave her collection focus. Choosing finance as her industry, she explains: 
+Driven by an entrepreneurial spirit, Regina had a clear vision: designing for executive women. Choosing finance as her industry, she focused her collection on future business attire: 
 
 > "*I've always wanted to design for powerful, professional women. Our assignment was to create a vision for women in 2042, but I concentrated on future business attire. It was a dream to be selected and create a mini-collection on this theme*." -Regina
 
-Her brand, [Reserved Wear](https://reserve-wear.com/), reflects her journey and style, empowering women in corporate roles with sophistication and personality.
+Her brand, [Reserved Wear](https://reserve-wear.com/), continues this vision, empowering women in corporate roles with sophistication and personality.
 
 <br>
 
 ## Fashion as Social Commentary
 {{< figure src="main_look_ronen.jpg" alt="Ronen's main look on canvas" caption="Ronen's main look on canvas" class="image right small" >}}
-While curiosity drew Ronen to the BFA, his collection became a platform for powerful ideas. Under the *Law* theme, his vision drew from social movements and intersectionality, reflecting his personal convictions. "*Novels about the Black experience in Brazil and decolonial theory, including texts about Palestine, influenced my work*," said Ronen. "*As an anti-Zionist, I see my designs participating in broader conversations on decolonization and justice*." He designs for those who wish to express these ideas through fashion. Ronen sees advocates in the legal field wearing fashion as a performative statement to advocate progressive values, dismantle colonial legacies, and promote social justice. 
+While curiosity drew Ronen to the BFA, his collection became a platform for social justice. Working under the *Law* theme, his vision drew from social movements and intersectionality. "*Novels about the Black experience in Brazil and decolonial theory, including texts about Palestine, influenced my work*," said Ronen. "*As an anti-Zionist, I see my designs participating in broader conversations on decolonization and justice*." Ronen sees advocates in the legal field wearing his designs as a performative statement to advocate progressive values, dismantle colonial legacies, and promote social justice. 
 
 Not only that, Ronen sees fashion as a dialogue platform on and off runways. 
 
->"*Runways already have an audience and excitement—why not use that space to engage meaningfully? I view it as a form of public art, whether on the runway or on the street, where people wearing my designs make a statement beyond the conventional spaces for art and social commentary, like academia or other cultural spaces*." -Ronen
+>"*Runways already have an audience and excitement—why not use that space to engage meaningfully? I view it as a form of public art, whether on the runway or on the street, where people wearing my designs make a statement beyond the conventional spaces for art and social commentary*." -Ronen
 
 Fashion design has deepened his commitment to social justice, offering a new expressive medium blending aesthetics with activism.
 
 ## Strength & Bravery for the Everywoman
 {{< figure src="main_look_rose2.jpg" alt="My main look on canvas" caption="My main look on canvas" class="image right small" >}}
-From a data project on occupational segregation, I discovered the emergency services sector remains predominantly male with minimal progress toward gender parity. This insight inspired my collection championing women in this essential field. Focusing on firefighter turnout jackets, I incorporated visibility and protective elements using deconstructed thrifted garments and textile waste. My vision for 2044 celebrates women's strength and bravery, aiming for a future where they are better represented and honored in these vital roles.
+A data project on occupational segregation revealed that emergency services remain predominantly male, with little progress toward gender parity. This insight inspired my collection, championing women in this essential field. My work focuses on firefighter turnout jackets, incorporating visibility and protective features by deconstructing thrifted garments and repurposing textile waste. My vision for 2044 celebrates women's strength and bravery, aiming for a future where they are better represented and honored in these vital roles.
 
-While creating my collection, I not only developed a vision for more women in the field, but also fortified my broader approach to design. I seek to redefine fashion beyond luxury brands and celebrity culture, prioritizing fit, durability, and individuality. My vision revolves around slow, personal, and repurposed designs that tell stories of conscious consumption and practicality. The BFA's sample development and sustainability classes have inspired me to explore these aspects further.
+While creating this collection, I not only envisioned more women in the field, but also strengthened my overall approach to design. I aim to redefine fashion beyond luxury brands and celebrity culture, focusing on fit, durability and individuality. Slow, repurposed designs that tell stories of conscious consumption. The BFA's [sample development and sustainability classes](https://eversewslowly.com/blog/2025/insiders-guide-to-the-bklyn-fashion-academy/#inside-the-classroom) have inspired me to explore these aspects further.
 
 With our visions in place, we now set to turn our designs into runway-ready garments—the hard part. 
 
