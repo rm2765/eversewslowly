@@ -298,11 +298,11 @@ The BFA marked a turning point for all of us. It nurtured our creative identitie
 
 Gia explained how the experience reshaped her self-perception:
 
-“*It gave me confidence—not just in the process of designing but in seeing my work validated at the end. Even though the audience was mostly there for support, having people look at what I created made me feel seen. I don’t know if they actually thought my designs were good, but the fact that they engaged with my work meant a lot.*” – Gia
+>“*It gave me confidence—not just in the process of designing but in seeing my work validated at the end. Even though the audience was mostly there for support, having people look at what I created made me feel seen. I don’t know if they actually thought my designs were good, but the fact that they engaged with my work meant a lot.*” – Gia
 
 She added:
 
-"*Not everyone can be like [Rick Owens](https://www.businessoffashion.com/people/rick-owens/?utm_source=chatgpt.com),designing purely for themselves. He once said he doesn't care about an audience, but most of us need validation to some degree.*" – Gia
+>"*Not everyone can be like [Rick Owens](https://www.businessoffashion.com/people/rick-owens/?utm_source=chatgpt.com),designing purely for themselves. He once said he doesn't care about an audience, but most of us need validation to some degree.*" – Gia
 
 I agree—the runway is powerful. It’s where our collections come to life, where the audience engages with our vision, and where our work truly becomes professional.
 
@@ -402,30 +402,8 @@ Above all, remember to give yourself grace. While it is a lot of hard work, you 
 
 **My final piece of advice is to be clear about why you're doing this.** It's easy to get swept away and lose sight of why you decided to embark on this journey. Keeping your purpose in mind can offer peace of mind and make it easier to grant yourself the grace you deserve when things get tough.
 
-# What’s next for us after the BKLYN Fashion Academy?
-
-## Clothing that Makes People Happy
-
-For Gia, the program clarified industry expectations. 
->"*It helped me understand the necessary skills and timelines for working at a company, and refreshed my knowledge of the design process—creating order instead of the fragmentation I felt in college*." -Gia
-
-With this clarity, Gia envisions creating clothing that brings joy, even if it means taking an unconventional path. "*I'd love to be a designer who makes people happy through clothing, not necessarily with a traditional store. The challenge is that everything requires money, which I'll need to figure out,*" she explains.
-
-## Keep the Momentum Going
-
-The program taught Regina the essentials of fashion shows, including practical skills like designing within budget constraints and managing production timelines from concept to fabric sourcing. With plans to meet a manufacturer soon, she's already established an LLC and website. "*I'm starting with one design*,” Regina says. 
->"*After the momentum of this fashion show, I just want to see where it goes and say that at least I tried.*" -Regina
-
-## Pursue Newfound Interests
-
-Ronen discovered unexpected possibilities: "*I realized I might actually want to pursue fashion—possibly in a niche area I hadn't considered before.*" He elaborates: 
->*"Initially, I just wanted to build skills and make clothes for myself. But through the program, I discovered a fascination with the performative aspect of fashion—how models become actors, embodying narratives through garments. That intersection felt incredibly compelling.*” - Ronen
-
-## A Process of Discovering
-
-This journey for me has been more than just learning to design and construct garments—it's been a process of discovering what resonates with me. I've identified which aspects of fashion I enjoy and wish to pursue within the field, along with the new paths I'll need to forge. When I applied, I was in the middle of refashioning my entire wardrobe. I'm returning to that project and exploring ways to leverage my background in data analytics alongside my interest in refashioning. Stay tuned!
-
 # Final Thoughts
+The BFA program has been a catalyst for our future plans and aspirations. For Gigi and Regina, it has equipped them with the skills and confidence to pursue fashion design professionally. Gigi aims to create clothing that brings joy to her clients, while Regina is taking concrete steps towards launching her own line, starting with a single design. Ronen has discovered a new passion at the intersection of art, design, and social commentary. He plans to explore performance art, soft sculpture, and fashion as potential income streams, all while continuing to refine his skills. When I applied, I was in the middle of refashioning my entire wardrobe. I'm returning to that project and exploring ways to leverage my background in data analytics alongside my interest in refashioning. Stay tuned!
 
 The BFA experience has been a transformative journey for us. I hope that by sharing our experiences in this round-up, we can inspire others to take the leap and to commit to their own creative adventures despite challenges. Whether you’re a beginner or looking to push your creative boundaries and business opportunities, the BFA is a great stepping stone. 
 
