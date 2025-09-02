@@ -25,9 +25,9 @@ timeout = "4250s"
   pinterest = "https://www.pinterest.com/EverSewSlowly"
   youtube = "https://youtube.com/@eversewslowly/"
 
-[Params.asset]
-  fontawesome_css = ["css/fontawesome-all.min.css"]
-  fontawesome_js = ["js/fontawesome-all.min.js"]
+# [Params.asset]
+  # fontawesome_css = ["css/fontawesome-all.min.css"]
+  # fontawesome_js = ["js/fontawesome-all.min.js"]
 
 [taxonomies]
   topic = "topics"

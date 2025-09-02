@@ -15,7 +15,7 @@
         <span class="label">Instagram</span></a></li>{{end}}
     {{ with .Site.Params.social.email }}
     <li><a target="_blank" href="mailto:{{.}}" class="fav icon style2">
-        {{- partial "icons/envelope.html" . -}}
+        {{- partial "icons/envelope-reg.html" . -}}
         <span class="label">Email</span></a></li>{{end}}
 </ul>
         <!--- <ul class="icons"> # old pinging font lib js
@@ -33,11 +33,10 @@
         <small>Theme based on Hugo Story by
             <a target="_blank" href="https://github.com/caressofsteel/">CaressOfSteel</a> 
         </small>
-        <i class="footerspacer icon fa-diamond"></i>
             
 </footer>
 
-<!-- FontAwesome JS -->
+<!-- FontAwesome JS
 {{ range .Site.Params.asset.fontawesome_js -}}
     <script type="text/javascript" src="{{ . | absURL }}"></script>
-{{- end }}
+{{- end }} -->

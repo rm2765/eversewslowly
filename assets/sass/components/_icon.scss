@@ -5,6 +5,30 @@
 	This Hugo theme is licensed under the Creative Commons Attribution 3.0 License.
 */
 
+/* SVG Icon Support */
+.icon-svg {
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    vertical-align: -0.125em;
+}
+
+/* Ensure SVG icons work with existing styles */
+.icon.style1 .icon-svg,
+.icon.style2 .icon-svg {
+    border-radius: inherit;
+}
+
+.icon.style2 .icon-svg {
+    width: 2.75em;
+    height: 2.75em;
+}
+
+.fav .icon-svg {
+    /* Inherits from existing .fav styling */
+}
+
+
 /* Icon */
 
 	.icon {
@@ -34,15 +58,21 @@
 		}
 
 		&.style2 {
-			&:before {
-				border-radius: 2.75em;
-				display: inline-block;
-				height: 2.75em;
-				line-height: 2.75em;
-				width: 2.75em;
+			border-radius: 2.75em;
+			display: inline-block;
+			height: 2.75em;
+			line-height: 2.75em;
+			width: 2.75em;
+    
+		&:before {
+			border-radius: 2.75em;
+			display: inline-block;
+			height: 2.75em;
+			line-height: 2.75em;
+			width: 2.75em;
 			}
 		}
-
+		
 		&.major {
 			display: block;
 			margin: 0 0 (_size(element-margin) * 0.5) 0;

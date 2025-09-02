@@ -2,19 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/blog/2025/insiders-guide-to-the-bklyn-fashion-academy/</loc>
+    <lastmod>2025-08-30T19:40:39+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/bklyn-fashion-academy-series/</loc>
+    <lastmod>2025-08-30T19:40:39+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/blog/</loc>
+    <lastmod>2025-08-30T19:40:39+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2025-08-30T19:40:39+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/cornerstone/</loc>
+    <lastmod>2025-08-30T19:40:39+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/emerging-designers/</loc>
+    <lastmod>2025-08-30T19:40:39+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/freebie/</loc>
     <lastmod>2025-08-30T19:40:39+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
     <lastmod>2025-08-30T19:40:39+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/runway-show/</loc>
+    <lastmod>2025-08-30T19:40:39+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-08-30T19:40:39+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/categories/ai-in-fashion/</loc>
-    <lastmod>2025-07-27T17:02:02+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/bklyn-fashion-academy-series/</loc>
-    <lastmod>2025-07-27T17:02:02+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/</loc>
     <lastmod>2025-07-27T17:02:02+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/design-vision/</loc>
@@ -32,17 +50,11 @@
     <loc>http://localhost:1313/tags/pinterest/</loc>
     <lastmod>2025-07-27T17:02:02+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2025-07-27T17:02:02+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/blog/2025/how-i-used-pinterest-and-ai-to-nail-my-design-vision/</loc>
     <lastmod>2025-07-27T17:02:02+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/women-in-future-industries/</loc>
     <lastmod>2025-07-27T17:02:02+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/emerging-designers/</loc>
-    <lastmod>2025-06-23T21:02:54+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/list/</loc>
     <lastmod>2025-06-23T21:02:54+00:00</lastmod>
@@ -50,32 +62,11 @@
     <loc>http://localhost:1313/blog/2025/nine-things-you-should-know-about-the-bklyn-fashion-academy/</loc>
     <lastmod>2025-06-23T21:02:54+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/runway-show/</loc>
-    <lastmod>2025-06-23T21:02:54+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/blog/2025/behind-the-seams/</loc>
     <lastmod>2025-04-26T20:42:13+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/roundup/</loc>
     <lastmod>2025-04-26T20:42:13+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/refashioning/</loc>
-    <lastmod>2025-03-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/slow-fashion/</loc>
-    <lastmod>2025-03-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/sustainable/</loc>
-    <lastmod>2025-03-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/tutorial/</loc>
-    <lastmod>2025-03-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/upcycling/</loc>
-    <lastmod>2025-03-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog/2025/your-first-post/</loc>
-    <lastmod>2025-03-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/beginner/</loc>
     <lastmod>2023-03-26T00:00:00+00:00</lastmod>
@@ -87,6 +78,9 @@
     <lastmod>2023-03-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/hooded-scarf/</loc>
+    <lastmod>2023-03-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/refashioning/</loc>
     <lastmod>2023-03-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/sewing-resources/</loc>
