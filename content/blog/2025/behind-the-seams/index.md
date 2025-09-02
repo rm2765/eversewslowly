@@ -1,6 +1,6 @@
 ---
 title: Behind the Seams
-subtitle: Our Brooklyn Fashion Academy Experience
+subtitle: Of the BKLYN Fashion Academy
 description: Four BKLYN Fashion Academy designers transform self-doubt into runway success with their "Women of Future Industries" collections, sharing insights for aspiring designers.
 date: 2025-04-26T20:42:13.328Z
 tags:
@@ -321,34 +321,34 @@ For designers like Ronen and me, learning and applying new techniques all at onc
 Before the program, I sewed just for myself with no real deadlines—what Seth Godin calls not being '*on the hook*.' Four months later, I'd conquered my fear of the sewing machine and put three designs on the runway. The program's power lies in creating genuine accountability: when you're truly committed to a deadline, you discover capabilities you never knew you had.
 
 
-## Program Review: Realities & Opportunities for Growth
+## Program Review
+### Realities & Opportunities for Growth
 {{< figure src="mentor_helping_dayof.JPG" alt="Mentor" caption="Ben Mach, our mentor, assisting one of Gia's models" class="image left medium" >}}
-The Brooklyn Fashion Academy offered a transformative blend of creative expression and rigorous hands-on work. However, the initial flyer and info sessions didn't convey its demanding nature; the long hours, problem-solving, and pressure became evident only after immersion. 
+The BKLYN Fashion Academy provided a transformative mix of creativity and hands-on rigor. However, the flyer and info sessions didn’t fully convey how demanding it would be. The long hours, constant problem-solving, and intense pressure only became clear once we were immersed in the program. 
 
-The entire 2024 cohort—Gia, Regina, Ronen, and myself included—is grateful to the program staff, supporters, and funders who made this experience possible. While delivering an impressive runway show that exceeded all our expectations, my fellow participants and I identified four areas for improvement: **1)** clearer planning timelines, **2)** more transparent workload expectations, **3)** additional teaching support, and **4)** strengthened mentorship resources. These suggestions are offered in the spirit of collaboration and program growth for future cohorts.
+Our 2024 cohort delivered an impressive runway show. We are deeply grateful to the staff, supporters, and funders who made the experience possible. We share these suggestions to support future cohorts and ongoing program growth: clearer project timelines, upfront and honest workload expectations, more structured teaching support, and expanded mentorship beyond our single (though excellent) mentor Ben Mach. These changes would help future designers better navigate the program's intensity.
 
 ### Improving Structure and Planning
 
-I told fellow designers "*the program gave us a false sense of security until we were suddenly out of time*"—a concern many shared. Gia noted, 
-> "*We needed a clear timeline and more accountability. Advice to multiply time estimates helped, but structured deadlines would have made runway preparation less stressful*." 
+"*The program gave us a false sense of security until we were suddenly out of time*," I told fellow designers—a concern echoed by others. Gia reflected: "*We needed a clear timeline and more accountability. Advice to multiply time estimates helped, but structured deadlines would have made runway preparation less stressful.*"
 
-While we valued the program's hands-on, self-driven approach, a more structured calendar with deadlines well before the runway countdown could have reduced pressure. With the program running from May to September, I'd suggest completing one garment—or one major construction step—monthly. Assigning models and sizes in advance would also eliminate a significant source of stress for participants.
+While we valued the hands-on, self-driven approach, a structured calendar with deadlines before the runway could have eased pressure. With the program running from May to September, I suggest finishing one garment—or one major construction step—each month. Assigning models and sizes in advance would also remove a major source of stress.
 
 ### Setting Clear Expectations
 
-Ronen brought up how the program needed to be more transparent about the workload and what to expect in terms of instruction versus self-driven learning. Clearer communication upfront, he felt, would have helped: 
-> "*They didn't really warn us about just how intense it would be. Before accepting people into the program, there should be a clearer explanation of what's expected and exactly what will and won't be taught. They should be upfront—this isn't a comprehensive sewing course*." -Ronen
+Ronen suggested the program be more transparent about workload and the balance between instruction and self-driven learning. He explained: "*They didn't really warn us about just how intense it would be. They should be upfront—this isn't a comprehensive sewing course. Before accepting people, explain exactly what will and won't be taught.*"
 
 ### Navigating Self-Directed Learning
 
-The program also focused more on problem-solving than formal instruction—a surprise to many of us. Both Ronen and I had anticipated more guidance, especially since the program description mentioned advanced sewing techniques. Instead, “*we had to figure out a lot on our own*,” Ronen recalled. “*Our mentor would give us a push in the right direction, but the rest was up to us.*”
+The program focused more on problem-solving than formal instruction—surprising many of us who expected structured guidance. Ronen and I had anticipated more teaching, especially since the program description mentioned advanced sewing techniques. Instead, "*we had to figure out a lot on our own,*" Ronen recalled. "*Our mentor would give us a push in the right direction, but the rest was up to us.*"
 
-To fill knowledge gaps, we relied on YouTube tutorials and library books with varying success. Our cohort created an informal support network, actively sharing resources and advice through our WhatsApp group. Ronen felt more structured guidance would benefit beginners: 
->"*I'd recommend more introductory sessions on basics—my biggest challenge was not knowing fundamentals. Learning through random YouTube videos and books was tough. Since the program only requires basic sewing skills, not a fashion degree, it should provide more foundational instruction.*"
+We filled knowledge gaps through YouTube tutorials and library books, with mixed results. Our cohort created an informal WhatsApp support network, sharing resources and troubleshooting together.
+
+Ronen felt that more structured guidance could benefit beginners: "*My biggest challenge was not knowing the fundamentals. Learning from random YouTube videos and books was tough. Since the program only requires basic sewing skills, not a fashion degree, it should provide more foundational instruction.*"
 
 ### More Mentorship Support
 
-Regina proposed that personalized, one-on-one mentorship could make a significant difference. Throughout the program, we relied solely on [Ben Mach](https://api-us.creativebug.com/instructors/benjamin-mach)—former Project Runway all star—who provided valuable support during sessions and via WhatsApp. However, having just one mentor for up to 20 participants felt insufficient for many of us. I agree with Regina. Personalized mentorship would have accelerated our growth, ideally creating lasting relationships that could guide our careers beyond the program—the icing on the cake of an already valuable experience.
+Regina proposed that personalized, one-on-one mentorship could make a significant difference. During the program, we relied solely on [Ben Mach](https://api-us.creativebug.com/instructors/benjamin-mach)—former Project Runway all star—who supported us during sessions and on WhatsApp. For a group of up to 20 participants, one mentor felt insufficient. I agree with Regina: more personalized mentorship could have accelerated our growth and built lasting relationships to guide our careers beyond the program.
 
 ### The Runway is the End Game
 
@@ -357,22 +357,19 @@ The runway show was undeniably the program's centerpiece, creating both exciteme
 
 {{< figure src="library_after.JPG" alt="Transformation" caption="Brooklyn Public Central Library's reference desk area transformed into a runway show." class="image right medium" >}}
 
-The library hall's transformation from a reference desk and patron sitting area into a professional runway venue was remarkable. Ronen questioned the runway-centric approach: 
-> "*I don't know how typical this kind of show is in the fashion industry. For garment makers, runway shows aren't always central. But in this program, the show is a big focus—it's something they promise and deliver.*"
+The library hall's transformation from a reference desk and patron sitting area into a professional runway venue was remarkable. Yet he questioned whether this focus serves all designers: "*I don't know how typical this kind of show is in the fashion industry. For garment makers, runway shows aren't always central, but in this program, the show is a big focus.*" The emphasis on designer-as-star particularly unsettled him: "*There's this idea of the designer on a pedestal, and while that appeals to some, I wasn't prepared for walking the runway myself. I was thinking, 'Why do I have to do this?'*"
 
-He added an interesting observation about the designer identity: 
->"*There's also this idea of the designer as a star, which I find interesting. It places the designer on a pedestal, and while that appeals to some, I wasn't prepared for the moment when I had to walk the runway myself. I was thinking, 'Why do I have to do this?'*"
+Despite these concerns, when I asked if the show was worth it, Ronen replied, "*Absolutely, but it's important to remember that fashion isn't just about runway shows. There are many ways to build a small business without them.*" 
 
-When I asked if the show was worth it, Ronen replied, "*Absolutely, but I think it's important to remember that fashion isn't just about runway shows. There are many ways to build a small business without them.*" Roberto Silva, instructor of the technical production classes, expressed similar sentiments during my interview with him.
-
-I had mixed feelings about the show. Though dissatisfied with my presentation and overwhelmed by the pace, afterward I remembered why I'd committed to this journey. I wasn't in it for the show, I was in it for the work that lead up to it. The true reward lay in my growth and lessons learned. As Gia said: "*Even as artists, what's the point of creating if no one sees it? Yes, there will be judgment—but feedback is valuable.*"
+I had mixed feelings about the show. While I felt dissatisfied with my presentation and overwhelmed by the timeline, I realized afterward that the show was never the point—the growth was. The months of learning, problem-solving, and pushing my limits were the real reward. As Gia put it: "*Even as artists, what's the point of creating if no one sees it? Yes, there will be judgment—but feedback is valuable.*"
 
 {{< gallery id="fifth" style="style2 medium lightbox onload-fade-in" src="galleryFive">}}
 {{< /gallery >}}
 
 <br>
 
-# Round-up Advice to Future BKLYN Fashion Academy Participants
+# Round-up Advice 
+## To Future BKLYN Fashion Academy Participants
 
 If you're considering applying, here's our collective wisdom:
 
