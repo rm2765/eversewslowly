@@ -4,7 +4,21 @@
 
         <p><i class="fas fa-heart"></i> 
             Follow Me on Social Media!</p>
-        <ul class="icons">
+            <ul class="icons">
+    {{ with .Site.Params.social.pinterest }}
+    <li><a target="_blank" href="{{.}}" class="icon brands style2">
+        {{- partial "icons/pinterest.html" . -}}
+        <span class="label">Pinterest</span></a></li>{{end}}
+    {{ with .Site.Params.social.instagram }}
+    <li><a target="_blank" href="{{.}}" class="icon brands style2">
+        {{- partial "icons/instagram.html" . -}}
+        <span class="label">Instagram</span></a></li>{{end}}
+    {{ with .Site.Params.social.email }}
+    <li><a target="_blank" href="mailto:{{.}}" class="fav icon style2">
+        {{- partial "icons/envelope.html" . -}}
+        <span class="label">Email</span></a></li>{{end}}
+</ul>
+        <!--- <ul class="icons"> # old pinging font lib js
             {{ with .Site.Params.social.pinterest }}
             <li><a target="_blank" href="{{.}}" class="icon brands style2 fa-pinterest">
                 <span class="label">Pinterest</span></a></li>{{end}}
@@ -14,7 +28,7 @@
             {{ with .Site.Params.social.email }}
             <li><a target="_blank" href="mailto:{{.}}" class="fav icon style2 fa-envelope">
                 <span class="label">Email</span></a></li>{{end}}
-        </ul>
+        </ul> -->
         <p>&copy; {{ now.Year }} Ever Sew Slowly </p>
         <small>Theme based on Hugo Story by
             <a target="_blank" href="https://github.com/caressofsteel/">CaressOfSteel</a> 

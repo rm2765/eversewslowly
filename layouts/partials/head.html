@@ -24,10 +24,10 @@
 	<noscript><link rel="stylesheet" href="{{ ($noscript | minify).RelPermalink }}" /></noscript>
 	{{end}}
 
-	<!-- FontAwesome CSS -->
+	<!-- FontAwesome CSS #removed
 	{{ range .Site.Params.asset.fontawesome_css -}}
 		<link rel="stylesheet" href="{{ . | absURL }}">
-	{{- end }}
+	{{- end }} -->
 
 	<!-- Custom JavaScript -->
 	{{ if hugo.IsServer }}

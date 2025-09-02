@@ -151,7 +151,9 @@ keywords:
   - emerging designers
 ---
 {{< figure src="bfa24_promo.png" alt="BKLYN Fashion Academy 2024 Promo Flyer" caption="BKLYN Fashion Academy 2024 Promo Flyer" class="image right medium" >}} 
-Last year, I joined the sixth season of the [BKLYN Fashion Academy](https://www.bklynlibrary.org/bklyn-fashion-academy#) (BFA), a four-month program culminating in a runway finale—an experience more aspiring designers should know about. I interviewed fellow designers Gia, Regina, and Ronen, and together, we tell it all—from the creative challenges that tested both our skills and resolve, to our growth as design professionals. What we learned is that the program doesn't just teach fashion—it teaches you that you're capable of more than you imagined. Our candid insights can help anyone considering this opportunity and, who knows, it could be the catalyst for your own design career.
+Last year, I joined the sixth season of the [BKLYN Fashion Academy](https://www.bklynlibrary.org/bklyn-fashion-academy#) (BFA), a four-month program culminating in a runway finale—an experience more aspiring designers should know about. I interviewed fellow designers Gia, Regina, and Ronen, and together, we tell it all—from the creative challenges that tested both our skills and resolve, to our growth as design professionals. What we learned is that the program doesn't just teach fashion—it teaches you that you're capable of more than you imagined. 
+
+Our candid insights can help anyone considering this opportunity and, who knows, it could be the catalyst for your own design career.
 
 
 # The Journey Begins with Doubt 
