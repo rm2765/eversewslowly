@@ -1,27 +1,92 @@
-<section class="banner style2"  style="background-color: rgba(255, 255, 255, 0.85);">
+<section class="banner style2" style="background-color: rgba(255, 255, 255, 0.85);">
     <div class="content">
-
-        {{ with .Title }}<h1>{{ . | markdownify | emojify  }}</h1>{{ end }}
+        {{ with .Title }}<h1>{{ . | markdownify | emojify }}</h1>{{ end }}
         {{ with .Params.subtitle}}<p class="major">{{ . | markdownify | emojify }}</p>{{ end }}
-        
+       
         <hr style="margin: 5px; height: 0;">
-
-            <div class="meta-info">
-              <div class="meta-item">
-                <i class="fad fa-calendar-alt fa-lg"></i>
-                  <span>{{ .Date.Format "Jan 2, 2006" }}</span>
-                </div>
-              <div class="meta-item">
-                <i class="fad fa-clock fa-lg"></i>
-                <span>{{ .ReadingTime }} minute{{ if ne .ReadingTime 1 }}s{{ end }}</span>
-              </div>
+        <div class="meta-info">
+            <div class="meta-item">
+                <span class="icon">
+                    {{- partial "icons/calendar.html" . -}}
+                </span>
+                <span>{{ .Date.Format "Jan 2, 2006" }}</span>
             </div>
-
-      </div>
-      
-  {{ with .Params.image }}
-    <div class="image">
-      <img src="{{ . }}" loading="lazy" decoding="async" alt="{{ $.Title }}">
+            <div class="meta-item">
+                <span class="icon">
+                    {{- partial "icons/clock.html" . -}}
+                </span>
+                <span>{{ .ReadingTime }} minute{{ if ne .ReadingTime 1 }}s{{ end }}</span>
+            </div>
+        </div>
     </div>
-  {{ end }}
+     
+    {{ with .Params.image }}
+        {{ $orig := $.Page.Resources.GetMatch (printf "**%s" .) }}
+        {{ if $orig }}
+            <div class="image responsive-banner-image">
+                {{ $scratch := $.Page.Scratch }}
+                {{ $imageKey := $orig.RelPermalink }}
+                {{ $sizes := dict "small" "400x" "medium" "800x" "large" "1200x" "xlarge" "1600x" }}
+                {{ $formats := slice "jpg" "webp" }}
+                
+                {{/* Process images */}}
+                {{ range $size, $dim := $sizes }}
+                    {{ range $formats }}
+                        {{ $key := printf "%s-banner-%s-%s" $imageKey $size . }}
+                        {{ if not ($scratch.Get $key) }}
+                            {{ $options := printf "%s%s" $dim (cond (eq . "webp") " webp" "") }}
+                            {{ $processed := $orig.Resize $options }}
+                            {{ $scratch.Set $key $processed }}
+                        {{ end }}
+                    {{ end }}
+                {{ end }}
+                
+                {{/* Get processed images */}}
+                {{ $smallJpg := $scratch.Get (printf "%s-banner-small-jpg" $imageKey) }}
+                {{ $mediumJpg := $scratch.Get (printf "%s-banner-medium-jpg" $imageKey) }}
+                {{ $largeJpg := $scratch.Get (printf "%s-banner-large-jpg" $imageKey) }}
+                {{ $xlargeJpg := $scratch.Get (printf "%s-banner-xlarge-jpg" $imageKey) }}
+                {{ $smallWebp := $scratch.Get (printf "%s-banner-small-webp" $imageKey) }}
+                {{ $mediumWebp := $scratch.Get (printf "%s-banner-medium-webp" $imageKey) }}
+                {{ $largeWebp := $scratch.Get (printf "%s-banner-large-webp" $imageKey) }}
+                {{ $xlargeWebp := $scratch.Get (printf "%s-banner-xlarge-webp" $imageKey) }}
+                
+                <picture>
+                    <!-- WebP sources -->
+                    <source 
+                        srcset="{{ $smallWebp.RelPermalink }} 400w,
+                                {{ $mediumWebp.RelPermalink }} 800w,
+                                {{ $largeWebp.RelPermalink }} 1200w,
+                                {{ $xlargeWebp.RelPermalink }} 1600w"
+                        sizes="(max-width: 480px) 400px,
+                               (max-width: 768px) 800px,
+                               (max-width: 1024px) 1200px,
+                               1600px"
+                        type="image/webp">
+                    
+                    <!-- JPEG fallback -->
+                    <img
+                        src="{{ $mediumJpg.RelPermalink }}"
+                        srcset="{{ $smallJpg.RelPermalink }} 400w,
+                                {{ $mediumJpg.RelPermalink }} 800w,
+                                {{ $largeJpg.RelPermalink }} 1200w,
+                                {{ $xlargeJpg.RelPermalink }} 1600w"
+                        sizes="(max-width: 480px) 400px,
+                               (max-width: 768px) 800px,
+                               (max-width: 1024px) 1200px,
+                               1600px"
+                        alt="{{ $.Title }}"
+                        loading="lazy"
+                        decoding="async"
+                        width="{{ $mediumJpg.Width }}"
+                        height="{{ $mediumJpg.Height }}">
+                </picture>
+            </div>
+        {{ else }}
+            {{/* Fallback for external images */}}
+            <div class="image">
+                <img src="{{ . }}" loading="lazy" decoding="async" alt="{{ $.Title }}">
+            </div>
+        {{ end }}
+    {{ end }}
 </section>

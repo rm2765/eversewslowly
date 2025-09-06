@@ -1,9 +1,7 @@
 <!-- Footer -->
  <br>
 <footer class="wrapper style1 align-center">
-
-        <p><i class="fas fa-heart"></i> 
-            Follow Me on Social Media!</p>
+    Follow Me on Social
             <ul class="icons">
     {{ with .Site.Params.social.pinterest }}
     <li><a target="_blank" href="{{.}}" class="icon brands style2">
@@ -18,6 +16,7 @@
         {{- partial "icons/envelope-reg.html" . -}}
         <span class="label">Email</span></a></li>{{end}}
 </ul>
+
         <!--- <ul class="icons"> # old pinging font lib js
             {{ with .Site.Params.social.pinterest }}
             <li><a target="_blank" href="{{.}}" class="icon brands style2 fa-pinterest">

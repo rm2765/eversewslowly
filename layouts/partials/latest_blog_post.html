@@ -8,7 +8,7 @@
       {{ with .Summary }}
         <p>{{ . | safeHTML }}</p>
       {{ end }}
-      
+     
       {{ $buttonLink := $permalink }}
       {{ if .Params.button }}
         <ul class="actions">
@@ -20,14 +20,127 @@
         </ul>
       {{ end }}
     </div>
-    
-    <div class="image">
+   
+    <div class="image responsive-spotlight-image">
       <a href="{{ $permalink }}">
-        {{ $imageSrc := "/images/spotlight01.jpg" }}
         {{ if .Params.image }}
-          {{ $imageSrc = printf "%s%s" .RelPermalink .Params.image }}
+          {{/* Try to find the image as a page resource first */}}
+          {{ $orig := .Resources.GetMatch (printf "**%s" .Params.image) }}
+          {{ if $orig }}
+            {{/* Process responsive images for page resource */}}
+            {{ $scratch := .Scratch }}
+            {{ $imageKey := $orig.RelPermalink }}
+            {{ $sizes := dict "small" "400x" "medium" "800x" "large" "1200x" }}
+            {{ $formats := slice "jpg" "webp" }}
+            
+            {{/* Process images */}}
+            {{ range $size, $dim := $sizes }}
+              {{ range $formats }}
+                {{ $key := printf "%s-spotlight-%s-%s" $imageKey $size . }}
+                {{ if not ($scratch.Get $key) }}
+                  {{ $options := printf "%s%s" $dim (cond (eq . "webp") " webp" "") }}
+                  {{ $processed := $orig.Resize $options }}
+                  {{ $scratch.Set $key $processed }}
+                {{ end }}
+              {{ end }}
+            {{ end }}
+            
+            {{/* Get processed images */}}
+            {{ $smallJpg := $scratch.Get (printf "%s-spotlight-small-jpg" $imageKey) }}
+            {{ $mediumJpg := $scratch.Get (printf "%s-spotlight-medium-jpg" $imageKey) }}
+            {{ $largeJpg := $scratch.Get (printf "%s-spotlight-large-jpg" $imageKey) }}
+            {{ $smallWebp := $scratch.Get (printf "%s-spotlight-small-webp" $imageKey) }}
+            {{ $mediumWebp := $scratch.Get (printf "%s-spotlight-medium-webp" $imageKey) }}
+            {{ $largeWebp := $scratch.Get (printf "%s-spotlight-large-webp" $imageKey) }}
+            
+            <picture>
+              <!-- WebP sources -->
+              <source 
+                srcset="{{ $smallWebp.RelPermalink }} 400w,
+                        {{ $mediumWebp.RelPermalink }} 800w,
+                        {{ $largeWebp.RelPermalink }} 1200w"
+                sizes="(max-width: 480px) 400px,
+                       (max-width: 768px) 800px,
+                       1200px"
+                type="image/webp">
+              
+              <!-- JPEG fallback -->
+              <img
+                src="{{ $mediumJpg.RelPermalink }}"
+                srcset="{{ $smallJpg.RelPermalink }} 400w,
+                        {{ $mediumJpg.RelPermalink }} 800w,
+                        {{ $largeJpg.RelPermalink }} 1200w"
+                sizes="(max-width: 480px) 400px,
+                       (max-width: 768px) 800px,
+                       1200px"
+                alt="{{ .Title }}"
+                loading="lazy"
+                decoding="async"
+                width="{{ $mediumJpg.Width }}"
+                height="{{ $mediumJpg.Height }}">
+            </picture>
+          {{ else }}
+            {{/* Fallback for external/static images */}}
+            {{ $imageSrc := printf "%s%s" .RelPermalink .Params.image }}
+            <img src="{{ $imageSrc | relURL }}" alt="{{ .Title }}" loading="lazy" decoding="async" />
+          {{ end }}
+        {{ else }}
+          {{/* Default spotlight image */}}
+          {{ $defaultImage := resources.Get "images/spotlight01.jpg" }}
+          {{ if $defaultImage }}
+            {{/* Process default image responsively */}}
+            {{ $scratch := .Scratch }}
+            {{ $imageKey := $defaultImage.RelPermalink }}
+            {{ $sizes := dict "small" "400x" "medium" "800x" "large" "1200x" }}
+            {{ $formats := slice "jpg" "webp" }}
+            
+            {{ range $size, $dim := $sizes }}
+              {{ range $formats }}
+                {{ $key := printf "%s-default-spotlight-%s-%s" $imageKey $size . }}
+                {{ if not ($scratch.Get $key) }}
+                  {{ $options := printf "%s%s" $dim (cond (eq . "webp") " webp" "") }}
+                  {{ $processed := $defaultImage.Resize $options }}
+                  {{ $scratch.Set $key $processed }}
+                {{ end }}
+              {{ end }}
+            {{ end }}
+            
+            {{ $smallJpg := $scratch.Get (printf "%s-default-spotlight-small-jpg" $imageKey) }}
+            {{ $mediumJpg := $scratch.Get (printf "%s-default-spotlight-medium-jpg" $imageKey) }}
+            {{ $largeJpg := $scratch.Get (printf "%s-default-spotlight-large-jpg" $imageKey) }}
+            {{ $smallWebp := $scratch.Get (printf "%s-default-spotlight-small-webp" $imageKey) }}
+            {{ $mediumWebp := $scratch.Get (printf "%s-default-spotlight-medium-webp" $imageKey) }}
+            {{ $largeWebp := $scratch.Get (printf "%s-default-spotlight-large-webp" $imageKey) }}
+            
+            <picture>
+              <source 
+                srcset="{{ $smallWebp.RelPermalink }} 400w,
+                        {{ $mediumWebp.RelPermalink }} 800w,
+                        {{ $largeWebp.RelPermalink }} 1200w"
+                sizes="(max-width: 480px) 400px,
+                       (max-width: 768px) 800px,
+                       1200px"
+                type="image/webp">
+              
+              <img
+                src="{{ $mediumJpg.RelPermalink }}"
+                srcset="{{ $smallJpg.RelPermalink }} 400w,
+                        {{ $mediumJpg.RelPermalink }} 800w,
+                        {{ $largeJpg.RelPermalink }} 1200w"
+                sizes="(max-width: 480px) 400px,
+                       (max-width: 768px) 800px,
+                       1200px"
+                alt="{{ .Title }}"
+                loading="lazy"
+                decoding="async"
+                width="{{ $mediumJpg.Width }}"
+                height="{{ $mediumJpg.Height }}">
+            </picture>
+          {{ else }}
+            {{/* Final fallback */}}
+            <img src="/images/spotlight01.jpg" alt="{{ .Title }}" loading="lazy" decoding="async" />
+          {{ end }}
         {{ end }}
-        <img src="{{ $imageSrc | relURL }}" alt="{{ .Title }}" />
       </a>
     </div>
   </section>

@@ -22,16 +22,44 @@
             <script src="{{ $clipboardJS.RelPermalink }}"></script>
 
             <!-- Social Share Icons -->
-            <ul class="icons share-icons">
-                <li><a href="https://pinterest.com/pin/create/button/?url={{ .Permalink }}&media={{ with .Params.image }}{{ . }}{{ end }}&description={{ .Title }}" class="icon brands style1 fa-pinterest" target="_blank" title="Share on Pinterest">
-                    <span class="label">Share on Pinterest</span></a></li>
-                <li><a href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}" target="_blank" title="Share on Facebook" class="icon brands style1 fa-facebook-f">
-                    <span class="label">Share on Facebook</span></a></li>
-                <li><a href="https://www.linkedin.com/sharing/share-offsite/?url={{ .Permalink }}" target="_blank" title="Share on LinkedIn" class="icon brands style1 fa-linkedin">
-                    <span class="label">Share on LinkedIn</span></a></li>
-                <li><a onclick="copyToClipboard('{{ .Permalink }}')" class="icon style1 fa-link" title="Copy Link" style="cursor: pointer;">
-                    <span class="label">Copy Link</span></a></li>
-            </ul>
+<ul class="icons share-icons">
+    <li>
+        <a href="https://pinterest.com/pin/create/button/?url={{ .Permalink }}&media={{ with .Params.image }}{{ . }}{{ end }}&description={{ .Title }}" 
+           class="icon brands style1" 
+           target="_blank" 
+           title="Share on Pinterest">
+            {{- partial "icons/pinterest.html" . -}}
+            <span class="label">Share on Pinterest</span>
+        </a>
+    </li>
+    <li>
+        <a href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}" 
+           target="_blank" 
+           title="Share on Facebook" 
+           class="icon brands style1">
+            {{- partial "icons/fb.html" . -}}
+            <span class="label">Share on Facebook</span>
+        </a>
+    </li>
+    <li>
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ .Permalink }}" 
+           target="_blank" 
+           title="Share on LinkedIn" 
+           class="icon brands style1">
+            {{- partial "icons/linkedin.html" . -}}
+            <span class="label">Share on LinkedIn</span>
+        </a>
+    </li>
+    <li>
+        <a onclick="copyToClipboard('{{ .Permalink }}')" 
+           class="icon style1" 
+           title="Copy Link" 
+           style="cursor: pointer;">
+            {{- partial "icons/link.html" . -}}
+            <span class="label">Copy Link</span>
+        </a>
+    </li>
+</ul>
         </div>    
          <div id="top"></div>
       {{ partial "toc" .}}

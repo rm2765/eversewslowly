@@ -1,165 +1,177 @@
 /*
-	Hugo Story by CaressOfSteel
-	A (modular, highly tweakable) responsive one-page theme for Hugo.
-	Ported from Story by HTML5UP.
-	This Hugo theme is licensed under the Creative Commons Attribution 3.0 License.
+    Hugo Story by CaressOfSteel
+    A (modular, highly tweakable) responsive one-page theme for Hugo.
+    Ported from Story by HTML5UP.
+    This Hugo theme is licensed under the Creative Commons Attribution 3.0 License.
 */
 
 /* SVG Icon Support */
 .icon-svg {
-    width: 1em;
-    height: 1em;
-    display: inline-block;
-    vertical-align: -0.125em;
+  width: 1em !important;         // Scales with font-size of parent
+  height: 1em !important;
+  display: inline-block;
+  vertical-align: -0.125em;
+  fill: currentColor;            // ensures SVG inherits text color
+  flex-shrink: 0;               // prevents SVG from shrinking in flex containers
 }
 
-/* Ensure SVG icons work with existing styles */
-.icon.style1 .icon-svg,
-.icon.style2 .icon-svg {
-    border-radius: inherit;
-}
-
-.icon.style2 .icon-svg {
-    width: 2.75em;
-    height: 2.75em;
-}
-
-.fav .icon-svg {
-    /* Inherits from existing .fav styling */
-}
-
-
-/* Icon */
-
-	.icon {
-		@include icon;
-		border-bottom: none;
-		position: relative;
-		text-align: center;
-
-		> .label {
-			display: none;
-		}
-
-		&:before {
-			line-height: inherit;
-		}
-
-		&.solid {
-			&:before {
-				font-weight: 900;
-			}
-		}
-
-		&.brands {
-			&:before {
-				font-family: 'Font Awesome 5 Brands';
-			}
-		}
-
-		&.style2 {
-			border-radius: 2.75em;
-			display: inline-block;
-			height: 2.75em;
-			line-height: 2.75em;
-			width: 2.75em;
+/* Icon Base Styles - Updated for SVG support */
+.icon {
+  border-bottom: none;
+  position: relative;
+  text-align: center;
+  font-size: 1rem;              // base scaling size for icons
+  display: inline-flex;         // changed to flex for better SVG alignment
+  align-items: center;
+  justify-content: center;
+  
+  > .label {
+    display: none;
+  }
+  
+  // Remove Font Awesome specific styles
+  // &:before styles are no longer needed for SVG icons
+  
+  &.style2 {
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 2em;                 // circle container matches icon scale
+    height: 2em;
+    line-height: 1;
     
-		&:before {
-			border-radius: 2.75em;
-			display: inline-block;
-			height: 2.75em;
-			line-height: 2.75em;
-			width: 2.75em;
-			}
-		}
-		
-		&.major {
-			display: block;
-			margin: 0 0 (_size(element-margin) * 0.5) 0;
+    // Apply styles directly to SVG instead of :before
+    .icon-svg {
+      transition: all 0.2s ease-in-out;
+    }
+  }
+  
+  &.major {
+    display: block;
+    margin: 0 0 (_size(element-margin) * 0.5) 0;
+    font-size: 1.25rem;         // moved from :before to parent
+  }
+}
 
-			&:before {
-				font-size: 1.25rem;
-			}
-		}
-	}
+/* Link icon styles - Updated for SVG */
+a.icon {
+  &.style2 {
+    transition: background-color 0.2s ease-in-out, 
+                box-shadow 0.2s ease-in-out, 
+                color 0.2s ease-in-out;
+    
+    .icon-svg {
+      transition: fill 0.2s ease-in-out;
+    }
+  }
+}
 
-	a.icon {
-		&.style2 {
-			&:before {
-				@include vendor('transition', (
-					'background-color #{_duration(transition)} ease-in-out',
-					'box-shadow #{_duration(transition)} ease-in-out',
-					'color #{_duration(transition)} ease-in-out'
-				));
-			}
-		}
-	}
+/* Color mixin updated for SVG icons */
+@mixin color-icon($p: null) {
+  .icon {
+    &.style2 {
+      box-shadow: inset 0 0 0 _size(border-width) _palette($p, border);
+    }
+  }
+  
+  a.icon {
+    &.style2 {
+      &:hover {
+        box-shadow: inset 0 0 0 _size(border-width) _palette($p, accent);
+        color: _palette($p, accent);
+        
+        .icon-svg {
+          fill: _palette($p, accent);
+        }
+      }
+      
+      &:active {
+        background-color: transparentize(_palette($p, accent), 0.9);
+        box-shadow: inset 0 0 0 _size(border-width) _palette($p, accent);
+        color: _palette($p, accent);
+        
+        .icon-svg {
+          fill: _palette($p, accent);
+        }
+      }
+    }
+  }
+}
 
-	@mixin color-icon($p: null) {
- 		.icon {
- 			&.style2 {
- 				&:before {
-					box-shadow: inset 0 0 0 _size(border-width) _palette($p, border);
- 				}
- 			}
- 		}
+@include color-icon;
 
-		a.icon {
-			&.style2 {
-				&:hover {
-					&:before {
-						box-shadow: inset 0 0 0 _size(border-width) _palette($p, accent);
-						color: _palette($p, accent);
-					}
-				}
+/* Meta Info (for post header icons on the blog single banner) */
+.meta-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 1rem 0;
+  
+  .meta-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.9rem;
+    
+    .icon {
+      font-size: 1.2rem;         // increased from 0.5rem for better visibility
+      margin-bottom: 0.25rem;
+      
+      .icon-svg {
+        width: 1em;
+        height: 1em;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 640px) {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}
 
-				&:active {
-					&:before {
-						background-color: transparentize(_palette($p, accent), 0.9);
-						box-shadow: inset 0 0 0 _size(border-width) _palette($p, accent);
-						color: _palette($p, accent);
-					}
-				}
-			}
-		}
-	}
+/* Post meta styling - Updated for SVG icons */
+.post-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  
+  .post-date,
+  .post-categories {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    
+    .icon {
+      font-size: 1rem;           // consistent icon sizing
+      
+      .icon-svg {
+        width: 1em;
+        height: 1em;
+      }
+    }
+  }
+  
+  .post-categories {
+    a {
+      color: inherit;
+      text-decoration: none;
+      
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
 
-	@include color-icon;
-
-	/* Meta Info (for post header icons on the blog single banner) */
-
-	.meta-info {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-wrap: wrap;
-		gap: 1.5rem;
-		margin: 1rem 0;
-	  
-		.meta-item {
-		  display: flex;
-		  flex-direction: column;
-		  align-items: center;
-		  font-size: 0.9rem;
-	  
-		  .icon {
-			font-size: 1.5rem;
-			margin-bottom: 0.25rem;
-		  }
-		}
-	  
-		@media screen and (max-width: 640px) {
-		  flex-direction: column;
-		  gap: 0.75rem;
-		}
-	  }
-	  
-/* Calender icon styling in the featured post card  */
-
-	  .post-summary {
-		font-size: 1rem;
-		line-height: 1.6;
-		color: #333;
-		margin-top: 0.5rem;
-	  }
-	  
+/* Calendar icon styling in the featured post card */
+.post-summary {
+  font-size: 0.9rem;            // increased from 0.5rem for readability
+  line-height: 1.6;
+  color: #333;
+  margin-top: 0.5rem;
+}

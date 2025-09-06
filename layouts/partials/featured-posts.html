@@ -46,21 +46,26 @@
               
               <!-- Date and categories below the image -->
               <div class="post-meta">
-                <span class="post-date">
-                  <i class="fad fa-calendar-alt"></i>
-                  <time datetime="{{ $post.Date.Format "2006-01-02" }}">{{ $post.Date.Format "January 2, 2006" }}</time>
-                </span>
-                <br>
-                <span class="post-categories">
-                  <i class="fad fa-tag"></i>
-                  {{ with $post.Params.categories }}
-                    {{ range $i, $category := . }}
-                      {{ if gt $i 0 }}{{ if eq (add $i 1) (len .) }} and {{ else }}, {{ end }}{{ end }}
-                      <a href="{{ "/categories/" | relURL }}{{ $category | urlize }}">{{ $category | humanize }}</a>
-                    {{ end }}
-                  {{ end }}
-                </span>
-              </div>
+  <span class="post-date">
+    <span class="icon">
+      {{- partial "icons/calendar.html" . -}}
+    </span>
+    <time datetime="{{ $post.Date.Format "2006-01-02" }}">{{ $post.Date.Format "January 2, 2006" }}</time>
+  </span>
+  <span class="post-categories">
+    <span class="icon">
+      {{- partial "icons/tag.html" . -}}
+    </span>
+    <span>
+      {{ with $post.Params.categories }}
+        {{ range $i, $category := . }}
+          {{ if gt $i 0 }}{{ if eq (add $i 1) (len .) }} and {{ else }}, {{ end }}{{ end }}
+          <a href="{{ "/categories/" | relURL }}{{ $category | urlize }}">{{ $category | humanize }}</a>
+        {{ end }}
+      {{ end }}
+    </span>
+  </span>
+</div>
               
               <!-- Post summary with character limit -->
               <div class="post-summary">

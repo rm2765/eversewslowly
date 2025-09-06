@@ -10,83 +10,136 @@
   border-radius: _size(border-radius);
   display: inline-block;
   position: relative;
-
-  img {
+  
+  img, picture {
     display: block;
     border-radius: _size(border-radius);
   }
-
+  
+  img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  /* Responsive banner image specific styles */
+  &.responsive-banner-image {
+    display: block;
+    width: 100%;
+    
+    picture {
+      width: 100%;
+    }
+    
+    img {
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+      object-fit: cover; /* Ensures good crop behavior */
+    }
+  }
+  
   /* Default alignment & sizing (40% / max‑width 10rem) */
   &.left,
   &.right {
     @include image-size(40%, 10rem);
-
     img { width: 100%; }
   }
-
+  
   &.left {
     float: left;
     margin: 0 1.5rem 1rem 0;
     top: 0.25rem;
   }
-
+  
   &.right {
     float: right;
     margin: 0 0 1rem 1.5rem;
     top: 0.25rem;
   }
-
+  
   /* Fit (full width) */
   &.fit {
     display: block;
     margin: 0 0 _size(element-margin) 0;
     width: 100%;
-
+    
     img {
       width: 100%;
     }
   }
-
+  
   /* Main (full width with extra bottom margin) */
   &.main {
     display: block;
     margin: 0 0 (_size(element-margin) * 1.5) 0;
     width: 100%;
-
+    
     img {
       width: 100%;
     }
   }
-
+  
   /* Size modifiers */
   &.small {
     @include image-size(50%, 12rem);
-
     img { width: 100%; }
   }
-
+  
   &.medium {
     @include image-size(75%, 20rem);
-
     img { width: 100%; }
   }
-
+  
   &.large {
     @include image-size(95%, 32rem);
-
     img { width: 100%; }
   }
 }
 
+/* Responsive image styles for content images */
+.rendered-image {
+  margin: 1rem 0;
+  
+  picture {
+    display: block;
+    width: 100%;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: _size(border-radius);
+  }
+  
+  figcaption {
+    font-style: italic;
+    text-align: center;
+    margin-top: 0.5rem;
+    font-size: 0.9em;
+    color: #666;
+  }
+}
+
+/* Mobile responsiveness */
 @include breakpoint('<=small') {
   .image,
   .image img,
+  .image picture,
   .image.fit,
-  .image.main {
+  .image.main,
+  .image.responsive-banner-image,
+  .image.responsive-spotlight-image {
     width: 100% !important;
     max-width: 100% !important;
     float: none !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
+  }
+  
+  .rendered-image {
+    img {
+      width: 100% !important;
+      max-width: 100% !important;
+    }
   }
 }
