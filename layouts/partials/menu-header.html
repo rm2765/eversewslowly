@@ -18,7 +18,7 @@
             <div class="mobile-search">
                 <input type="text" placeholder="Search..." id="mobileSearchInput">
                 <a href="#" class="button primary fit small" id="mobileSearchButton">
-                    <i class="fa fa-search"></i>
+                    {{- partial "icons/magnify.html" . -}}
                 </a>
             </div>
 
@@ -55,7 +55,9 @@
             <input type="text" placeholder="Search..." id="desktopSearchInput">
             <ul class="icons">
                 <li>
-                    <a href="#" class="icon style2 fa-search" id="desktopSearchButton"></a>
+                    <a href="#" class="icon style2" id="desktopSearchButton">
+                        {{- partial "icons/magnify.html" . -}}
+                    </a>
                 </li>
             </ul>
         </div>
