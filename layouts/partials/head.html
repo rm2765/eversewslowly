@@ -8,6 +8,9 @@
 	{{ partial "favicon" }}
 	{{ end }}
 	
+	<!-- Pinterest account verify -->
+	<meta name="p:domain_verify" content="582253ef0ef9c13e3377efbd1b74c4ad"/>
+
 	<!-- CSS -->
 	{{ if hugo.IsServer }}
 	{{ $style := resources.Get "sass/main.scss" | resources.ExecuteAsTemplate "scss/main.scss" . | toCSS (dict "targetPath" "css/main.css" "outputStyle" "compressed" "enableSourceMap" false) }}
