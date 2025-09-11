@@ -1,30 +1,36 @@
-{{- $original := resources.Get .image -}}
+{{- with .image }}
 
-{{/* Create responsive cropped versions for the grid */}}
-{{- $thumb := $original.Fill "360x250 smart" -}}
-{{- $medium := $original.Fill "720x500 smart" -}}
-{{- $large := $original.Fill "1200x800 smart" -}}
+  {{- $original := resources.Get . -}}
+  {{- if $original }}
+    {{- $thumb := $original.Fill "360x250 smart" -}}
+    {{- $medium := $original.Fill "720x500 smart" -}}
+    {{- $large := $original.Fill "1200x800 smart" -}}
 
-<article>
-  <!-- Link points to the original (uncropped) -->
-  <a href="{{ $original.RelPermalink }}" class="image">
-    <picture>
-      <source srcset="{{ $large.RelPermalink }}" media="(min-width: 1024px)">
-      <source srcset="{{ $medium.RelPermalink }}" media="(min-width: 600px)">
-      <img 
-        src="{{ $thumb.RelPermalink }}" 
-        alt="{{ .title }}" 
-        loading="lazy" 
-        decoding="async"
-      >
-    </picture>
-  </a>
+    <article>
+      <!-- Use original (uncropped) for lightbox -->
+      <a href="{{ $original.RelPermalink }}" class="image">
+        <picture>
+          <source srcset="{{ $large.RelPermalink }}" media="(min-width: 1024px)">
+          <source srcset="{{ $medium.RelPermalink }}" media="(min-width: 600px)">
+          <img 
+            src="{{ $thumb.RelPermalink }}" 
+            alt="{{ $.title }}" 
+            loading="lazy" 
+            decoding="async"
+          >
+        </picture>
+      </a>
 
-  <div class="caption">
-    <h3>{{ .title }}</h3>
-    <p>{{ .content }}</p>
-    <ul class="actions fixed">
-      <li><span class="button small">{{ .button }}</span></li>
-    </ul>
-  </div>
-</article>
+      <div class="caption">
+        <h3>{{ $.title }}</h3>
+        <p>{{ $.content }}</p>
+        <ul class="actions fixed">
+          <li><span class="button small">{{ $.button }}</span></li>
+        </ul>
+      </div>
+    </article>
+  {{- else }}
+    <!-- fallback if image not found -->
+    <p>⚠ Image not found: {{ . }}</p>
+  {{- end }}
+{{- end }}
