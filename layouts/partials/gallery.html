@@ -8,7 +8,8 @@
     <!-- Gallery -->
     <div class="gallery {{ .style }}">
         {{ range .pictures }}
-            {{ partialCached "picture" . }}
+            {{ partial "gallery_landing" . }}
         {{ end }}
     </div>
 </section>
+<br>

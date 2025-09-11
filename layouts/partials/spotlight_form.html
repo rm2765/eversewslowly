@@ -1,0 +1,33 @@
+<section class="spotlight {{ .style }}"{{ with .id }} id="{{ . }}"{{ end }}>
+    <div class="content">
+        {{ with .title | markdownify }}<h2>{{ . }}</h2>{{ end }}
+        {{ with .content | markdownify}}<p>{{ . | safeHTML }}</p>{{ end }}
+        
+        <form name="contact" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="contact" />
+            <div class="fields">
+                <div class="field half">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" required />
+                </div>
+                <div class="field half">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required />
+                </div>
+                <div class="field">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" rows="6" required></textarea>
+                </div>
+            </div>
+            <ul class="actions">
+                <li><input type="submit" value="Send Message" /></li>
+            </ul>
+        </form>
+    </div>
+    
+    {{ with .image }}
+        <div class="image">
+            <img src="{{ . }}" alt="" />
+        </div>
+    {{ end }}
+</section>

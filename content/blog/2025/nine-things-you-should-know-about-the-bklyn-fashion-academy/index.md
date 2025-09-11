@@ -36,8 +36,9 @@ The Brooklyn Fashion Academy isn’t about beating the designer next to you; it�
 
 ### 2. It’s the Only Program of Its Kind in the U.S.
  {{< figure src="bfa_logo.png" alt="BKLYN Fashion Academy Logo" caption="BKLYN Fashion Academy Logo - Courtsey of the BPL" class="image left small" >}} 
-Hosted by the Brooklyn Public Library, the BFA is completely free and unlike any other program in the country. It blends design, business training, mentorship, and technical labs—all from inside a public institution. It's a new model for accessible fashion education. In my complete guide of the BFA post, I go over the backstory to the program's origins and development.
+Hosted by the Brooklyn Public Library, the BFA is completely free and unlike any other program in the country. It blends design, business training, mentorship, and technical labs—all from inside a public institution. It's a new model for accessible fashion education. Check my [complete insider's guide](https://eversewslowly.com/blog/2025/insiders-guide-to-the-bklyn-fashion-academy/) where I go over the backstory to the program's origins and development.
 
+<br>
 <br>
 
 ### 3. Prepare to Face Your Toughest Critic—Yourself.
@@ -69,4 +70,4 @@ The final runway show isn’t just a celebration; it’s your first real chance 
 From the excitement of breakthroughs to the frustration of creative blocks, you’ll experience a spectrum of emotions. The emotional rollercoaster is part of the process—and by the end, you’ll not only be a better designer, but a more resilient one.
 
 ---
-<sub>Check out my Instagram highlights for a real-time look at my experience in the BFA program.</sub>
+<sub>Check out my [Instagram highlights](https://www.instagram.com/stories/highlights/18037420993853163/) for a real-time look at my experience in the BFA program.</sub>

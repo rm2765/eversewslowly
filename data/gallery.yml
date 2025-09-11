@@ -1,77 +1,37 @@
 title: "Gallery"
-style: "style1 small lightbox onscroll-fade-in"
+style: "style1 medium lightbox onscroll-fade-in"
 content: |
-  Fill in
+  
 pictures:
-  - title: "Title"
-    content: "Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices."
-    image: "images/gallery/fulls/01.jpg"
-    thumb: "images/gallery/thumbs/01.jpg"
+  - title: "Bomber Jacket"
+    content: "One of my designs worn by Nikki Medina on the BKLYN Fashion Academy 2024 runway."
+    image: "images/gallery/bomber_jacket_model.jpg"  # This should be in assets/ or content/ folder, not static/
     button: "Details"
-
-  - title: "Title"
-    content: "Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices."
-    image: "images/gallery/fulls/02.jpg"
-    thumb: "images/gallery/thumbs/02.jpg"
+  - title: "Runway Walk"
+    content: "One look short, but made it to the runway anyway."
+    image: "images/gallery/made_it.webp"  # This should be in assets/ or content/ folder, not static/
     button: "Details"
-
-  - title: "Title"
-    content: "Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices."
-    image: "images/gallery/fulls/03.jpg"
-    thumb: "images/gallery/thumbs/03.jpg"
+  - title: "Women Firefighter Inspired Collection"
+    content: "My main look for the BKLYN Fashion Academy Women in Future indutries theme"
+    image: "images/gallery/main_look_rose.jpg"  # This should be in assets/ or content/ folder, not static/
     button: "Details"
-
-  - title: "Title"
-    content: "Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices."
-    image: "images/gallery/fulls/04.jpg"
-    thumb: "images/gallery/thumbs/04.jpg"
+  - title: "My models and I"
+    content: "Before the runway show began at the BKLYN Fashion Academy"
+    image: "images/gallery/pic_with_models.png"  # This should be in assets/ or content/ folder, not static/
     button: "Details"
-
-  - title: "Title"
-    content: "Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices."
-    image: "images/gallery/fulls/05.jpg"
-    thumb: "images/gallery/thumbs/05.jpg"
+  - title: "First Refashions"
+    content: "First refashions to my name that I use to apply to the BKLYN Fashion Academy"
+    image: "images/gallery/side_by_side.jpg"  # This should be in assets/ or content/ folder, not static/
     button: "Details"
-
-  - title: "Title"
-    content: "Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices."
-    image: "images/gallery/fulls/06.jpg"
-    thumb: "images/gallery/thumbs/06.jpg"
+  - title: "Sketches Lineup"
+    content: "My sketches/designs for my mini-collection at the BKLYN Fashion Academy"
+    image: "images/gallery/sketch_lineup.jpg"  # This should be in assets/ or content/ folder, not static/
     button: "Details"
-
-  - title: "Title"
-    content: "Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices."
-    image: "images/gallery/fulls/07.jpg"
-    thumb: "images/gallery/thumbs/07.jpg"
+  - title: "Garment Construction"
+    content: Hours before the runway show
+    image: "images/gallery/wip.jpg"  # This should be in assets/ or content/ folder, not static/
     button: "Details"
-
-  - title: "Title"
-    content: "Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices."
-    image: "images/gallery/fulls/08.jpg"
-    thumb: "images/gallery/thumbs/08.jpg"
+  - title: "Text-to-Image AI design"
+    content: "Text-to-Image AI design when brainstorming for my mini-collection"
+    image: "images/gallery/txt_ex1.png"  # This should be in assets/ or content/ folder, not static/
     button: "Details"
-
-  - title: "Title"
-    content: "Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices."
-    image: "images/gallery/fulls/09.jpg"
-    thumb: "images/gallery/thumbs/09.jpg"
-    button: "Details"
-
-  - title: "Title"
-    content: "Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices."
-    image: "images/gallery/fulls/10.jpg"
-    thumb: "images/gallery/thumbs/10.jpg"
-    button: "Details"
-
-  - title: "Title"
-    content: "Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices."
-    image: "images/gallery/fulls/11.jpg"
-    thumb: "images/gallery/thumbs/11.jpg"
-    button: "Details"
-
-  - title: "Title"
-    content: "Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices."
-    image: "images/gallery/fulls/12.jpg"
-    thumb: "images/gallery/thumbs/12.jpg"
-    button: "Details"
-    

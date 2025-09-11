@@ -3,7 +3,7 @@
 	{{ partialCached "banner" site.Data.banner }}
 	{{ partialCached "latest_blog_post" site.Data.spotlight_blog }}
 	{{ partialCached "spotlight" site.Data.spotlight2 }}
-	{{ partialCached "gallery" site.Data.gallery }}
+	{{ partial "gallery" site.Data.gallery }}
 	{{ partialCached "newsletter_inline" site.Data.newsletter_inline}}
 <br>
 {{ end }}
