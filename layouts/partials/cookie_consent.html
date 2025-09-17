@@ -1,0 +1,38 @@
+<section class="wrapper style1 align-center">
+    <div class="inner">
+        <div id="cookie-consent">
+        <span>
+        We use cookies to improve your experience. See our 
+        <a href="{{ "/policy/" | relURL }}" class="underline">Privacy & Cookie Policy</a>.
+        </span>
+      <!--  <div>
+            <button id="accept-analytics" class="button small">Accept</button>
+            <button id="decline-analytics" class="button small">Decline</button>
+        </div> -->
+    </div>
+
+</section>
+
+<script>
+  (function() {
+    const consentKey = "analyticsConsent";
+    const banner = document.getElementById("cookie-consent");
+    const acceptBtn = document.getElementById("accept-analytics");
+    const declineBtn = document.getElementById("decline-analytics");
+
+    if (!localStorage.getItem(consentKey)) {
+      banner.classList.remove("hidden");
+    }
+
+    acceptBtn.addEventListener("click", function() {
+      localStorage.setItem(consentKey, "granted");
+      banner.classList.add("hidden");
+      location.reload(); // reload so GA partial can load
+    });
+
+    declineBtn.addEventListener("click", function() {
+      localStorage.setItem(consentKey, "denied");
+      banner.classList.add("hidden");
+    });
+  })();
+</script>

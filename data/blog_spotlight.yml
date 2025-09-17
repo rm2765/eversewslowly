@@ -1,5 +1,5 @@
 ####################### Blog Spotlight #########################
-style: "style4 color2 fullscreen orient-left content-align-left image-position-center onscroll-image-fade-in"
+style: "style4 bg-alt fullscreen orient-left content-align-left image-position-center onscroll-image-fade-in"
 id: "first"
 button: 
   label: "Read"

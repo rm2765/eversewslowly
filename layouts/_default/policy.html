@@ -1,0 +1,17 @@
+{{ define "main" }}
+{{ partialCached "menu-header" . }}
+
+<section class="wrapper style1 align-left">
+    <div class="inner">
+        {{ with .Title }}<h1>{{ . | markdownify | emojify  }}</h1>{{ end }}
+        <div class="content">{{ with .Content }}<div>
+            {{ . | markdownify | emojify | safeHTML}}
+    </div>{{ end }}
+Last updated: {{ now.Year }}
+
+</section>
+
+{{ partial "breadcrumbs" . }}
+{{ partialCached "newsletter_inline" site.Data.newsletter_inline}}
+
+{{ end }}

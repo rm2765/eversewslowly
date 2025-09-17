@@ -14,7 +14,9 @@
 		</div>
 		
 		<!--{{ template "_internal/google_analytics.html" . }}-->
-		{{ partial "google_analytics" . }}
+		<!--{{ partial "cookie_consent.html" . }}-->
+		{{ partial "google_analytics.html" . }}
+
 		{{ partialCached "scripts" . }}
 		{{ partial "footer" . }}
 
