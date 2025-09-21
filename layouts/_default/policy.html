@@ -4,12 +4,74 @@
 <section class="wrapper style1 align-left">
     <div class="inner">
         {{ with .Title }}<h1>{{ . | markdownify | emojify  }}</h1>{{ end }}
+        
+        
         <div class="content">{{ with .Content }}<div>
             {{ . | markdownify | emojify | safeHTML}}
-    </div>{{ end }}
-Last updated: {{ now.Year }}
+        </div>{{ end }}
+        Last updated: {{ now.Year }}
 
+    </div>
 </section>
+
+<section class="wrapper style1 align-center">
+  <div class="inner">
+    <div id="ga-opt-out-section">
+            <p>We use Google Analytics to better understand our visitors. If you'd rather not be tracked, you can opt out below. 
+                <br>Your choice will be saved to your browser.</p>
+            <button id="ga-opt-out-button" class="button fit small">
+                Opt Out of Analytics
+            </button>
+            <hr>
+        </div>
+
+        <script>
+            function updateOptOutButton() {
+                const isOptedOut = localStorage.getItem('ga-opt-out');
+                const button = document.getElementById('ga-opt-out-button');
+                if (button) {
+                    if (isOptedOut) {
+                        button.textContent = "You Are Currently Opted Out";
+                        button.style.backgroundColor = "#4CAF50"; // Green color
+                    } else {
+                        button.textContent = "Opt Out of Tracking";
+                        button.style.backgroundColor = ""; // Reset to default button color
+                    }
+                }
+            }
+
+            function gaOptout() {
+                if (typeof gtag === 'function') {
+                    const isOptedOut = localStorage.getItem('ga-opt-out');
+                    if (isOptedOut) {
+                        // User is currently opted out, so opt them back in
+                        localStorage.removeItem('ga-opt-out');
+                        gtag('consent', 'update', {
+                            'analytics_storage': 'granted'
+                        });
+                    } else {
+                        // User is currently opted in, so opt them out
+                        localStorage.setItem('ga-opt-out', 'true');
+                        gtag('consent', 'update', {
+                            'analytics_storage': 'denied'
+                        });
+                    }
+                    updateOptOutButton();
+                }
+            }
+
+            // Attach the click handler and set initial button text on page load
+            document.addEventListener('DOMContentLoaded', () => {
+                const button = document.getElementById('ga-opt-out-button');
+                if (button) {
+                    button.addEventListener('click', gaOptout);
+                }
+                updateOptOutButton();
+            });
+        </script>
+
+    </div>
+    </section>
 
 {{ partial "breadcrumbs" . }}
 {{ partialCached "newsletter_inline" site.Data.newsletter_inline}}

@@ -1,11 +1,34 @@
 {{ $gaid := getenv "HUGO_GOOGLE_ANALYTICS_ID" }}
 {{ if and (eq hugo.Environment "production") $gaid }}
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ $gaid }}"></script>
+  <script>
+    // Define the default consent state based on user's preference
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',
+      'analytics_storage': localStorage.getItem('ga-opt-out') ? 'denied' : 'granted',
+      'personalization_storage': 'denied',
+      'wait_for_update': 500
+    });
+
+    gtag('js', new Date());
+    gtag('config', '{{ $gaid }}');
+  </script>
+{{ end }}
+
+<!-- {{ $gaid := getenv "HUGO_GOOGLE_ANALYTICS_ID" }}
+{{ if and (eq hugo.Environment "production") $gaid }} -->
   <!-- Google Analytics 4 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id={{ $gaid }}"></script>
+ <!-- <script async src="https://www.googletagmanager.com/gtag/js?id={{ $gaid }}"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', '{{ $gaid }}');
   </script>
-{{ end }}
+{{ end }} 
+-->
+
+

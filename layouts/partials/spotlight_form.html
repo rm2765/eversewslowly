@@ -3,8 +3,13 @@
         {{ with .title | markdownify }}<h2>{{ . }}</h2>{{ end }}
         {{ with .content | markdownify}}<p>{{ . | safeHTML }}</p>{{ end }}
         
-        <form name="contact" method="POST" data-netlify="true">
+        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-netlify-recaptcha="true">
             <input type="hidden" name="form-name" value="contact" />
+            <p class="hidden" style="display: none;">
+                <label>
+                    Don’t fill this out if you’re human: <input name="bot-field" type="text" />
+                </label>
+            </p>
             <div class="fields">
                 <div class="field half">
                     <label for="name">Name</label>
@@ -19,6 +24,7 @@
                     <textarea name="message" id="message" rows="6" required></textarea>
                 </div>
             </div>
+            <div data-netlify-recaptcha="true"></div>
             <ul class="actions">
                 <li><input type="submit" value="Send Message" /></li>
             </ul>
