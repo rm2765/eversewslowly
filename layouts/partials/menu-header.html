@@ -1,4 +1,4 @@
-<!-- Updated HTML for Hugo header -->
+<!-- Updated HTML for Hugo header with working search -->
 <header class="main-header">
     <div class="container">
         <!-- Logo and Hamburger for mobile -->
@@ -111,11 +111,11 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Search functionality
+    // Enhanced search functionality
     function handleSearch(searchInput) {
         const query = searchInput.value.trim();
         if (query) {
-            // Fixed: Use string concatenation instead of template literals
+            // Navigate to search page with query parameter
             window.location.href = "{{ site.BaseURL }}/search?q=" + encodeURIComponent(query);
         }
     }
@@ -132,7 +132,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
         desktopSearchInput.addEventListener('keypress', function(e) {
             if (e.key === 'Enter') {
-                handleSearch(this);
+                e.preventDefault();
+                handleSearch(desktopSearchInput);
             }
         });
     }
@@ -142,13 +143,15 @@ document.addEventListener('DOMContentLoaded', function() {
     const mobileSearchInput = document.getElementById('mobileSearchInput');
     
     if (mobileSearchButton && mobileSearchInput) {
-        mobileSearchButton.addEventListener('click', function() {
+        mobileSearchButton.addEventListener('click', function(e) {
+            e.preventDefault();
             handleSearch(mobileSearchInput);
         });
 
         mobileSearchInput.addEventListener('keypress', function(e) {
             if (e.key === 'Enter') {
-                handleSearch(this);
+                e.preventDefault();
+                handleSearch(mobileSearchInput);
             }
         });
     }

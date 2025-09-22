@@ -1,0 +1,213 @@
+{{ define "main" }}
+{{ partialCached "menu-header" . }}
+<section class="search-container wrapper style1 align-center">
+   
+    <div class="inner">
+       <h1>Search Results</h1>
+
+         <!-- Search Form -->
+            <form method="get" action="#" id="searchForm">
+                <div class="fields">
+                    <div class="field">
+                        <input type="text" id="searchInput" name="q" placeholder="Enter your search terms..." value="">
+                    </div>
+                </div>
+                <div style="text-align: center;">
+                    <button type="submit" id="searchButton" class="button primary">Search</button>
+                </div>
+            </form>
+
+            <div id="searchStats" class="search-stats"></div>
+   
+    
+       
+    <section class="wrapper style2">
+        <div class="index align-left">
+            <!-- Search Results -->
+            <section id="resultsSection" style="display: none;">
+                <header>
+                </header>
+                <div class="content">
+                    <dl id="searchResults">
+                        <!-- Results will be populated here -->
+                    </dl>
+                </div>
+            </section>
+
+            <!-- No Results -->
+            <section id="noResultsSection" style="display: none;">
+                <header>
+                    <h3>No Results Found</h3>
+                </header>
+                <div class="content">
+                    <p>No results found for your search. Try different keywords or check your spelling.</p>
+                    <h4>Search Tips:</h4>
+                    <ul>
+                        <li>Try different or more general keywords</li>
+                        <li>Check your spelling</li>
+                        <li>Use fewer search terms</li>
+                        <li>Try synonyms or related terms</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        </section>
+    </div>
+   <hr>
+</section>
+<br>
+
+
+<style>
+.search-stats {
+    margin: 1rem 0;
+    font-size: 1.25rem;
+    font-style: italic;
+}
+
+.search-highlight {
+    background-color: #A8E4D9;
+    padding: 0 4px;
+    border-radius: 2px;
+    font-weight: bold;
+    color: #000000;
+}
+
+@media screen and (max-width: 736px) {
+    .search-stats {
+        text-align: center;
+    }
+}
+</style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.6.2/fuse.min.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    let searchData = [];
+    let fuse;
+    
+    // Initialize search
+    fetch('{{ site.BaseURL }}/index.json')
+        .then(response => response.json())
+        .then(data => {
+            searchData = data;
+            
+            // Configure Fuse.js
+            const fuseOptions = {
+                keys: [
+                    { name: 'title', weight: 0.4 },
+                    { name: 'content', weight: 0.3 },
+                    { name: 'summary', weight: 0.2 },
+                    { name: 'tags', weight: 0.1 }
+                ],
+                threshold: 0.4,
+                includeScore: true,
+                includeMatches: true,
+                minMatchCharLength: 2
+            };
+            
+            fuse = new Fuse(searchData, fuseOptions);
+            
+            // Get query from URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const query = urlParams.get('q');
+            
+            if (query) {
+                document.getElementById('searchInput').value = query;
+                performSearch(query);
+            }
+        })
+        .catch(error => {
+            console.error('Error loading search data:', error);
+            document.getElementById('searchResults').innerHTML = '<p>Error loading search data.</p>';
+        });
+    
+    // Search functionality
+    function performSearch(query) {
+        if (!query.trim() || !fuse) return;
+        
+        const results = fuse.search(query);
+        displayResults(results, query);
+    }
+    
+    function displayResults(results, query) {
+        const resultsContainer = document.getElementById('searchResults');
+        const statsContainer = document.getElementById('searchStats');
+        const noResultsSection = document.getElementById('noResultsSection');
+        const resultsSection = document.getElementById('resultsSection');
+        
+        if (results.length === 0) {
+            resultsContainer.innerHTML = '';
+            statsContainer.innerHTML = '';
+            resultsSection.style.display = 'none';
+            noResultsSection.style.display = 'block';
+            return;
+        }
+        
+        noResultsSection.style.display = 'none';
+        resultsSection.style.display = 'block';
+        statsContainer.innerHTML = `Found ${results.length} result${results.length !== 1 ? 's' : ''} for "${query}"`;
+        
+        // Display search results matching archive.html structure
+        const resultHTML = results.map(result => {
+            const item = result.item;
+            let snippet = item.content || item.summary || '';
+            
+            // Highlight search terms in snippet
+            const searchTerms = query.toLowerCase().split(' ');
+            searchTerms.forEach(term => {
+                if (term.length > 1) {
+                    const regex = new RegExp(`(${term})`, 'gi');
+                    snippet = snippet.replace(regex, '<span class="search-highlight">$1</span>');
+                }
+            });
+            
+            // Truncate snippet like archive does
+            snippet = snippet.length > 150 ? snippet.substring(0, 150) + '...' : snippet;
+            
+            return `
+                <dt><a href="${item.permalink}" style="font-size: x-large ; font-weight: lighter;">${item.title}</a>
+                    <div style="font-weight: lighter;">
+                        <span>
+                          <i class="fad fa-calendar-alt"></i>
+                          <time datetime="${item.date}">${new Date(item.date).toLocaleDateString('en-US', {year: 'numeric', month: 'long', day: 'numeric'})}</time>
+                          &verbar;
+                          <i class="fad fa-tag"></i>
+                          ${item.section ? item.section.charAt(0).toUpperCase() + item.section.slice(1) : 'Page'}
+                          ${item.tags && item.tags.length ? ' • ' + item.tags.join(', ') : ''}
+                        </span>
+                    </div>
+                </dt>
+                <dd>
+                    <p>${snippet}</p>
+                    <p class="button small" style="margin-top: -0.5rem;">Read More</p>
+                </dd>
+            `;
+        }).join('');
+        
+        resultsContainer.innerHTML = resultHTML;
+    }
+    
+    // Event listeners
+    document.getElementById('searchButton').addEventListener('click', function(e) {
+        e.preventDefault();
+        const query = document.getElementById('searchInput').value.trim();
+        if (query) {
+            performSearch(query);
+            // Update URL without page reload
+            const newUrl = new URL(window.location);
+            newUrl.searchParams.set('q', query);
+            window.history.pushState({}, '', newUrl);
+        }
+    });
+    
+    document.getElementById('searchInput').addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            e.preventDefault();
+            document.getElementById('searchButton').click();
+        }
+    });
+});
+</script>
+{{ end }}
