@@ -11,15 +11,11 @@
   {{ $groupIndex := 0 }}
   {{ range $taxonomyName, $taxonomyTerms := .Site.Taxonomies }}
     {{ if gt (len $taxonomyTerms) 0 }}
-      <div class="taxonomy-group" style="display: flex; margin-bottom: 2rem;">
+      
         <!-- Left: Taxonomy Group Header -->
-        <div class="taxonomy-header" style="flex: 0 0 200px; text-align: left;">
-          <header>
-            <h3>{{ title $taxonomyName }}</h3>
-          </header>
-        </div>
+      
+            <h2>{{ title $taxonomyName }}</h2>
         <!-- Right: Terms Buttons -->
-        <div class="taxonomy-content" style="flex: 1;">
           <ul class="actions">
             {{ $btnClass := cond (eq (mod $groupIndex 2) 0) "primary" "" }}
             {{ range $term, $pages := $taxonomyTerms }}
@@ -36,10 +32,8 @@
               </li>
             {{ end }}
           </ul>
-        </div>
-      </div>
       {{ $groupIndex = add $groupIndex 1 }}
     {{ end }}
-  {{ end }}
-</div>
+    {{ end }}
+  </div>
 </section>
