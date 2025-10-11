@@ -649,6 +649,46 @@
 					// ...
 				}
 
+				// Orientation: Center (new modifier)
+&.orient-center {
+	@include vendor('flex-direction', 'column-reverse');
+	@include vendor('align-items', 'center');
+	text-align: center;
+
+	.content {
+		width: 34rem;
+		max-width: 100%;
+		margin-top: 1.5rem;
+	}
+
+	.image {
+		margin: 0 0 1.5rem 0;
+		width: ($image-size * 0.85);
+		height: ($image-size * 0.85);
+	}
+
+	@include breakpoint('<=medium') {
+		.image {
+			width: ($image-size * 0.75);
+			height: ($image-size * 0.75);
+			margin-bottom: 1.25rem;
+		}
+	}
+
+	@include breakpoint('<=small') {
+		.content {
+			width: 100%;
+		}
+
+		.image {
+			width: ($image-size * 0.65);
+			height: ($image-size * 0.65);
+			margin-bottom: 1rem;
+		}
+	}
+}
+
+
 			// Content Alignment.
 				&.content-align-left {
 					// ...
@@ -987,5 +1027,7 @@
 			}
 		}
 	}
+
+
 
 	@include color-banner;

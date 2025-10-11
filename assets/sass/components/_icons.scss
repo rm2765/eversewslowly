@@ -21,3 +21,22 @@
 			}
 		}
 	}
+
+	/* Larger social icons specifically for Links Bio */
+ul.icons.icons-links-bio {
+  li {
+    a.icon {
+      font-size: 2rem;          // increase size of the icon
+      width: 3rem;              // optional: make clickable area bigger
+      height: 3rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      .icon-svg {
+        width: 2.5rem;
+        height: 2.5rem;
+      }
+    }
+  }
+}

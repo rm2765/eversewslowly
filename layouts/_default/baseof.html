@@ -18,7 +18,9 @@
 		{{ partial "google_analytics.html" . }}
 
 		{{ partialCached "scripts" . }}
-		{{ partial "footer" . }}
+		{{ block "footer" . }}
+     		{{ partial "footer.html" . }}
+   		{{ end }}
 
 		{{ $js := resources.Get "js/toggle-captions.js" | js.Build }}
 		<script src="{{ $js.RelPermalink }}" defer></script>

@@ -1,0 +1,82 @@
+{{ define "main" }}
+<!-- Banner Section -->
+<section class="banner style3 color3 orient-center content-align-center image-position-center onload-image-fade-in onload-content-fade-up">
+  <div class="content">
+    {{ with .Title }}<h1>{{ . | markdownify | emojify }}</h1>{{ end }}
+    
+    <!-- Social Icons -->
+    <ul class="icons icons-links-bio">
+      {{ with .Site.Params.social.pinterest }}
+      <li><a target="_blank" href="{{.}}" class="icon brands style1">
+          {{- partial "icons/pinterest.html" . -}}
+          <span class="label">Pinterest</span></a></li>{{end}}
+      {{ with .Site.Params.social.instagram }}
+      <li><a target="_blank" href="{{.}}" class="icon brands style1">
+          {{- partial "icons/instagram.html" . -}}
+          <span class="label">Instagram</span></a></li>{{end}}
+       {{ with .Site.Params.social.youtube }}
+        <li><a target="_blank" href="{{.}}" class="icon brands style1">
+          {{- partial "icons/youtube.html" . -}}
+          <span class="label">YouTube</span></a></li>{{end}}
+      {{ with .Site.Params.social.website }}
+      <li><a target="_blank" href="{{.}}" class="icon brands style1">
+          {{- partial "icons/globe.html" . -}}
+          <span class="label">Website</span></a></li>{{end}}
+    </ul>
+
+    {{ with .Description }}<p class="major">{{ . | markdownify | emojify }}</p>{{ end }}
+  </div>
+
+  {{ with .Params.banner_image }}
+  <div class="image circular-banner">
+    <img src="{{ . | relURL }}" alt="{{ $.Title }}" loading="lazy" decoding="async">
+  </div>
+  {{ end }}
+</section>
+
+
+<!-- Button Links -->
+<section id="link-buttons" class="wrapper style1">
+  <div class="inner">
+      <ul class="actions stacked fit">
+        {{ range .Params.buttons }}
+          <li><a href="{{ .link }}" class="button full primary fit span">{{ .label }}</a></li>
+        {{ end }}
+      </ul>
+    </div>
+</section>
+
+<!-- Intro Text -->
+{{ with .Params.cards_intro }}
+<section class="wrapper style2">
+  <div class="inner" style="text-align:center;">
+    <p>{{ . | markdownify }}</p>
+  </div>
+</section>
+{{ end }}
+
+{{ partialCached "newsletter_inline" site.Data.newsletter_inline}}
+
+<!-- Curated Cards -->
+{{ with .Params.cards }}
+<section id="curated-links" class="wrapper style2">
+    <div class="gallery style1 small">
+      {{ range . }}
+      <article>
+        <a href="{{ .link }}" class="image">
+          <img src="{{ .image | relURL }}" alt="{{ .title }}">
+        </a>
+        <div class="caption">
+          <h3>{{ .title }}</h3>
+        </div>
+      </article>
+      {{ end }}
+  </div>
+</section>
+{{ end }}
+
+{{ end }}
+
+{{ define "footer" }}
+<!-- Footer suppressed on this page -->
+{{ end }}
