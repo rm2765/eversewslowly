@@ -218,4 +218,4 @@ The intersection of visual discovery and AI generation offers fashion designers 
 
 ---
 
-💬 Have you tried using AI in your creative process yet? What tools or techniques do you love? Drop a comment below\!
+💬 Have you tried using AI in your creative process yet? What tools or techniques do you love? 
