@@ -15,6 +15,8 @@ buttons:
     link: "https://www.youtube.com/playlist?list=PLsQTSSrgilWROYtFxgWLe_ZW48Z4G4maK"
   - label: "🛍️ Shop discarded fabric from NYC fashion Houses for your next upcycling project! + Get 10% off"
     link: "https://shopfabscrap.org/?ref=eversewslowly"
+  - label: "📚 Find all my Sewing Book reviews & links!"
+    link: "https://pin.it/2KTi3QQgk"
 
 cards_intro: ""
 
