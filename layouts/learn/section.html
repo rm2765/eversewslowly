@@ -1,15 +1,187 @@
 {{ define "main" }}
 
     {{ partial "menu-header" . }}
-
-    <br>
-    🚧 This page is under construction. Please check back later!
+     {{ partial "banner" site.Data.banner_learn }}
 
     <!-- 
-    {{ partial "banner" site.Data.banner_learn }}
     {{ partial "spotlight" site.Data.spotlight_learn }}
     {{ partial "spotlight" site.Data.spotlight_learn_blog }}
     {{ partialCached "blog-taxonomies-buttons" . }}
     -->
 
+    
+<!-- Intro Section -->
+<section id="intro" class="wrapper style1 align-center onscroll-fade-in">
+  <div class="inner">
+    <h1>The Refashion Toolkit</h1>
+    <p class="major">An ongoing skill library for slow fashion makers.</p>
+    <p>
+      Welcome to <strong>The Refashion Toolkit</strong> — an evolving library of sewing and refashion skills designed to grow with you.  
+      Each month adds a new focus area — from finishing techniques to creative deconstruction — so you can build your skills at your own pace.  
+      Think of it as a long-form, ever-updating reference for anyone learning to refashion thoughtfully and sustainably.
+    </p>
+    <p>
+      Use the filters below to explore by <strong>technique type</strong>, <strong>skill level</strong>, or <strong>format</strong>, and come back often — there’s always something new to learn.
+    </p>
+    <p><em>Last updated: {{ .Lastmod.Format "January 2006" }}</em></p>
+  </div>
+</section>
+
+<hr>
+
+ <br>
+    🚧 This page is under construction. Please check back later!
+
+<!-- Monthly Highlight 
+<section id="highlight" class="wrapper style2 align-center onscroll-fade-in">
+  <div class="inner">
+    <h2>{{ .Params.highlight.title }}</h2>
+    <p>{{ .Params.highlight.description }}</p>
+    <ul class="actions stacked">
+      <li><a href="{{ .Params.highlight.link }}" class="button primary large">Explore Resources →</a></li>
+    </ul>
+  </div>
+</section> -->
+
+<!-- Filter Bar 
+<section id="filters" class="wrapper style1 align-center onscroll-fade-in">
+  <div class="inner">
+    <form id="filter-form" class="fields">
+      <div class="field third">
+        <label for="technique">Technique Type</label>
+        <select id="technique">
+          <option value="">All</option>
+          <option value="Finishing">Finishing</option>
+          <option value="Deconstruction">Deconstruction</option>
+          <option value="Alteration">Alteration</option>
+          <option value="Creative">Creative</option>
+        </select>
+      </div>
+      <div class="field third">
+        <label for="skill">Skill Level</label>
+        <select id="skill">
+          <option value="">All</option>
+          <option value="Beginner">Beginner</option>
+          <option value="Intermediate">Intermediate</option>
+          <option value="Advanced">Advanced</option>
+        </select>
+      </div>
+      <div class="field third">
+        <label for="format">Format</label>
+        <select id="format">
+          <option value="">All</option>
+          <option value="Video">Video</option>
+          <option value="Article">Article</option>
+          <option value="Tutorial">Tutorial</option>
+          <option value="Guide">Guide</option>
+        </select>
+      </div>
+    </form>
+  </div>
+</section> -->
+
+<!-- Resource Grid
+<section id="resources" class="wrapper style3 onscroll-fade-in">
+  <div class="inner">
+    <div class="items style1 medium" id="resource-cards"> -->
+
+      <!-- Example Card 1 
+      <section class="item" data-technique="Finishing" data-skill="Beginner" data-format="Guide">
+        <span class="icon style2 major fa-scissors"></span>
+        <h3>Bias Tape Basics</h3>
+        <p class="meta"><span class="badge">Beginner</span> · Seam Finishing · Guide</p>
+        <p>Learn how to make and apply bias tape for polished edges using fabric scraps.</p>
+        <ul class="actions">
+          <li><a href="/learn/bias-tape-basics/" class="button small">Read / Watch →</a></li>
+        </ul>
+      </section> -->
+
+      <!-- Example Card 2 
+      <section class="item" data-technique="Deconstruction" data-skill="Intermediate" data-format="Video">
+        <span class="icon style2 major fa-recycle"></span>
+        <h3>Reusing Seams & Hems</h3>
+        <p class="meta"><span class="badge">Intermediate</span> · Deconstruction · Video</p>
+        <p>Discover how to unpick and reuse seams from thrifted garments while preserving structure.</p>
+        <ul class="actions">
+          <li><a href="/learn/reusing-seams-hems/" class="button small">Read / Watch →</a></li>
+        </ul>
+      </section> -->
+
+      <!-- Example Card 3 
+      <section class="item" data-technique="Alteration" data-skill="Beginner" data-format="Article">
+        <span class="icon style2 major fa-ruler-combined"></span>
+        <h3>Quick Pattern Hacks</h3>
+        <p class="meta"><span class="badge">Beginner</span> · Alteration · Article</p>
+        <p>Fast and flexible ways to adjust your existing patterns for better fit or new design options.</p>
+        <ul class="actions">
+          <li><a href="/learn/quick-pattern-hacks/" class="button small">Read / Watch →</a></li>
+        </ul>
+      </section>
+
+    </div>
+  </div>
+</section> -->
+
+<!-- Monthly Download CTA 
+<section id="cta" class="wrapper style2 align-center onscroll-fade-in">
+  <div class="inner">
+    <h2>✨ {{ .Params.download.title }}</h2>
+    <p>{{ .Params.download.description }}</p>
+    <ul class="actions stacked">
+      <li><a href="{{ .Params.download.link }}" class="button primary large">Get This Month’s Download →</a></li>
+    </ul>
+    <p><em>Available for free this month only.</em></p>
+  </div>
+</section> -->
+
+<!-- Filtering Script
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const filters = document.querySelectorAll('#filter-form select');
+    const cards = document.querySelectorAll('#resource-cards .item');
+
+    function applyFilters() {
+      const technique = document.querySelector('#technique').value;
+      const skill = document.querySelector('#skill').value;
+      const format = document.querySelector('#format').value;
+
+      cards.forEach(card => {
+        const match =
+          (!technique || card.dataset.technique === technique) &&
+          (!skill || card.dataset.skill === skill) &&
+          (!format || card.dataset.format === format);
+
+        card.style.display = match ? 'block' : 'none';
+      });
+    }
+
+    filters.forEach(f => f.addEventListener('change', applyFilters));
+  });
+</script>
+
+<style>
+  #filter-form select {
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+    background: #fff;
+    border: 1px solid #ccc;
+  }
+  .badge {
+    display: inline-block;
+    background: #d3e2dc;
+    color: #333;
+    border-radius: 1rem;
+    padding: 0.2rem 0.8rem;
+    font-size: 0.8rem;
+    margin-right: 0.3rem;
+  }
+  .item {
+    transition: all 0.3s ease;
+  }
+  .item:hover {
+    transform: translateY(-5px);
+  }
+</style>  -->
+
 {{ end }}
+

@@ -1,0 +1,16 @@
+{{ define "main" }}
+{{ partial "menu-header.html" . }}
+{{ partial "banner_button" site.Data.books.banner}}
+
+{{/* Top Books Grid */}}
+{{ partial "book-tile.html" (dict "context" . "dataset" "top10") }}
+
+<!-- {{ partial "book-tile.html" (dict "context" . "dataset" "top10" "title" "My Top 10 Sewing Books" "content" "These books have earned their place on my shelf through years of use, inspiration, and return visits. Each one offers something unique—whether it's technical mastery, creative spark, or a mindset shift toward slow, sustainable making.") }} -->
+
+{{/* Newsletter Signup */}}
+{{ partial "newsletter_inline.html" . }}
+
+{{/* Breadcrumbs */}}
+{{ partial "breadcrumbs.html" . }}
+
+{{ end }}

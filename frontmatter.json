@@ -9,6 +9,14 @@
     {
       "title": "content",
       "path": "[[workspace]]/content"
+    },
+    {
+      "title": "learn",
+      "path": "[[workspace]]/content/learn"
+    },
+    {
+      "title": "books",
+      "path": "[[workspace]]/content/learn/books"
     }
   ],
   "frontMatter.taxonomy.contentTypes": [

@@ -4,10 +4,11 @@
         {{ with .title }}<h1>{{ . | markdownify | emojify  }}</h1>{{ end }}
         {{ with .subtitle }}<p class="major">{{ . | markdownify | emojify }}</p>{{ end }}
         {{ with .content }}<div>{{ . | markdownify | emojify }}</div>{{ end }}
+        <br>
         {{ with .buttons }}
-            <ul class="actions small">
+            <ul class="actions">
                 {{ range . }}
-                    <li><a href="{{ .link }}" class="button primary small fit">{{ .label }}</a></li>
+                    <li><a href="{{ .link }}" class="button primary">{{ .label }}</a></li>
                 {{ end }}
             </ul>
         {{ end }}

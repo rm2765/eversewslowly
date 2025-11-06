@@ -1,17 +1,17 @@
 ####################### Banner - uses buttons not button #########################
 style: "style2 orient-center content-align-enter image-position-right fullscreen onload-image-fade-in onload-content-fade-right"
-title : "Learn to Refashion"
+title : "Level Up!"
 subtitle: |
   Discover video tutorials, curated resources, and expert guides to transform your wardrobe and crafts.
 content : |
   Whether you’re a beginner or an expert, explore refashioning techniques and ideas to bring new life to your clothing and accessories.
 buttons:
-  - label : "Transformations"
-    link : "#transformation"
-  - label : "General Sewing"
-    link : "#sewing"
   - label : "Get Started"
     link : "#beginner"
-  - label : "Top List"
-    link : "#top"
+  - label : "Sew Series"
+    link : "#sewing"
+  - label : "Refashion Tutorials"
+    link : "#refashion"
+  - label : "Book List"
+    link : "/learn/books"
 image : "banner.jpg"

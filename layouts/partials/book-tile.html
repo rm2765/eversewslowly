@@ -1,0 +1,198 @@
+{{/*
+  book-tile.html
+  Displays a grid of book tiles.
+  Usage: {{ partial "book-tile.html" (dict "context" . "dataset" "top10") }}
+  - OR -
+  Usage: {{ partial "book-tile.html" . }} (If the dataset name is passed in the context)
+*/}}
+{{ $datasetName := .dataset | default "all" }}
+{{ $data := index .context.Site.Data.books $datasetName }}
+
+{{/* Extract Header Info and Book List from the Data object */}}
+{{ $title := $data.title }}
+{{ $content := $data.content }}
+{{ $books := $data.books }}
+
+{{/* Fallback to "all" if no data or empty */}}
+{{ if or (not $books) (eq (len $books) 0) }}
+  {{ $allData := index .context.Site.Data.books "all" }}
+  {{ $books = $allData.books }}
+{{ end }}
+
+{{ if $books }}
+<section class="wrapper style1 align-center">
+  <div class="inner">
+    {{ with $title }}<h2>{{ . }}</h2>{{ end }}
+    {{ with $content }}<p>{{ . | safeHTML }}</p>{{ end }}
+   
+    <div class="items style3 medium book-lightbox">
+      {{ range $books }}
+      <section class="book-item">
+        {{/* Book Cover with Static Thumbnail and Video Preview */}}
+        <article class="book-cover">
+          {{ $mediaType := .type | default "image" }}
+          {{ $thumbnail := .thumbnail | default .image }}
+         
+          <a href="#" class="image book-media-link" data-media-url="{{ .image }}" data-type="{{ $mediaType }}">
+            {{/* Static thumbnail shown by default */}}
+            <img src="{{ $thumbnail }}" alt="{{ .title }}" class="book-thumbnail" />
+           
+            {{/* Video or GIF element (hidden by default, plays on hover) */}} 
+            
+            {{ $src := .image }} 
+            {{ $isVideo := or (in $src ".mp4") (in $src ".webm") }} 
+            {{ $isGif := in $src ".gif" }} 
+            {{ if $isVideo }} <video class="book-video" muted playsinline preload="metadata"> <source src="{{ $src }}" type="video/mp4"> </video> 
+            {{ else if $isGif }} <img src="{{ $src }}" alt="{{ .title }}" class="book-video gif-preview" loading="lazy"> {{ end }}
+           
+            {{/* Caption overlay - shown on scroll, hidden on video hover */}}
+            <div class="caption">
+              <h3>{{ .title }}</h3>
+              {{ if .quote }}
+              <p class="book-quote">{{ .quote }}</p>
+              {{ end }}
+            </div>
+          </a>
+        </article>
+       
+        {{/* Book Details */}}
+        <div class="book-details">
+          {{ if .takeaways }}
+          <p class="takeaways">{{ .takeaways }}</p>
+          {{ end }}
+         
+          {{ if .tags }}
+          <div class="book-tags">
+            <span class="icon">{{- partial "icons/tag.html" . -}}</span>
+             {{ range .tags }}
+             <span class="post-categories"> {{ . }}</span>
+            {{ end }}
+          </div>
+          {{ end }}
+         
+          <ul class="actions small">
+            {{ if .source }}
+            <li><a href="{{ .source }}" class="button primary small">Review</a></li>
+            {{ end }}
+            {{ if .affiliate }}
+            <li><a href="{{ .affiliate }}" target="_blank" rel="noopener nofollow" class="button small">
+                {{- partial "icons/link.html" . -}} AMZ</a></li>
+            {{ end }}
+          </ul>
+        </div>
+      </section>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+{{/* --- ALL BOOKS EXPANDABLE LIST SECTION --- */}}
+
+{{ $allBooksData := index .context.Site.Data.books "all" }}
+{{ $allBooks := $allBooksData.books | default (index .context.Site.Data.books "all") }}
+
+{{ if $allBooks }}
+  {{/* --- Group books by their first tag --- */}}
+  {{ $groupedBooks := dict }}
+  {{ range $allBooks }}
+    {{ $tag := index .tags 0 | default "Uncategorized" }}
+    {{ $existing := index $groupedBooks $tag | default (slice) }}
+    {{ $updated := $existing | append . }}
+    {{ $groupedBooks = merge $groupedBooks (dict $tag $updated) }}
+  {{ end }}
+
+  <section class="wrapper style1 align-center">
+    <div class="inner">
+
+      <!-- Centered Expand Button -->
+      <ul class="actions justify-center" style="display:flex; justify-content:center;">
+        <li>
+          <a href="#all-books-list" 
+             class="button primary icon expand-button" 
+             data-toggle="collapse" 
+             role="button" 
+             aria-expanded="false" 
+             aria-controls="all-books-list"
+             style="display:inline-flex; align-items:center; gap:0.5em; font-size:1.05em;">
+            <span class="icon large-chevron" style="font-size:1.4em;">
+              {{- partial "icons/chevron-down.html" . -}}
+            </span>
+            <span>All Books (by Category)</span>
+          </a>
+        </li>
+      </ul>
+
+      <!-- Collapsible List -->
+      <div id="all-books-list" class="collapse" style="display:none; margin-top:2em;">
+        <section>
+          <header>
+            <h3>The Complete Library</h3>
+          </header>
+
+          <div class="content align-left">
+            {{ range $tag, $books := $groupedBooks }}
+              <h4>{{ $tag }}</h4>
+              <ul>
+                {{ range $books }}
+                  <li>
+                    {{ $mediaType := .type | default "image" }}
+                    <a href="#" class="book-media-link" data-media-url="{{ .image }}" data-type="{{ $mediaType }}">
+                      {{ .title }}
+                    </a>
+
+                    {{ if .affiliate }}
+                      | <a href="{{ .affiliate }}" target="_blank" rel="noopener nofollow">AMZ</a>
+                    {{ end }}
+                    {{ if .source }}
+                      | <a href="{{ .source }}">Review</a>
+                    {{ end }}
+                  </li>
+                {{ end }}
+              </ul>
+            {{ end }}
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const expandBtn = document.querySelector('.expand-button');
+    const target = document.querySelector('#all-books-list');
+    if (expandBtn && target) {
+      expandBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        const isVisible = target.style.display === 'block';
+        target.style.display = isVisible ? 'none' : 'block';
+        expandBtn.setAttribute('aria-expanded', !isVisible);
+      });
+    }
+  });
+  </script>
+
+  <style>
+  /* --- Styling for the Expand Button --- */
+  .expand-button .large-chevron svg {
+    width: 1.4em;
+    height: 1.4em;
+  }
+  .expand-button:hover {
+    transform: scale(1.03);
+    transition: transform 0.2s ease;
+  }
+  .expand-button span {
+    vertical-align: middle;
+  }
+  </style>
+{{ end }}
+
+
+
+{{ else }}
+<section class="wrapper style1 align-center">
+  <div class="inner">
+    <p>No books found in this collection yet. Check back soon!</p>
+  </div>
+</section>
+{{ end }}

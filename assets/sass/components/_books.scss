@@ -1,0 +1,577 @@
+/* Book Item Styling */
+.book-item {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Lightbox Modal for Items */
+.items.book-lightbox {
+  position: relative;
+}
+
+.items.book-lightbox .modal {
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  pointer-events: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  outline: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  visibility: hidden;
+  opacity: 0;
+  z-index: 0;
+  transition: opacity 0.5s ease, visibility 0.5s, z-index 0.5s;
+}
+
+.items.book-lightbox .modal:before {
+  animation: gallery-modal-spinner 1s infinite linear;
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 4rem;
+  height: 4rem;
+  margin: -2rem 0 0 -2rem;
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="96" height="96"%3E%3Cstyle%3Ecircle%7Bfill:transparent;stroke:%23ffffff;stroke-width:1.5px%7D%3C/style%3E%3Cdefs%3E%3CclipPath id="corner"%3E%3Cpolygon points="0,0 48,0 48,48 96,48 96,96 0,96"/%3E%3C/clipPath%3E%3C/defs%3E%3Cg clip-path="url(%23corner)"%3E%3Ccircle cx="48" cy="48" r="32"/%3E%3C/g%3E%3C/svg%3E');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 4rem;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  transition-delay: 0.5s;
+}
+
+.items.book-lightbox .modal:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  width: 4rem;
+  height: 4rem;
+  cursor: pointer;
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="64" height="64"%3E%3Cstyle%3Eline%7Bstroke:%23ffffff;stroke-width:1.5px%7D%3C/style%3E%3Cline x1="20" y1="20" x2="44" y2="44"/%3E%3Cline x1="20" y1="44" x2="44" y2="20"/%3E%3C/svg%3E');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 3rem;
+}
+
+.items.book-lightbox .modal .inner {
+  transform: translateY(0.75rem);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  opacity: 0;
+}
+
+.items.book-lightbox .modal .inner img {
+  display: block;
+  max-width: 90vw;
+  max-height: 85vh;
+  box-shadow: 0 1rem 3rem 0 rgba(0, 0, 0, 0.35);
+}
+
+.items.book-lightbox .modal.visible {
+  pointer-events: auto;
+  visibility: visible;
+  opacity: 1;
+  z-index: 10001;
+}
+
+.items.book-lightbox .modal.visible:before {
+  opacity: 1;
+}
+
+.items.book-lightbox .modal.loaded .inner {
+  transform: translateY(0);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  opacity: 1;
+}
+
+.items.book-lightbox .modal.loaded:before {
+  transition-delay: 0s;
+  opacity: 0;
+}
+
+@keyframes gallery-modal-spinner {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Book Cover with Gallery-style Hover */
+.book-cover {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  border-radius: 4px;
+}
+
+.book-cover .image {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  min-height: 400px;
+}
+
+.book-cover .image img {
+  display: block;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.3s ease;
+}
+
+.book-cover:hover .image img {
+  transform: scale(1.05);
+}
+
+/* Caption Overlay (Hidden by default, shown on hover) */
+.book-cover .caption {
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
+  padding: 2.5rem 2rem !important;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.5) 20%,
+    rgba(0, 0, 0, 0.8) 60%,
+    rgba(0, 0, 0, 0.95) 100%
+  ) !important;
+  color: #ffffff !important;
+  opacity: 0 !important;
+  transform: translateY(20px) !important;
+  transition: all 0.3s ease !important;
+  pointer-events: none !important;
+  z-index: 2 !important;
+  display: block !important;
+  min-height: 200px;
+}
+
+/* Caption Overlay (Hidden by default, shown on hover) */
+.book-cover .caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 1.5rem;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.7) 40%,
+    rgba(0, 0, 0, 0.9) 100%
+  );
+  color: #ffffff;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.book-cover:hover .caption {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+.book-cover .caption h3 {
+  color: #ffffff !important;
+  margin: 0 0 1rem 0 !important;
+  font-size: 1.5rem !important;
+  font-weight: 700 !important;
+  line-height: 1.3 !important;
+}
+
+.book-cover .caption .book-quote {
+  font-style: italic !important;
+  font-size: 1rem !important;
+  color: rgba(255, 255, 255, 0.95) !important;
+  margin: 0 !important;
+  line-height: 1.6 !important;
+}
+
+/* Book Details Section */
+.book-details {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.book-details .takeaways {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  flex: 1;
+}
+
+/* Book Tags */
+.book-tags {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.85rem;
+  color: inherit;
+}
+
+.book-tags .icon {
+  display: inline-flex;
+  width: 1em;
+  height: 1em;
+  opacity: 0.6;
+  flex-shrink: 0;
+}
+
+.book-tags .icon svg {
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
+}
+
+.book-tags .tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  align-items: center;
+  color: inherit;
+}
+
+.book-tags .tag {
+  color: inherit;
+  font-weight: 500;
+}
+
+/* Button Actions */
+.book-details .actions {
+  margin-top: auto;
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 0.5rem;
+  
+  li {
+    flex: 1;
+    width: auto !important;
+    
+    .button {
+      width: auto;
+      white-space: nowrap;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      
+      .icon,
+      [class*="icon"] {
+        display: inline-flex !important;
+        width: 1.5em !important;
+        height: 1.5em !important;
+        flex-shrink: 0;
+        
+        svg {
+          width: 100% !important;
+          height: 100% !important;
+          display: block;
+        }
+      }
+}
+  }
+}
+
+
+/* Responsive adjustments */
+@media screen and (max-width: 980px) {
+  .book-cover .image {
+    min-height: 350px;
+  }
+  
+  .book-cover .image img {
+    height: 350px;
+  }
+  
+  .book-cover .caption {
+    padding: 2rem 1.5rem !important;
+    min-height: 180px;
+  }
+  
+  .book-cover .caption h3 {
+    font-size: 1.3rem !important;
+  }
+  
+  .book-cover .caption .book-quote {
+    font-size: 0.95rem !important;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .book-cover {
+    margin-bottom: 1rem;
+  }
+  
+  .book-cover .image {
+    min-height: 300px;
+  }
+  
+  .book-cover .image img {
+    height: 300px;
+  }
+  
+  .book-cover .caption {
+    padding: 1.5rem 1rem !important;
+    min-height: 150px;
+  }
+  
+  .book-cover .caption h3 {
+    font-size: 1.1rem !important;
+  }
+  
+  .book-cover .caption .book-quote {
+    font-size: 0.85rem !important;
+  }
+  
+  .book-details .takeaways {
+    font-size: 0.9rem;
+  }
+  
+  .book-tags .tag {
+    font-size: 0.65rem;
+    padding: 0.2rem 0.6rem;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .book-tags {
+    color: inherit;
+  }
+}
+
+// Add these styles to your existing book SCSS file
+
+/* Video Thumbnail and Preview Styling */
+.book-cover .image {
+  position: relative;
+}
+
+.book-thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.book-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 10;
+}
+
+.book-video.playing {
+  opacity: 1;
+}
+
+/* Caption overlay inside the image link - shown via scrollex, hidden when video plays */
+.book-cover .image .caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 1.5rem;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.7) 40%,
+    rgba(0, 0, 0, 0.9) 100%
+  );
+  color: #ffffff;
+  pointer-events: none;
+  z-index: 5;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Show caption when parent article is active (scrollex) */
+.book-item:not(.is-inactive) .book-cover .image .caption {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hide caption when video is playing */
+.book-video.playing ~ .caption {
+  opacity: 0 !important;
+  transition: opacity 0.2s ease;
+}
+
+.book-cover .image .caption h3 {
+  color: #ffffff;
+  margin: 0 0 0.5rem 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.book-cover .image .caption .book-quote {
+  font-style: italic;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.95);
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Video Lightbox Modal Styles (matching existing gallery lightbox) */
+.video-lightbox-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  outline: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  visibility: hidden;
+  opacity: 0;
+  z-index: 0;
+  transition: opacity 0.5s ease, visibility 0.5s, z-index 0.5s;
+  
+  &:before {
+    animation: gallery-modal-spinner 1s infinite linear;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 4rem;
+    height: 4rem;
+    margin: -2rem 0 0 -2rem;
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="96" height="96"%3E%3Cstyle%3Ecircle%7Bfill:transparent;stroke:%23ffffff;stroke-width:1.5px%7D%3C/style%3E%3Cdefs%3E%3CclipPath id="corner"%3E%3Cpolygon points="0,0 48,0 48,48 96,48 96,96 0,96"/%3E%3C/clipPath%3E%3C/defs%3E%3Cg clip-path="url(%23corner)"%3E%3Ccircle cx="48" cy="48" r="32"/%3E%3C/g%3E%3C/svg%3E');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 4rem;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+    transition-delay: 0.5s;
+  }
+  
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="64" height="64"%3E%3Cstyle%3Eline%7Bstroke:%23ffffff;stroke-width:1.5px%7D%3C/style%3E%3Cline x1="20" y1="20" x2="44" y2="44"/%3E%3Cline x1="20" y1="44" x2="44" y2="20"/%3E%3C/svg%3E');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 3rem;
+  }
+  
+  .inner {
+    transform: translateY(0.75rem);
+    transition: opacity 0.25s ease, transform 0.25s ease;
+    opacity: 0;
+    
+    video {
+      display: block;
+      max-width: 80vw;
+      max-height: 75vh;
+      width: auto;
+      height: auto;
+      box-shadow: 0 1rem 3rem 0 rgba(0, 0, 0, 0.35);
+    }
+  }
+  
+  &.visible {
+    pointer-events: auto;
+    visibility: visible;
+    opacity: 1;
+    z-index: 10001;
+    
+    &:before {
+      opacity: 1;
+    }
+  }
+  
+  &.loaded {
+    .inner {
+      transform: translateY(0);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+      opacity: 1;
+    }
+    
+    &:before {
+      transition-delay: 0s;
+      opacity: 0;
+    }
+  }
+}
+
+/* Responsive Video Lightbox */
+@media screen and (max-width: 980px) {
+  .video-lightbox-modal .inner video {
+    max-width: 75vw;
+    max-height: 70vh;
+  }
+  
+  .book-cover .image .caption {
+    padding: 1.5rem 1.25rem;
+  }
+  
+  .book-cover .image .caption h3 {
+    font-size: 1.3rem;
+  }
+  
+  .book-cover .image .caption .book-quote {
+    font-size: 0.95rem;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .video-lightbox-modal .inner video {
+    max-width: 90vw;
+    max-height: 65vh;
+  }
+  
+  .book-cover .image .caption {
+    padding: 1.25rem 1rem;
+  }
+  
+  .book-cover .image .caption h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.35rem;
+  }
+  
+  .book-cover .image .caption .book-quote {
+    font-size: 0.85rem;
+  }
+}

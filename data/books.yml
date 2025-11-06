@@ -1,0 +1,92 @@
+banner:
+  style: "style1 orient-left content-align-left image-position-center onscroll-image-fade-in"
+  title: "Textilepedia"
+  subtitle: Latest Read
+  author: By Fashionary
+  content: "A deceptively beautifully photographed book of all fiber & material types. You'll think you can actual touch the fibers by how real it looks."
+  image: "https://rm2765.github.io/mypins/pin_bks/textilepedia-bk.jpg"
+  button:
+    label: Get on Amazon
+    link: "https://amzn.to/4oj1dkx"
+
+
+top10:
+  title: "My Top Sewing Books"
+  content: |
+    These books have earned their place on my shelf through years of use, inspiration, and return visits. Each one offers something unique—whether it's technical mastery, creative spark, or a mindset shift toward slow, sustainable making.
+    <br><br>
+    Borrow these books from the local public library, buy the ebook or a used copy before buying new.
+    <br><br>
+    Disclosure: Affiliate links support me in creating helpful content =) 
+  style: "style1 onscroll-fade-in"
+  books:
+  - title: "📚 Reader’s Digest Complete Guide to Sewing"
+    image: "https://rm2765.github.io/mypins/pin_bks/reader-digest-bk.mp4"
+    thumbnail: "https://rm2765.github.io/mypins/pin_bks/readers-digest-bk.jpg"  # Static image shown by default
+    bg: "https://rm2765.github.io/mypins/pin_bks/readers-digest-bk.jpg"  # Background image (optional, for additional effects)
+    type: "video"
+    takeaways: "Tons of photo guides and illustrations to reference or when trying out a new technique. It's part of my sewing library and perfect for anyone looking to build their sewing foundations or looking for a refresher. "
+    quote: "Sewing techniques from A to Z "
+    affiliate: "https://amzn.to/4n0MObC"
+   # source: "/learn/books/refashion-handbook"
+    tags: ["Reference", "A to Z"]
+    
+  - title: "Sewing Love: Handmade Clothes for Any Body"
+    image: "https://rm2765.github.io/mypins/pin_bks/sewing_love-bk.mp4"
+    thumbnail: https://rm2765.github.io/mypins/pin_bks/sewing_love-bk.jpg
+    type: video
+    bg: "https://rm2765.github.io/mypins/pin_bks/sewing_love-bk.jpg"
+    takeaways: Sanae Ishida celebrates the beauty of all body types and shows how to make garments that truly fit you. She walks you through tools, drafting your own slopers or muslins, and includes approachable projects—from tops and dresses to coats.
+    quote: We've all been frustrated by clothes that don’t fit, and usually end up blaming ourselves instead of the clothes.
+    affiliate: "https://amzn.to/46XkxOF"
+    source: 
+    tags: ["Sloper", "Body Positive Sewing"]
+    
+  - title: "✂️👕 The Re:Fashion Wardrobe"
+    image: "https://rm2765.github.io/mypins/pin_bks/refashion_wardrobe-bk.gif"
+    thumbnail: https://rm2765.github.io/mypins/pin_bks/refashion_wardrobe-bk.jpg
+    type: video
+    bg: "https://rm2765.github.io/mypins/pin_bks/refashion_wardrobe-bk.jpg"
+    takeaways: "Portia Lawrie shows us how to breathe new life into clothes you already own. The projects are simple yet stylish, designed to be layerable, wearable, and timeless. She shares the philosophy behind refashioning with key insights like valuing what we have, and finding joy in creativity and resourcefulness. "
+    quote: "Perfect for anyone ready to reconnect with their clothes in a more mindful way."
+    affiliate: "https://amzn.to/4oxboCm"
+    source: 
+    tags: ["Refashion", "capsule wardrobe"]
+    
+  - title: "Textilepedia"
+    image: https://rm2765.github.io/mypins/pin_bks/textilepedia-bk.mp4
+    thumbnail: https://rm2765.github.io/mypins/pin_bks/textilepedia-bk.jpg
+    type: video
+    bg: https://rm2765.github.io/mypins/pin_bks/textilepedia-bk.jpg
+    takeaways: "Fashionary created a deceptively beautifully photographed book of all fiber & material types. You'll think you can actual touch the fibers by how real it looks."
+    quote: "،، The knowledge of fabric is the foundation of fashion design ❞ "
+    affiliate: "https://amzn.to/4oj1dkx"
+    tags: ["Reference", "Fabric"]
+
+  
+
+all:
+  # It's good practice to give the "all" list a title too, even if hidden
+  title: "All Books"
+  content: "The complete list of every book." 
+  books:
+    # THIS is the array the template needs to iterate over
+    - title: "📚 Reader’s Digest Complete Guide to Sewing" 
+      image: "https://rm2765.github.io/mypins/pin_bks/reader-digest-bk.mp4"
+      type: "video" 
+      source: 
+      affiliate: "https://amzn.to/4n0MObC"
+      tags: ["Reference", "A to Z"]
+
+    - title: "Sewing Love: Handmade Clothes for Any Body"
+      image: "https://rm2765.github.io/mypins/pin_bks/sewing_love-bk.mp4"
+      type: "video" 
+      affiliate: "https://amzn.to/46XkxOF"
+      source: 
+      tags: ["Sloper", "Body Positive Sewing"]
+
+    - title: "Textilepedia"
+      image: https://rm2765.github.io/mypins/pin_bks/textilepedia-bk.mp4
+      type: "video" 
+      affiliate: "https://amzn.to/4oj1dkx"
+      tags: ["Reference", "Fabric"]

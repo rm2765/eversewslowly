@@ -1,0 +1,20 @@
+<!-- Banner * its uses button not buttons-->
+<section class="banner {{ .style }}">
+    <div class="content">
+        {{ with .title }}<h1>{{ . | markdownify | emojify  }}</h1>{{ end }}
+        {{ with .author}}<p class="major">{{ . | markdownify | emojify }}</p>{{ end }}
+         {{ with .subtitle }}<h2>{{ . | markdownify | emojify }}</h2>{{ end }}
+        {{ with .content }}<div>{{ . | markdownify | emojify }}</div>{{ end }}
+        <br>
+        {{ with .button }}
+           <ul class="actions small">
+            <li><a href="{{ .link }}" class="button primary large">{{ .label }}</a></li>
+        </ul>{{ end }}
+    </div>
+    {{ with .image }} <div class="image">
+            <img src="{{ . }}" alt="" />
+        </div>
+    {{ end }}
+</section>
+
+  

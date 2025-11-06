@@ -151,6 +151,223 @@
 			.children()
 				.wrapInner('<div class="inner"></div>');
 
+	// Book Items Lightbox (must run BEFORE wrapInner to prevent conflicts)
+	$('.items.book-lightbox')
+		.each(function() {
+			var $items = $(this);
+			// Only prepend a modal if none exists.
+			if (!$items.children('.modal').length) {
+				$items.prepend('<div class="modal" tabIndex="-1"><div class="inner"><img src="" /></div></div>');
+			}
+		})
+		.on('click', 'a.image', function(event) {
+
+			var $a = $(this),
+				$items = $a.closest('.items.book-lightbox'),
+				$modal = $items.children('.modal'),
+				$modalImg = $modal.find('img'),
+				href = $a.attr('href');
+
+			// Not an image? Bail.
+			if (!href.match(/\.(jpg|gif|png|mp4|webp|avif)$/))
+				return;
+
+			// Prevent default.
+			event.preventDefault();
+			event.stopPropagation();
+
+			// Locked? Bail.
+			if ($modal[0]._locked)
+				return;
+
+			// Lock.
+			$modal[0]._locked = true;
+
+			// Set src.
+			$modalImg.attr('src', href);
+
+			// Set visible.
+			$modal.addClass('visible');
+
+			// Focus.
+			$modal.focus();
+
+			// Delay.
+			setTimeout(function() {
+				// Unlock.
+				$modal[0]._locked = false;
+			}, 600);
+
+		})
+		.on('click', '.modal', function(event) {
+
+			var $modal = $(this),
+				$modalImg = $modal.find('img');
+
+			// Locked? Bail.
+			if ($modal[0]._locked)
+				return;
+
+			// Already hidden? Bail.
+			if (!$modal.hasClass('visible'))
+				return;
+
+			// Lock.
+			$modal[0]._locked = true;
+
+			// Clear visible, loaded.
+			$modal.removeClass('loaded')
+
+			// Delay.
+			setTimeout(function() {
+				$modal.removeClass('visible');
+				setTimeout(function() {
+					// Clear src.
+					$modalImg.attr('src', '');
+					// Unlock.
+					$modal[0]._locked = false;
+					// Focus.
+					$body.focus();
+				}, 475);
+			}, 125);
+
+		})
+		.on('keypress', '.modal', function(event) {
+
+			var $modal = $(this);
+			// Escape? Hide modal.
+			if (event.keyCode == 27)
+				$modal.trigger('click');
+
+		})
+		.find('img')
+			.on('load', function(event) {
+
+				var $modalImg = $(this),
+					$modal = $modalImg.parents('.modal');
+
+				setTimeout(function() {
+					// No longer visible? Bail.
+					if (!$modal.hasClass('visible'))
+						return;
+					// Set loaded.
+					$modal.addClass('loaded');
+				}, 275);
+			});
+
+// Add this section to your main.js file after the existing Book Items Lightbox code
+
+// Book Video Preview and Lightbox Handler
+(function($) {
+	var hoverTimers = {};
+	
+	$('.book-media-link').each(function() {
+		var $link = $(this);
+		var $video = $link.find('.book-video');
+		var $thumbnail = $link.find('.book-thumbnail');
+		var mediaType = $link.attr('data-type');
+		var mediaUrl = $link.attr('data-media-url');
+		var linkId = 'book-' + Math.random().toString(36).substr(2, 9);
+		
+		// Handle video preview on hover (3 seconds)
+		if (mediaType === 'video' && $video.length) {
+			$link.on('mouseenter', function() {
+				// Play video and show it
+				$video.addClass('playing');
+				$video[0].currentTime = 0;
+				$video[0].play();
+				
+				// Stop after 3 seconds
+				hoverTimers[linkId] = setTimeout(function() {
+					$video.removeClass('playing');
+					$video[0].pause();
+					$video[0].currentTime = 0;
+				}, 3000);
+			});
+			
+			$link.on('mouseleave', function() {
+				// Clear timer and stop video
+				if (hoverTimers[linkId]) {
+					clearTimeout(hoverTimers[linkId]);
+				}
+				$video.removeClass('playing');
+				$video[0].pause();
+				$video[0].currentTime = 0;
+			});
+		}
+		
+		// Handle click to open lightbox
+		$link.on('click', function(e) {
+			e.preventDefault();
+			e.stopPropagation();
+			
+			if (mediaType === 'video') {
+				// Stop any hover video
+				if ($video.length) {
+					if (hoverTimers[linkId]) {
+						clearTimeout(hoverTimers[linkId]);
+					}
+					$video.removeClass('playing');
+					$video[0].pause();
+					$video[0].currentTime = 0;
+				}
+				
+				// Create video lightbox (matching existing lightbox structure)
+				var $modal = $('<div class="video-lightbox-modal" tabIndex="-1"></div>');
+				var $inner = $('<div class="inner"></div>');
+				var $videoPlayer = $('<video controls autoplay></video>');
+				$videoPlayer.append('<source src="' + mediaUrl + '" type="video/mp4">');
+				
+				$inner.append($videoPlayer);
+				$modal.append($inner);
+				$body.append($modal);
+				
+				// Show modal with animation
+				setTimeout(function() {
+					$modal.addClass('visible');
+					setTimeout(function() {
+						$modal.addClass('loaded');
+					}, 100);
+				}, 10);
+				
+				// Close on click (anywhere on modal)
+				$modal.on('click', function(e) {
+					// Don't close if clicking on video controls
+					if (e.target.tagName === 'VIDEO' || $(e.target).closest('video').length) {
+						return;
+					}
+					
+					$modal.removeClass('loaded');
+					setTimeout(function() {
+						$modal.removeClass('visible');
+						setTimeout(function() {
+							$modal.remove();
+						}, 300);
+					}, 100);
+				});
+				
+				// ESC key to close
+				$(document).on('keypress.videolightbox', function(e) {
+					if (e.keyCode === 27) {
+						$modal.removeClass('loaded');
+						setTimeout(function() {
+							$modal.removeClass('visible');
+							setTimeout(function() {
+								$modal.remove();
+							}, 300);
+						}, 100);
+						$(document).off('keypress.videolightbox');
+					}
+				});
+			} else {
+				// For images, trigger the existing lightbox
+				// The existing book-lightbox handler will catch this
+				return true;
+			}
+		});
+	});
+})(jQuery);
+
 				// Featured Posts centering
 $(document).ready(function() {
     $('.items.style2').each(function() {
@@ -357,6 +574,5 @@ $('.gallery.lightbox')
 	  $modal.addClass('loaded');
 	}, 275);
   });
-
 
 })(jQuery);

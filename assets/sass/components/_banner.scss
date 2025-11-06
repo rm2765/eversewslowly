@@ -235,7 +235,7 @@
 		@include vendor('flex-direction', 'row');
 		@include vendor('justify-content', 'flex-end');
 		position: relative;
-		text-align: left;
+		text-align: left !important;
 		overflow-x: hidden;
 
 		.content {
@@ -342,7 +342,7 @@
 
 			// Content Alignment.
 				&.content-align-left {
-					// ...
+					text-align: left !important;
 				}
 
 				&.content-align-center {
