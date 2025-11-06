@@ -10,7 +10,7 @@ content : |
 buttons:
   - label : "Blog"
     link : "/blog"
-  - label : "Learn to Refashion"
+  - label : "Learn"
     link : "/learn"
   - label : "Gallery"
     link : "/gallery"
@@ -18,5 +18,5 @@ buttons:
     link : "/connect"
   #- label : "Shop"
   #  link : "#shop"
-image : "refashion_mens_shirt.webp"
+image : "turtle.png"
 
