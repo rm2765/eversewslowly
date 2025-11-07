@@ -1,6 +1,6 @@
 {{ define "main" }}
 {{ partial "menu-header.html" . }}
-{{ partial "banner_button" site.Data.books.banner}}
+{{ partial "spotlight" site.Data.books.spotlight}}
 
 {{/* Top Books Grid */}}
 {{ partial "book-tile.html" (dict "context" . "dataset" "top10") }}

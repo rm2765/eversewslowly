@@ -1,9 +1,9 @@
-banner:
+spotlight:
   style: "style1 orient-left content-align-left image-position-center onscroll-image-fade-in"
-  title: "Textilepedia"
-  subtitle: Latest Read
+  title: "Textilepedia: The Complete Fabric Guide"
+  subtitle: 📖 Latest Read 📖
   author: By Fashionary
-  content: "A deceptively beautifully photographed book of all fiber & material types. You'll think you can actual touch the fibers by how real it looks."
+  content: "✨A deceptively beautifully photographed book of all fiber & material types. You'll think you can actual touch the fibers by how real it looks."
   image: "https://rm2765.github.io/mypins/pin_bks/textilepedia-bk.jpg"
   button:
     label: Get on Amazon

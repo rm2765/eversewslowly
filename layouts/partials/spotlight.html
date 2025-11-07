@@ -2,6 +2,8 @@
 <section class="spotlight {{ .style }}"{{ with .id }} id="{{ . }}"{{ end }}>
     <div class="content">
         {{ with .title | markdownify }}<h2>{{ . }}</h2>{{ end }}
+        {{ with .author}}<p class="major">{{ . | markdownify | emojify }}</p>{{ end }}
+        {{ with .subtitle }}<p>{{ . | markdownify | emojify }}<p>{{ end }}
         {{ with .content | markdownify}}<p>{{ . | safeHTML }}</p>{{ end }}
         {{ with .button }}<ul class="actions stacked">
             <li><a href="{{ .link }}" class="button">{{ .label }}</a></li>

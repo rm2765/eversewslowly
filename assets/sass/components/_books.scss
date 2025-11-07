@@ -290,7 +290,7 @@
           display: block;
         }
       }
-}
+    }
   }
 }
 
@@ -353,6 +353,10 @@
     font-size: 0.65rem;
     padding: 0.2rem 0.6rem;
   }
+  
+  .book-details .actions li .button {
+    justify-content: center;
+  }
 }
 
 /* Dark mode support */
@@ -362,7 +366,20 @@
   }
 }
 
-// Add these styles to your existing book SCSS file
+/* --- Styling for the Expand Button --- */
+.expand-button .large-chevron svg {
+  width: 1.4em;
+  height: 1.4em;
+}
+
+.expand-button:hover {
+  transform: scale(1.03);
+  transition: transform 0.2s ease;
+}
+
+.expand-button span {
+  vertical-align: middle;
+}
 
 /* Video Thumbnail and Preview Styling */
 .book-cover .image {
@@ -573,5 +590,9 @@
   
   .book-cover .image .caption .book-quote {
     font-size: 0.85rem;
+  }
+  
+  .book-details .actions li .button {
+    justify-content: center;
   }
 }

@@ -1,5 +1,5 @@
 ---
-title: "The Refashion Toolkit: Ongoing Skill Library"
+title: "Learn"
 description: "An evolving resource hub of refashion and sewing skills — updated monthly with new techniques, guides, and printable downloads for slow fashion makers."
 layout: "learn"
 date: 2025-10-01

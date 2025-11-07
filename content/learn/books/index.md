@@ -1,4 +1,5 @@
 ---
 layout: "books"
-breadcrumb: "Learn › Book Recommendations"
+title: Books
+date: 2025-11-07
 ---
