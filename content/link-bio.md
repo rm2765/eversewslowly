@@ -17,7 +17,7 @@ buttons:
     link: "https://shopfabscrap.org/?ref=eversewslowly"
   - label: "📚 Find all my Sewing Book reviews & links!"
     link: "/learn/books"
-  - label: Reclaimed Fabric Sourcing List
+  - label: ♻️ Reclaimed Fabric Sourcing List
     link: https://airtable.com/app5c3k4HKyfgkk6J/shrt5I0t1o5KHtZis/tblMLXFNfRcSDEHTe
 
 cards_intro: ""
@@ -35,4 +35,7 @@ cards:
   - image: "top9_BFA.png"
     title: "Top 9 Facts about the BKLYN Fashion Academy"
     link: "/blog/2025/nine-things-you-should-know-about-the-bklyn-fashion-academy/"
+  - image: "reclaim_fabric_pin.png"
+    title: "Reclaimed Textile Sourcing"
+    link: "/blog/2025/reclaimed-textiles/"
 ---
