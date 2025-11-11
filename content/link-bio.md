@@ -9,7 +9,7 @@ buttons:
     link: "https://eversewslowly.eo.page/subscribe"
   - label: "📝 Read the Blog"
     link: "/blog/"
-  - label: "🧵 Learn to Refashion (Simple but Cute Refashion Tutorials)"
+  - label: "🧵 Simple & Cute Refashion Tutorials"
     link: "https://www.youtube.com/watch?v=oIK_ygYk84U&list=PLsQTSSrgilWQMW4A0KHsw_daZHGRtUPem&pp=gAQBiAQB"
   - label: "😅 Beginner Mistakes (Top Tutorials)"
     link: "https://www.youtube.com/playlist?list=PLsQTSSrgilWROYtFxgWLe_ZW48Z4G4maK"
@@ -17,6 +17,8 @@ buttons:
     link: "https://shopfabscrap.org/?ref=eversewslowly"
   - label: "📚 Find all my Sewing Book reviews & links!"
     link: "/learn/books"
+  - label: Reclaimed Fabric Sourcing List
+    link: https://airtable.com/app5c3k4HKyfgkk6J/shrt5I0t1o5KHtZis/tblMLXFNfRcSDEHTe
 
 cards_intro: ""
 
