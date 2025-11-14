@@ -8,11 +8,14 @@ tags:
   - Moodboard
   - Pinterest
   - Women in Future Industries
-  - Inspo
-categories:
-  - BKLYN Fashion Academy Series
   - How-to
   - AI in Fashion
+  - Fashion Education
+categories:
+  - BKLYN Fashion Academy Series
+  - Inspo
+  - Technology & Innovation
+  - Fashion Industry
 fmContentType: Blog
 image: pinterest_board.webp
 summary: In this post, I'll be breaking down how I translated my initial ideas into final design sketches using **Pinterest**, a visual search platform, and **generative AI**, specifically the text-to-image feature in **Microsoft Designer**. Together, these tools helped me both explore and clarify my aesthetic and generate design references far beyond what I could imagine on my own.

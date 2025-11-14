@@ -7,9 +7,11 @@ tags:
   - emerging designers
   - runway show
   - Women in Future Industries
+  - Round-up
+  - fashion education
 categories:
   - BKLYN Fashion Academy Series
-  - Roundup
+  - Fashion Industry
 fmContentType: Blog
 image: my_models_bts_2.webp
 summary: Last year, I joined the [BKLYN Fashion Academy](https://www.bklynlibrary.org/bklyn-fashion-academy#)'s sixth season—an incredible program that more aspiring designers should know about. The Academy (BFA) takes designers on a four-month journey to a runway finale. The 2024 cohort created mini-collections under the *Women in Future Industries* theme. I interviewed fellow designers Gia, Regina, and Ronen, and together, we tell it all—from the creative challenges that tested both our skills and resolve, to our growth as design professionals.

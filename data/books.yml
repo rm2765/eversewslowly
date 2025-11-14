@@ -6,8 +6,8 @@ spotlight:
   content: "✨A deceptively beautifully photographed book of all fiber & material types. You'll think you can actual touch the fibers by how real it looks."
   image: "https://rm2765.github.io/mypins/pin_bks/textilepedia-bk.jpg"
   button:
-    label: Get on Amazon
-    link: "https://amzn.to/4oj1dkx"
+    label: Read Review
+    link: /blog/2025/textilepedia-book-review
 
 
 top10:
@@ -62,6 +62,7 @@ top10:
     quote: "،، The knowledge of fabric is the foundation of fashion design ❞ "
     affiliate: "https://amzn.to/4oj1dkx"
     tags: ["Reference", "Fabric"]
+    source: /blog/2025/textilepedia-book-review
 
   
 
@@ -90,3 +91,11 @@ all:
       type: "video" 
       affiliate: "https://amzn.to/4oj1dkx"
       tags: ["Reference", "Fabric"]
+      source: /blog/2025/textilepedia-book-review
+
+    - title: "The Re:Fashion Wardrobe"
+      image: https://rm2765.github.io/mypins/pin_bks/refashion_wardrobe-bk.gif
+      type: "image" 
+      affiliate: "https://amzn.to/4oj1dkx"
+      tags: ["Refashion", "Capsule Wardrobe"]
+      affiliate: "https://amzn.to/4oxboCm"

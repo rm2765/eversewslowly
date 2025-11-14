@@ -8,7 +8,8 @@ tags:
     - beginner
     - thrift
 categories:
-    - Refashioning
+    - Learn to Sew
+    - Refashion Our Wardrobe
 fmContentType: Blog
 image: sewing_hobby_birds.jpg
 summary: 

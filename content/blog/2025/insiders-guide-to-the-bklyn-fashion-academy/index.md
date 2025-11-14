@@ -7,9 +7,10 @@ tags:
     - emerging designers
     - runway show
     - freebie
+    - fashion education
 categories:
     - BKLYN Fashion Academy Series
-    - cornerstone
+    - Fashion Industry
 fmContentType: Blog
 image: runway.webp
 summary: null

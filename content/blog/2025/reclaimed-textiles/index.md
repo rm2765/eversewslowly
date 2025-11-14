@@ -4,15 +4,15 @@ description: A curated Airtable directory for sourcing reclaimed textiles — fr
 date: 2025-11-11T10:00:00.000Z
 draft: false
 tags:
-  - Textile Sourcing
-  - Sustainable Fashion
   - Fabric Directory
-  - Upcycling
-  - Resource Guide
+  - List
+  - Circularity
+  - overlooked fabrics
+  - Affiliates
 categories:
-  - Learn to Refashion
   - Resources
-  - Sustainability
+  - Fabric Radar
+  - Reclaimed Textile Sourcing
 fmContentType: Blog
 image: collage_fabric.png
 summary: This Airtable directory brings together the best sources for reclaimed textiles — whether you’re searching for deadstock rolls, pre-consumer remnants, or post-consumer fabrics ready for transformation. Organized by organization type, material category, and price range, it’s designed to help makers and designers find sustainable materials and reduce reliance on new production.
@@ -29,7 +29,12 @@ keywords:
   - creative reuse center
   - slow fashion resources
   - eco fashion
-  - zero waste sewing
+  - fabric remnant
+  - secondhand fabrics
+  - secondhand garments
+  - fabric destash
+  - marketplaces
+  - 
 ---
 
 ## Why Sourcing Reclaimed Textiles Matters

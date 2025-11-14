@@ -6,8 +6,8 @@
 
     
     <div class="content">
-      <div class="items style2 {{ $featured.style }}">
-        {{ range first 6 $featured.items }}
+      <div class="items {{ $featured.style }}">
+        {{ range first 9 $featured.items }}
           {{ $post := site.GetPage (printf "blog/%s" .path) }}
           {{ if $post }}
           <article onclick="window.location='{{ $post.Permalink }}';">

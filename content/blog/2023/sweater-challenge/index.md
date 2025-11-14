@@ -12,8 +12,7 @@ tags:
   - face mask
   - tunic
 categories:
-  - Refashioning
-  - Sewing Resources
+  - Refashion Our Wardrobe
 image: sweater_challenge.jpg
 summary:
 ---
