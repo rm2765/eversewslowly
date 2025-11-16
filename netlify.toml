@@ -1,5 +1,5 @@
 [build]
-command = "hugo --minify"  # Added --minify flag
+command = "hugo --gc --cleanDestinationDir --ignoreCache --minify"
 publish = "public"
 
 [build.environment]
@@ -8,14 +8,15 @@ HUGO_VERSION = "0.145.0"
 ## -----------------------------------------------
 ## Context-specific builds
 ## -----------------------------------------------
+
 [context.branch-deploy]
-command = "hugo -F -b $DEPLOY_PRIME_URL"
+command = "hugo --gc --cleanDestinationDir --ignoreCache -F -b $DEPLOY_PRIME_URL"
 
 [context.deploy-preview]
-command = "hugo -F -b $DEPLOY_PRIME_URL"
+command = "hugo --gc --cleanDestinationDir --ignoreCache -F -b $DEPLOY_PRIME_URL"
 
 [context.production]
-command = "hugo --minify"  # Ensure minification in production
+command = "hugo --gc --cleanDestinationDir --ignoreCache --minify"
 
 [context.production.environment]
 HUGO_ENV = "production"
