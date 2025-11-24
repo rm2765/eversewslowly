@@ -20,6 +20,17 @@ top10:
     Disclosure: Affiliate links support me in creating helpful content =) 
   style: "style1 onscroll-fade-in"
   books:
+  - title: " ReFashioned: Cutting-Edge Clothing from Upcycled Materials"
+    image: "https://rm2765.github.io/mypins/pin_bks/refashion_couture_bk.mp4"
+    thumbnail: "https://rm2765.github.io/mypins/pin_bks/refashion_couture_bk.gif"  # Static image shown by default
+    bg: "https://rm2765.github.io/mypins/pin_bks/refashion_couture_bk.gif"  # Background image (optional, for additional effects)
+    type: "video"
+    takeaways: "Sass Brown showcases several designers who are on the cutting-edge of upcycled fashion. An inspiring look at how refashioning spans even to the high-end couture. ✂️🌍"
+    quote: "..homage to the wealth of talented designers working with recycled and upcycled materials, who truly deserve their own book."
+    affiliate: "https://amzn.to/497WldB"
+   # source: "/learn/books/refashion-handbook"
+    tags: ["Refashion", "Inspiration"]
+
   - title: "📚 Reader’s Digest Complete Guide to Sewing"
     image: "https://rm2765.github.io/mypins/pin_bks/reader-digest-bk.mp4"
     thumbnail: "https://rm2765.github.io/mypins/pin_bks/readers-digest-bk.jpg"  # Static image shown by default
@@ -99,3 +110,11 @@ all:
       affiliate: "https://amzn.to/4oj1dkx"
       tags: ["Refashion", "Capsule Wardrobe"]
       affiliate: "https://amzn.to/4oxboCm"
+
+    - title: "ReFashioned: Cutting-Edge Clothing from Upcycled Materials"
+      image: "https://rm2765.github.io/mypins/pin_bks/refashion_couture_bk.mp4"
+      type: "video"
+      affiliate: "https://amzn.to/497WldB"
+      tags: ["Refashion", "Inspiration"]
+
+
