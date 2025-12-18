@@ -5,6 +5,8 @@ description: ""
 banner_image: "turtle.png"
 
 buttons:
+  - label: "📝 Read Behind the Seams: Four BKLYNFA Designer Stories"
+    link: /blog/2025/behind-the-seams/
   - label: "✨ Emerging Designer Resource PDF (FREE Download)"
     link: "https://eversewslowly.eo.page/subscribe"
   - label: "📝 Read the Blog"
