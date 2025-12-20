@@ -41,16 +41,16 @@ keywords:
 
 This month’s Fabric Radar focuses on **plaid flannels**. Nothing signals fall and winter quite like it, a cold-weather staple that can be reclaimed, reimagined and refashioned into your next loved item that you can't help but wear again and again.
 
-After spending a day sourcing **standout finds,** the results fell into four categories that will serve where you are in the beginner to pro upcycler journey:
+After spending a day lookng for overlooked gems, my results fell into four categories:
 
 * **Vintage & special wool**  
 * **Affordable everyday basics**  
 * **Playful, unexpected fabric moments**  
 * **Non-traditional pieces hiding serious yardage**
 
-**All listings featured here are **secondhand garments (post-consumer textiles),** materials already made, worn, and ready for their next chapter. I also searched on creative reuse places (for a full list of locations visit my [Reclaimed Textile Sourcing Directory](/reclaimed-textiles)). However plaid flannel finds there sold so fast before I could put this blog post together .*
+**All listings featured here are **secondhand garments (post-consumer textiles),** materials already made, worn, and ready for their next chapter. I also searched at creative reuse location (for a full list, visit my [Reclaimed Textile Sourcing Directory](/reclaimed-textiles)). However, the plaid flannel finds there sold so quickly that I couldn't include them before publishing this post.*
 
-## **Why Reclaim Plaid Flannels?**
+## Why Reclaim Plaid Flannels?
 It’s the season: people are clearing out winter wardrobes,  including you. Before scrolling, check your own closet for flannel pieces that could be repaired, refashioned, or repurposed.
 
 Beyond that, plaid flannels are **abundant on secondhand marketplaces**, coming in a wide range of **weights and fiber content**. That variety allows for a lot of design **flexibility and creativity**.
@@ -59,11 +59,11 @@ Reclaimed plaid flannels are perfect for making skirts and pinafores, bags, patc
 
 ---
 
-## **My Top 15 Refashion-Ready Finds**
+## My Top 15 Refashion-Ready Finds
 
 ### **🟤 Vintage & Reprocessed Wool**
 
-These are heavyweight flannels that are durable, traditional, and exude workwear aesthethic.
+These are heavyweight flannels that are durable, traditional, and exude workwear aesthetic.
 
 * **John Henry Orange Wool Flannel (Men’s M)**  
   Vintage Korean-made button down with warm yellow/orange plaid colors made of a reprocessed wool/nylon blend.  
@@ -81,8 +81,6 @@ These are heavyweight flannels that are durable, traditional, and exude workwear
 * **L.L. Bean Fleece-Lined Plaid Shacket  (Men’s L)**  
   Another more recognizable brand, this find is a chunky flannel, its fleece lined making a great outwear piece for the cold. Can be great to wear as is or refashioned into a matching scarf, beanie, glove set. The flannel is cotton and the fleece is poly. Here's a *[runner-up](https://www.mercari.com/us/item/m11494918270/)* if looking for one that's not fleece-lined. 
   {{< ogcard-auto "https://poshmark.com/listing/LL-Bean-Shirt-Mens-Large-Green-Red-Plaid-Fleece-Lined-Shacket-Traditional-Fit-67fd31d78fa207783ef1f9ad" >}}
-
-
 
 
 <br>
@@ -117,8 +115,11 @@ These are midweight flannels that tend to be softer, less expensive and abundant
     {{< ogcard-auto "https://www.depop.com/products/merandmoss-multi-colored-plaid-flannel-shirt-plaid/" >}}
     Great for accessories or color-blocked designs.  
 
+<br>
+<br>
+
 ### **🔵 Non-Traditional Sources (Hidden Yardage)**
-If you want more *fabric*, perhaps looking to sell your remakes or buying materials to teach upcycling — look here 👀. Robes, gowns, and bundles are items that require more fabric to make and therfore make for great items to thrift for upcycling projects. 
+If you want more *fabric*, perhaps looking to sell your remakes or buying materials to teach upcycling — look here 👀. Robes, gowns, and bundles are items that require more fabric to make and therefore make for great items to thrift for upcycling projects. 
 
 * **Flannel Bathrobe (Maternity) & VIntage EUC**  
    {{< ogcard-auto "https://poshmark.com/listing/EUC-flannel-bathrobe-66d774b31985247f5f26fae2/" >}} 
@@ -131,20 +132,18 @@ If you want more *fabric*, perhaps looking to sell your remakes or buying materi
    High-value sourcing: save on shipping, save on it being a lower price per item compared to when buying one alone.
    {{< ogcard-auto "https://www.mercari.com/us/item/m53169093958/" >}}
 
-
-
 ***
 
-## **A Mini Story: Reprocessed Wool**
+## A Mini Story: Reprocessed Wool
 
 Wondering what reprocessed wool is? Well reprocessed wool comes from **pre-consumer factory waste**: cutting scraps, leftover yarns, and production offcuts that never made it into finished garments. These materials are collected, shredded back into fiber, and spun again into new yarn. This process was common in mid-century workwear and outdoor garments because it:
 * Lowered costs  
 * Increased wool availability  
 * Created durable fabrics, often blended with nylon
 
-As a result, many vintage wool flannels feel sturdier or rougher (likely itchier) than modern soft wool. They were designed to work hard and they still can. Choosing these pieces today extends the life of material that’s already been processed once, becoming new clothes from scaps,  honoring both its history, and its potential.
+As a result, many vintage wool flannels feel sturdier or rougher (likely itchier) than modern soft wool. They were designed to work hard and they still can. Choosing these pieces today extends the life of material that’s already been reclaimed once before, honoring both its history, and its potential.
 
-## **How to Spot Quality Flannel Online**
+## How to Spot Quality Flannel Online
 **Look for the following:**
 * Fiber content listed (cotton, wool, blends)  
 * Brushed or double-napped surfaces  
@@ -157,7 +156,7 @@ As a result, many vintage wool flannels feel sturdier or rougher (likely itchier
 * Light pilling (often removable)  
 * Itchiness (likely wool, consider adding a lining)
 
-## **How to Search for these Overlooked Gems**
+## How to Search for these Overlooked Gems
 **Try searches using key terms like:**
 * “men’s flannel robe”  
 * “vintage wool plaid shirt”  
@@ -171,7 +170,7 @@ Pro tip: sort by **oldest listings**. These overlooked pieces may often offer th
 ---
 
 ## Visualizing a Plaid Flannel Refashion
-Over time, I’ve built a [YouTube playlist library](https://youtube.com/playlist?list=PLsQTSSrgilWRgctj705UjVUBYyc5nzc-s&si=D-Gdr50sovX0U27u) where I save some of the best flannel refashion tutorials—from button-down to wrap skirts, patchwork maxis, and more. Watching these helps me spot construction opportunities while I’m still sourcing.
+Over time, I’ve built a [YouTube playlist](https://youtube.com/playlist?list=PLsQTSSrgilWRgctj705UjVUBYyc5nzc-s&si=D-Gdr50sovX0U27u) where I save some of the best flannel refashion tutorials—from button-down to wrap skirts, patchwork maxis, and more. Watching these helps me spot construction opportunities while I’m still sourcing.
 
 👇 Browse the playlist below to see real examples of flannel shirts turned into entirely new garments:
 
@@ -187,12 +186,10 @@ Using generative AI allows me to preview how a refashion-ready material could lo
 
 {{< figure src="flannel_transformed.png" alt="Gemini's Create An Image" caption="Generative Ai style mapping example" class="image fit" >}}
 
-This kind of visualization can’t replace hands-on making. However, it offers a great support while sourcing and planning, especially when working with limited or one-of-a-kind materials.
+This kind of visualization can’t replace hands-on making. However, it offers a great support while sourcing and planning, especially when working with limited or one-of-a-kind materials. Together, tutorial study with material visualization helps refashion-ready finds reveal what they can become—often before they even arrive in the mail!
 
-# ***Reference prompt used in Gemini:**
-Combine the two images. Apply the style, color palette, and distinct plaid lines of the first image onto the content and composition of the second image.*
-
-Together, tutorial study with material visualization helps refashion-ready finds reveal what they can become—often before they even arrive in the mail!
+***Reference prompt used in Gemini:**
+"Combine the two images. Apply the style, color palette, and distinct plaid lines of the first image onto the content and composition of the second image."*
 
 ---
 
