@@ -6,12 +6,12 @@ subtitle: |
 content : |
   Whether you’re a beginner or an expert, explore refashioning techniques and ideas to bring new life to your clothing and accessories.
 buttons:
-  - label : "Get Started"
-    link : "#beginner"
-  - label : "Sew Series"
-    link : "#sewing"
-  - label : "Refashion Tutorials"
-    link : "#refashion"
+#  - label : "Get Started"
+#    link : "#beginner"
+#  - label : "Sew Series"
+#    link : "#sewing"
+#  - label : "Refashion Tutorials"
+#    link : "#refashion"
   - label : "Book List"
     link : "/learn/books"
 image : "banner.jpg"

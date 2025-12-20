@@ -5,7 +5,7 @@ publishDir = "public"
 
 enableEmoji = true
 metaDataFormat = "yaml"
-timeout = "4250s"
+timeout = "7950s"
 
 [build]
   publish = "public"

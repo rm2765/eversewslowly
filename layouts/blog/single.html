@@ -1,4 +1,5 @@
 {{ define "main" }}
+
 {{ partialCached "menu-header" . }}
 {{ partial "blog_single_banner" . }}
 <section class="wrapper style2">
@@ -20,6 +21,9 @@
 
             {{ $clipboardJS := resources.Get "js/clipboard.js" | resources.Fingerprint }}
             <script src="{{ $clipboardJS.RelPermalink }}"></script>
+
+            {{ $js := resources.Get "js/ograph-card.js" | js.Build | minify | fingerprint }}
+            <script src="{{ $js.RelPermalink }}" defer></script>
 
             <!-- Social Share Icons -->
 <ul class="icons share-icons">
