@@ -19,7 +19,7 @@ fmContentType: Blog
 image: plaid_flannel_cover.png
 summary: This month’s Fabric Radar focuses on reclaimed plaid flannel — highlighting standout secondhand finds, non-traditional sourcing strategies, and practical guidance for spotting quality materials online. Designed for makers and designers who refashion garments into something new.
 type: blog
-slug: plaid-flannel-finds-for-refashioning
+slug: plaid-flannel-finds
 toc: false
 insertTOC: false
 keywords:

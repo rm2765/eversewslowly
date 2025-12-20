@@ -5,6 +5,8 @@ description: ""
 banner_image: "turtle.png"
 
 buttons:
+  - label: "📡 Fabric Radar: Plaid Flannel Finds"
+    link: /blog/2025/plaid-flannel-finds/
   - label: "📝 Read Behind the Seams: Four BKLYNFA Designer Stories"
     link: /blog/2025/behind-the-seams/
   - label: "✨ Emerging Designer Resource PDF (FREE Download)"
