@@ -188,8 +188,8 @@ Using generative AI allows me to preview how a refashion-ready material could lo
 
 This kind of visualization can’t replace hands-on making. However, it offers a great support while sourcing and planning, especially when working with limited or one-of-a-kind materials. Together, tutorial study with material visualization helps refashion-ready finds reveal what they can become—often before they even arrive in the mail!
 
-***Reference prompt used in Gemini:**
-"Combine the two images. Apply the style, color palette, and distinct plaid lines of the first image onto the content and composition of the second image."*
+***Reference prompt used in Gemini:***
+"Combine the two images. Apply the style, color palette, and distinct plaid lines of the first image onto the content and composition of the second image."
 
 ---
 

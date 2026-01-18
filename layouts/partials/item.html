@@ -9,6 +9,12 @@
       <span class="{{ .style }}"></span>
     </div>
   {{ end }}
-  <h3>{{ .name | markdownify }}</h3>
-  <p> {{ .content | markdownify }}</p>
+  
+  {{ if .url }}
+    <h3><a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .name | markdownify }}</a></h3>
+  {{ else }}
+    <h3>{{ .name | markdownify }}</h3>
+  {{ end }}
+  
+  <p>{{ .content | markdownify }}</p>
 </section>

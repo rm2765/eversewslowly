@@ -1,0 +1,4 @@
+---
+layout: "supplies"
+title: Supplies
+---
