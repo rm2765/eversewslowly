@@ -1,153 +1,144 @@
-title: "Refashioning Toolkit Bingo"
-content: How many of these essential tools do you have in a row? 
-style: "style2 medium onscroll-fade-in"
-items:
-  # Cutting Tools
-  - name: "Fabric Scissors"
-    content: My first pair of scissors is the Fiskars Easy Action Scissors 10". 
-    url: https://amzn.to/49uMOMj
-    image: https://rm2765.github.io/mypins/supplies/fabric_scissors.jpg
+title:
+  style: "style4 color3 orient-left content-align-left onscroll-image-fade-in"
+  title: Build Your Dream Refashioning Toolkit
+  image: "https://rm2765.github.io/mypins/supplies/banner_supplies.png"
+  content: | 
+    The difference between a frustrating project and a satisfying transformation? Having the right tools. Whether you're taking apart thrifted finds or creating custom pieces from scratch, <b>these 21 essentials</b> will help you sew with confidence and achieve professional-looking results.
+    <br><br>
+    How many tools do you have? Check off each one you own and see how close you are to a complete refashioning toolkit!
+ 
   
-  - name: "Pinking Shears"
-    content: I got its sister, these Fiskar Easy Action 9" pinking shears that prevents fabric fraying.
-    image: https://rm2765.github.io/mypins/supplies/pinking.jpg
-    url: https://amzn.to/4qPLXwJ
+# Cutting Tools Section
+cutting_tools:
+  title: "Cutting Tools"
+  style: "style3 medium onscroll-fade-in"
+  content: "Sharp, quality cutting tools are the foundation of clean, professional work." 
+  items:
+    - name: "Fabric Scissors"
+      content: My first pair of scissors is the Fiskars Easy Action Scissors 10". 
+      url: https://amzn.to/49uMOMj
+      image: https://rm2765.github.io/mypins/supplies/fabric_scissors.jpg
+    
+    - name: "Pinking Shears"
+      content: I got its sister, these Fiskar Easy Action 9" pinking shears that prevents fabric fraying.
+      image: https://rm2765.github.io/mypins/supplies/pinking.jpg
+      url: https://amzn.to/4qPLXwJ
 
-  - name: "Rotary Cutter"
-    content: "I also got the Fiskars classic 45mm rotary cutter with comfort handle."
-    image: https://rm2765.github.io/mypins/supplies/rotary_cutter.jpg
-    url: https://amzn.to/45PwHYD
+    - name: "Rotary Cutter"
+      content: "I also got the Fiskars classic 45mm rotary cutter with comfort handle."
+      image: https://rm2765.github.io/mypins/supplies/rotary_cutter.jpg
+      url: https://amzn.to/45PwHYD
 
-  - name: "Self-Healing Mat"
-    content: And of course, I got the Fiskars 18" X 24" cutting mat as well!
-    image: https://rm2765.github.io/mypins/supplies/self_mat.jpg
-    url: https://amzn.to/4sFWmgh
+    - name: "Self-Healing Mat"
+      content: And of course, I got the Fiskars 18" X 24" cutting mat as well!
+      image: https://rm2765.github.io/mypins/supplies/self_mat.jpg
+      url: https://amzn.to/4sFWmgh
 
-  
-  # Sewing Machine & Accessories
-  - name: "Sewing Machine"
-    content: "The Singer Stylist 7528 is the machine I own. Sadly, its been discontinued. Brother has good beginner machines."
-    image: https://rm2765.github.io/mypins/supplies/sewing_machine.jpg
-    url: https://amzn.to/49O8bJM
-  
-  - name: "Walking Foot"
-    content: "The walking foot has been my lifesaver for neater sewing. You need all the support you can get when learning to sew."
-    image: https://rm2765.github.io/mypins/supplies/walking_foot.png
-    url: https://amzn.to/4aOQeff
-  
-  - name: "Universal Needles"
-    content: "Needles come in diffferent types and sizes. These are the most commonly used."
-    image: https://rm2765.github.io/mypins/supplies/needles_1.jpg
-    url: https://amzn.to/45Vc8tO
-  
-  - name: "Stretch Needles"
-    content: "You'll need these needles when working with knit fabrics."
-    image: https://rm2765.github.io/mypins/supplies/ballpoint_needles.png
-    url: https://amzn.to/4b024Dv
-  
-  - name: "Twin Needles"
-    content: "These needles create that double lined top stitch finish that make your refashion clothes so rad!"
-    image: https://rm2765.github.io/mypins/supplies/twin_needles.png
-    url: https://amzn.to/4jKURJF
+# Sewing Machine & Attachments Section
+machine_attachments:
+  title: "Sewing Machine & Attachments"
+  style: "style3 medium onscroll-fade-in"
+  content: "Your sewing machine is your workhorse, but the right attachments and needles make all the difference. Match your needle to your fabric for professional results every time."
+  items:
+    - name: "Sewing Machine"
+      content: "The Singer Stylist 7528 is the machine I own. Sadly, its been discontinued. Brother has good beginner machines."
+      image: https://rm2765.github.io/mypins/supplies/sewing_machine.jpg
+      url: https://amzn.to/49O8bJM
+    
+    - name: "Walking Foot"
+      content: "The walking foot has been my lifesaver for neater sewing. You need all the support you can get when learning to sew."
+      image: https://rm2765.github.io/mypins/supplies/walking_foot.png
+      url: https://amzn.to/4aOQeff
+    
+    - name: "Universal Needles"
+      content: "Needles come in different types and sizes. These are the most commonly used."
+      image: https://rm2765.github.io/mypins/supplies/needles_1.jpg
+      url: https://amzn.to/45Vc8tO
+    
+    - name: "Stretch Needles"
+      content: "You'll need these needles when working with knit fabrics."
+      image: https://rm2765.github.io/mypins/supplies/ballpoint_needles.png
+      url: https://amzn.to/4b024Dv
+    
+    - name: "Twin Needles"
+      content: "These needles create that double lined top stitch finish that make your refashion clothes so rad!"
+      image: https://rm2765.github.io/mypins/supplies/twin_needles.png
+      url: https://amzn.to/4jKURJF
 
-  - name: "Heavy Duty Needles"
-    content: "You'll need heavy-duty needles for working with jeans, and other heavy weight woven fabrics."
-    image: https://rm2765.github.io/mypins/supplies/heavy_duty_needles.png
-    url: https://amzn.to/49zRC4x
-  
-  - name: "Thread Sets"
-    content: I purchase <a href="https://amzn.to/3NqfEq0">Gutermann</a> or Coats & Clark for my threads.
-    image: https://rm2765.github.io/mypins/supplies/spools.png
-    url: https://amzn.to/4jGk7AW
+    - name: "Heavy Duty Needles"
+      content: "You'll need heavy-duty needles for working with jeans, and other heavy weight woven fabrics."
+      image: https://rm2765.github.io/mypins/supplies/heavy_duty_needles.png
+      url: https://amzn.to/49zRC4x
+    
+    - name: "Thread Sets"
+      content: I purchase <a href="https://amzn.to/3NqfEq0">Gutermann</a> or Coats & Clark for my threads.
+      image: https://rm2765.github.io/mypins/supplies/spools.png
+      url: https://amzn.to/4jGk7AW
 
-  
-   # Deconstructing & Seam Work
-  - name: "Seam Rippers"
-    content: "An essential refashioning tool. The seam ripper is for taking apart garments and undoing mistakes."
-    style: "solid style2 major fa-wrench"
-    image: https://rm2765.github.io/mypins/supplies/seam_ripper.png
-    url: https://amzn.to/4jCdkrU
-  
-  - name: "Fabric Shaver"
-    content: "Refresh old garments by removing pills and fuzz—makes thrifted pieces look brand new again."
-    image: https://rm2765.github.io/mypins/supplies/fabric_shaver.jpg
-    url: https://amzn.to/3LBsZep
-  
-  # Pattern Making & Marking
-  - name: "Pattern Weights"
-    content: "Pattern weights secure pattern placement when tracing or cutting."
-    image: https://rm2765.github.io/mypins/supplies/pattern_weights.jpg
-    url: https://amzn.to/45hYf8W
-  
-  - name: "Marking Tools"
-    content: "Dual water-soluble and air-erasable fabric disappearing ink markings pens are a must have."
-    url: https://amzn.to/45fLhbK
-    image: https://rm2765.github.io/mypins/supplies/marking_dual_pens.png
-  
-  - name: "Tracing Tools & Paper"
-    content: Using tracing paper and a <a href="https://amzn.to/4k4UtWN">tracing wheel</a> is a great way to pull patterns from existing clothes.
-    url: https://amzn.to/4qod6Hh 
-    image: https://rm2765.github.io/mypins/supplies/tracing.png
-  
-  - name: "Rulers & Measuring"
-    content: Clear grid rulers are so helpful, <a href="https://amzn.to/4b5VNpU">styling design rulers</a> for curved lines, and <a href="https://amzn.to/49C5MRi"> measuring tapes</a> as well.
-    image: https://rm2765.github.io/mypins/supplies/ruler.png
-    url: https://amzn.to/49Po2I4
-  
-  # Bias Tape & Binding
+# Deconstructing & Refreshing Section
+deconstructing:
+  title: "Deconstructing & Refreshing"
+  style: "style3 medium onscroll-fade-in"
+  content: "Refashioning means taking things apart to make it new again."
+  items:
+    - name: "Seam Rippers"
+      content: "An essential refashioning tool. The seam ripper is for taking apart garments and undoing mistakes."
+      image: https://rm2765.github.io/mypins/supplies/seam_ripper.png
+      url: https://amzn.to/4jCdkrU
+    
+    - name: "Fabric Shaver"
+      content: "Refresh old garments by removing pills and fuzz—makes thrifted pieces look brand new again."
+      image: https://rm2765.github.io/mypins/supplies/fabric_shaver.jpg
+      url: https://amzn.to/3LBsZep
 
-  - name: "Bias Tape Maker"
-    content: "Make your own bias tape to create finishes that match your refashioned garment."
-    image: https://rm2765.github.io/mypins/supplies/bias_tape_maker.png
-    url: https://amzn.to/4qSPA5k
-  
-  - name: "Sewing Clips"
-    content: "Wonder clips are great to use instead of pins at times depending on the fabric."
-    image: https://rm2765.github.io/mypins/supplies/wonder_clip.png
-    url: https://amzn.to/4btyvu1
-  
-  # Adhesives & Fasteners
-  - name: "Fray Check"
-    content: "Stop-fraying sealer. No-sew solutions for quick fixes, preventing raw edge fraying."
-    image: https://rm2765.github.io/mypins/supplies/fray_check.png
-    url: https://amzn.to/49Ho2J7
-  
-  # - name: "Hem Tapes"
-  #   content: "HeatnBond iron-on adhesive and no-sew double-sided hem tape. Perfect for quick alterations, temporary fixes, or when you need a clean hem without stitching."
-  #   style: "solid style2 major fa-tape"
-  
-  # - name: "Grommet Kit"
-  #   content: "500-piece eyelet tool kit with 3/8-inch grommets. Add professional grommets to bags, jackets, or create lace-up details on refashioned garments."
-  #   style: "solid style2 major fa-circle"
-  
-  # Tools & Hardware
-  # - name: "Pliers Set"
-  #   content: "High-leverage needle nose, linesman, and diagonal cutting pliers. Essential for removing rivets, setting hardware, and working with grommets or metal embellishments."
-  #   style: "solid style2 major fa-wrench"
-  
-  # Pins & Notions
-  - name: "Glass Head Pins"
-    content: Glass pins are a must. You can iron over them and the glass heads won't melt, you can keep them in a <a href="https://amzn.to/49HrMKn">magnetic container</a> for easy use.
-    url: https://amzn.to/49vCOE0
-    image: https://rm2765.github.io/mypins/supplies/pins.png
+# Pattern Making & Marking Section
+pattern_marking:
+  title: "Pattern Making & Marking"
+  style: "style3 medium onscroll-fade-in"
+  content: "Create or copy patterns from existing clothes and mark up your fabrics with pens that can disappear."
+  items:
+    - name: "Pattern Weights"
+      content: "Pattern weights secure pattern placement when tracing or cutting."
+      image: https://rm2765.github.io/mypins/supplies/pattern_weights.jpg
+      url: https://amzn.to/45hYf8W
+    
+    - name: "Marking Tools"
+      content: "Dual water-soluble and air-erasable fabric disappearing ink markings pens are a must have."
+      url: https://amzn.to/45fLhbK
+      image: https://rm2765.github.io/mypins/supplies/marking_dual_pens.png
+    
+    - name: "Tracing Tools & Paper"
+      content: Using tracing paper and a <a href="https://amzn.to/4k4UtWN">tracing wheel</a> is a great way to pull patterns from existing clothes.
+      url: https://amzn.to/4qod6Hh 
+      image: https://rm2765.github.io/mypins/supplies/tracing.png
+    
+    - name: "Rulers & Measuring"
+      content: Clear grid rulers are so helpful, <a href="https://amzn.to/4b5VNpU">styling design rulers</a> for curved lines, and <a href="https://amzn.to/49C5MRi">measuring tapes</a> as well.
+      image: https://rm2765.github.io/mypins/supplies/ruler.png
+      url: https://amzn.to/49Po2I4
 
-  
-    # Pressing & Finishing
-  # - name: "Mini Travel Iron"
-  #   content: "Compact steam iron with dual voltage and temperature control. Perfect for pressing small seams, detail work, and quick touch-ups without dragging out a full-size iron."
-  #   style: "solid style2 major fa-iron"
-  #   image: 
-  #   url: https://amzn.to/4qgQZm5
-  
-  # - name: "Pressing Mats"
-  #   content: "17x13.5 wool pressing mat and portable ironing mat. The wool mat reflects heat for better pressing results, while the portable version lets you iron anywhere."
-  #   style: "solid style2 major fa-square"
-  #   image:
-  #   url: https://amzn.to/3LdEN6y
-  
-  # - name: "Tailor's Ham & Seam Roll"
-  #   content: "Professional curved pressing tools for shaping darts, sleeves, and curved seams. These ergonomic tools are the secret to achieving that couture finish on fitted garments."
-  #   style: "solid style2 major fa-egg"
-  #   image:
-  #   url: https://amzn.to/3N835iW
-  
+# Helper Tools Section
+helpers:
+  title: "Helper Tools"
+  style: "style3 medium onscroll-fade-in"
+  content: "These tools help you create finishes and secure your work from quick and easy to professional and beautifully."
+  items:
+    - name: "Bias Tape Maker"
+      content: "Make your own bias tape to create finishes that match your refashioned garment."
+      image: https://rm2765.github.io/mypins/supplies/bias_tape_maker.png
+      url: https://amzn.to/4qSPA5k
+    
+    - name: "Sewing Clips"
+      content: "Wonder clips are great to use instead of pins at times depending on the fabric."
+      image: https://rm2765.github.io/mypins/supplies/wonder_clip.png
+      url: https://amzn.to/4btyvu1
+    
+    - name: "Fray Check"
+      content: "Stop-fraying sealer. No-sew solutions for quick fixes, preventing raw edge fraying."
+      image: https://rm2765.github.io/mypins/supplies/fray_check.png
+      url: https://amzn.to/49Ho2J7
+    
+    - name: "Glass Head Pins"
+      content: Glass pins are a must. You can iron over them and the glass heads won't melt, you can keep them in a <a href="https://amzn.to/49HrMKn">magnetic container</a> for easy use.
+      url: https://amzn.to/49vCOE0
+      image: https://rm2765.github.io/mypins/supplies/pins.png

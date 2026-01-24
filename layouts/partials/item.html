@@ -1,13 +1,29 @@
 {{/* layouts/partials/item.html */}}
 <section class="item">
-  {{ with .image }}
-    <div class="item-media">
-      <img src="{{ . }}" loading="lazy" alt="{{ $.name | default "item" }}" decoding="async" />
-    </div>
+  {{ if .url }}
+    {{ with .image }}
+      <div class="item-media">
+        <a href="{{ $.url }}" target="_blank" rel="noopener noreferrer">
+          <img src="{{ . }}" loading="lazy" alt="{{ $.name | default "item" }}" decoding="async" />
+        </a>
+      </div>
+    {{ else }}
+      <div class="item-media">
+        <a href="{{ $.url }}" target="_blank" rel="noopener noreferrer">
+          <span class="{{ $.style }}"></span>
+        </a>
+      </div>
+    {{ end }}
   {{ else }}
-    <div class="item-media">
-      <span class="{{ .style }}"></span>
-    </div>
+    {{ with .image }}
+      <div class="item-media">
+        <img src="{{ . }}" loading="lazy" alt="{{ $.name | default "item" }}" decoding="async" />
+      </div>
+    {{ else }}
+      <div class="item-media">
+        <span class="{{ .style }}"></span>
+      </div>
+    {{ end }}
   {{ end }}
   
   {{ if .url }}

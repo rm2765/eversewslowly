@@ -1,6 +1,26 @@
 {{ define "main" }}
 {{ partial "menu-header.html" . }}
 
-{{ partial "items" site.Data.supplies }}
+{{ partial "spotlight" site.Data.supplies.title }}
+{{ partial "items" site.Data.supplies.cutting_tools }}
+{{ partial "items" site.Data.supplies.machine_attachments }}
+{{ partial "items" site.Data.supplies.deconstructing }}
+{{ partial "items" site.Data.supplies.pattern_marking }}
+{{ partial "items" site.Data.supplies.helpers }}
+
+
+<!-- Call to Action Section 
+<section class="wrapper style2 align-left">
+  <div class="inner">
+    <h2>Ready to Put Your Tools to Work?</h2>
+    <p>Now that you know what you need, check out my refashioning tutorials to start transforming thrifted finds into custom pieces. Every project includes a toolkit checklist so you'll know exactly which tools you'll need.</p>
+    <p>📌 <b>Save this page</b> for easy reference when shopping</p>
+    <p>📥 <b>Download</b> the printable checklist (coming soon!)</p>
+    <p>💬 Questions about any of these tools? <a href="../../connect">Connect with me</a></p>
+  </div>
+</section> -->
+
+{{ partialCached "newsletter_inline" site.Data.newsletter_inline}}
+{{ partial "breadcrumbs" . }}
 
 {{ end }}
